@@ -1,0 +1,150 @@
+
+body {
+    position: relative;
+    background: url("bg-skins/gold2-outer.jpg") top center no-repeat;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #000 !important;
+}
+
+body::after {
+    content: '';
+    min-height: 220px;
+    height: 100%;
+    display: block;
+    top: 250px;
+    position: relative;
+    background: #000 url("bg-skins/gold2-body.gif") top center repeat-y;
+}
+
+h1,h2,h3,h4,h5,h6,a,p,label,button,em{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-family: 'Arial Narrow', Arial ;
+    font-weight: normal;
+    color: #fff;
+}
+
+em, p{
+    font-size: 0.8em;
+}
+
+a{
+    color: #eeb211;
+    border-radius: 0px;
+    padding: 5px 10px;
+    background: url("misc/link_stripes.png") 0 0 no-repeat;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover{
+    color: #333;
+    background-position: -300px 0;
+}
+
+.wrapper{
+    width: 976px;
+    height: 1000px;
+    margin: auto;
+}
+
+header{
+    background-image: url(bg-header/sitelinks.png);
+    display: flex;
+    align-items: center;
+    height: 45px;
+    width: 100%;
+}
+
+.headerC{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+}
+
+main{
+    position: relative;
+    top: 128px;
+    width: 950px;
+    height: unset;
+    margin: 0 auto;
+    padding: 10px 13px 0 13px;
+    background: url("bg-main/bg-main.gif") top center repeat-y;
+    z-index: 999;
+    color: #7d7575;
+}
+
+.sectionC{
+    padding: 10px 13px 0;
+}
+
+.pod{
+    margin-bottom: 10px;
+    position: relative;
+    display: block;
+    border: solid 4px #000;
+    background-color: #000;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px #000;
+    width: auto
+}
+
+.podHeader{
+    width: 100%;
+    height: 41px;
+    display: flex;
+    align-items: center;
+}
+
+.podHeader{
+    background: url(bg-skins/podtops/podtop-gold.jpg) 0 0 no-repeat;
+}
+
+
+.podHeader h2 {
+  float: left;
+  height: 31px;
+  overflow: hidden;
+  margin: 5px;
+  padding-left: 36px;
+  color: #fff;
+  font-size: 27px;
+  line-height: 1.1em;
+  font-weight: normal;
+  background-image: url(icons/h2-all.png);
+  background-repeat: no-repeat;
+}
+
+.podHeader::before{
+  position: absolute;
+  padding-right: 3px;
+  height: 100%;
+  right: 0;
+  background: inherit;
+  background-position: right 0;
+}
+
+.podBottom{
+    min-height: 50px;
+    width: 100%;
+    background: url(bg-main/podbreaker-23.jpg) 0 -6px no-repeat;
+}
+
+.podC{
+    padding: 20px 15px;
+}
+
+.podC img{
+    width: 100%;
+    margin-bottom: 20px;
+}

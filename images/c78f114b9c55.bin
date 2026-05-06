@@ -1,0 +1,1934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>Newgrounds Community Hub</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="theme-color" content="#262425">
+
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.0/themes/smoothness/jquery-ui.min.css?stamp=1778089915" type="text/css" media="all" />
+	<link rel="stylesheet" href="https://css.ngfiles.com/ng_2015.69fb7fbb71c70.css?stamp=1778089915" type="text/css" media="all" />
+	<link rel="stylesheet" href="https://css.ngfiles.com/emotes/emotes.69fb7fb4044f7.css?stamp=1778089915" type="text/css" media="all" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css?stamp=1778089915" type="text/css" media="all" />
+
+    
+    <script src="https://js.ngfiles.com/legacy.js?ngcache=1778089838"></script>        <script src="https://js.ngfiles.com/jquery/jquery-ui.js?ngcache=1725463505"></script>
+    <script src="https://js.ngfiles.com/uploads/fine-uploader.js?ngcache=1707337429"></script>    <script src="https://js.ngfiles.com/misc/postscribe.js?ngcache=1707337428"></script>    <script src="https://js.ngfiles.com/hammerjs/hammer.min.js?ngcache=1707337428"></script>    <script src="https://js.ngfiles.com/imageviewer/imageviewer.js?ngcache=1769180717"></script>
+                            <script src="https://js.ngfiles.com/jquery/jquery.ui.touch-punch.min.js?ngcache=1707337428"></script>                    <script src="https://js.ngfiles.com/audio/howler.js?ngcache=1707337425"></script>                    <script src="https://js.ngfiles.com/ng_media.js?1744046555"></script>            
+    <script>
+        // <![CDATA[
+                PHP.set('_cv_endpoint', "\/checkvalidation");
+        PHP.set('current_domain', "www.newgrounds.com");
+        PHP.set('is_userpage', false);
+        PHP.set('now', '1778102100');
+        PHP.set('datetime', '2026-05-06 17:15:00');
+                                        PHP.set('user_logged_in', false);
+        PHP.set('user_is_supporter', false);
+
+                            PHP.set('_passport_html', '<iframe src="https://www.newgrounds.com/passport" class="passport_frame"></iframe>');
+            PHP.set('_passport_create_html', '<iframe src="https://www.newgrounds.com/passport/signup" class="passport_frame"></iframe>');
+            PHP.set('_passport_forgot_html', '<iframe src="https://www.newgrounds.com/passport/forgot-password" class="passport_frame"></iframe>');
+            PHP.set('_passport_redirect', "https:\/\/www.newgrounds.com\/community");
+
+                        PHP.set('uuid_prefix', "108ctl1-");
+        
+        
+
+        // ]]>
+    </script>
+
+                <script src="https://js.ngfiles.com/global/passport.js?ngcache=1770305088"></script>    
+        
+    
+        
+    <script src="https://js.ngfiles.com/css_browser_selector.js?ngcache=1707337428"></script>
+        
+    
+        
+    
+        
+    <link rel="icon" type="image/png" href="https://www.newgrounds.com/img/icons/favicon.png" />
+    <link rel="shortcut icon" href="https://www.newgrounds.com/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="apple-touch-icon" href="https://img.ngfiles.com/misc/ios/apple-touch-icon.png" />
+            <link rel="apple-touch-icon" href="https://img.ngfiles.com/misc/ios/apple-touch-icon-57x57.png" sizes="57x57" />
+            <link rel="apple-touch-icon" href="https://img.ngfiles.com/misc/ios/apple-touch-icon-72x72.png" sizes="72x72" />
+            <link rel="apple-touch-icon" href="https://img.ngfiles.com/misc/ios/apple-touch-icon-76x76.png" sizes="76x76" />
+            <link rel="apple-touch-icon" href="https://img.ngfiles.com/misc/ios/apple-touch-icon-114x114.png" sizes="114x114" />
+            <link rel="apple-touch-icon" href="https://img.ngfiles.com/misc/ios/apple-touch-icon-120x120.png" sizes="120x120" />
+            <link rel="apple-touch-icon" href="https://img.ngfiles.com/misc/ios/apple-touch-icon-144x144.png" sizes="144x144" />
+            <link rel="apple-touch-icon" href="https://img.ngfiles.com/misc/ios/apple-touch-icon-152x152.png" sizes="152x152" />
+            <link rel="apple-touch-icon" href="https://img.ngfiles.com/misc/ios/apple-touch-icon-180x180.png" sizes="180x180" />
+    
+                        <meta property="og:url" content="https://www.newgrounds.com/community" />                    <meta property="og:image" content="https://img.ngfiles.com/misc/tank_logo_medium.gif" />                    <meta property="og:site_name" content="Newgrounds.com" />            
+    
+    <script>
+        var $ng_adcode_user_is_supporter = 1;
+    </script>
+
+    
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>
+    // <![CDATA[
+        PHP.set('ismobile', false);
+    PHP.set('ng_design', "2015");
+    PHP.set('www_root', "https:\/\/www.newgrounds.com");
+    PHP.set('img_root', "https://img.ngfiles.com");
+    PHP.set('css_root', "https://css.ngfiles.com");
+    PHP.set('referrer', "https:\/\/www.newgrounds.com\/community");
+                // ]]>
+</script>
+
+
+<script>
+    
+        function ngdebug(text) {}
+    
+        (function($) {
+            $(function() {
+                var header = $('#notification-bar');
+                var body = $('body, html');
+                var hash;
+
+                
+                function scrollTo(name, nohash) {
+
+                    if (typeof(name) == 'undefined') return;
+
+                    var element, ypos;
+                    var shim = 0; //header.height();
+                    if (name) {
+                        element = $("a[name='" + name + "']").get(0); // named anchor
+                        if (!element) {
+                            element = $("#" + name); // element by id
+                        }
+                        if (element.length > 0) {
+                            ypos = element.offset().top - shim - 8; // 8px pad
+                            if (isNaN(ypos) || ypos < 0) ypos = 0;
+                        } else {
+                            return;
+                        }
+                    } else {
+                        ypos = 0; // if no name/id, scroll to top
+                    }
+
+                    body.animate({
+                        scrollTop: ypos
+                    }, 325, function() {
+                        if (nohash !== true) {
+                            hash = "#" + name;
+                            if (window.location.hash !== hash) window.location.hash = hash;
+                        }
+                    });
+                }
+
+                $("a[href^='#']").click(function() {
+                    var name = $(this).attr('href').substring(1);
+                    var nohash = $(this).attr('data-nohash') === 'true' ? true : false;
+                    scrollTo(name, nohash);
+                    return false;
+                });
+
+            })
+        })(jQuery);
+</script>
+
+<script src="https://js.ngfiles.com/art/gallery.js?ngcache=1778007616"></script>
+    
+
+    
+    
+        
+        
+        
+    <svg id='user-custom-svg'></svg><style id='user-custom-style'></style><script src="https://js.ngfiles.com/users/customization.js?1778089907"></script>
+
+</head>
+
+
+<body class="skin-general-desktop">
+	<div class='page-dimmer'></div>
+	<div id='activetask-saving-msg' style="display:none"><em class="fa fa-spin fa-spinner"></em> Saving</div>
+	        <div id="passport_container" class="passport-container"></div>
+    <script>
+        var _passport_html = '<iframe src="https://www.newgrounds.com/passport" class="passport_frame"></iframe>';
+        var _passport_redirect = "\/\/www.newgrounds.com\/community";
+    </script>
+
+<script type="text/template" id="_ng_alert_template">
+    <div class="column wide">
+		<div class="pod">
+			<div class="pod-head" data-elem="header">
+				<h2 data-elem="title">Alert!</h2>
+			</div>
+			<div class="pod-body" data-elem="body">
+				<p data-elem="message" class="text-align-center strong highlight">Something happened!</p>
+				<div class="text-align-center"><button data-elem="button">OK</button></div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<script type="text/template" id="_ng_confirm_template">
+    <div class="column wide">
+		<div class="pod">
+			<div class="pod-head" data-elem="header">
+				<h2 data-elem="title">Are you sure?</h2>
+			</div>
+			<div class="pod-body" data-elem="body">
+				<p data-elem="message" class="text-align-center strong highlight">Something happened!</p>
+				<div class="text-align-center">
+					<button data-elem="button-cancel" style="cursor:pointer">Cancel</button>
+					<button data-elem="button-confirm" style="cursor:pointer">Confirm</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<div class="blackout-hover" id="blackout_hover" style="display:none; overflow:hidden">
+    <div class="blackout-inner">
+        <div class="blackout-bookend"></div>
+        <div class="blackout-bookshelf">
+            <div class="blackout-bookend shimmed"></div>
+            <div class="blackout-center" id="blackout_center"></div>
+            <div class="blackout-bookend shimmed"></div>
+        </div>
+        <div class="blackout-bookend"></div>
+    </div>
+</div>
+<div class="blackout" id="blackout">
+    <div class="blackout-bg" id="blackout-bg"></div>
+</div>
+
+<div id="_ngHiddenAudioPlayerWrapper" class="ng-audio-player-global">
+		<audio id="global-audio"></audio>
+
+	<div class="ng-apg-centered">
+		<div id="_ngHiddenAudioPlayer" class="ng-apg-bounds">
+
+			
+
+<div class="media-player-playback-controls">
+	<button
+		class="media-player-previous"
+		id="global-audio-player-previous"
+		title="Previous Track"
+		disabled>
+		<i class="fa fa-step-backward" role="presentation"></i>
+	</button>
+
+		
+	<button
+		class="media-player-play"
+		id="global-audio-player-play"
+		title="Play"
+		disabled>
+		<i class="fa fa-play" role="presentation"></i>
+	</button>
+
+		<button
+		class="media-player-pause"
+		id="global-audio-player-pause"
+		title="Pause"
+		disabled>
+		<i class="fa fa-pause" role="presentation"></i>
+	</button>
+
+			<button
+			class="media-player-stop"
+			id="global-audio-player-stop"
+			title="Stop"
+			disabled>
+			<i class="fa fa-stop" role="presentation"></i>
+		</button>
+
+					
+	<button
+		class="media-player-next"
+		id="global-audio-player-next"
+		title="Next Track"
+		disabled>
+		<i class="fa fa-step-forward" role="presentation"></i>
+	</button>
+
+
+	<span class="spacer"></span>
+
+	<button
+		class="media-player-repeat"
+		id="global-audio-player-repeat"
+		title="Repeat All Tracks"
+		disabled>
+		<i class="fa fa-retweet" role="presentation"></i>
+	</button>
+
+
+					
+
+</div>			<div class="media-player-progress">
+	<div
+		class="media-player-current-time"
+		id="global-audio-player-progress">
+		00:00
+	</div>
+
+	<div class="media-player-progression">
+		<div class="position" id="global-audio-player-container"></div>
+	</div>
+
+	<div
+		class="media-player-duration"
+		id="global-audio-player-duration">
+		00:00
+	</div>
+</div>
+							
+<div class="media-player-volume-control" >
+	<button
+		id="global-audio-player-volumeToggle">
+		<i class="fa fa-volume-up"></i>
+	</button>
+
+	<div class="bar off" id="global-audio-player-volume"></div>
+</div>			
+			<div id="_ngHiddenAudioPlayerDetails" class="media-player-display">
+			</div>
+		</div>
+	</div>
+
+</div>
+<script type="text/javascript">
+	jQuery(function() {
+		NgAudioPlayer.registerGlobalPlayer('_ngHiddenAudioPlayerWrapper');
+		//ngutils.components.audio.registerGlobalPlayer('_ngHiddenAudioPlayerWrapper');
+	});
+</script>	<div id="notification-shim" class="notification-shim"></div>
+		<div class="notification-bar" id="notification-bar">
+    <div class="wrapper">
+        <div class="logo padded-left">
+            <a href="https://www.newgrounds.com">Newgrounds</a>
+        </div>
+        <div class="search" role="search">
+            <form id="topsearch-elastic" action="https://www.newgrounds.com/search/summary" method="get">
+                <input type="hidden" name="suitabilities" value="etm">
+                
+                <input placeholder="Search Newgrounds..." type="text" name="terms" id="topsearch_text" value="" maxlength="40" aria-label="Search Newgrounds..."><button type="submit" class="topsearch-submit" title="Search"><em class="fa fa-search"></em></button>
+            </form>
+            <script type="text/template" id="search_suggestion_template">
+	<ul class="ui-autocomplete">
+
+				<li class="ui-autocomplete-terms">
+			<em class="suggestion fa fa-search" aria-role="presentation"></em><span class="suggestion" data-html="text">Suggestions...</span>
+		</li>
+
+				<li class="ui-autocomplete-content-6000">
+			<a data-href="url">
+				<div class="icon"><img class="user-icon" data-src="icon"  aria-role="presentation"></div>
+				<div class="title">
+					<span data-html="title">Username</span>
+				</div>
+				<div class="meta">
+					<span class="ngicon-small-user gray" aria-role="presentation"></span>
+				</div>
+			</a>
+		</li>
+
+							<li class="ui-autocomplete-content-1">
+				<a data-href="url">
+					<div class="icon"><img data-src="icon" aria-role="presentation"></div>
+					<div class="title">
+						<span data-html="title">Title</span>
+					</div>
+					<div class="meta">
+						<span class="ngicon-small-movie gray" aria-role="presentation"></span>
+					</div>
+				</a>
+			</li>
+					<li class="ui-autocomplete-content-2">
+				<a data-href="url">
+					<div class="icon"><img data-src="icon" aria-role="presentation"></div>
+					<div class="title">
+						<span data-html="title">Title</span>
+					</div>
+					<div class="meta">
+						<span class="ngicon-small-game gray" aria-role="presentation"></span>
+					</div>
+				</a>
+			</li>
+					<li class="ui-autocomplete-content-3">
+				<a data-href="url">
+					<div class="icon"><img data-src="icon" aria-role="presentation"></div>
+					<div class="title">
+						<span data-html="title">Title</span>
+					</div>
+					<div class="meta">
+						<span class="ngicon-small-audio gray" aria-role="presentation"></span>
+					</div>
+				</a>
+			</li>
+					<li class="ui-autocomplete-content-4">
+				<a data-href="url">
+					<div class="icon"><img data-src="icon" aria-role="presentation"></div>
+					<div class="title">
+						<span data-html="title">Title</span>
+					</div>
+					<div class="meta">
+						<span class="ngicon-small-art gray" aria-role="presentation"></span>
+					</div>
+				</a>
+			</li>
+					<li class="ui-autocomplete-content-4500">
+				<a data-href="url">
+					<div class="icon"><img data-src="icon" aria-role="presentation"></div>
+					<div class="title">
+						<span data-html="title">Title</span>
+					</div>
+					<div class="meta">
+						<span class="ngicon-small-collection gray" aria-role="presentation"></span>
+					</div>
+				</a>
+			</li>
+					<li class="ui-autocomplete-content-21000">
+				<a data-href="url">
+					<div class="icon"><img data-src="icon" aria-role="presentation"></div>
+					<div class="title">
+						<span data-html="title">Title</span>
+					</div>
+					<div class="meta">
+						<span class="ngicon-small-playlist gray" aria-role="presentation"></span>
+					</div>
+				</a>
+			</li>
+		
+							<li class="ui-autocomplete-content-4001">
+				<a data-href="url">
+					<div class="icon"><img class="user-icon" data-src="icon"/></div>
+					<div class="title">
+						<span data-html="title">Username</span>
+					</div>
+					<div class="meta">
+						<span class="ngicon-small-lit gray" aria-role="presentation"></span>
+					</div>
+				</a>
+			</li>
+					<li class="ui-autocomplete-content-3001">
+				<a data-href="url">
+					<div class="icon"><img class="user-icon" data-src="icon"/></div>
+					<div class="title">
+						<span data-html="title">Username</span>
+					</div>
+					<div class="meta">
+						<span class="ngicon-small-lit gray" aria-role="presentation"></span>
+					</div>
+				</a>
+			</li>
+					<li class="ui-autocomplete-content-3002">
+				<a data-href="url">
+					<div class="icon"><img class="user-icon" data-src="icon"/></div>
+					<div class="title">
+						<span data-html="title">Username</span>
+					</div>
+					<div class="meta">
+						<span class="ngicon-small-lit gray" aria-role="presentation"></span>
+					</div>
+				</a>
+			</li>
+		
+					<li class="ui-autocomplete-content-11002">
+				<a data-href="url">
+										<div class="title">
+						<span data-html="title">Title</span>
+					</div>
+										<input type="hidden" data-hidden="generic_id" name="generic_id" value="">
+					<input type="hidden" data-hidden="type_id" name="type_id" value="11002">
+				</a>
+			</li>
+					<li class="ui-autocomplete-content-11003">
+				<a data-href="url">
+										<div class="title">
+						<span data-html="title">Title</span>
+					</div>
+										<input type="hidden" data-hidden="generic_id" name="generic_id" value="">
+					<input type="hidden" data-hidden="type_id" name="type_id" value="11003">
+				</a>
+			</li>
+		
+				<li class="ui-autocomplete-links">
+			<a data-href="url">
+				<span class="fa fa-search" aria-role="none"></span> <span class="title" data-html="text">Links...</span>
+			</a>
+		</li>
+
+	</ul>
+
+</script>            <script>
+                SearchHelper.init('topsearch_text', '/search/suggest');
+            </script>
+        </div>
+        <div class="notifications padded-right" id="notification-buttons">
+
+                            <div class="notification-login-side">
+                    <a href="https://www.newgrounds.com/passport" rel="nofollow"  id="passport_login" >Login</a>
+                    /
+                    <a href="https://www.newgrounds.com/passport/signup" rel="nofollow"  id="passport_create" >Sign Up</a>
+                </div>
+                    </div>
+    </div>
+</div>
+    <script src="https://js.ngfiles.com/global/passport.js?ngcache=1770305088"></script>
+	<div class="outer" id="outer-skin">
+
+		<div class="header-nav-row" id="header-nav-row">
+			<div class="header-nav-container header-nav-relative" id="header-nav-container">
+				<nav id="topnav" class="header-nav-buttons">
+					<a href="https://www.newgrounds.com/movies" class="header-nav-button-movies" >Movies</a><a href="https://www.newgrounds.com/games" class="header-nav-button-games" >Games</a><a href="https://www.newgrounds.com/audio" class="header-nav-button-audio" >Audio</a><a href="https://www.newgrounds.com/art" class="header-nav-button-art" >Art</a><a href="https://www.newgrounds.com/portal" class="header-nav-button-channels" >Portal</a><a href="https://www.newgrounds.com/community" class="header-nav-button-community" >Community</a><a href="https://www.newgrounds.com/social" class="header-nav-button-feed"  rel="nofollow" >Your Feed</a>				</nav>
+			</div>
+		</div>
+
+		<div id="ng-global-video-player-shimwrap"><div id="ng-global-video-player-shim"></div></div>
+<div id="ng-global-video-player-wrapper">
+	<div id="ng-global-video-player">
+		<script>
+			ngutils.components.video.player.getGlobal({});
+		</script>
+	</div>
+</div>
+					<div class="skin-wrapper ">
+				<div class="skin-inner">
+					<div class="background" style="
+						background-image: url('//img.ngfiles.com/themes/100/6833d3261777458761.webp?1777458775');
+					"><img src="//img.ngfiles.com/themes/100/6833d3261777458761.webp?1777458775" alt="Newgrounds Background Image Theme"></div>
+					<div class="skin-bars"></div>
+				</div>
+			</div>
+		
+		
+		<div id="header-insert"></div>
+
+		
+		<div class="body-main">
+						<div class="body-center">
+				<div>
+					<div class="body-guts top">
+						
+													<div class="header-deck">
+								<div class="ng-latest-supporter-wide">
+    <div class="ng-latest-supporter-inner">
+        <div class="ng-latest-supporter-image">
+            <div class="user-icon-bordered">
+                <a href="https://roezlli.newgrounds.com" target="_blank"><svg viewBox="0 0 248 248" class="svgmask sz-large s0 c0" >
+	<image href="https://img.ngfiles.com/defaults/icon-user.gif?f1707337412"/>
+	<use href="#path_s0"/>
+</svg></a>
+            </div>
+        </div>
+        <div class="ng-latest-supporter-meta" style="flex:1">
+            <p class="ng-latest-supporter-title"><a href="https://roezlli.newgrounds.com" target="blank">Roezlli</a> just joined the crew!</p>
+            <p class="ng-latest-supporter-message">
+                We need <strong>you</strong> on the team, too.
+            </p>
+            <p class="ng-latest-supporter-message">Support Newgrounds and get tons of perks!</p>
+        </div>
+        <div class="ng-latest-supporter-meta">
+                            <p style="text-align: center; padding-bottom: 4px"><a href="#" id="supporter_message_pp_open" rel="nofollow">Create a Free Account</a> and then..</p>
+
+                <script>
+                    jQuery('#supporter_message_pp_open').on('click', function() {
+                        PassportHandler.open(true);
+                        return false;
+                    });
+                </script>
+                        <a class="ng-latest-supporter-button" href="https://www.newgrounds.com/supporter">Become a Supporter!</a>
+        </div>
+    </div>
+</div>
+							</div>
+						<div class="column thin">
+    <div class="pod">
+	<div class="pod-head">
+		<h2 class="user">User of the Day</h2>
+
+		<span><a href="https://www.newgrounds.com/bbs/uotd">Archive</a></span>
+	</div>
+
+	<div class="pod-body">
+		<ul class="itemlist">
+			<li>
+<div class="item-user">
+            <a class="item-icon" href="https://hyperbeamart.newgrounds.com">
+                        <div class="user-icon-bordered"><svg viewBox="0 0 248 248" class="svgmask s5 c18" >
+	<image href="https://uimg.ngfiles.com/icons/7757/7757898_large.webp?f1710259885"/>
+	<use href="#path_s5"/>
+</svg></div>
+        </a>
+        <div class="item-details">
+        <div class="item-details-main">
+            <h4>
+                                    <a href="https://hyperbeamart.newgrounds.com">Hyperbeamart</a>
+                            </h4>
+        </div>
+        <div class="item-details-meta">
+            <div class="user-level">
+                                    Level 10                    <span>- Supporter</span>                            </div>
+            <div class="aura-text-g1">Game Developer</div>
+        </div>
+    </div>
+    </div>
+</li>
+		</ul>
+	</div>
+</div>
+    <div class="pod">
+    <div class="pod-head">
+        <h2 class="users">Latest Supporters...</h2>
+        <span>
+                            <a href="https://www.newgrounds.com/supporter">Join Them!</a>
+                    </span>
+    </div>
+
+    <div class="pod-body">
+        <ul class="itemlist">
+                                            <li>
+                    <div class="flexbox-row align-middle">
+                        <div class="">
+                            <a class="item-user nohover" href="https://roezlli.newgrounds.com" title="Roezlli's page">
+                                <svg viewBox="0 0 248 248" class="svgmask sz-large s0 c0" >
+	<image href="https://img.ngfiles.com/defaults/icon-user.gif?f1707337412"/>
+	<use href="#path_s0"/>
+</svg>                            </a>
+                        </div>
+                        <div class="flex-1">
+                            <div>
+                                <a  href="https://roezlli.newgrounds.com">Roezlli</a>
+                            </div>
+
+                            <div>
+                                <span class="medium-size" >snagged a month's membership!</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                                            <li>
+                    <div class="flexbox-row align-middle">
+                        <div class="">
+                            <a class="item-user nohover" href="https://khristinaw421.newgrounds.com" title="Khristinaw421's page">
+                                <svg viewBox="0 0 248 248" class="svgmask sz-large s0 c0" >
+	<image href="https://img.ngfiles.com/defaults/icon-user.gif?f1707337412"/>
+	<use href="#path_s0"/>
+</svg>                            </a>
+                        </div>
+                        <div class="flex-1">
+                            <div>
+                                <a  href="https://khristinaw421.newgrounds.com">Khristinaw421</a>
+                            </div>
+
+                            <div>
+                                <span class="medium-size" >snagged a month's membership!</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                    </ul>
+    </div>
+</div>
+    <div class="pod">
+	<div class="pod-head">
+		<h2 class="comments">Newgrounds Live</h2></span>
+	</div>
+
+	<div class="pod-body title-links">
+		<h3><a href="/chat" class="link">Newgrounds Chat</a></h3>
+		<p>
+			A casual place to hang out and talk.
+		</p>
+	</div>
+
+	<div class="pod-body title-links">
+		<h3><a href="/radio" class="link">Newgrounds Radio</a></h3>
+		<p>
+			Discover new music alongside other NG listeners!
+		</p>
+	</div>
+</div>    <div class="pod">
+	<div class="pod-head">
+		<h2 class="users">Artist News</h2>
+		<span><a href="/news/artists/">More News</a></span>
+	</div>
+
+	<div class="pod-body">
+
+		<div class="artist-news-container">
+			<ul class="itemlist alternating">
+									<li>
+						<a class="item-user" href="https://crimsonkero.newgrounds.com/news/post/1624050" title="Go RED!!! : News + Updates">
+        <svg viewBox="0 0 248 248" alt="CrimsonKero&#039;s icon" class="svgmask sz-large s2 c18" >
+	<image href="https://uimg.ngfiles.com/icons/8157/8157415_large.webp?f1778048833"/>
+	<use href="#path_s2"/>
+</svg>    <div class="item-details">
+        <div class="news-author-small">
+            <strong>CrimsonKero</strong>:
+        </div>
+        <div class="news-title-small">
+            Go RED!!! : News + Updates        </div>
+    </div>
+</a>
+					</li>
+									<li>
+						<a class="item-user" href="https://uncleregz.newgrounds.com/news/post/1624039" title="Commissions open!">
+        <svg viewBox="0 0 248 248" alt="UNCLEREGZ&#039;s icon" class="svgmask sz-large s0 cX" >
+	<image href="https://uimg.ngfiles.com/icons/9552/9552426_large.webp?f1778085671"/>
+	<use href="#path_s0"/>
+</svg>    <div class="item-details">
+        <div class="news-author-small">
+            <strong>UNCLEREGZ</strong>:
+        </div>
+        <div class="news-title-small">
+            Commissions open!        </div>
+    </div>
+</a>
+					</li>
+									<li>
+						<a class="item-user" href="https://cherry-garnet.newgrounds.com/news/post/1624023" title="Finally Got A Computer/Reposting My Wormboy Pictures">
+        <svg viewBox="0 0 248 248" alt="Cherry-Garnet&#039;s icon" class="svgmask sz-large s10 c8" >
+	<image href="https://uimg.ngfiles.com/icons/10458/10458736_large.webp?f1774902142"/>
+	<use href="#path_s10"/>
+</svg>    <div class="item-details">
+        <div class="news-author-small">
+            <strong>Cherry-Garnet</strong>:
+        </div>
+        <div class="news-title-small">
+            Finally Got A Computer/Reposting My Wormboy Pictures        </div>
+    </div>
+</a>
+					</li>
+									<li>
+						<a class="item-user" href="https://baryiscool.newgrounds.com/news/post/1624022" title="New song, also socials update">
+        <svg viewBox="0 0 248 248" alt="baryiscool&#039;s icon" class="svgmask sz-large s0 cX" >
+	<image href="https://uimg.ngfiles.com/icons/7035/7035079_large.webp?f1735584504"/>
+	<use href="#path_s0"/>
+</svg>    <div class="item-details">
+        <div class="news-author-small">
+            <strong>baryiscool</strong>:
+        </div>
+        <div class="news-title-small">
+            New song, also socials update        </div>
+    </div>
+</a>
+					</li>
+									<li>
+						<a class="item-user" href="https://theinterviewer.newgrounds.com/news/post/1623999" title="Interview with Aalasteir">
+        <svg viewBox="0 0 248 248" alt="TheInterviewer&#039;s icon" class="svgmask sz-large s0 cX" >
+	<image href="https://uimg.ngfiles.com/icons/2732/2732075_large.png?f1592370603"/>
+	<use href="#path_s0"/>
+</svg>    <div class="item-details">
+        <div class="news-author-small">
+            <strong>TheInterviewer</strong>:
+        </div>
+        <div class="news-title-small">
+            Interview with Aalasteir        </div>
+    </div>
+</a>
+					</li>
+									<li>
+						<a class="item-user" href="https://mrwarlordmuffin.newgrounds.com/news/post/1623991" title="★Comic... You could say it&#039;s Indie, right? Wait, what am I still writing this in the title of the announcement, DAMN IT!! STO">
+        <svg viewBox="0 0 248 248" alt="MrWarlordMuffin&#039;s icon" class="svgmask sz-large s0 cX" >
+	<image href="https://uimg.ngfiles.com/icons/25657/25657477_large.webp?f1768929430"/>
+	<use href="#path_s0"/>
+</svg>    <div class="item-details">
+        <div class="news-author-small">
+            <strong>MrWarlordMuffin</strong>:
+        </div>
+        <div class="news-title-small">
+            ★Comic... You could say it&#039;s Indie, right? Wait, what am I still writing this in the title of the announcement, DAMN IT!! STO        </div>
+    </div>
+</a>
+					</li>
+									<li>
+						<a class="item-user" href="https://okidou.newgrounds.com/news/post/1623990" title="6 Years on Newgrounds!!!">
+        <svg viewBox="0 0 248 248" alt="Okidou&#039;s icon" class="svgmask sz-large s0 c0" >
+	<image href="https://uimg.ngfiles.com/icons/7992/7992641_large.webp?f1759856783"/>
+	<use href="#path_s0"/>
+</svg>    <div class="item-details">
+        <div class="news-author-small">
+            <strong>Okidou</strong>:
+        </div>
+        <div class="news-title-small">
+            6 Years on Newgrounds!!!        </div>
+    </div>
+</a>
+					</li>
+									<li>
+						<a class="item-user" href="https://veliteaquila.newgrounds.com/news/post/1623970" title="What the hell is GUN METAL PANIC?">
+        <svg viewBox="0 0 248 248" alt="VeliteAquila&#039;s icon" class="svgmask sz-large s0 cX" >
+	<image href="https://uimg.ngfiles.com/icons/22100/22100324_large.webp?f1715042589"/>
+	<use href="#path_s0"/>
+</svg>    <div class="item-details">
+        <div class="news-author-small">
+            <strong>VeliteAquila</strong>:
+        </div>
+        <div class="news-title-small">
+            What the hell is GUN METAL PANIC?        </div>
+    </div>
+</a>
+					</li>
+							</ul>
+		</div>
+
+	</div>
+
+</div></div>
+
+<div class="column wide">
+    <div class="pod">
+        <div class="pod-body">
+            <div class="flexbox-row align-middle">
+                <div class="flex-1">
+                    <p class="notation no-margin no-padding">Altering these settings may filter what you see.</p>
+                </div>
+                <div>
+                    <div class="searchform-extra">
+    <div class="flexbox align-center" >
+                    <label class="ratings-label padded-right strong em">Ratings:</label>
+                <div id="suitabilities69fbaf54d1737">
+            <ul class="horzlinks suitability-checkboxes">
+                                    
+                    <li >
+                        <input type="checkbox" class="suitable-e" name="suitabilities[]" id="suitabilities69fbaf54d1737_e" value="e"  checked="checked" >
+                        <label for="suitabilities69fbaf54d1737_e">e</label>
+                    </li>
+                                    
+                    <li >
+                        <input type="checkbox" class="suitable-t" name="suitabilities[]" id="suitabilities69fbaf54d1737_t" value="t"  checked="checked" >
+                        <label for="suitabilities69fbaf54d1737_t">t</label>
+                    </li>
+                                    
+                    <li >
+                        <input type="checkbox" class="suitable-m" name="suitabilities[]" id="suitabilities69fbaf54d1737_m" value="m"  checked="checked" >
+                        <label for="suitabilities69fbaf54d1737_m">m</label>
+                    </li>
+                                    
+                    <li  data-disabled="" >
+                        <input type="checkbox" class="suitable-a" name="suitabilities[]" id="suitabilities69fbaf54d1737_a" value="a"  disabled>
+                        <label for="suitabilities69fbaf54d1737_a">a</label>
+                    </li>
+                
+            </ul>
+            <input type="hidden" name="userkey" value="f3ea6%O5d5d1e8f656f%24cfO9746679aae%P9c1aar71%%767704%7%1%10f%1b5fs989187a3Ob427re77crs%20f32d%%sb%0%1a5d65d20f3r9P167b%69rPf8c4028r06e06eab28e914d426938429b15f15665%s%4d7P%%O%rr7089-3495592" />                            <input type="hidden" name="_token" value="0IOXnoIJ1F2iX0wtL302V8VA7DjoBYPTFAbdWRsC" autocomplete="off">                    </div>
+    </div>
+
+    <script>
+        /* jshint ignore: start*/
+        PHP.set('fire_signup_for_disabled', true);
+        // PHP.set('suitabilities_endpoint', "\/suitabilities");
+        PHP.set('suitabilities_endpoint', "https:\/\/www.newgrounds.com\/suitabilities");
+        PHP.set('suitabilities_opts_disable_on_click', true);
+        PHP.set('suitabilities_opts_refresh_page', true);
+        /* jshint ignore: end*/
+
+        (function($) {
+            var inputs = $('#suitabilities69fbaf54d1737 input');
+            var bo = new ngutils.blackout({
+                remove_on_click_outside: false,
+                remove_on_hide: true
+            });
+
+            let engageOrDisengage = (on) => {
+                if (on) {
+                    bo.show();
+                    inputs.disable();
+                } else {
+                    bo.hide();
+                    inputs.enable();
+                }
+            };
+
+            let checkAtLeastOne = () => {
+                if (!inputs.filter(':checked').length) {
+                    inputs.first().prop('checked', true);
+                }
+            };
+
+            $('#suitabilities69fbaf54d1737 li[data-disabled]').click(function() {
+                PassportHandler.open(true);
+                return false;
+            });
+
+            inputs.click(function() {
+                checkAtLeastOne();
+
+                let update = inputs.serializeArray();
+                let disable_on_click = PHP.get('suitabilities_opts_disable_on_click');
+
+                if (disable_on_click) {
+                    engageOrDisengage(true);
+                }
+
+                $.postXD(PHP.get('suitabilities_endpoint'), update, () => {
+                    let suitability = $.map(update, function(v, k) {
+                        return v.value;
+                    });
+
+                    ngutils.event.dispatch('suitabilities-updated', suitability);
+
+                    if (PHP.get('suitabilities_opts_refresh_page')) {
+                        window.location.href = window.location.href;
+                    }
+                }).fail(() => {
+                    if (disable_on_click) {
+                        engageOrDisengage(false);
+                    }
+                });
+            });
+
+        })(jQuery);
+    </script>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pod">
+    <div class="pod-head">
+        <h2 class="forum">From The Forums...</h2>
+        <span>
+            
+<div class="select-wrapper">
+	<select id="forum_jump" data-select-links="1">
+		<option value="" disabled selected>Jump to Forum...</option>					<optgroup label="Members">
+									<option value="/bbs/forum/3" >Where is / How to / Help!</option>
+									<option value="/bbs/forum/10" >Clubs &amp; Crews</option>
+									<option value="/bbs/forum/15" >Video Games</option>
+							</optgroup>
+					<optgroup label="Artists &amp; Creators">
+									<option value="/bbs/forum/17" >Animation</option>
+									<option value="/bbs/forum/14" >Art</option>
+									<option value="/bbs/forum/13" >Audio</option>
+									<option value="/bbs/forum/23" >Voice Acting</option>
+									<option value="/bbs/forum/18" >Writing</option>
+									<option value="/bbs/forum/19" >Collaboration</option>
+							</optgroup>
+					<optgroup label="Developers &amp; Programmers">
+									<option value="/bbs/forum/2" >Game Development</option>
+									<option value="/bbs/forum/7" >Programming</option>
+							</optgroup>
+					<optgroup label="Site News">
+									<option value="/bbs/forum/5" >NG News</option>
+									<option value="/bbs/forum/8" >P-bot&#039;s Postings</option>
+							</optgroup>
+			</select>
+</div>        </span>
+        <span>
+            <a href="https://www.newgrounds.com/bbs">All Forums</a>
+        </span>
+    </div>
+
+    <div class="pod-body">
+                        <div class="forumthread-index">
+                <div class="forumthread-status">Status</div>
+                <div class="forumthread-title">Mood / Topic & Pages:</div>
+                <div class="forumthread-poster first">Topic Starter:</div>
+                <div class="forumthread-replies">Replies:</div>
+                <div class="forumthread-poster last">Last Post:</div>
+            </div>
+        
+        <ul class="itemlist alternating">
+                            <li >
+    <span
+        data-block-target="1-7472308"
+        class="user-not-blocked"
+        >
+        <span class="show-when-user-not-blocked allow-preview">
+            <div class='item-forumthread-medium'>
+
+	<div class="forumthread-status">
+		<span class="icon-new" title="New posts!"></span>
+	</div>
+	<div class="forumthread-title">
+		<span class="emoteset-1 mood-27"></span>
+		<div>
+			<a href="https://www.newgrounds.com/bbs/topic/1557599">
+								I&#039;m so gamer			</a>
+					</div>
+	</div>
+
+	<div class="forumthread-poster first">
+		<a href="https://deity-donkus.newgrounds.com/">
+			<div class="item-icon">
+								<svg viewBox="0 0 248 248" class="svgmask sz-medium s31 c12" >
+	<image href="https://uimg.ngfiles.com/icons/7472/7472308_large.webp?f1759342599"/>
+	<use href="#path_s31"/>
+</svg>			</div>
+			<div class="item-meta">
+				<div>
+					Deity-Donkus				</div>
+				<span id="fp_date_1557599">2026-05-06 12:00:48</span>
+			</div>
+		</a>
+	</div>
+
+	<div class="forumthread-replies">
+		6	</div>
+
+	<div class="forumthread-poster last">
+		<a href="https://superboss03.newgrounds.com/">
+			<div class="item-icon">
+								<svg viewBox="0 0 248 248" class="svgmask sz-medium s0 cX" >
+	<image href="https://uimg.ngfiles.com/icons/11568/11568720_large.webp?f1773454093"/>
+	<use href="#path_s0"/>
+</svg>			</div>
+			<div class="item-meta">
+				<div>
+					SuperBoss03				</div>
+				<div>
+					<span id="lp_date_1557599">2026-05-06 16:58:45</span>
+				</div>
+			</div>
+		</a>
+	</div>
+	<script>
+		(function($) {
+			$('#fp_date_1557599').couNtinGDate('2026-05-06 12:00:48', '2026-05-06 17:15:00', { format: 'mediumDate' });
+			$('#lp_date_1557599').couNtinGDate('2026-05-06 16:58:45', '2026-05-06 17:15:00', { format: 'mediumDate' });
+		})(jQuery);
+	</script>
+
+</div>        </span>
+        <span class="show-when-user-is-blocked allow-preview">
+            <div class="text-align-center"><a onclick="ngutils.user.block.onClickTogglePreview(event, this)" style="display: inline-block; padding-bottom:0.4em" href="https://www.newgrounds.com/bbs/topic/1557599" class="notation">&hellip;</a></div>
+        </span>
+    </span>
+</li>
+                            <li >
+    <span
+        data-block-target="1-1312619"
+        class="user-not-blocked"
+        >
+        <span class="show-when-user-not-blocked allow-preview">
+            <div class='item-forumthread-medium'>
+
+	<div class="forumthread-status">
+		<span class="icon-new" title="New posts!"></span>
+	</div>
+	<div class="forumthread-title">
+		<span class="emoteset-1 mood-39"></span>
+		<div>
+			<a href="https://www.newgrounds.com/bbs/topic/1557546">
+								Retro Renaissance VGM Contest ($ Prizes!)			</a>
+					</div>
+	</div>
+
+	<div class="forumthread-poster first">
+		<a href="https://eliteferrex.newgrounds.com/">
+			<div class="item-icon">
+								<svg viewBox="0 0 248 248" class="svgmask sz-medium s9 c9" >
+	<image href="https://uimg.ngfiles.com/icons/1312/1312619_large.webp?f1730428496"/>
+	<use href="#path_s9"/>
+</svg>			</div>
+			<div class="item-meta">
+				<div>
+					EliteFerrex				</div>
+				<span id="fp_date_1557546">2026-05-04 21:12:27</span>
+			</div>
+		</a>
+	</div>
+
+	<div class="forumthread-replies">
+		4	</div>
+
+	<div class="forumthread-poster last">
+		<a href="https://eliteferrex.newgrounds.com/">
+			<div class="item-icon">
+								<svg viewBox="0 0 248 248" class="svgmask sz-medium s9 c9" >
+	<image href="https://uimg.ngfiles.com/icons/1312/1312619_large.webp?f1730428496"/>
+	<use href="#path_s9"/>
+</svg>			</div>
+			<div class="item-meta">
+				<div>
+					EliteFerrex				</div>
+				<div>
+					<span id="lp_date_1557546">2026-05-06 13:40:59</span>
+				</div>
+			</div>
+		</a>
+	</div>
+	<script>
+		(function($) {
+			$('#fp_date_1557546').couNtinGDate('2026-05-04 21:12:27', '2026-05-06 17:15:00', { format: 'mediumDate' });
+			$('#lp_date_1557546').couNtinGDate('2026-05-06 13:40:59', '2026-05-06 17:15:00', { format: 'mediumDate' });
+		})(jQuery);
+	</script>
+
+</div>        </span>
+        <span class="show-when-user-is-blocked allow-preview">
+            <div class="text-align-center"><a onclick="ngutils.user.block.onClickTogglePreview(event, this)" style="display: inline-block; padding-bottom:0.4em" href="https://www.newgrounds.com/bbs/topic/1557546" class="notation">&hellip;</a></div>
+        </span>
+    </span>
+</li>
+                            <li >
+    <span
+        data-block-target="1-1664781"
+        class="user-not-blocked"
+        >
+        <span class="show-when-user-not-blocked allow-preview">
+            <div class='item-forumthread-medium'>
+
+	<div class="forumthread-status">
+		<span class="icon-new" title="New posts!"></span>
+	</div>
+	<div class="forumthread-title">
+		<span class="emoteset-1 mood-30"></span>
+		<div>
+			<a href="https://www.newgrounds.com/bbs/topic/1557512">
+								I don&#039;t get TF2			</a>
+					</div>
+	</div>
+
+	<div class="forumthread-poster first">
+		<a href="https://azu-kun.newgrounds.com/">
+			<div class="item-icon">
+								<svg viewBox="0 0 248 248" class="svgmask sz-medium s9 c2" >
+	<image href="https://uimg.ngfiles.com/icons/1664/1664781_large.webp?f1755639996"/>
+	<use href="#path_s9"/>
+</svg>			</div>
+			<div class="item-meta">
+				<div>
+					Azu-Kun				</div>
+				<span id="fp_date_1557512">2026-05-03 15:24:05</span>
+			</div>
+		</a>
+	</div>
+
+	<div class="forumthread-replies">
+		20	</div>
+
+	<div class="forumthread-poster last">
+		<a href="https://wizzlerman.newgrounds.com/">
+			<div class="item-icon">
+								<svg viewBox="0 0 248 248" class="svgmask sz-medium s0 cX" >
+	<image href="https://uimg.ngfiles.com/icons/28686/28686337_large.webp?f1777931301"/>
+	<use href="#path_s0"/>
+</svg>			</div>
+			<div class="item-meta">
+				<div>
+					wizzlerman				</div>
+				<div>
+					<span id="lp_date_1557512">2026-05-06 13:22:21</span>
+				</div>
+			</div>
+		</a>
+	</div>
+	<script>
+		(function($) {
+			$('#fp_date_1557512').couNtinGDate('2026-05-03 15:24:05', '2026-05-06 17:15:00', { format: 'mediumDate' });
+			$('#lp_date_1557512').couNtinGDate('2026-05-06 13:22:21', '2026-05-06 17:15:00', { format: 'mediumDate' });
+		})(jQuery);
+	</script>
+
+</div>        </span>
+        <span class="show-when-user-is-blocked allow-preview">
+            <div class="text-align-center"><a onclick="ngutils.user.block.onClickTogglePreview(event, this)" style="display: inline-block; padding-bottom:0.4em" href="https://www.newgrounds.com/bbs/topic/1557512" class="notation">&hellip;</a></div>
+        </span>
+    </span>
+</li>
+                            <li >
+    <span
+        data-block-target="1-27802967"
+        class="user-not-blocked"
+        >
+        <span class="show-when-user-not-blocked allow-preview">
+            <div class='item-forumthread-medium'>
+
+	<div class="forumthread-status">
+		<span class="icon-new active" title="Popular thread, new posts!"></span>
+	</div>
+	<div class="forumthread-title">
+		<span class="emoteset-1 mood-1"></span>
+		<div>
+			<a href="https://www.newgrounds.com/bbs/topic/1557535">
+								Send me your OC!			</a>
+			
+				<span>	<a href="/bbs/topic/1557535/1"><span>1</span></a>
+
+		<a href="/bbs/topic/1557535/2"><span>2</span></a>
+
+		<a href="/bbs/topic/1557535/3"><span>3</span></a>
+
+		<a href="/bbs/topic/1557535/4"><span>4</span></a>
+
+	
+</span>
+
+					</div>
+	</div>
+
+	<div class="forumthread-poster first">
+		<a href="https://iumseri.newgrounds.com/">
+			<div class="item-icon">
+								<svg viewBox="0 0 248 248" class="svgmask sz-medium s0 cX" >
+	<image href="https://uimg.ngfiles.com/icons/27802/27802967_large.webp?f1771360114"/>
+	<use href="#path_s0"/>
+</svg>			</div>
+			<div class="item-meta">
+				<div>
+					IUmSerI				</div>
+				<span id="fp_date_1557535">2026-05-04 10:52:43</span>
+			</div>
+		</a>
+	</div>
+
+	<div class="forumthread-replies">
+		103	</div>
+
+	<div class="forumthread-poster last">
+		<a href="https://thenotorioustom.newgrounds.com/">
+			<div class="item-icon">
+								<svg viewBox="0 0 248 248" class="svgmask sz-medium s4 c14" >
+	<image href="https://uimg.ngfiles.com/icons/16476/16476373_large.webp?f1775099840"/>
+	<use href="#path_s4"/>
+</svg>			</div>
+			<div class="item-meta">
+				<div>
+					TheNotoriousTOM				</div>
+				<div>
+					<span id="lp_date_1557535">2026-05-06 12:52:00</span>
+				</div>
+			</div>
+		</a>
+	</div>
+	<script>
+		(function($) {
+			$('#fp_date_1557535').couNtinGDate('2026-05-04 10:52:43', '2026-05-06 17:15:00', { format: 'mediumDate' });
+			$('#lp_date_1557535').couNtinGDate('2026-05-06 12:52:00', '2026-05-06 17:15:00', { format: 'mediumDate' });
+		})(jQuery);
+	</script>
+
+</div>        </span>
+        <span class="show-when-user-is-blocked allow-preview">
+            <div class="text-align-center"><a onclick="ngutils.user.block.onClickTogglePreview(event, this)" style="display: inline-block; padding-bottom:0.4em" href="https://www.newgrounds.com/bbs/topic/1557535" class="notation">&hellip;</a></div>
+        </span>
+    </span>
+</li>
+                            <li >
+    <span
+        data-block-target="1-23905898"
+        class="user-not-blocked"
+        >
+        <span class="show-when-user-not-blocked allow-preview">
+            <div class='item-forumthread-medium'>
+
+	<div class="forumthread-status">
+		<span class="icon-new" title="New posts!"></span>
+	</div>
+	<div class="forumthread-title">
+		<span class="emoteset-1 mood-9"></span>
+		<div>
+			<a href="https://www.newgrounds.com/bbs/topic/1557575">
+								Drawing Ambidextrously?			</a>
+					</div>
+	</div>
+
+	<div class="forumthread-poster first">
+		<a href="https://pinkytelephone.newgrounds.com/">
+			<div class="item-icon">
+								<svg viewBox="0 0 248 248" class="svgmask sz-medium s0 c6" >
+	<image href="https://uimg.ngfiles.com/icons/23905/23905898_large.webp?f1774038229"/>
+	<use href="#path_s0"/>
+</svg>			</div>
+			<div class="item-meta">
+				<div>
+					PinkyTelephone				</div>
+				<span id="fp_date_1557575">2026-05-05 22:22:45</span>
+			</div>
+		</a>
+	</div>
+
+	<div class="forumthread-replies">
+		6	</div>
+
+	<div class="forumthread-poster last">
+		<a href="https://sinnykitt.newgrounds.com/">
+			<div class="item-icon">
+								<svg viewBox="0 0 248 248" class="svgmask sz-medium s0 cX" >
+	<image href="https://uimg.ngfiles.com/icons/9225/9225893_large.jpg?f1649272056"/>
+	<use href="#path_s0"/>
+</svg>			</div>
+			<div class="item-meta">
+				<div>
+					sinnykitt				</div>
+				<div>
+					<span id="lp_date_1557575">2026-05-06 12:08:04</span>
+				</div>
+			</div>
+		</a>
+	</div>
+	<script>
+		(function($) {
+			$('#fp_date_1557575').couNtinGDate('2026-05-05 22:22:45', '2026-05-06 17:15:00', { format: 'mediumDate' });
+			$('#lp_date_1557575').couNtinGDate('2026-05-06 12:08:04', '2026-05-06 17:15:00', { format: 'mediumDate' });
+		})(jQuery);
+	</script>
+
+</div>        </span>
+        <span class="show-when-user-is-blocked allow-preview">
+            <div class="text-align-center"><a onclick="ngutils.user.block.onClickTogglePreview(event, this)" style="display: inline-block; padding-bottom:0.4em" href="https://www.newgrounds.com/bbs/topic/1557575" class="notation">&hellip;</a></div>
+        </span>
+    </span>
+</li>
+                            <li >
+    <span
+        data-block-target="1-1"
+        class="user-not-blocked"
+        >
+        <span class="show-when-user-not-blocked allow-preview">
+            <div class='item-forumthread-medium'>
+
+	<div class="forumthread-status">
+		<span class="icon-news" title="Latest NG News!"></span>
+	</div>
+	<div class="forumthread-title">
+		<span class="emoteset-1 mood-32"></span>
+		<div>
+			<a href="https://www.newgrounds.com/bbs/topic/1557568">
+				<span>NG News:</span>				Mobile HTML Refresh			</a>
+			
+				<span>	<a href="/bbs/topic/1557568/1"><span>1</span></a>
+
+		<a href="/bbs/topic/1557568/2"><span>2</span></a>
+
+		<a href="/bbs/topic/1557568/3"><span>3</span></a>
+
+		<a href="/bbs/topic/1557568/4"><span>4</span></a>
+
+		<a href="/bbs/topic/1557568/5"><span>5</span></a>
+
+		<a href="/bbs/topic/1557568/6"><span>6</span></a>
+
+	
+</span>
+
+					</div>
+	</div>
+
+	<div class="forumthread-poster first">
+		<a href="https://tomfulp.newgrounds.com/">
+			<div class="item-icon">
+								<svg viewBox="0 0 248 248" class="svgmask sz-medium s2 c0" >
+	<image href="https://uimg.ngfiles.com/icons/0/1_large.webp?f1765028877"/>
+	<use href="#path_s2"/>
+</svg>			</div>
+			<div class="item-meta">
+				<div>
+					TomFulp				</div>
+				<span id="fp_date_1557568">2026-05-05 15:10:00</span>
+			</div>
+		</a>
+	</div>
+
+	<div class="forumthread-replies">
+		160	</div>
+
+	<div class="forumthread-poster last">
+		<a href="https://shyang-emon.newgrounds.com/">
+			<div class="item-icon">
+								<svg viewBox="0 0 248 248" class="svgmask sz-medium s0 cX" >
+	<image href="https://uimg.ngfiles.com/icons/8677/8677926_large.webp?f1776076834"/>
+	<use href="#path_s0"/>
+</svg>			</div>
+			<div class="item-meta">
+				<div>
+					Shyang-emon				</div>
+				<div>
+					<span id="lp_date_1557568">2026-05-06 11:11:15</span>
+				</div>
+			</div>
+		</a>
+	</div>
+	<script>
+		(function($) {
+			$('#fp_date_1557568').couNtinGDate('2026-05-05 15:10:00', '2026-05-06 17:15:00', { format: 'mediumDate' });
+			$('#lp_date_1557568').couNtinGDate('2026-05-06 11:11:15', '2026-05-06 17:15:00', { format: 'mediumDate' });
+		})(jQuery);
+	</script>
+
+</div>        </span>
+        <span class="show-when-user-is-blocked allow-preview">
+            <div class="text-align-center"><a onclick="ngutils.user.block.onClickTogglePreview(event, this)" style="display: inline-block; padding-bottom:0.4em" href="https://www.newgrounds.com/bbs/topic/1557568" class="notation">&hellip;</a></div>
+        </span>
+    </span>
+</li>
+                            <li >
+    <span
+        data-block-target="1-16687063"
+        class="user-not-blocked"
+        >
+        <span class="show-when-user-not-blocked allow-preview">
+            <div class='item-forumthread-medium'>
+
+	<div class="forumthread-status">
+		<span class="icon-new" title="New posts!"></span>
+	</div>
+	<div class="forumthread-title">
+		<span class="emoteset-1 mood-2"></span>
+		<div>
+			<a href="https://www.newgrounds.com/bbs/topic/1557526">
+								Video Games that require you to log Into or install a 3rd party app			</a>
+					</div>
+	</div>
+
+	<div class="forumthread-poster first">
+		<a href="https://gunbro23.newgrounds.com/">
+			<div class="item-icon">
+								<svg viewBox="0 0 248 248" class="svgmask sz-medium s0 cX" >
+	<image href="https://uimg.ngfiles.com/icons/16687/16687063_large.webp?f1725312905"/>
+	<use href="#path_s0"/>
+</svg>			</div>
+			<div class="item-meta">
+				<div>
+					Gunbro23				</div>
+				<span id="fp_date_1557526">2026-05-04 01:59:09</span>
+			</div>
+		</a>
+	</div>
+
+	<div class="forumthread-replies">
+		21	</div>
+
+	<div class="forumthread-poster last">
+		<a href="https://onixdark.newgrounds.com/">
+			<div class="item-icon">
+								<svg viewBox="0 0 248 248" class="svgmask sz-medium s0 cX" >
+	<image href="https://uimg.ngfiles.com/icons/8105/8105762_large.webp?f1768500156"/>
+	<use href="#path_s0"/>
+</svg>			</div>
+			<div class="item-meta">
+				<div>
+					OnixDark				</div>
+				<div>
+					<span id="lp_date_1557526">2026-05-06 10:48:22</span>
+				</div>
+			</div>
+		</a>
+	</div>
+	<script>
+		(function($) {
+			$('#fp_date_1557526').couNtinGDate('2026-05-04 01:59:09', '2026-05-06 17:15:00', { format: 'mediumDate' });
+			$('#lp_date_1557526').couNtinGDate('2026-05-06 10:48:22', '2026-05-06 17:15:00', { format: 'mediumDate' });
+		})(jQuery);
+	</script>
+
+</div>        </span>
+        <span class="show-when-user-is-blocked allow-preview">
+            <div class="text-align-center"><a onclick="ngutils.user.block.onClickTogglePreview(event, this)" style="display: inline-block; padding-bottom:0.4em" href="https://www.newgrounds.com/bbs/topic/1557526" class="notation">&hellip;</a></div>
+        </span>
+    </span>
+</li>
+                            <li >
+    <span
+        data-block-target="1-23480661"
+        class="user-not-blocked"
+        >
+        <span class="show-when-user-not-blocked allow-preview">
+            <div class='item-forumthread-medium'>
+
+	<div class="forumthread-status">
+		<span class="icon-new active" title="Popular thread, new posts!"></span>
+	</div>
+	<div class="forumthread-title">
+		<span class="emoteset-1 mood-12"></span>
+		<div>
+			<a href="https://www.newgrounds.com/bbs/topic/1557466">
+								Send me our OCs and i will make a boss theme for them!			</a>
+			
+				<span>	<a href="/bbs/topic/1557466/1"><span>1</span></a>
+
+		<a href="/bbs/topic/1557466/2"><span>2</span></a>
+
+		<a href="/bbs/topic/1557466/3"><span>3</span></a>
+
+	
+</span>
+
+					</div>
+	</div>
+
+	<div class="forumthread-poster first">
+		<a href="https://dj-lumia.newgrounds.com/">
+			<div class="item-icon">
+								<svg viewBox="0 0 248 248" class="svgmask sz-medium s0 cX" >
+	<image href="https://uimg.ngfiles.com/icons/23480/23480661_large.webp?f1769608584"/>
+	<use href="#path_s0"/>
+</svg>			</div>
+			<div class="item-meta">
+				<div>
+					dj-Lumia				</div>
+				<span id="fp_date_1557466">2026-05-01 21:23:15</span>
+			</div>
+		</a>
+	</div>
+
+	<div class="forumthread-replies">
+		70	</div>
+
+	<div class="forumthread-poster last">
+		<a href="https://nockeynoo.newgrounds.com/">
+			<div class="item-icon">
+								<svg viewBox="0 0 248 248" class="svgmask sz-medium s0 cX" >
+	<image href="https://uimg.ngfiles.com/icons/11452/11452094_large.webp?f1704377450"/>
+	<use href="#path_s0"/>
+</svg>			</div>
+			<div class="item-meta">
+				<div>
+					NockeyNoo				</div>
+				<div>
+					<span id="lp_date_1557466">2026-05-06 09:37:33</span>
+				</div>
+			</div>
+		</a>
+	</div>
+	<script>
+		(function($) {
+			$('#fp_date_1557466').couNtinGDate('2026-05-01 21:23:15', '2026-05-06 17:15:00', { format: 'mediumDate' });
+			$('#lp_date_1557466').couNtinGDate('2026-05-06 09:37:33', '2026-05-06 17:15:00', { format: 'mediumDate' });
+		})(jQuery);
+	</script>
+
+</div>        </span>
+        <span class="show-when-user-is-blocked allow-preview">
+            <div class="text-align-center"><a onclick="ngutils.user.block.onClickTogglePreview(event, this)" style="display: inline-block; padding-bottom:0.4em" href="https://www.newgrounds.com/bbs/topic/1557466" class="notation">&hellip;</a></div>
+        </span>
+    </span>
+</li>
+                            <li >
+    <span
+        data-block-target="1-1"
+        class="user-not-blocked"
+        >
+        <span class="show-when-user-not-blocked allow-preview">
+            <div class='item-forumthread-medium'>
+
+	<div class="forumthread-status">
+		<span class="icon-news" title="Latest NG News!"></span>
+	</div>
+	<div class="forumthread-title">
+		<span class="emoteset-1 mood-39"></span>
+		<div>
+			<a href="https://www.newgrounds.com/bbs/topic/1557421">
+				<span>NG News:</span>				Happy Pico Day!			</a>
+			
+				<span>	<a href="/bbs/topic/1557421/1"><span>1</span></a>
+
+		<a href="/bbs/topic/1557421/2"><span>2</span></a>
+
+		<a href="/bbs/topic/1557421/3"><span>3</span></a>
+
+		<a href="/bbs/topic/1557421/4"><span>4</span></a>
+
+		<a href="/bbs/topic/1557421/5"><span>5</span></a>
+
+		<a href="/bbs/topic/1557421/6"><span>6</span></a>
+
+		<a href="/bbs/topic/1557421/7"><span>7</span></a>
+
+		<a href="/bbs/topic/1557421/8"><span>8</span></a>
+
+		<a href="/bbs/topic/1557421/9"><span>9</span></a>
+
+	
+</span>
+
+					</div>
+	</div>
+
+	<div class="forumthread-poster first">
+		<a href="https://tomfulp.newgrounds.com/">
+			<div class="item-icon">
+								<svg viewBox="0 0 248 248" class="svgmask sz-medium s2 c0" >
+	<image href="https://uimg.ngfiles.com/icons/0/1_large.webp?f1765028877"/>
+	<use href="#path_s2"/>
+</svg>			</div>
+			<div class="item-meta">
+				<div>
+					TomFulp				</div>
+				<span id="fp_date_1557421">2026-04-30 10:27:15</span>
+			</div>
+		</a>
+	</div>
+
+	<div class="forumthread-replies">
+		248	</div>
+
+	<div class="forumthread-poster last">
+		<a href="https://catmontri.newgrounds.com/">
+			<div class="item-icon">
+								<svg viewBox="0 0 248 248" class="svgmask sz-medium s6 c4" >
+	<image href="https://uimg.ngfiles.com/icons/18147/18147245_large.webp?f1774561613"/>
+	<use href="#path_s6"/>
+</svg>			</div>
+			<div class="item-meta">
+				<div>
+					CatMonTri				</div>
+				<div>
+					<span id="lp_date_1557421">2026-05-06 06:47:35</span>
+				</div>
+			</div>
+		</a>
+	</div>
+	<script>
+		(function($) {
+			$('#fp_date_1557421').couNtinGDate('2026-04-30 10:27:15', '2026-05-06 17:15:00', { format: 'mediumDate' });
+			$('#lp_date_1557421').couNtinGDate('2026-05-06 06:47:35', '2026-05-06 17:15:00', { format: 'mediumDate' });
+		})(jQuery);
+	</script>
+
+</div>        </span>
+        <span class="show-when-user-is-blocked allow-preview">
+            <div class="text-align-center"><a onclick="ngutils.user.block.onClickTogglePreview(event, this)" style="display: inline-block; padding-bottom:0.4em" href="https://www.newgrounds.com/bbs/topic/1557421" class="notation">&hellip;</a></div>
+        </span>
+    </span>
+</li>
+                            <li >
+    <span
+        data-block-target="1-28641337"
+        class="user-not-blocked"
+        >
+        <span class="show-when-user-not-blocked allow-preview">
+            <div class='item-forumthread-medium'>
+
+	<div class="forumthread-status">
+		<span class="icon-new" title="New posts!"></span>
+	</div>
+	<div class="forumthread-title">
+		<span class="emoteset-1 mood-6"></span>
+		<div>
+			<a href="https://www.newgrounds.com/bbs/topic/1557510">
+								Me And Boy Thread! (And also DoTeaThing&#039;s art thread)			</a>
+					</div>
+	</div>
+
+	<div class="forumthread-poster first">
+		<a href="https://doteathing.newgrounds.com/">
+			<div class="item-icon">
+								<svg viewBox="0 0 248 248" class="svgmask sz-medium s0 cX" >
+	<image href="https://uimg.ngfiles.com/icons/28641/28641337_large.webp?f1776556701"/>
+	<use href="#path_s0"/>
+</svg>			</div>
+			<div class="item-meta">
+				<div>
+					DoTeaThing				</div>
+				<span id="fp_date_1557510">2026-05-03 14:14:49</span>
+			</div>
+		</a>
+	</div>
+
+	<div class="forumthread-replies">
+		4	</div>
+
+	<div class="forumthread-poster last">
+		<a href="https://doteathing.newgrounds.com/">
+			<div class="item-icon">
+								<svg viewBox="0 0 248 248" class="svgmask sz-medium s0 cX" >
+	<image href="https://uimg.ngfiles.com/icons/28641/28641337_large.webp?f1776556701"/>
+	<use href="#path_s0"/>
+</svg>			</div>
+			<div class="item-meta">
+				<div>
+					DoTeaThing				</div>
+				<div>
+					<span id="lp_date_1557510">2026-05-06 05:44:58</span>
+				</div>
+			</div>
+		</a>
+	</div>
+	<script>
+		(function($) {
+			$('#fp_date_1557510').couNtinGDate('2026-05-03 14:14:49', '2026-05-06 17:15:00', { format: 'mediumDate' });
+			$('#lp_date_1557510').couNtinGDate('2026-05-06 05:44:58', '2026-05-06 17:15:00', { format: 'mediumDate' });
+		})(jQuery);
+	</script>
+
+</div>        </span>
+        <span class="show-when-user-is-blocked allow-preview">
+            <div class="text-align-center"><a onclick="ngutils.user.block.onClickTogglePreview(event, this)" style="display: inline-block; padding-bottom:0.4em" href="https://www.newgrounds.com/bbs/topic/1557510" class="notation">&hellip;</a></div>
+        </span>
+    </span>
+</li>
+                    </ul>
+    
+</div>
+</div>    <div class="pod">
+	<div class="pod-head">
+		<h2 class="list">Movers &amp; Shakers</h2>
+		<span>
+			<a href="https://www.newgrounds.com/rankings">All Rankings</a>
+		</span>
+	</div>
+	
+	<div class="pod-body">
+		<ul class="itemlist alternating">
+							<li>
+										<div class="item-userrank-hub">
+												<a class="userrank-user" href="https://vinking.newgrounds.com/">
+														<svg viewBox="0 0 248 248" class="svgmask sz-45 s0 cX" >
+	<image href="https://img.ngfiles.com/defaults/icon-user.gif?f1707337412"/>
+	<use href="#path_s0"/>
+</svg>							<span class="padded-half-left">Vinking</span>
+						</a>
+						<div class="userrank-label">
+							<span>Most medals today (60)</span>
+						</div>
+						<div class="userrank-link">
+							<a class="button" href="https://www.newgrounds.com/rankings/medals">Medal Rankings</a>
+						</div>
+					</div>
+				</li>
+					</ul>
+	</div>
+</div>
+    <div class="pod">
+
+	<div class="pod-head">
+		<h2 class="exclamation">Help Wanted</h2>
+		<span>
+			<a href="https://www.newgrounds.com/collab">Browse All</a>
+		</span>
+	</div>
+
+	<div class="pod-body">
+					<ul class="itemlist alternating">
+									<li><a href="https://www.newgrounds.com/collab/view/27001" class="item-collab-small">
+		<svg viewBox="0 0 248 248" alt="Safugame" class="svgmask sz-45 sz-large s0 cX" >
+	<image href="https://uimg.ngfiles.com/icons/19299/19299256_large.webp?f1775506460"/>
+	<use href="#path_s0"/>
+</svg>	<div class="collab-ad padded-half-left">
+		<span class="collab-user"><strong>Safugame</strong></span>
+		<span class="collab-seeking">artist / programmer / animator <span>looking for</span> artist / programmer / animator</span>
+	</div>
+</a>
+</li>
+									<li><a href="https://www.newgrounds.com/collab/view/26562" class="item-collab-small">
+		<svg viewBox="0 0 248 248" alt="WeegeeMan1" class="svgmask sz-45 sz-large s0 cX" >
+	<image href="https://uimg.ngfiles.com/icons/26571/26571570_large.webp?f1764462271"/>
+	<use href="#path_s0"/>
+</svg>	<div class="collab-ad padded-half-left">
+		<span class="collab-user"><strong>WeegeeMan1</strong></span>
+		<span class="collab-seeking">artist <span>looking for</span> artist</span>
+	</div>
+</a>
+</li>
+									<li><a href="https://www.newgrounds.com/collab/view/27330" class="item-collab-small">
+		<svg viewBox="0 0 248 248" alt="nekosynth" class="svgmask sz-45 sz-large s0 cX" >
+	<image href="https://uimg.ngfiles.com/icons/27986/27986915_large.webp?f1771664126"/>
+	<use href="#path_s0"/>
+</svg>	<div class="collab-ad padded-half-left">
+		<span class="collab-user"><strong>nekosynth</strong></span>
+		<span class="collab-seeking">musician <span>looking for</span> artist / programmer / musician / voice actor / writer / animator / sound designer</span>
+	</div>
+</a>
+</li>
+									<li><a href="https://www.newgrounds.com/collab/view/27104" class="item-collab-small">
+		<svg viewBox="0 0 248 248" alt="Easyprojekt" class="svgmask sz-45 sz-large s0 cX" >
+	<image href="https://uimg.ngfiles.com/icons/10187/10187676_large.webp?f1774699800"/>
+	<use href="#path_s0"/>
+</svg>	<div class="collab-ad padded-half-left">
+		<span class="collab-user"><strong>Easyprojekt</strong></span>
+		<span class="collab-seeking">musician <span>looking for</span> artist / programmer / voice actor / writer / animator</span>
+	</div>
+</a>
+</li>
+									<li><a href="https://www.newgrounds.com/collab/view/27381" class="item-collab-small">
+		<svg viewBox="0 0 248 248" alt="coders22" class="svgmask sz-45 sz-large s0 cX" >
+	<image href="https://uimg.ngfiles.com/icons/8122/8122434_large.webp?f1735728625"/>
+	<use href="#path_s0"/>
+</svg>	<div class="collab-ad padded-half-left">
+		<span class="collab-user"><strong>coders22</strong></span>
+		<span class="collab-seeking">artist / voice actor / writer / animator / sound designer <span>looking for</span> voice actor</span>
+	</div>
+</a>
+</li>
+									<li><a href="https://www.newgrounds.com/collab/view/21889" class="item-collab-small">
+		<svg viewBox="0 0 248 248" alt="microwavedmedia" class="svgmask sz-45 sz-large s0 cX" >
+	<image href="https://uimg.ngfiles.com/icons/15076/15076886_large.webp?f1714241570"/>
+	<use href="#path_s0"/>
+</svg>	<div class="collab-ad padded-half-left">
+		<span class="collab-user"><strong>microwavedmedia</strong></span>
+		<span class="collab-seeking">artist / voice actor / writer <span>looking for</span> artist / programmer / musician / voice actor / writer / animator / sound designer</span>
+	</div>
+</a>
+</li>
+									<li><a href="https://www.newgrounds.com/collab/view/27368" class="item-collab-small">
+		<svg viewBox="0 0 248 248" alt="Cannibalpossum" class="svgmask sz-45 sz-large s0 cX" >
+	<image href="https://uimg.ngfiles.com/icons/24954/24954894_large.webp?f1777008239"/>
+	<use href="#path_s0"/>
+</svg>	<div class="collab-ad padded-half-left">
+		<span class="collab-user"><strong>Cannibalpossum</strong></span>
+		<span class="collab-seeking">artist / animator <span>looking for</span> artist / animator</span>
+	</div>
+</a>
+</li>
+									<li><a href="https://www.newgrounds.com/collab/view/27363" class="item-collab-small">
+		<svg viewBox="0 0 248 248" alt="SunnyFem" class="svgmask sz-45 sz-large s0 cX" >
+	<image href="https://uimg.ngfiles.com/icons/28771/28771469_large.webp?f1777732412"/>
+	<use href="#path_s0"/>
+</svg>	<div class="collab-ad padded-half-left">
+		<span class="collab-user"><strong>SunnyFem</strong></span>
+		<span class="collab-seeking">musician <span>looking for</span> artist / programmer / musician / voice actor / writer / animator / sound designer</span>
+	</div>
+</a>
+</li>
+							</ul>
+			</div>
+	
+</div></div>
+<div style="clear:both"></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="body-footer-shim"></div>
+
+<div class="body-footer-wrapper">
+	<div class="footer-features">
+	<div id="footer-feature-buttons" class="footer-feature-buttons"><span><h3><span>FEATURED</span><span>CONTENT</span></h3><div><button id="footer-feature-btn-games" class="footer-feature-btn-games">Games</button><button id="footer-feature-btn-movies" class="footer-feature-btn-movies">Movies</button><button id="footer-feature-btn-audio" class="footer-feature-btn-audio">Audio</button><button id="footer-feature-btn-art" class="footer-feature-btn-art">Art</button><button id="footer-feature-btn-channels" class="footer-feature-btn-channels">Channels</button><button id="footer-feature-btn-users" class="footer-feature-btn-users selected">Users</button></span></div>
+	</div>
+	<div class="footer-features-items" id="footer-features-items">
+		<div>
+			<a class="featureshift-left" id="featureshift-left"><span></span></a>
+		</div>
+		<div class="featured-items" id="footer-featured-items"><div class="footer-features-blogposts">
+			<div class="span-1">
+			<a href="https://candychick15.newgrounds.com/news/post/1624081">
+	candychick15	<strong>YinYang Fanime Dub - YouTube Trailer</strong>
+</a>		</div>
+			<div class="span-1">
+			<a href="https://djxenon.newgrounds.com/news/post/1624080">
+	DJXenon	<strong>Thank You For You Guys&#039; Support</strong>
+</a>		</div>
+			<div class="span-1">
+			<a href="https://cassregister.newgrounds.com/news/post/1624078">
+	cassregister	<strong>hank</strong>
+</a>		</div>
+			<div class="span-1">
+			<a href="https://tvisfather.newgrounds.com/news/post/1624077">
+	TVisFather	<strong>Maybe, I&#039;ll just write.</strong>
+</a>		</div>
+			<div class="span-1">
+			<a href="https://placeholder456.newgrounds.com/news/post/1624076">
+	Placeholder456	<strong>яemembeя potatoman?</strong>
+</a>		</div>
+			<div class="span-1">
+			<a href="https://chouco3.newgrounds.com/news/post/1624074">
+	chouco3	<strong>art school interview</strong>
+</a>		</div>
+	</div></div>
+		<div>
+			<a class="featureshift-right" id="featureshift-right"><span></span></a>
+		</div>
+	</div>
+</div>
+
+<script>
+	ngutils.footer.init(["footer-feature-btn-games","footer-feature-btn-movies","footer-feature-btn-audio","footer-feature-btn-art","footer-feature-btn-channels","footer-feature-btn-users"]);
+</script>
+
+	
+	<div style="clear:both"></div>
+	<div class="footer-main ">
+    <div class="footer-background">
+                    <div class="footer-wall-artist">
+                <a class="flexbox inline align-center no-visited" href="https://koibs.newgrounds.com">
+                    <div class="flex-1 text-align-right"><strong class="highlight">Wall Art by</strong></div>
+                                        <div class="padded"><svg viewBox="0 0 248 248" alt="Koibs&#039;s icon" class="svgmask sz-45 s1 c1" >
+	<image href="https://uimg.ngfiles.com/icons/15172/15172379_large.webp?f1747379673"/>
+	<use href="#path_s1"/>
+</svg></div>
+                    <div class="flex-1"><strong>Koibs</strong></div>
+                </a>
+            </div>
+                <div class="footer-navigation no-visited">
+            <div class="footer-navigation-column">
+                <div class="footer-navigation-cell">
+                    <h4>Main Sections</h4>
+                    <ul>
+                                                <li><a href="https://www.newgrounds.com/games">Games</a></li>
+                        <li><a href="https://www.newgrounds.com/movies">Movies</a></li>
+                        <li><a href="https://www.newgrounds.com/art">Art</a></li>
+                        <li><a href="https://www.newgrounds.com/audio">Audio</a></li>
+                                                <li><a href="https://www.newgrounds.com/social" rel="nofollow">Your Feed</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-navigation-column">
+                <div class="footer-navigation-cell">
+                    <h4>Extra, Extra!</h4>
+                    <ul>
+                        <li><a href="https://www.newgrounds.com/series">Series</a></li>
+                        <li><a href="https://www.newgrounds.com/collections">Collections</a></li>
+                        <li><a href="https://www.newgrounds.com/playlists">Playlists</a></li>
+                        <li><a href="https://www.newgrounds.com/games/browse?interval=all&amp;artist-type=unjudged">Game Judging</a></li>
+                        <li><a href="https://www.newgrounds.com/movies/browse?interval=all&amp;artist-type=unjudged">Movie Judging</a></li>
+                        <li><a href="https://www.newgrounds.com/portal">Classic Portal</a></li>
+                        <li><a href="https://sharkrobot.com/collections/newgrounds" target="_blank">Snag a T-Shirt</a></li>
+                        <li><a href="https://www.newgrounds.com/wiki/creator-resources">Creator Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+                            <div class="footer-navigation-column">
+                    <div class="footer-navigation-cell">
+                        <h4>Community</h4>
+                        <ul>
+                            <li><a href="https://www.newgrounds.com/bbs">Forums</a></li>
+                            <li><a href="https://www.newgrounds.com/chat">Chat</a></li>
+                            <li><a href="https://www.newgrounds.com/calendar">Calendar</a></li>
+                            <li><a href="https://www.newgrounds.com/news/artists">Artist News</a></li>
+                            <li><a href="https://www.newgrounds.com/rankings">Rankings</a></li>
+                            <li><a href="https://www.newgrounds.com/wiki">NG Wiki</a></li>
+                        </ul>
+                    </div>
+                </div>
+                        <div class="footer-navigation-column">
+                <div class="footer-navigation-cell">
+                    <h4>NG Related</h4>
+                    <ul>
+                        <li><a href="https://www.newgrounds.com/wiki/about-newgrounds">About</a></li>
+                        <li><a href="https://www.newgrounds.com/wiki/frequently-asked-questions">Help / FAQ</a></li>
+                        <li><a href="https://www.newgrounds.com/wiki/contact-us">Contact Us</a></li>
+                        <li><a href="https://www.newgrounds.com/support">Support NG!</a></li>
+                        <li><a href="https://www.newgrounds.com/wiki/about-newgrounds/staff">The Staff</a></li>
+                        <li><a href="https://www.newgrounds.com/wiki/about-newgrounds/history">History</a></li>
+                        <li><a href="https://www.newgrounds.com/wiki/help-information/rss">RSS</a></li>
+                        <li><a href="https://www.newgrounds.com/wiki/help-information/dmca-notice">Copyright</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-decoration"></div>
+    </div>
+    <div class="footer-bottom">
+                <div class="footer-copyright no-visited">
+            &copy;Copyright 1995-2026 Newgrounds, Inc. All rights reserved.
+            <a href="https://www.newgrounds.com/wiki/help-information/privacy-policy">Privacy Policy</a>
+            |
+            <a href="https://www.newgrounds.com/wiki/help-information/terms-of-use">Terms of Use</a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<script>
+	(function($) {
+		$wrap = $('div.body-footer-wrapper');
+		$shim = $('div.body-footer-shim');
+
+		$shim.height($wrap.height());
+	})(jQuery);
+</script>
+<!-- s.i. view 1/8 -->
+</body>
+</html>

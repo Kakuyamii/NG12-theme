@@ -1,0 +1,3018 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>Featured Audio</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="theme-color" content="#262425">
+
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.0/themes/smoothness/jquery-ui.min.css?stamp=1778089915" type="text/css" media="all" />
+	<link rel="stylesheet" href="https://css.ngfiles.com/ng_2015.69fb7fbb71c70.css?stamp=1778089915" type="text/css" media="all" />
+	<link rel="stylesheet" href="https://css.ngfiles.com/emotes/emotes.69fb7fb4044f7.css?stamp=1778089915" type="text/css" media="all" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css?stamp=1778089915" type="text/css" media="all" />
+
+    
+    <script src="https://js.ngfiles.com/legacy.js?ngcache=1778089838"></script>        <script src="https://js.ngfiles.com/jquery/jquery-ui.js?ngcache=1725463505"></script>
+    <script src="https://js.ngfiles.com/uploads/fine-uploader.js?ngcache=1707337429"></script>    <script src="https://js.ngfiles.com/misc/postscribe.js?ngcache=1707337428"></script>    <script src="https://js.ngfiles.com/hammerjs/hammer.min.js?ngcache=1707337428"></script>    <script src="https://js.ngfiles.com/imageviewer/imageviewer.js?ngcache=1769180717"></script>
+                            <script src="https://js.ngfiles.com/jquery/jquery.ui.touch-punch.min.js?ngcache=1707337428"></script>                    <script src="https://js.ngfiles.com/audio/howler.js?ngcache=1707337425"></script>                    <script src="https://js.ngfiles.com/ng_media.js?1744046555"></script>            
+    <script>
+        // <![CDATA[
+                PHP.set('_cv_endpoint', "\/checkvalidation");
+        PHP.set('current_domain', "www.newgrounds.com");
+        PHP.set('is_userpage', false);
+        PHP.set('now', '1778101721');
+        PHP.set('datetime', '2026-05-06 17:08:41');
+                                        PHP.set('user_logged_in', false);
+        PHP.set('user_is_supporter', false);
+
+                            PHP.set('_passport_html', '<iframe src="https://www.newgrounds.com/passport" class="passport_frame"></iframe>');
+            PHP.set('_passport_create_html', '<iframe src="https://www.newgrounds.com/passport/signup" class="passport_frame"></iframe>');
+            PHP.set('_passport_forgot_html', '<iframe src="https://www.newgrounds.com/passport/forgot-password" class="passport_frame"></iframe>');
+            PHP.set('_passport_redirect', "https:\/\/www.newgrounds.com\/audio");
+
+                        PHP.set('uuid_prefix', "qk6788-");
+        
+        
+
+        // ]]>
+    </script>
+
+                <script src="https://js.ngfiles.com/global/passport.js?ngcache=1770305088"></script>    
+                            <script src="https://js.ngfiles.com/moderators/hub.js?ngcache=1707337428"></script>            
+    
+        
+    <script src="https://js.ngfiles.com/css_browser_selector.js?ngcache=1707337428"></script>
+        
+    
+        
+    
+        
+    <link rel="icon" type="image/png" href="https://www.newgrounds.com/img/icons/favicon.png" />
+    <link rel="shortcut icon" href="https://www.newgrounds.com/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="apple-touch-icon" href="https://img.ngfiles.com/misc/ios/apple-touch-icon.png" />
+            <link rel="apple-touch-icon" href="https://img.ngfiles.com/misc/ios/apple-touch-icon-57x57.png" sizes="57x57" />
+            <link rel="apple-touch-icon" href="https://img.ngfiles.com/misc/ios/apple-touch-icon-72x72.png" sizes="72x72" />
+            <link rel="apple-touch-icon" href="https://img.ngfiles.com/misc/ios/apple-touch-icon-76x76.png" sizes="76x76" />
+            <link rel="apple-touch-icon" href="https://img.ngfiles.com/misc/ios/apple-touch-icon-114x114.png" sizes="114x114" />
+            <link rel="apple-touch-icon" href="https://img.ngfiles.com/misc/ios/apple-touch-icon-120x120.png" sizes="120x120" />
+            <link rel="apple-touch-icon" href="https://img.ngfiles.com/misc/ios/apple-touch-icon-144x144.png" sizes="144x144" />
+            <link rel="apple-touch-icon" href="https://img.ngfiles.com/misc/ios/apple-touch-icon-152x152.png" sizes="152x152" />
+            <link rel="apple-touch-icon" href="https://img.ngfiles.com/misc/ios/apple-touch-icon-180x180.png" sizes="180x180" />
+    
+                        <meta property="og:url" content="https://www.newgrounds.com/audio" />                    <meta property="og:image" content="https://img.ngfiles.com/misc/tank_logo_medium.gif" />                    <meta property="og:site_name" content="Newgrounds.com" />            
+    
+    <script>
+        var $ng_adcode_user_is_supporter = 1;
+    </script>
+
+    
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>
+    // <![CDATA[
+        PHP.set('ismobile', false);
+    PHP.set('ng_design', "2015");
+    PHP.set('www_root', "https:\/\/www.newgrounds.com");
+    PHP.set('img_root', "https://img.ngfiles.com");
+    PHP.set('css_root', "https://css.ngfiles.com");
+    PHP.set('referrer', "https:\/\/www.newgrounds.com\/audio");
+                // ]]>
+</script>
+
+
+<script>
+    
+        function ngdebug(text) {}
+    
+        (function($) {
+            $(function() {
+                var header = $('#notification-bar');
+                var body = $('body, html');
+                var hash;
+
+                
+                function scrollTo(name, nohash) {
+
+                    if (typeof(name) == 'undefined') return;
+
+                    var element, ypos;
+                    var shim = 0; //header.height();
+                    if (name) {
+                        element = $("a[name='" + name + "']").get(0); // named anchor
+                        if (!element) {
+                            element = $("#" + name); // element by id
+                        }
+                        if (element.length > 0) {
+                            ypos = element.offset().top - shim - 8; // 8px pad
+                            if (isNaN(ypos) || ypos < 0) ypos = 0;
+                        } else {
+                            return;
+                        }
+                    } else {
+                        ypos = 0; // if no name/id, scroll to top
+                    }
+
+                    body.animate({
+                        scrollTop: ypos
+                    }, 325, function() {
+                        if (nohash !== true) {
+                            hash = "#" + name;
+                            if (window.location.hash !== hash) window.location.hash = hash;
+                        }
+                    });
+                }
+
+                $("a[href^='#']").click(function() {
+                    var name = $(this).attr('href').substring(1);
+                    var nohash = $(this).attr('data-nohash') === 'true' ? true : false;
+                    scrollTo(name, nohash);
+                    return false;
+                });
+
+            })
+        })(jQuery);
+</script>
+
+<script src="https://js.ngfiles.com/art/gallery.js?ngcache=1778007616"></script>
+    
+
+    
+    
+        
+        
+        
+    <svg id='user-custom-svg'></svg><style id='user-custom-style'></style><script src="https://js.ngfiles.com/users/customization.js?1778089907"></script>
+
+</head>
+
+
+<body class="skin-general-desktop">
+	<div class='page-dimmer'></div>
+	<div id='activetask-saving-msg' style="display:none"><em class="fa fa-spin fa-spinner"></em> Saving</div>
+	        <div id="passport_container" class="passport-container"></div>
+    <script>
+        var _passport_html = '<iframe src="https://www.newgrounds.com/passport" class="passport_frame"></iframe>';
+        var _passport_redirect = "\/\/www.newgrounds.com\/audio";
+    </script>
+
+<script type="text/template" id="_ng_alert_template">
+    <div class="column wide">
+		<div class="pod">
+			<div class="pod-head" data-elem="header">
+				<h2 data-elem="title">Alert!</h2>
+			</div>
+			<div class="pod-body" data-elem="body">
+				<p data-elem="message" class="text-align-center strong highlight">Something happened!</p>
+				<div class="text-align-center"><button data-elem="button">OK</button></div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<script type="text/template" id="_ng_confirm_template">
+    <div class="column wide">
+		<div class="pod">
+			<div class="pod-head" data-elem="header">
+				<h2 data-elem="title">Are you sure?</h2>
+			</div>
+			<div class="pod-body" data-elem="body">
+				<p data-elem="message" class="text-align-center strong highlight">Something happened!</p>
+				<div class="text-align-center">
+					<button data-elem="button-cancel" style="cursor:pointer">Cancel</button>
+					<button data-elem="button-confirm" style="cursor:pointer">Confirm</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<div class="blackout-hover" id="blackout_hover" style="display:none; overflow:hidden">
+    <div class="blackout-inner">
+        <div class="blackout-bookend"></div>
+        <div class="blackout-bookshelf">
+            <div class="blackout-bookend shimmed"></div>
+            <div class="blackout-center" id="blackout_center"></div>
+            <div class="blackout-bookend shimmed"></div>
+        </div>
+        <div class="blackout-bookend"></div>
+    </div>
+</div>
+<div class="blackout" id="blackout">
+    <div class="blackout-bg" id="blackout-bg"></div>
+</div>
+
+<div id="_ngHiddenAudioPlayerWrapper" class="ng-audio-player-global">
+		<audio id="global-audio"></audio>
+
+	<div class="ng-apg-centered">
+		<div id="_ngHiddenAudioPlayer" class="ng-apg-bounds">
+
+			
+
+<div class="media-player-playback-controls">
+	<button
+		class="media-player-previous"
+		id="global-audio-player-previous"
+		title="Previous Track"
+		disabled>
+		<i class="fa fa-step-backward" role="presentation"></i>
+	</button>
+
+		
+	<button
+		class="media-player-play"
+		id="global-audio-player-play"
+		title="Play"
+		disabled>
+		<i class="fa fa-play" role="presentation"></i>
+	</button>
+
+		<button
+		class="media-player-pause"
+		id="global-audio-player-pause"
+		title="Pause"
+		disabled>
+		<i class="fa fa-pause" role="presentation"></i>
+	</button>
+
+			<button
+			class="media-player-stop"
+			id="global-audio-player-stop"
+			title="Stop"
+			disabled>
+			<i class="fa fa-stop" role="presentation"></i>
+		</button>
+
+					
+	<button
+		class="media-player-next"
+		id="global-audio-player-next"
+		title="Next Track"
+		disabled>
+		<i class="fa fa-step-forward" role="presentation"></i>
+	</button>
+
+
+	<span class="spacer"></span>
+
+	<button
+		class="media-player-repeat"
+		id="global-audio-player-repeat"
+		title="Repeat All Tracks"
+		disabled>
+		<i class="fa fa-retweet" role="presentation"></i>
+	</button>
+
+
+					
+
+</div>			<div class="media-player-progress">
+	<div
+		class="media-player-current-time"
+		id="global-audio-player-progress">
+		00:00
+	</div>
+
+	<div class="media-player-progression">
+		<div class="position" id="global-audio-player-container"></div>
+	</div>
+
+	<div
+		class="media-player-duration"
+		id="global-audio-player-duration">
+		00:00
+	</div>
+</div>
+							
+<div class="media-player-volume-control" >
+	<button
+		id="global-audio-player-volumeToggle">
+		<i class="fa fa-volume-up"></i>
+	</button>
+
+	<div class="bar off" id="global-audio-player-volume"></div>
+</div>			
+			<div id="_ngHiddenAudioPlayerDetails" class="media-player-display">
+			</div>
+		</div>
+	</div>
+
+</div>
+<script type="text/javascript">
+	jQuery(function() {
+		NgAudioPlayer.registerGlobalPlayer('_ngHiddenAudioPlayerWrapper');
+		//ngutils.components.audio.registerGlobalPlayer('_ngHiddenAudioPlayerWrapper');
+	});
+</script>	<div id="notification-shim" class="notification-shim"></div>
+		<div class="notification-bar" id="notification-bar">
+    <div class="wrapper">
+        <div class="logo padded-left">
+            <a href="https://www.newgrounds.com">Newgrounds</a>
+        </div>
+        <div class="search" role="search">
+            <form id="topsearch-elastic" action="https://www.newgrounds.com/search/conduct/audio" method="get">
+                <input type="hidden" name="suitabilities" value="etm">
+                                    <input type="hidden" name="c" value="3">
+                
+                <input placeholder="Search Audio..." type="text" name="terms" id="topsearch_text" value="" maxlength="40" aria-label="Search Audio..."><button type="submit" class="topsearch-submit" title="Search"><em class="fa fa-search"></em></button>
+            </form>
+            <script type="text/template" id="search_suggestion_template">
+	<ul class="ui-autocomplete">
+
+				<li class="ui-autocomplete-terms">
+			<em class="suggestion fa fa-search" aria-role="presentation"></em><span class="suggestion" data-html="text">Suggestions...</span>
+		</li>
+
+				<li class="ui-autocomplete-content-6000">
+			<a data-href="url">
+				<div class="icon"><img class="user-icon" data-src="icon"  aria-role="presentation"></div>
+				<div class="title">
+					<span data-html="title">Username</span>
+				</div>
+				<div class="meta">
+					<span class="ngicon-small-user gray" aria-role="presentation"></span>
+				</div>
+			</a>
+		</li>
+
+							<li class="ui-autocomplete-content-1">
+				<a data-href="url">
+					<div class="icon"><img data-src="icon" aria-role="presentation"></div>
+					<div class="title">
+						<span data-html="title">Title</span>
+					</div>
+					<div class="meta">
+						<span class="ngicon-small-movie gray" aria-role="presentation"></span>
+					</div>
+				</a>
+			</li>
+					<li class="ui-autocomplete-content-2">
+				<a data-href="url">
+					<div class="icon"><img data-src="icon" aria-role="presentation"></div>
+					<div class="title">
+						<span data-html="title">Title</span>
+					</div>
+					<div class="meta">
+						<span class="ngicon-small-game gray" aria-role="presentation"></span>
+					</div>
+				</a>
+			</li>
+					<li class="ui-autocomplete-content-3">
+				<a data-href="url">
+					<div class="icon"><img data-src="icon" aria-role="presentation"></div>
+					<div class="title">
+						<span data-html="title">Title</span>
+					</div>
+					<div class="meta">
+						<span class="ngicon-small-audio gray" aria-role="presentation"></span>
+					</div>
+				</a>
+			</li>
+					<li class="ui-autocomplete-content-4">
+				<a data-href="url">
+					<div class="icon"><img data-src="icon" aria-role="presentation"></div>
+					<div class="title">
+						<span data-html="title">Title</span>
+					</div>
+					<div class="meta">
+						<span class="ngicon-small-art gray" aria-role="presentation"></span>
+					</div>
+				</a>
+			</li>
+					<li class="ui-autocomplete-content-4500">
+				<a data-href="url">
+					<div class="icon"><img data-src="icon" aria-role="presentation"></div>
+					<div class="title">
+						<span data-html="title">Title</span>
+					</div>
+					<div class="meta">
+						<span class="ngicon-small-collection gray" aria-role="presentation"></span>
+					</div>
+				</a>
+			</li>
+					<li class="ui-autocomplete-content-21000">
+				<a data-href="url">
+					<div class="icon"><img data-src="icon" aria-role="presentation"></div>
+					<div class="title">
+						<span data-html="title">Title</span>
+					</div>
+					<div class="meta">
+						<span class="ngicon-small-playlist gray" aria-role="presentation"></span>
+					</div>
+				</a>
+			</li>
+		
+							<li class="ui-autocomplete-content-4001">
+				<a data-href="url">
+					<div class="icon"><img class="user-icon" data-src="icon"/></div>
+					<div class="title">
+						<span data-html="title">Username</span>
+					</div>
+					<div class="meta">
+						<span class="ngicon-small-lit gray" aria-role="presentation"></span>
+					</div>
+				</a>
+			</li>
+					<li class="ui-autocomplete-content-3001">
+				<a data-href="url">
+					<div class="icon"><img class="user-icon" data-src="icon"/></div>
+					<div class="title">
+						<span data-html="title">Username</span>
+					</div>
+					<div class="meta">
+						<span class="ngicon-small-lit gray" aria-role="presentation"></span>
+					</div>
+				</a>
+			</li>
+					<li class="ui-autocomplete-content-3002">
+				<a data-href="url">
+					<div class="icon"><img class="user-icon" data-src="icon"/></div>
+					<div class="title">
+						<span data-html="title">Username</span>
+					</div>
+					<div class="meta">
+						<span class="ngicon-small-lit gray" aria-role="presentation"></span>
+					</div>
+				</a>
+			</li>
+		
+					<li class="ui-autocomplete-content-11002">
+				<a data-href="url">
+										<div class="title">
+						<span data-html="title">Title</span>
+					</div>
+										<input type="hidden" data-hidden="generic_id" name="generic_id" value="">
+					<input type="hidden" data-hidden="type_id" name="type_id" value="11002">
+				</a>
+			</li>
+					<li class="ui-autocomplete-content-11003">
+				<a data-href="url">
+										<div class="title">
+						<span data-html="title">Title</span>
+					</div>
+										<input type="hidden" data-hidden="generic_id" name="generic_id" value="">
+					<input type="hidden" data-hidden="type_id" name="type_id" value="11003">
+				</a>
+			</li>
+		
+				<li class="ui-autocomplete-links">
+			<a data-href="url">
+				<span class="fa fa-search" aria-role="none"></span> <span class="title" data-html="text">Links...</span>
+			</a>
+		</li>
+
+	</ul>
+
+</script>            <script>
+                SearchHelper.init('topsearch_text', '/search/suggest');
+            </script>
+        </div>
+        <div class="notifications padded-right" id="notification-buttons">
+
+                            <div class="notification-login-side">
+                    <a href="https://www.newgrounds.com/passport" rel="nofollow"  id="passport_login" >Login</a>
+                    /
+                    <a href="https://www.newgrounds.com/passport/signup" rel="nofollow"  id="passport_create" >Sign Up</a>
+                </div>
+                    </div>
+    </div>
+</div>
+    <script src="https://js.ngfiles.com/global/passport.js?ngcache=1770305088"></script>
+	<div class="outer" id="outer-skin">
+
+		<div class="header-nav-row" id="header-nav-row">
+			<div class="header-nav-container header-nav-relative" id="header-nav-container">
+				<nav id="topnav" class="header-nav-buttons">
+					<a href="https://www.newgrounds.com/movies" class="header-nav-button-movies" >Movies</a><a href="https://www.newgrounds.com/games" class="header-nav-button-games" >Games</a><a href="https://www.newgrounds.com/audio" class="header-nav-button-audio" >Audio</a><a href="https://www.newgrounds.com/art" class="header-nav-button-art" >Art</a><a href="https://www.newgrounds.com/portal" class="header-nav-button-channels" >Portal</a><a href="https://www.newgrounds.com/community" class="header-nav-button-community" >Community</a><a href="https://www.newgrounds.com/social" class="header-nav-button-feed"  rel="nofollow" >Your Feed</a>				</nav>
+			</div>
+		</div>
+
+		<div id="ng-global-video-player-shimwrap"><div id="ng-global-video-player-shim"></div></div>
+<div id="ng-global-video-player-wrapper">
+	<div id="ng-global-video-player">
+		<script>
+			ngutils.components.video.player.getGlobal({});
+		</script>
+	</div>
+</div>
+					<div class="skin-wrapper ">
+				<div class="skin-inner">
+					<div class="background" style="
+						background-image: url('//img.ngfiles.com/themes/100/6833d3261777458761.webp?1777458775');
+					"><img src="//img.ngfiles.com/themes/100/6833d3261777458761.webp?1777458775" alt="Newgrounds Background Image Theme"></div>
+					<div class="skin-bars"></div>
+				</div>
+			</div>
+		
+		
+		<div id="header-insert"></div>
+
+		
+		<div class="body-main">
+						<div class="body-center">
+				<div>
+					<div class="body-guts top">
+						
+													<div class="header-deck">
+								<div class="ng-latest-supporter-wide">
+    <div class="ng-latest-supporter-inner">
+        <div class="ng-latest-supporter-image">
+            <div class="user-icon-bordered">
+                <a href="https://roezlli.newgrounds.com" target="_blank"><svg viewBox="0 0 248 248" class="svgmask sz-large s0 c0" >
+	<image href="https://img.ngfiles.com/defaults/icon-user.gif?f1707337412"/>
+	<use href="#path_s0"/>
+</svg></a>
+            </div>
+        </div>
+        <div class="ng-latest-supporter-meta" style="flex:1">
+            <p class="ng-latest-supporter-title"><a href="https://roezlli.newgrounds.com" target="blank">Roezlli</a> just joined the crew!</p>
+            <p class="ng-latest-supporter-message">
+                We need <strong>you</strong> on the team, too.
+            </p>
+            <p class="ng-latest-supporter-message">Support Newgrounds and get tons of perks!</p>
+        </div>
+        <div class="ng-latest-supporter-meta">
+                            <p style="text-align: center; padding-bottom: 4px"><a href="#" id="supporter_message_pp_open" rel="nofollow">Create a Free Account</a> and then..</p>
+
+                <script>
+                    jQuery('#supporter_message_pp_open').on('click', function() {
+                        PassportHandler.open(true);
+                        return false;
+                    });
+                </script>
+                        <a class="ng-latest-supporter-button" href="https://www.newgrounds.com/supporter">Become a Supporter!</a>
+        </div>
+    </div>
+</div>
+							</div>
+						
+<div class="column" id="hub">
+    <div class="pod">
+        <div class="pod-head">
+            <h2 class="audio">Featured Audio</h2>
+                            <span>
+                    <a href="https://www.newgrounds.com/bbs/forum/13">Audio Forum</a>
+                </span>
+                            <span>
+                    <a href="https://www.newgrounds.com/bbs/forum/23">VA Forum</a>
+                </span>
+                                </div>
+        <form method="post" action="https://www.newgrounds.com/audio/featured">
+            <div class="pod-body">
+
+                                    <div class="searchnav-options">
+	<input type="hidden" name="type" value="1">
+	<nav class="searchnav" id="search-header-nav">
+		<div class="navgroup no-visited">
+							<a
+					href="https://www.newgrounds.com/audio?type=1"
+											class="current"
+									>
+				Music			</a>
+							<a
+					href="https://www.newgrounds.com/audio?type=3"
+									>
+				Voice			</a>
+							<a
+					href="https://www.newgrounds.com/audio?type=4"
+									>
+				Podcasts			</a>
+						<a href="/radio">Radio</a>
+		</div>
+	</nav>
+</div>                
+                <div class="searchform-options padded-bottom">
+                    <div class="searchform-sort">
+                        		<a 
+		href="https://www.newgrounds.com/audio/featured"
+		class="no-visited current"
+	>
+		Featured	</a>
+
+		<a 
+		href="https://www.newgrounds.com/audio/browse"
+		class="no-visited"
+	>
+		Latest	</a>
+
+		<a 
+		href="https://www.newgrounds.com/audio/popular"
+		class="no-visited"
+	>
+		Popular	</a>
+
+		<a 
+		href="https://www.newgrounds.com/social/feeds/show/favorite-artists-audio"
+		class="no-visited"
+	>
+		Your Feed	</a>
+
+                    </div>
+                    <div class="searchform-extra">
+    <div class="flexbox align-center" >
+                    <label class="ratings-label padded-right strong em">Ratings:</label>
+                <div id="suitabilities69fbadd9b63b7">
+            <ul class="horzlinks suitability-checkboxes">
+                                    
+                    <li >
+                        <input type="checkbox" class="suitable-e" name="suitabilities[]" id="suitabilities69fbadd9b63b7_e" value="e"  checked="checked" >
+                        <label for="suitabilities69fbadd9b63b7_e">e</label>
+                    </li>
+                                    
+                    <li >
+                        <input type="checkbox" class="suitable-t" name="suitabilities[]" id="suitabilities69fbadd9b63b7_t" value="t"  checked="checked" >
+                        <label for="suitabilities69fbadd9b63b7_t">t</label>
+                    </li>
+                                    
+                    <li >
+                        <input type="checkbox" class="suitable-m" name="suitabilities[]" id="suitabilities69fbadd9b63b7_m" value="m"  checked="checked" >
+                        <label for="suitabilities69fbadd9b63b7_m">m</label>
+                    </li>
+                                    
+                    <li  data-disabled="" >
+                        <input type="checkbox" class="suitable-a" name="suitabilities[]" id="suitabilities69fbadd9b63b7_a" value="a"  disabled>
+                        <label for="suitabilities69fbadd9b63b7_a">a</label>
+                    </li>
+                
+            </ul>
+            <input type="hidden" name="userkey" value="b50a6%O0d5d2a8fbc15%14cfO9742679a1e%P9c177r74%%767704%7%7%10f%c35fs689087f2Ob9care771rs%104321%%s7%1%1e5d65d22f7r1P1b19%67rPf8c9068r06e06eab28e914d426938429b15f15665%s%4d7P%%O%rr2559-3447052" />                            <input type="hidden" name="_token" value="QzpR25hyAYyiYQmJz6ntKQHh5WBAcJd9sD7dm5Fk" autocomplete="off">                    </div>
+    </div>
+
+    <script>
+        /* jshint ignore: start*/
+        PHP.set('fire_signup_for_disabled', true);
+        // PHP.set('suitabilities_endpoint', "\/suitabilities");
+        PHP.set('suitabilities_endpoint', "https:\/\/www.newgrounds.com\/suitabilities");
+        PHP.set('suitabilities_opts_disable_on_click', true);
+        PHP.set('suitabilities_opts_refresh_page', true);
+        /* jshint ignore: end*/
+
+        (function($) {
+            var inputs = $('#suitabilities69fbadd9b63b7 input');
+            var bo = new ngutils.blackout({
+                remove_on_click_outside: false,
+                remove_on_hide: true
+            });
+
+            let engageOrDisengage = (on) => {
+                if (on) {
+                    bo.show();
+                    inputs.disable();
+                } else {
+                    bo.hide();
+                    inputs.enable();
+                }
+            };
+
+            let checkAtLeastOne = () => {
+                if (!inputs.filter(':checked').length) {
+                    inputs.first().prop('checked', true);
+                }
+            };
+
+            $('#suitabilities69fbadd9b63b7 li[data-disabled]').click(function() {
+                PassportHandler.open(true);
+                return false;
+            });
+
+            inputs.click(function() {
+                checkAtLeastOne();
+
+                let update = inputs.serializeArray();
+                let disable_on_click = PHP.get('suitabilities_opts_disable_on_click');
+
+                if (disable_on_click) {
+                    engageOrDisengage(true);
+                }
+
+                $.postXD(PHP.get('suitabilities_endpoint'), update, () => {
+                    let suitability = $.map(update, function(v, k) {
+                        return v.value;
+                    });
+
+                    ngutils.event.dispatch('suitabilities-updated', suitability);
+
+                    if (PHP.get('suitabilities_opts_refresh_page')) {
+                        window.location.href = window.location.href;
+                    }
+                }).fail(() => {
+                    if (disable_on_click) {
+                        engageOrDisengage(false);
+                    }
+                });
+            });
+
+        })(jQuery);
+    </script>
+</div>
+                </div>
+
+                                    <div class="flexbox padded-vert form-inline">
+                        <div>
+                            <label>Range:</label>
+                            <div class="select-wrapper">
+                                <select name="interval">
+                                    <option value="today" >Today</option>
+<option value="yesterday" >Yesterday</option>
+<option value="week" >Week</option>
+<option value="month" >Month</option>
+<option value="year" >Year</option>
+<option value="all" selected="selected">All</option>
+<option value="" >Custom</option>                                </select>
+                            </div>
+                        </div>
+
+                        <div class="flex-1"></div>
+
+                        <div>
+                            <label>Sort By:</label>
+                            <div class="select-wrapper">
+                                <select name="sort">
+                                    <option value="date" selected="selected">Date</option>
+<option value="score" >Score</option>
+<option value="views" >Views</option>                                </select>
+                            </div>
+                        </div>
+
+                        <div class="flex-1"></div>
+
+                        <div>
+                            <label>Category:</label>
+                            <div class="select-wrapper">
+                                <select name="genre">
+                                    <option value="0" selected="selected">All</option>
+<option value="3" >Easy Listening - Classical</option>
+<option value="18" >Easy Listening - Jazz</option>
+<option value="51" >Easy Listening - Solo Instrument</option>
+<option value="5" >Electronic - Ambient</option>
+<option value="48" >Electronic - Chipstep</option>
+<option value="6" >Electronic - Dance</option>
+<option value="7" >Electronic - Drum N Bass</option>
+<option value="41" >Electronic - Dubstep</option>
+<option value="9" >Electronic - House</option>
+<option value="8" >Electronic - Industrial</option>
+<option value="20" >Electronic - New Wave</option>
+<option value="57" >Electronic - Synthwave</option>
+<option value="10" >Electronic - Techno</option>
+<option value="11" >Electronic - Trance</option>
+<option value="12" >Electronic - Video Game</option>
+<option value="17" >Hip Hop, Rap, R&B - Hip Hop - Modern</option>
+<option value="16" >Hip Hop, Rap, R&B - Hip Hop - Olskool</option>
+<option value="47" >Hip Hop, Rap, R&B - Nerdcore</option>
+<option value="21" >Hip Hop, Rap, R&B - R&B</option>
+<option value="22" >Metal, Rock - Brit Pop</option>
+<option value="23" >Metal, Rock - Classic Rock</option>
+<option value="24" >Metal, Rock - General Rock</option>
+<option value="25" >Metal, Rock - Grunge</option>
+<option value="15" >Metal, Rock - Heavy Metal</option>
+<option value="26" >Metal, Rock - Indie</option>
+<option value="27" >Metal, Rock - Pop</option>
+<option value="28" >Metal, Rock - Punk</option>
+<option value="50" >Other - Cinematic</option>
+<option value="49" >Other - Experimental</option>
+<option value="13" >Other - Funk</option>
+<option value="52" >Other - Fusion</option>
+<option value="14" >Other - Goth</option>
+<option value="39" >Other - Miscellaneous</option>
+<option value="29" >Other - Ska</option>
+<option value="19" >Other - World</option>
+<option value="1" >Southern Flavor - Bluegrass</option>
+<option value="2" >Southern Flavor - Blues</option>
+<option value="4" >Southern Flavor - Country</option>                                </select>
+                            </div>
+                        </div>
+
+                        
+                                            </div>
+                    <div class="flexbox padded-top form-inline" id="after-or-before"  style="display: none" >
+                        <div>
+                            <label>After:</label>
+                            <input type="text" name="after" value="" placeholder="YYYY-MM-DD" autocomplete="off">
+                        </div>
+                        <div class="flex-1"></div>
+                        <div>
+                            <label>Before:</label>
+                            <input type="text" name="before" value="" placeholder="YYYY-MM-DD" autocomplete="off">
+                        </div>
+                        <div class="flex-4"></div>
+                    </div>
+
+                
+
+                <div class="padded-top" id="content-results-69fbadd9b6499">
+                                            <ul class="itemlist alternating" data-audio-playlist='audio-hub'>
+                            	<li data-hub-id="1563396">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b65e0">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1563396" class="item-audiosubmission " title="Death is inevitable">
+			<div class="item-icon">
+				<div><img
+						src="https://aicon.ngfiles.com/1563/1563396_medium.webp?f1778081701"
+						width="60"
+						height="60"
+						alt="Death is inevitable"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>Death is inevitable</h4>
+															<span>by
+									<strong>baryiscool</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+															i made a incredible arpeggiator, and based a song around it
+
+the way it makes me float is unlike any feeling i can discribe
+
+i&#039;m incredibly happy with how this track turned out, although it took a bit&hellip;													</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+													<div class="star-score" title="Score: 4.74/5.00">
+	<span style="width:95%"></span>
+</div>												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+															<dd>Drum N Bass</dd>
+														<dd>412 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1563396"
+						data-audio-type="3"
+						data-audio-duration="203"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1377821">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b67cc">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1377821" class="item-audiosubmission " title="GRAVE64">
+			<div class="item-icon">
+				<div><img
+						src="https://aicon.ngfiles.com/1377/1377821_medium.webp?f1732409212"
+						width="60"
+						height="60"
+						alt="GRAVE64"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>GRAVE64</h4>
+															<span>by
+									<strong>IROZAGE</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+															I wonder what&#039;s inside													</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+													<div class="star-score" title="Score: 4.49/5.00">
+	<span style="width:90%"></span>
+</div>												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+															<dd>Drum N Bass</dd>
+														<dd>1,000 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1377821"
+						data-audio-type="3"
+						data-audio-duration="154"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1469727">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b6946">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1469727" class="item-audiosubmission " title="Further Beyond">
+			<div class="item-icon">
+				<div><img
+						src="https://aicon.ngfiles.com/1469/1469727_medium.webp?f1767183787"
+						width="60"
+						height="60"
+						alt="Further Beyond"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>Further Beyond</h4>
+															<span>by
+									<strong>arctesu</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+															✦ AD ASTRA ✦
+
+0001 🟎 Astral Gate
+
+0002 🟎 Entwined
+
+0003 🟎 Further Beyond (Plus Ultra)
+
+0004 🟎 Kilonova
+
+--
+
+soundcloud 🟎 youtube 🟎 bandcamp													</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+													<div class="star-score" title="Score: 5.00/5.00">
+	<span style="width:100%"></span>
+</div>												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+															<dd>Drum N Bass</dd>
+														<dd>808 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1469727"
+						data-audio-type="3"
+						data-audio-duration="192"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1561030">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b6be4">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1561030" class="item-audiosubmission " title="Dcapper">
+			<div class="item-icon">
+				<div><img
+						src="https://aicon.ngfiles.com/1561/1561030_medium.webp?f1777608292"
+						width="60"
+						height="60"
+						alt="Dcapper"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>Dcapper</h4>
+															<span>by
+									<strong>KoaSouvenir</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+															written by @jame24 and me, from our new EP &#039;Color Outside The Lines, Vol. 1&#039;
+
+Stream it!													</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+													<div class="star-score" title="Score: 4.85/5.00">
+	<span style="width:97%"></span>
+</div>												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+															<dd>Industrial</dd>
+														<dd>625 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1561030"
+						data-audio-type="3"
+						data-audio-duration="133"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1561072">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b6d99">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1561072" class="item-audiosubmission " title="Sprite (スプライト) PS1 OST - Pop My Can, Girl!">
+			<div class="item-icon">
+				<div><img
+						src="https://aicon.ngfiles.com/1561/1561072_medium.webp?f1777619873"
+						width="60"
+						height="60"
+						alt="Sprite (スプライト) PS1 OST - Pop My Can, Girl!"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>Sprite (スプライト) PS1 OST - Pop My Can, Girl!</h4>
+															<span>by
+									<strong>marbardan82</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+															Sprite (スプライト) for the PS1 is one of the most obscure pieces of gaming history. A basic shmup like Battle Bakraid or Progear, but with SPRITE!!!
+
+TRANSLATED FROM BOX DESCRIPTION:
+
+It follows&hellip;													</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+													<div class="star-score" title="Score: 4.50/5.00">
+	<span style="width:90%"></span>
+</div>												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+															<dd>Techno</dd>
+														<dd>693 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1561072"
+						data-audio-type="3"
+						data-audio-duration="255"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1561351">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b6f05">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1561351" class="item-audiosubmission " title="STAR✦DUST">
+			<div class="item-icon">
+				<div><img
+						src="https://aicon.ngfiles.com/1561/1561351_medium.webp?f1777947260"
+						width="60"
+						height="60"
+						alt="STAR✦DUST"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>STAR✦DUST</h4>
+															<span>by
+									<strong>Mrsto</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+															my first time trying to do breakcore...
+
+visualizer
+
+the character in the cover art is silver wolf from honkai star rail													</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+													<div class="star-score" title="Score: 5.00/5.00">
+	<span style="width:100%"></span>
+</div>												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+															<dd>Drum N Bass</dd>
+														<dd>833 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1561351"
+						data-audio-type="3"
+						data-audio-duration="160"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1561783">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b7072">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1561783" class="item-audiosubmission " title="AIM | Orchard Road">
+			<div class="item-icon">
+				<div><img
+						src="https://aicon.ngfiles.com/1561/1561783_medium.png?f1777991815"
+						width="60"
+						height="60"
+						alt="AIM | Orchard Road"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>AIM | Orchard Road</h4>
+															<span>by
+									<strong>HG-HL</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+															Hey everyone! This is my first ever AIM submission! This project was inspired by an unreal art piece I saw from @YakovlevArt called Entropy Environments. With my song, I tried to take the awesome futu&hellip;													</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+													<div class="star-score" title="Score: 4.80/5.00">
+	<span style="width:96%"></span>
+</div>												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+															<dd>Synthwave</dd>
+														<dd>539 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1561783"
+						data-audio-type="3"
+						data-audio-duration="220"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1563093">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b71ef">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1563093" class="item-audiosubmission " title="B1GBOII - &quot;OPEN OCEAN&quot;">
+			<div class="item-icon">
+				<div><img
+						src="https://aicon.ngfiles.com/1563/1563093_medium.webp?f1778002410"
+						width="60"
+						height="60"
+						alt="B1GBOII - &quot;OPEN OCEAN&quot;"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>B1GBOII - &quot;OPEN OCEAN&quot;</h4>
+															<span>by
+									<strong>IAMB1GBOII</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+															I tried to make some melodic riddim and it kinda sounded good, that&#039;s it.
+
+Genre: Melodic Riddim/Dubstep
+
+Tempo: 150
+
+Key: D# Minor													</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+															<dd>Dubstep</dd>
+														<dd>541 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1563093"
+						data-audio-type="3"
+						data-audio-duration="244"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1563105">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b72e8">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1563105" class="item-audiosubmission " title="Pearl Drops">
+			<div class="item-icon">
+				<div><img
+						src="https://aicon.ngfiles.com/1563/1563105_medium.webp?f1778005460"
+						width="60"
+						height="60"
+						alt="Pearl Drops"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>Pearl Drops</h4>
+															<span>by
+									<strong>SyTeQ</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+																												</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+															<dd>Miscellaneous</dd>
+														<dd>498 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1563105"
+						data-audio-type="3"
+						data-audio-duration="192"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1563187">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b73df">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1563187" class="item-audiosubmission " title="DJ CLAMOR - I&#039;M SCARED">
+			<div class="item-icon">
+				<div><img
+						src="https://img.ngfiles.com/defaults/icon-audio-smaller.png?f1707337412"
+						width="60"
+						height="60"
+						alt="DJ CLAMOR - I&#039;M SCARED"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>DJ CLAMOR - I&#039;M SCARED</h4>
+															<span>by
+									<strong>DJClamor</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+															Had a bit of an art block lately, this is probably the most fun I&#039;ve had making a song so far, inspired by Kenshi Yonezu&#039;s &quot;KICK BACK&quot; .
+
+DJ CLAMOR ON ALL PLATFORMS!
+
+Song will soon be up on Spotify!													</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+															<dd>Indie</dd>
+														<dd>385 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1563187"
+						data-audio-type="3"
+						data-audio-duration="154"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1563225">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b74f9">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1563225" class="item-audiosubmission " title="WHOLE_LIFE_">
+			<div class="item-icon">
+				<div><img
+						src="https://aicon.ngfiles.com/1563/1563225_medium.webp?f1778029458"
+						width="60"
+						height="60"
+						alt="WHOLE_LIFE_"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>WHOLE_LIFE_</h4>
+															<span>by
+									<strong>FreakFormal</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+															part of an album im putting out, im sure you can pin point the sound better than I, I can&#039;t immediately but I think im biased. Hope it feels as unique as it did to me when I made it, thank you if you &hellip;													</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+															<dd>Indie</dd>
+														<dd>425 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1563225"
+						data-audio-type="3"
+						data-audio-duration="204"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1563284">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b75f0">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1563284" class="item-audiosubmission " title="me0w ₍^. .^₎Ⳋ">
+			<div class="item-icon">
+				<div><img
+						src="https://aicon.ngfiles.com/1563/1563284_medium.webp?f1778040082"
+						width="60"
+						height="60"
+						alt="me0w ₍^. .^₎Ⳋ"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>me0w ₍^. .^₎Ⳋ</h4>
+															<span>by
+									<strong>SpoiledJif</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+															guys. i rlly wanna fuckin cat and im tired of hiding it. i gotta make this happen
+
+anyways follow my shit
+
+[Youtube]
+
+https://www.youtube.com/@spoiledjif1
+
+[Twitter]
+
+https://x.com/SpoiledJif
+
+[Paypal&hellip;													</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+													<div class="star-score" title="Score: 4.78/5.00">
+	<span style="width:96%"></span>
+</div>												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+															<dd>Video Game</dd>
+														<dd>504 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1563284"
+						data-audio-type="3"
+						data-audio-duration="138"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1563286">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b775f">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1563286" class="item-audiosubmission " title="cooped up">
+			<div class="item-icon">
+				<div><img
+						src="https://aicon.ngfiles.com/1563/1563286_medium.webp?f1778040717"
+						width="60"
+						height="60"
+						alt="cooped up"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>cooped up</h4>
+															<span>by
+									<strong>JellyFish</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+															Wake up, no clue where I&#039;m at now
+
+Makeup smeared up on my face
+
+Breathe strong right before I crash out
+
+See your clothes lying up on the bed
+
+I&#039;m safe but don&#039;t feel assured so
+
+I take another hit o&hellip;													</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+															<dd>Dance</dd>
+														<dd>396 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1563286"
+						data-audio-type="3"
+						data-audio-duration="148"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1563306">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b7856">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1563306" class="item-audiosubmission " title="BGM 87">
+			<div class="item-icon">
+				<div><img
+						src="https://aicon.ngfiles.com/1563/1563306_medium.png?f1778049799"
+						width="60"
+						height="60"
+						alt="BGM 87"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>BGM 87</h4>
+															<span>by
+									<strong>KingofCDs</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+															Another silly little song.
+
+By: C. D. Frett
+
+Created: May 5, 2026													</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+													<div class="star-score" title="Score: 4.68/5.00">
+	<span style="width:94%"></span>
+</div>												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+															<dd>Video Game</dd>
+														<dd>390 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1563306"
+						data-audio-type="3"
+						data-audio-duration="189"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1563364">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b79cd">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1563364" class="item-audiosubmission " title="Aurora">
+			<div class="item-icon">
+				<div><img
+						src="https://aicon.ngfiles.com/1563/1563364_medium.webp?f1778068809"
+						width="60"
+						height="60"
+						alt="Aurora"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>Aurora</h4>
+															<span>by
+									<strong>jeity</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+																												</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+														<dd>423 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1563364"
+						data-audio-type="3"
+						data-audio-duration="177"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1563388">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b7ac2">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1563388" class="item-audiosubmission " title="Nature(Dance)">
+			<div class="item-icon">
+				<div><img
+						src="https://aicon.ngfiles.com/1563/1563388_medium.webp?f1778076013"
+						width="60"
+						height="60"
+						alt="Nature(Dance)"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>Nature(Dance)</h4>
+															<span>by
+									<strong>ScottJacob</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+																												</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+														<dd>357 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1563388"
+						data-audio-type="3"
+						data-audio-duration="217"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1563391">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b7bbc">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1563391" class="item-audiosubmission " title="Hyper Bunny Girl">
+			<div class="item-icon">
+				<div><img
+						src="https://aicon.ngfiles.com/1563/1563391_medium.webp?f1778077226"
+						width="60"
+						height="60"
+						alt="Hyper Bunny Girl"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>Hyper Bunny Girl</h4>
+															<span>by
+									<strong>KawaiiKittyKore</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+															holi everyone, this is a song from my last album, I would really appreciate your help if you follow me on Spotify and Youtube, I love you all. (づ｡◕‿‿◕｡)づ													</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+													<div class="star-score" title="Score: 4.71/5.00">
+	<span style="width:94%"></span>
+</div>												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+															<dd>Dance</dd>
+														<dd>385 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1563391"
+						data-audio-type="3"
+						data-audio-duration="130"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1562739">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b7db5">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1562739" class="item-audiosubmission " title="Unimportance - Stuck ( 2025 )">
+			<div class="item-icon">
+				<div><img
+						src="https://aicon.ngfiles.com/1562/1562739_medium.webp?f1777919884"
+						width="60"
+						height="60"
+						alt="Unimportance - Stuck ( 2025 )"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>Unimportance - Stuck ( 2025 )</h4>
+															<span>by
+									<strong>Unimportance97</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+																												</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+													<div class="star-score" title="Score: 4.87/5.00">
+	<span style="width:97%"></span>
+</div>												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+															<dd>Drum N Bass</dd>
+														<dd>2,172 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1562739"
+						data-audio-type="3"
+						data-audio-duration="110"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1560784">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b805c">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1560784" class="item-audiosubmission " title="classroom remix PICO DAY 26">
+			<div class="item-icon">
+				<div><img
+						src="https://aicon.ngfiles.com/1560/1560784_medium.webp?f1777566801"
+						width="60"
+						height="60"
+						alt="classroom remix PICO DAY 26"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>classroom remix PICO DAY 26</h4>
+															<span>by
+									<strong>MrBladesYT</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+															super super rushed to get it in time for pico day lmao													</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+													<div class="star-score" title="Score: 4.71/5.00">
+	<span style="width:94%"></span>
+</div>												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+															<dd>Video Game</dd>
+														<dd>2,593 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1560784"
+						data-audio-type="3"
+						data-audio-duration="71"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1562718">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b8223">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1562718" class="item-audiosubmission " title="Starstruck">
+			<div class="item-icon">
+				<div><img
+						src="https://aicon.ngfiles.com/1562/1562718_medium.webp?f1777914048"
+						width="60"
+						height="60"
+						alt="Starstruck"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>Starstruck</h4>
+															<span>by
+									<strong>iammodus</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+															Stream/Download: https://hypeddit.com/iammodus/starstruck
+
+Crown of stars and dust
+
+Eyes of fire, they watch
+
+Hands of fate and war
+
+Stand tall
+
+You&#039;re Starstruck
+
+modus
+
+https://www.iammod.us
+
+https:&hellip;													</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+													<div class="star-score" title="Score: 4.62/5.00">
+	<span style="width:92%"></span>
+</div>												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+															<dd>Dubstep</dd>
+														<dd>2,880 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1562718"
+						data-audio-type="3"
+						data-audio-duration="232"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1562722">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b83ce">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1562722" class="item-audiosubmission " title="Infowler - Riptide (ft. DASH30)">
+			<div class="item-icon">
+				<div><img
+						src="https://aicon.ngfiles.com/1562/1562722_medium.webp?f1777914875"
+						width="60"
+						height="60"
+						alt="Infowler - Riptide (ft. DASH30)"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>Infowler - Riptide (ft. DASH30)</h4>
+															<span>by
+									<strong>Infowler</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+															our first release on monstercat??? we hope you enjoy :)
+
+🌊 Stream: https://infowler.com/riptide
+
+Follow DASH30:
+
+https://soundcloud.com/dash30
+
+https://www.youtube.com/@dash30music
+
+https://x.com/d&hellip;													</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+													<div class="star-score" title="Score: 4.61/5.00">
+	<span style="width:92%"></span>
+</div>												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+															<dd>House</dd>
+														<dd>2,454 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1562722"
+						data-audio-type="3"
+						data-audio-duration="229"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1562773">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b85a7">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1562773" class="item-audiosubmission " title="Lunch-Break Empathy">
+			<div class="item-icon">
+				<div><img
+						src="https://aicon.ngfiles.com/1562/1562773_medium.webp?f1777926472"
+						width="60"
+						height="60"
+						alt="Lunch-Break Empathy"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>Lunch-Break Empathy</h4>
+															<span>by
+									<strong>DannyGoodShirt</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+															Edited some vocals cuz shit was off so bad lmfao
+
+Recorded with Audiacity &amp; a Rhode NT1A + foam shield
+
+Lunch-Break Empathy is a demo I wrote and tried to record as quick as possible. Compressing and &hellip;													</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+													<div class="star-score" title="Score: 4.89/5.00">
+	<span style="width:98%"></span>
+</div>												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+															<dd>Indie</dd>
+														<dd>2,009 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1562773"
+						data-audio-type="3"
+						data-audio-duration="229"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1562892">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b878f">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1562892" class="item-audiosubmission " title="EXH-TIMBRE">
+			<div class="item-icon">
+				<div><img
+						src="https://aicon.ngfiles.com/1562/1562892_medium.webp?f1777947000"
+						width="60"
+						height="60"
+						alt="EXH-TIMBRE"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>EXH-TIMBRE</h4>
+															<span>by
+									<strong>Zylenxx</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+																												</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+													<div class="star-score" title="Score: 4.93/5.00">
+	<span style="width:99%"></span>
+</div>												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+															<dd>Dance</dd>
+														<dd>2,259 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1562892"
+						data-audio-type="3"
+						data-audio-duration="220"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1563005">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b8a6f">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1563005" class="item-audiosubmission " title="We Might Start Getting Wrinkles in a Year or Two">
+			<div class="item-icon">
+				<div><img
+						src="https://aicon.ngfiles.com/1563/1563005_medium.webp?f1777982415"
+						width="60"
+						height="60"
+						alt="We Might Start Getting Wrinkles in a Year or Two"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>We Might Start Getting Wrinkles in a Year or Two</h4>
+															<span>by
+									<strong>jeity</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+																												</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+													<div class="star-score" title="Score: 4.69/5.00">
+	<span style="width:94%"></span>
+</div>												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+														<dd>2,009 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1563005"
+						data-audio-type="3"
+						data-audio-duration="80"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1563007">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b8c60">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1563007" class="item-audiosubmission " title="Avenue Gordon Bennett">
+			<div class="item-icon">
+				<div><img
+						src="https://img.ngfiles.com/defaults/icon-audio-smaller.png?f1707337412"
+						width="60"
+						height="60"
+						alt="Avenue Gordon Bennett"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>Avenue Gordon Bennett</h4>
+															<span>by
+									<strong>ItsBurner</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+															Title is a reference to some place !
+
+~Sawan													</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+													<div class="star-score" title="Score: 4.64/5.00">
+	<span style="width:93%"></span>
+</div>												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+															<dd>Fusion</dd>
+														<dd>1,798 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1563007"
+						data-audio-type="3"
+						data-audio-duration="106"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1563029">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b8e34">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1563029" class="item-audiosubmission " title="♐︎●︎□︎⬥︎♏︎❒︎flower⧫︎□︎◆︎♍︎♒︎touch">
+			<div class="item-icon">
+				<div><img
+						src="https://aicon.ngfiles.com/1563/1563029_medium.webp?f1777990449"
+						width="60"
+						height="60"
+						alt="♐︎●︎□︎⬥︎♏︎❒︎flower⧫︎□︎◆︎♍︎♒︎touch"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>♐︎●︎□︎⬥︎♏︎❒︎flower⧫︎□︎◆︎♍︎♒︎touch</h4>
+															<span>by
+									<strong>dx9scope</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+															⌘︎♋︎♑︎♋︎♎︎🙵♋︎													</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+													<div class="star-score" title="Score: 4.85/5.00">
+	<span style="width:97%"></span>
+</div>												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+															<dd>Drum N Bass</dd>
+														<dd>1,906 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1563029"
+						data-audio-type="3"
+						data-audio-duration="428"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1377108">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b8fcf">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1377108" class="item-audiosubmission " title="TALON">
+			<div class="item-icon">
+				<div><img
+						src="https://aicon.ngfiles.com/1377/1377108_medium.webp?f1732231349"
+						width="60"
+						height="60"
+						alt="TALON"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>TALON</h4>
+															<span>by
+									<strong>IROZAGE</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+																												</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+													<div class="star-score" title="Score: 4.56/5.00">
+	<span style="width:91%"></span>
+</div>												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+															<dd>Dubstep</dd>
+														<dd>3,833 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1377108"
+						data-audio-type="3"
+						data-audio-duration="232"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1444306">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b918f">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1444306" class="item-audiosubmission " title="LoviTek - Away (Feat Ghostlabz)">
+			<div class="item-icon">
+				<div><img
+						src="https://aicon.ngfiles.com/1444/1444306_medium.webp?f1751039318"
+						width="60"
+						height="60"
+						alt="LoviTek - Away (Feat Ghostlabz)"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>LoviTek - Away (Feat Ghostlabz)</h4>
+															<span>by
+									<strong>LoviTek</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+															I finished this song in the 5th of June that day was my birthday, I was planning on releasing this as the first track of an upcoming label called &quot;Sharp Minor Records&quot;, but the lider of the label pull&hellip;													</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+													<div class="star-score" title="Score: 4.61/5.00">
+	<span style="width:92%"></span>
+</div>												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+															<dd>Dubstep</dd>
+														<dd>3,006 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1444306"
+						data-audio-type="3"
+						data-audio-duration="361"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1560783">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b9368">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1560783" class="item-audiosubmission " title="The Rocky Road to Dublin">
+			<div class="item-icon">
+				<div><img
+						src="https://aicon.ngfiles.com/1560/1560783_medium.webp?f1777566753"
+						width="60"
+						height="60"
+						alt="The Rocky Road to Dublin"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>The Rocky Road to Dublin</h4>
+															<span>by
+									<strong>Doumaaa</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+															Me &amp; my clones bring you this fast-paced Irish classic with multiple vocal harmonies and instruments! ☘️
+
+⬇️ Watch the whole ride! ⬇️
+
+🔔 More Music → https://www.youtube.com/@dominikp&hellip;													</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+													<div class="star-score" title="Score: 4.37/5.00">
+	<span style="width:87%"></span>
+</div>												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+															<dd>World</dd>
+														<dd>2,600 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1560783"
+						data-audio-type="3"
+						data-audio-duration="157"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li data-hub-id="1562719">
+		
+<div class="audio-wrapper" id="audio-wrapper69fbadd9b9560">
+	<div class="flexbox">
+		<a href="https://www.newgrounds.com/audio/listen/1562719" class="item-audiosubmission " title="Memories">
+			<div class="item-icon">
+				<div><img
+						src="https://aicon.ngfiles.com/1562/1562719_medium.webp?f1777914384"
+						width="60"
+						height="60"
+						alt="Memories"
+						 /></div>
+			</div>
+			<div class="item-details">
+				<div class="item-details-main">
+					<div>
+						<div class="detail-title">
+							<h4>Memories</h4>
+															<span>by
+									<strong>MXC-Music</strong>
+								</span>
+													</div>
+						<div class="detail-description">
+															This one&#039;s kinda short but i really like it.
+
+yeah you expected me to say &quot;i HoPe YoU tOo LiKe It&quot;? haha not this time fella
+
+&quot;bruh ts just an orchestra with drums and bass&quot;- my Friend
+
+Music Video													</div>
+					</div>
+				</div>
+
+									<div class="item-details-meta">
+													<div class="star-score" title="Score: 4.91/5.00">
+	<span style="width:98%"></span>
+</div>												<dl>
+							<dd><strong class="color-audio">Song</strong></dd>
+															<dd>Trance</dd>
+														<dd>2,798 Views</dd>
+						</dl>
+					</div>
+				
+			</div>
+		</a>
+
+		<div class="absolute ">
+	<a
+		class="play-control-medium"
+		title="PLAY"
+				data-audio-playback="1562719"
+						data-audio-type="3"
+						data-audio-duration="176"
+				style="display:none"
+		>PLAY</a>
+
+		
+</div>
+
+		
+	</div>
+
+	</div>	</li>
+	<li id="load-more-items" data-playlist-func="load-more">
+		<p id="is-loading" style="display:none"><em class="fa fa-spin fa-spinner"></em> Loading More...</p>
+		<p id="not-loading"><a href="https://www.newgrounds.com/audio/featured?offset=30&amp;inner=1">Load More</a></p>
+		<script>
+			/* jshint esversion: 6 */
+			(($) => {
+				var $element = $('#load-more-items');
+
+				var registerIds = function($element) {
+					return $.map($('[data-hub-id]', $element), function(el, k) {
+						return $(el).attr('data-hub-id');
+					});
+				};
+
+				var ids = registerIds($('div[id^="content-results-"]'));
+
+				var doLoad = (e) => {
+					$('#is-loading', $element).show();
+					$('#not-loading', $element).hide();
+
+					$.get('https://www.newgrounds.com/audio/featured?offset=30&inner=1', (result) => {
+						var $content = $(result.content);
+
+						$content = $.map($content, function(el, k) {
+							var _id = $(el).attr('data-hub-id');
+
+							if (undefined === _id) {
+								return el;
+							}
+
+							if (-1 === $.inArray(_id, ids)) {
+								ids.push(_id);
+								return el;
+							}
+						});
+
+						// keep a small cache of previously loaded ids
+						if (ids.length > 240) {
+							ids.slice(240);
+						}
+
+						$element.replaceWith($content);
+					}, 'json');
+					return false;
+				};
+
+				$('#not-loading', $element).click(doLoad);
+
+				ngutils.element.whenOnscreen($element, doLoad, 200);
+
+							})(jQuery);
+		</script>
+	</li>
+                        </ul>
+                                    </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<script>
+    PHP.set('min_date', '2014-08-26');
+    PHP.set('max_date', '2026-05-06');
+</script>
+<script>
+    // no auto-completion (the false param here)
+    (function($) {
+        var blackout = new ngutils.blackout();
+        var is_mobile = PHP.get('ismobile');
+
+        blackout._onfail = function() {
+            blackout.hide();
+        };
+
+        var getForm = function() {
+            return $('#hub form');
+        };
+
+        var intermediary = function(url, obj, nopush) {
+            blackout.load(url, function(response) {
+                if (!(response && response.content && response.content.length)) {
+                    return;
+                }
+
+                $('#hub').replaceWith(response.content);
+                if (false !== nopush) {
+                    history.pushState({}, response.title, url);
+                    if (null !== response.title) {
+                        document.title = response.title;
+                    } else {
+                        document.title = 'Search';
+                    }
+                }
+
+                blackout.hide();
+                init();
+
+                if (is_mobile) {
+                    toggleMobileFilters($(document).data('hub-filters-visible'));
+                }
+            });
+        };
+
+        window.onpopstate = function(event) {
+            intermediary(window.location.href, null, false);
+        };
+
+        var initSelects = function() {
+            var $form = getForm();
+            $('select', $form).off().on('change', function() {
+                var submit = this.name !== 'interval';
+
+                submit = submit || this.name === 'interval' && this.value.length;
+
+                if (submit) {
+                    $('#after-or-before').hide();
+
+                    if (this.name === 'interval') {
+                        // clear out custom values
+                        $('#after-or-before input').val('');
+                    }
+
+                    $form.submit();
+                } else if (this.name === 'interval') {
+                    $('#after-or-before').show();
+                }
+            });
+        };
+
+        var initAfterBefore = function() {
+            var date_format = 'yy-mm-dd';
+            var params = {
+                'changeYear': true,
+                'dateFormat': date_format,
+                'minDate': PHP.get('min_date'),
+                'maxDate': PHP.get('max_date'),
+                onSelect: function() {
+                    getForm().submit();
+                }
+            };
+
+            $('#after-or-before input[name="after"]').datepicker($.extend(params, {
+                //
+            }));
+            $('#after-or-before input[name="before"]').datepicker($.extend(params, {
+                //
+            }));
+        };
+
+        var mf_labels = {
+            "on": "Filters",
+            "off": "Hide Filters"
+        };
+
+        var toggleMobileFilters = function(show) {
+            var $div = $('#hub-filters');
+            if (typeof show !== 'boolean') {
+                show = !$div.is(':visible');
+            }
+
+            if (!show) {
+                $div.show().slideToggle(250);;
+                //$('#hub-filters-btn').html(mf_labels.on);
+                // reset
+                $(document).data('hub-filters-visible', false);
+            } else {
+                $div.hide().slideToggle(250);
+                //$('#hub-filters-btn').html(mf_labels.off);
+                $(document).data('hub-filters-visible', true);
+            }
+
+            return false;
+        };
+
+        var initMobileFilters = function() {
+            $('#hub-filters-btn').off().click(toggleMobileFilters);
+        };
+
+        var stripAddParam = function(name, value) {
+            $('nav a, .searchform-sort a, .pagenav a', getForm()).each(function() {
+                $(this).replaceUrlParameterByName(name, value);
+            });
+        };
+
+        var init = function(no_reinit) {
+            reinit = false !== no_reinit;
+
+            if (is_mobile) {
+                initMobileFilters();
+            }
+
+            initSelects();
+            initAfterBefore();
+
+            var $form = getForm();
+
+            $form.off('submit').on('submit', function() {
+
+                // suitabilities are handled separately
+                const params = $.map($form.serializeArray(), function(param, k) {
+                    if (param.name.indexOf('suitabilities[]') !== 0 && param.value.length) {
+                        return param;
+                    }
+                }).filter(param => !['_token', 'userkey'].includes(param.name));
+
+                const url = getForm().attr('action') + '?' + $.param(params);
+
+                intermediary(url);
+                return false;
+
+            });
+
+        };
+
+        init(false);
+
+    })(jQuery);
+</script>
+<div style="clear:both"></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="body-footer-shim"></div>
+
+<div class="body-footer-wrapper">
+	<div class="footer-features">
+	<div id="footer-feature-buttons" class="footer-feature-buttons"><span><h3><span>FEATURED</span><span>CONTENT</span></h3><div><button id="footer-feature-btn-games" class="footer-feature-btn-games">Games</button><button id="footer-feature-btn-movies" class="footer-feature-btn-movies">Movies</button><button id="footer-feature-btn-audio" class="footer-feature-btn-audio selected">Audio</button><button id="footer-feature-btn-art" class="footer-feature-btn-art">Art</button><button id="footer-feature-btn-channels" class="footer-feature-btn-channels">Channels</button><button id="footer-feature-btn-users" class="footer-feature-btn-users">Users</button></span></div>
+	</div>
+	<div class="footer-features-items" id="footer-features-items">
+		<div>
+			<a class="featureshift-left" id="featureshift-left"><span></span></a>
+		</div>
+		<div class="featured-items" id="footer-featured-items"><div class="flexbox">
+			<div class="featured-item"><div class="audio-wrapper">
+	<a class="audiosubmission-footer-feature" href="https://www.newgrounds.com/audio/listen/1561012" title="S.D.A.B.">
+		<h4>S.D.A.B.</h4>
+		<div class="audiosubmission-details">
+			<div>
+				<img class="icon" src="https://aicon.ngfiles.com/1561/1561012_medium.webp?f1777608021" alt="S.D.A.B.">
+			</div>
+			<div class="flex-1">
+				<div class="audiosubmission-details-inner">
+					 <br/>
+					4,258 Listens
+				</div>
+				<div class="star-score" title="Score: 4.95/5.00">
+	<span style="width:99%"></span>
+</div>			</div>
+		</div>
+	</a>
+</div></div>
+			<div class="featured-item"><div class="audio-wrapper">
+	<a class="audiosubmission-footer-feature" href="https://www.newgrounds.com/audio/listen/1561095" title="Hopes n Dreams (Hyperpop Remix) | Undertale 10th Anniversary">
+		<h4>Hopes n Dreams (Hyperpop Remix) | Undertale 10th Anniversary</h4>
+		<div class="audiosubmission-details">
+			<div>
+				<img class="icon" src="https://aicon.ngfiles.com/1561/1561095_medium.webp?f1777625494" alt="Hopes n Dreams (Hyperpop Remix) | Undertale 10th Anniversary">
+			</div>
+			<div class="flex-1">
+				<div class="audiosubmission-details-inner">
+					 <br/>
+					5,271 Listens
+				</div>
+				<div class="star-score" title="Score: 4.93/5.00">
+	<span style="width:99%"></span>
+</div>			</div>
+		</div>
+	</a>
+</div></div>
+			<div class="featured-item"><div class="audio-wrapper">
+	<a class="audiosubmission-footer-feature" href="https://www.newgrounds.com/audio/listen/1560710" title="ParagonX9 - STΛRLIGHT UNITY">
+		<h4>ParagonX9 - STΛRLIGHT UNITY</h4>
+		<div class="audiosubmission-details">
+			<div>
+				<img class="icon" src="https://aicon.ngfiles.com/1560/1560710_medium.webp?f1777550419" alt="ParagonX9 - STΛRLIGHT UNITY">
+			</div>
+			<div class="flex-1">
+				<div class="audiosubmission-details-inner">
+					 <br/>
+					5,222 Listens
+				</div>
+				<div class="star-score" title="Score: 4.89/5.00">
+	<span style="width:98%"></span>
+</div>			</div>
+		</div>
+	</a>
+</div></div>
+			<div class="featured-item"><div class="audio-wrapper">
+	<a class="audiosubmission-footer-feature" href="https://www.newgrounds.com/audio/listen/1561579" title="✦ ONE YEAR OF NG ✦">
+		<h4>✦ ONE YEAR OF NG ✦</h4>
+		<div class="audiosubmission-details">
+			<div>
+				<img class="icon" src="https://aicon.ngfiles.com/1561/1561579_medium.png?f1777705309" alt="✦ ONE YEAR OF NG ✦">
+			</div>
+			<div class="flex-1">
+				<div class="audiosubmission-details-inner">
+					 <br/>
+					2,759 Listens
+				</div>
+				<div class="star-score" title="Score: 4.90/5.00">
+	<span style="width:98%"></span>
+</div>			</div>
+		</div>
+	</a>
+</div></div>
+	</div></div>
+		<div>
+			<a class="featureshift-right" id="featureshift-right"><span></span></a>
+		</div>
+	</div>
+</div>
+
+<script>
+	ngutils.footer.init(["footer-feature-btn-games","footer-feature-btn-movies","footer-feature-btn-audio","footer-feature-btn-art","footer-feature-btn-channels","footer-feature-btn-users"]);
+</script>
+
+	
+	<div style="clear:both"></div>
+	<div class="footer-main ">
+    <div class="footer-background">
+                    <div class="footer-wall-artist">
+                <a class="flexbox inline align-center no-visited" href="https://koibs.newgrounds.com">
+                    <div class="flex-1 text-align-right"><strong class="highlight">Wall Art by</strong></div>
+                                        <div class="padded"><svg viewBox="0 0 248 248" alt="Koibs&#039;s icon" class="svgmask sz-45 s1 c1" >
+	<image href="https://uimg.ngfiles.com/icons/15172/15172379_large.webp?f1747379673"/>
+	<use href="#path_s1"/>
+</svg></div>
+                    <div class="flex-1"><strong>Koibs</strong></div>
+                </a>
+            </div>
+                <div class="footer-navigation no-visited">
+            <div class="footer-navigation-column">
+                <div class="footer-navigation-cell">
+                    <h4>Main Sections</h4>
+                    <ul>
+                                                <li><a href="https://www.newgrounds.com/games">Games</a></li>
+                        <li><a href="https://www.newgrounds.com/movies">Movies</a></li>
+                        <li><a href="https://www.newgrounds.com/art">Art</a></li>
+                        <li><a href="https://www.newgrounds.com/audio">Audio</a></li>
+                                                <li><a href="https://www.newgrounds.com/social" rel="nofollow">Your Feed</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-navigation-column">
+                <div class="footer-navigation-cell">
+                    <h4>Extra, Extra!</h4>
+                    <ul>
+                        <li><a href="https://www.newgrounds.com/series">Series</a></li>
+                        <li><a href="https://www.newgrounds.com/collections">Collections</a></li>
+                        <li><a href="https://www.newgrounds.com/playlists">Playlists</a></li>
+                        <li><a href="https://www.newgrounds.com/games/browse?interval=all&amp;artist-type=unjudged">Game Judging</a></li>
+                        <li><a href="https://www.newgrounds.com/movies/browse?interval=all&amp;artist-type=unjudged">Movie Judging</a></li>
+                        <li><a href="https://www.newgrounds.com/portal">Classic Portal</a></li>
+                        <li><a href="https://sharkrobot.com/collections/newgrounds" target="_blank">Snag a T-Shirt</a></li>
+                        <li><a href="https://www.newgrounds.com/wiki/creator-resources">Creator Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+                            <div class="footer-navigation-column">
+                    <div class="footer-navigation-cell">
+                        <h4>Community</h4>
+                        <ul>
+                            <li><a href="https://www.newgrounds.com/bbs">Forums</a></li>
+                            <li><a href="https://www.newgrounds.com/chat">Chat</a></li>
+                            <li><a href="https://www.newgrounds.com/calendar">Calendar</a></li>
+                            <li><a href="https://www.newgrounds.com/news/artists">Artist News</a></li>
+                            <li><a href="https://www.newgrounds.com/rankings">Rankings</a></li>
+                            <li><a href="https://www.newgrounds.com/wiki">NG Wiki</a></li>
+                        </ul>
+                    </div>
+                </div>
+                        <div class="footer-navigation-column">
+                <div class="footer-navigation-cell">
+                    <h4>NG Related</h4>
+                    <ul>
+                        <li><a href="https://www.newgrounds.com/wiki/about-newgrounds">About</a></li>
+                        <li><a href="https://www.newgrounds.com/wiki/frequently-asked-questions">Help / FAQ</a></li>
+                        <li><a href="https://www.newgrounds.com/wiki/contact-us">Contact Us</a></li>
+                        <li><a href="https://www.newgrounds.com/support">Support NG!</a></li>
+                        <li><a href="https://www.newgrounds.com/wiki/about-newgrounds/staff">The Staff</a></li>
+                        <li><a href="https://www.newgrounds.com/wiki/about-newgrounds/history">History</a></li>
+                        <li><a href="https://www.newgrounds.com/wiki/help-information/rss">RSS</a></li>
+                        <li><a href="https://www.newgrounds.com/wiki/help-information/dmca-notice">Copyright</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-decoration"></div>
+    </div>
+    <div class="footer-bottom">
+                <div class="footer-copyright no-visited">
+            &copy;Copyright 1995-2026 Newgrounds, Inc. All rights reserved.
+            <a href="https://www.newgrounds.com/wiki/help-information/privacy-policy">Privacy Policy</a>
+            |
+            <a href="https://www.newgrounds.com/wiki/help-information/terms-of-use">Terms of Use</a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<script>
+	(function($) {
+		$wrap = $('div.body-footer-wrapper');
+		$shim = $('div.body-footer-shim');
+
+		$shim.height($wrap.height());
+	})(jQuery);
+</script>
+<!-- s.i. view 1/8 -->
+</body>
+</html>
