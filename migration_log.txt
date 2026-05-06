@@ -1,1540 +1,956 @@
-NG12 Image Migration — 232 URLs
+NG12 Migration — 158 archive.org URLs
 ============================================================
 
 
 [1] https://web.archive.org/web/20120809060441im_/http://cssimg.ngfiles.com/bg-skins/gold2-body.gif
-  ✓  gold2-body.gif  (428 bytes)
+  SKIP  already downloaded
 
 [2] https://web.archive.org/web/20120209092835im_/http://cssimg.ngfiles.com/bg-skins/gold1-body.gif
-  ✓  gold1-body.gif  (803 bytes)
+  SKIP  already downloaded
 
 [3] https://web.archive.org/web/20120329033828im_/http://cssimg.ngfiles.com/bg-skins/skin-closure-body.gif
-  ✓  skin-closure-body.gif  (79 bytes)
+  SKIP  already downloaded
 
 [4] https://web.archive.org/web/20120510014025im_/http://img.ngfiles.com/bg-skins/picoday2012-body.gif
-  ✓  picoday2012-body.gif  (389 bytes)
+  SKIP  already downloaded
 
 [5] https://web.archive.org/web/20130502002555im_/http://cssimg.ngfiles.com/bg-skins/gold2-body.gif
-  ✓  gold2-body_077b70.gif  (428 bytes)
+  SKIP  already downloaded
 
 [6] https://web.archive.org/web/20120806050759im_/http://img.ngfiles.com/bg-skins/robotday2012-body.gif
-  ✓  robotday2012-body.gif  (804 bytes)
+  SKIP  already downloaded
 
 [7] https://web.archive.org/web/20120815044057im_/http://img.ngfiles.com/bg-skins/clockday2012-body.gif
-  ✓  clockday2012-body.gif  (587 bytes)
+  SKIP  already downloaded
 
 [8] https://web.archive.org/web/20120923023402im_/http://img.ngfiles.com/bg-skins/madnessday2012-body.gif
-  ✓  madnessday2012-body.gif  (541 bytes)
+  SKIP  already downloaded
 
 [9] https://web.archive.org/web/20121009173533/https://cssimg.ngfiles.com/bg-skins/halloween2012-body.gif
-  ✓  halloween2012-body.gif  (472 bytes)
+  SKIP  already downloaded
 
 [10] https://web.archive.org/web/20130730221215im_/http://cssimg.ngfiles.com/bg-skins/gold2-body.gif
-  ✓  gold2-body_d06802.gif  (428 bytes)
+  SKIP  already downloaded
 
 [11] https://web.archive.org/web/20121129130123im_/http://cssimg.ngfiles.com/bg-skins/gold4-body.gif
-  ✓  gold4-body.gif  (798 bytes)
+  SKIP  already downloaded
 
 [12] https://web.archive.org/web/20120809060441im_/http://cssimg.ngfiles.com/bg-skins/gold2-outer.jpg
-  ✓  gold2-outer.jpg  (117,040 bytes)
+  SKIP  already downloaded
 
 [13] https://web.archive.org/web/20121106014041im_/http://www.newgrounds.com/img/bg-skins/gold3-outer.jpg
-  ✓  gold3-outer.jpg  (101,387 bytes)
+  SKIP  already downloaded
 
 [14] https://web.archive.org/web/20120209092835im_/http://cssimg.ngfiles.com/bg-skins/gold1-outer.jpg
-  ✓  gold1-outer.jpg  (98,922 bytes)
+  SKIP  already downloaded
 
 [15] https://web.archive.org/web/20120329033828im_/http://cssimg.ngfiles.com/bg-skins/skin-closure.jpg
-  ✗  attempt 1/10 failed: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-     ↻  waiting 5s before retry …
-  ✓  skin-closure.jpg  (143,333 bytes)
+  SKIP  already downloaded
 
 [16] https://web.archive.org/web/20120510014025im_/http://img.ngfiles.com/bg-skins/picoday2012-outer.jpg
-  ✓  picoday2012-outer.jpg  (232,923 bytes)
+  SKIP  already downloaded
 
 [17] https://web.archive.org/web/20130502002555im_/http://cssimg.ngfiles.com/bg-skins/picoday2013-textless.jpg
-  ✓  picoday2013-textless.jpg  (216,515 bytes)
+  SKIP  already downloaded
 
 [18] https://web.archive.org/web/20130427113357im_/http://cssimg.ngfiles.com/bg-skins/picoday2013.jpg
-  ✓  picoday2013.jpg  (255,050 bytes)
+  SKIP  already downloaded
 
 [19] https://web.archive.org/web/20120713031123im_/http://img.ngfiles.com/bg-skins/robotday2012-outer.jpg
-  ✓  robotday2012-outer.jpg  (196,121 bytes)
+  SKIP  already downloaded
 
 [20] https://web.archive.org/web/20120815044110im_/http://img.ngfiles.com/bg-skins/clockday2012-outer.jpg
-  ✗  attempt 1/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120815044110im_/http://img.ngfiles.com/bg-skins/clockday2012-outer.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 5s before retry …
-  ✗  attempt 2/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120815044110im_/http://img.ngfiles.com/bg-skins/clockday2012-outer.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 10s before retry …
-  ✗  attempt 3/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120815044110im_/http://img.ngfiles.com/bg-skins/clockday2012-outer.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 20s before retry …
-  ✓  clockday2012-outer.jpg  (338,891 bytes)
+  SKIP  already downloaded
 
 [21] https://web.archive.org/web/20120923023402im_/http://img.ngfiles.com/bg-skins/madnessday2012-outer.jpg
-  ✗  attempt 1/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120923023402im_/http://img.ngfiles.com/bg-skins/madnessday2012-outer.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 5s before retry …
-  ✗  attempt 2/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120923023402im_/http://img.ngfiles.com/bg-skins/madnessday2012-outer.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 10s before retry …
-  ✗  attempt 3/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120923023402im_/http://img.ngfiles.com/bg-skins/madnessday2012-outer.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 20s before retry …
-  ✗  attempt 4/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120923023402im_/http://img.ngfiles.com/bg-skins/madnessday2012-outer.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 30s before retry …
-  ✗  attempt 5/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120923023402im_/http://img.ngfiles.com/bg-skins/madnessday2012-outer.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 45s before retry …
-  ✓  madnessday2012-outer.jpg  (179,342 bytes)
+  SKIP  already downloaded
 
 [22] https://web.archive.org/web/20121025014300/https://cssimg.ngfiles.com/bg-skins/halloween2012-outer.jpg
-  ✓  halloween2012-outer.jpg  (160,682 bytes)
+  SKIP  already downloaded
 
 [23] https://web.archive.org/web/20130730221215im_/http://cssimg.ngfiles.com/bg-skins/robotday2013-textless.jpg
-  ✓  robotday2013-textless.jpg  (142,398 bytes)
+  SKIP  already downloaded
 
 [24] https://web.archive.org/web/20130922205541im_/http://cssimg.ngfiles.com/bg-skins/madnessday2013.jpg
-  ✓  madnessday2013.jpg  (166,749 bytes)
+  SKIP  already downloaded
 
 [25] https://web.archive.org/web/20131028203227im_/http://cssimg.ngfiles.com/bg-skins/halloween2013.jpg
-  ✓  halloween2013.jpg  (208,806 bytes)
+  SKIP  already downloaded
 
 [26] https://web.archive.org/web/20121129130123im_/http://cssimg.ngfiles.com/bg-skins/gold4-outer.jpg
-  ✓  gold4-outer.jpg  (112,330 bytes)
+  SKIP  already downloaded
 
-[27] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/background/bgtest3.png
-  ✓  bgtest3.png  (703 bytes)
+[27] https://web.archive.org/web/20120719011330im_/http://cssimg.ngfiles.com/bg-header/sitelinks.png
+  SKIP  already downloaded
 
-[28] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/background/bgtest1.png
-  ✓  bgtest1.png  (48,193 bytes)
+[28] https://web.archive.org/web/20120719011330im_/http://cssimg.ngfiles.com/bg-header/navigationTop.png
+  SKIP  already downloaded
 
-[29] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/background/bgtest4.png
-  ✓  bgtest4.png  (17,935 bytes)
+[29] https://web.archive.org/web/20120929053305im_/http://cssimg.ngfiles.com/bg-header/logo.png
+  SKIP  already downloaded
 
-[30] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/background/bgtest2.png
-  ✓  bgtest2.png  (145 bytes)
+[30] https://web.archive.org/web/20120630190942im_/http://cssimg.ngfiles.com/logo.png
+  SKIP  already downloaded
 
-[31] https://web.archive.org/web/20120719011330im_/http://cssimg.ngfiles.com/bg-header/sitelinks.png
-  ✓  sitelinks.png  (31,390 bytes)
+[31] https://web.archive.org/web/20120815044057im_/http://cssimg.ngfiles.com/logo-clockday.png
+  SKIP  already downloaded
 
-[32] https://web.archive.org/web/20120719011330im_/http://cssimg.ngfiles.com/bg-header/navigationTop.png
-  ✓  navigationTop.png  (8,745 bytes)
+[32] https://web.archive.org/web/20140730064842im_/http://cssimg.ngfiles.com/bg-header/logo.png
+  SKIP  already downloaded
 
-[33] https://web.archive.org/web/20120929053305im_/http://cssimg.ngfiles.com/bg-header/logo.png
-  ✓  logo.png  (7,959 bytes)
+[33] https://web.archive.org/web/20120605235416im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-gold.jpg
+  SKIP  already downloaded
 
-[34] https://web.archive.org/web/20120630190942im_/http://cssimg.ngfiles.com/logo.png
-  ✓  logo_773543.png  (19,392 bytes)
+[34] https://web.archive.org/web/20120826024845im_/http://cssimg.ngfiles.com/bg-header/search.png
+  SKIP  already downloaded
 
-[35] https://web.archive.org/web/20120815044057im_/http://cssimg.ngfiles.com/logo-clockday.png
-  ✓  logo-clockday.png  (21,088 bytes)
+[35] https://web.archive.org/web/20120605235416im_/http://cssimg.ngfiles.com/bg-skins/buttons/button-gold.gif
+  SKIP  already downloaded
 
-[36] https://web.archive.org/web/20140730064842im_/http://cssimg.ngfiles.com/bg-header/logo.png
-  ✓  logo_fd98f5.png  (6,738 bytes)
+[36] https://web.archive.org/web/20120211004736im_/http://cssimg.ngfiles.com/icons/a-15yellows.png
+  SKIP  already downloaded
 
-[37] https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/search.png
-  ✓  search.png  (8,080 bytes)
+[37] https://web.archive.org/web/20120719011330im_/http://cssimg.ngfiles.com/bg-header/navbar.jpg
+  SKIP  already downloaded
 
-[38] https://web.archive.org/web/20120605235416im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-gold.jpg
-  ✓  input-gold.jpg  (3,473 bytes)
+[38] https://web.archive.org/web/20140730064842im_/http://cssimg.ngfiles.com/bg-header/navbar2014.jpg
+  SKIP  already downloaded
 
-[39] https://web.archive.org/web/20120826024845im_/http://cssimg.ngfiles.com/bg-header/search.png
-  ✓  search_16557e.png  (10,847 bytes)
+[39] https://web.archive.org/web/20120719011330im_/http://cssimg.ngfiles.com/bg-main/bg-main.gif
+  SKIP  already downloaded
 
-[40] https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/open1.png
-  ✓  open1.png  (18,653 bytes)
+[40] https://web.archive.org/web/20120823233518im_/http://cssimg.ngfiles.com/bg-main/pod-23.jpg
+  SKIP  already downloaded
 
-[41] https://web.archive.org/web/20120605235416im_/http://cssimg.ngfiles.com/bg-skins/buttons/button-gold.gif
-  ✓  button-gold.gif  (2,998 bytes)
+[41] https://web.archive.org/web/20120213173248im_/http://cssimg.ngfiles.com/bg-main/pod-13.jpg
+  SKIP  already downloaded
 
-[42] https://web.archive.org/web/20120211004736im_/http://cssimg.ngfiles.com/icons/a-15yellows.png
-  ✓  a-15yellows.png  (13,337 bytes)
+[42] https://web.archive.org/web/20130102035309im_/http://cssimg.ngfiles.com/bg-main/podbreaker-13.jpg
+  SKIP  already downloaded
 
-[43] https://web.archive.org/web/20120719011330im_/http://cssimg.ngfiles.com/bg-header/navbar.jpg
-  ✓  navbar.jpg  (85,520 bytes)
+[43] https://web.archive.org/web/20120823233518im_/http://cssimg.ngfiles.com/bg-main/podbreaker-23.jpg
+  SKIP  already downloaded
 
-[44] https://web.archive.org/web/20140730064842im_/http://cssimg.ngfiles.com/bg-header/navbar2014.jpg
-  ✓  navbar2014.jpg  (74,795 bytes)
+[44] https://web.archive.org/web/20120721010820im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
+  SKIP  already downloaded
 
-[45] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/headerads/headerad2.png
-  ✓  headerad2.png  (83,954 bytes)
+[45] https://web.archive.org/web/20120213173248im_/http://cssimg.ngfiles.com/bg-main/podbreaker-13.jpg
+  SKIP  already downloaded
 
-[46] https://web.archive.org/web/20120719011330im_/http://cssimg.ngfiles.com/bg-main/bg-main.gif
-  ✓  bg-main.gif  (1,092 bytes)
+[46] https://web.archive.org/web/20120929053305im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-L.png
+  SKIP  already downloaded
 
-[47] https://web.archive.org/web/20120823233518im_/http://cssimg.ngfiles.com/bg-main/pod-23.jpg
-  ✗  attempt 1/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120823233518im_/http://cssimg.ngfiles.com/bg-main/pod-23.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 5s before retry …
-  ✗  attempt 2/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120823233518im_/http://cssimg.ngfiles.com/bg-main/pod-23.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 10s before retry …
-  ✗  attempt 3/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120823233518im_/http://cssimg.ngfiles.com/bg-main/pod-23.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 20s before retry …
-  ✓  pod-23.jpg  (4,532 bytes)
+[47] https://web.archive.org/web/20120704205152im_/http://cssimg.ngfiles.com/bg-skins/podtops/podtop-gold.jpg
+  SKIP  already downloaded
 
-[48] https://web.archive.org/web/20120213173248im_/http://cssimg.ngfiles.com/bg-main/pod-13.jpg
-  ✗  attempt 1/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120213173248im_/http://cssimg.ngfiles.com/bg-main/pod-13.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 5s before retry …
-  ✗  attempt 2/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120213173248im_/http://cssimg.ngfiles.com/bg-main/pod-13.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 10s before retry …
-  ✗  attempt 3/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120213173248im_/http://cssimg.ngfiles.com/bg-main/pod-13.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 20s before retry …
-  ✗  attempt 4/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120213173248im_/http://cssimg.ngfiles.com/bg-main/pod-13.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 30s before retry …
-  ✗  attempt 5/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120213173248im_/http://cssimg.ngfiles.com/bg-main/pod-13.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 45s before retry …
-  ✓  pod-13.jpg  (3,145 bytes)
+[48] https://web.archive.org/web/20120721010820im_/http://cssimg.ngfiles.com/icons/h2-all.png
+  SKIP  already downloaded
 
-[49] https://web.archive.org/web/20130102035309im_/http://cssimg.ngfiles.com/bg-main/podbreaker-13.jpg
-  ✓  podbreaker-13.jpg  (1,420 bytes)
+[49] https://web.archive.org/web/20120801032454im_/http://cssimg.ngfiles.com/misc/link_stripes.png
+  SKIP  already downloaded
 
-[50] https://web.archive.org/web/20120823233518im_/http://cssimg.ngfiles.com/bg-main/podbreaker-23.jpg
-  ✓  podbreaker-23.jpg  (2,517 bytes)
+[50] https://web.archive.org/web/20120326075528im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-R.png
+  SKIP  already downloaded
 
-[51] https://web.archive.org/web/20120721010820im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
-  ✓  podbreaker-33.jpg  (3,520 bytes)
+[51] https://web.archive.org/web/20120804071630im_/http://cssimg.ngfiles.com/icons/a-portalicons.png
+  SKIP  already downloaded
 
-[52] https://web.archive.org/web/20120213173248im_/http://cssimg.ngfiles.com/bg-main/podbreaker-13.jpg
-  ✓  podbreaker-13_a6606b.jpg  (1,420 bytes)
+[52] https://web.archive.org/web/20120326075528im_/http://cssimg.ngfiles.com/icons/a-portalicons.png
+  SKIP  already downloaded
 
-[53] https://web.archive.org/web/20120929053305im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-L.png
-  ✓  hoverticks-L.png  (1,368 bytes)
+[53] https://web.archive.org/web/20120902073228im_/http://cssimg.ngfiles.com/icons/a-portalicons.png
+  SKIP  already downloaded
 
-[54] https://web.archive.org/web/20120704205152im_/http://cssimg.ngfiles.com/bg-skins/podtops/podtop-gold.jpg
-  ✓  podtop-gold.jpg  (11,927 bytes)
+[54] https://web.archive.org/web/20120902000631im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-L.png
+  SKIP  already downloaded
 
-[55] https://web.archive.org/web/20120721010820im_/http://cssimg.ngfiles.com/icons/h2-all.png
-  ✓  h2-all.png  (67,818 bytes)
+[55] https://web.archive.org/web/20120804071630im_/http://cssimg.ngfiles.com/misc/vp-Stars.png
+  SKIP  already downloaded
 
-[56] https://web.archive.org/web/20120801032454im_/http://cssimg.ngfiles.com/misc/link_stripes.png
-  ✓  link_stripes.png  (1,096 bytes)
+[56] https://web.archive.org/web/20120301165012im_/http://cssimg.ngfiles.com/bg-skins/podtops/podtop-gold.jpg
+  SKIP  already downloaded
 
-[57] https://web.archive.org/web/20120326075528im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-R.png
-  ✓  hoverticks-R.png  (1,392 bytes)
+[57] https://web.archive.org/web/20120301165012im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg
+  SKIP  already downloaded
 
-[58] https://web.archive.org/web/20120804071630im_/http://cssimg.ngfiles.com/icons/a-portalicons.png
-  ✓  a-portalicons.png  (5,064 bytes)
+[58] https://web.archive.org/web/20120211115524im_/http://cssimg.ngfiles.com/bg-main/podstripe.gif
+  SKIP  already downloaded
 
-[59] https://web.archive.org/web/20120326075528im_/http://cssimg.ngfiles.com/icons/a-portalicons.png
-  ✓  a-portalicons_3f570b.png  (5,064 bytes)
+[59] https://web.archive.org/web/20130624011139im_/http://cssimg.ngfiles.com/bg-skins/fp-outer.jpg
+  SKIP  already downloaded
 
-[60] https://web.archive.org/web/20120902073228im_/http://cssimg.ngfiles.com/icons/a-portalicons.png
-  ✓  a-portalicons_8daca6.png  (5,064 bytes)
+[60] https://web.archive.org/web/20120328203446im_/http://uimg.ngfiles.com/icons/0/1_large.gif
+  SKIP  already downloaded
 
-[61] https://web.archive.org/web/20120902000631im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-L.png
-  ✓  hoverticks-L_c5f1de.png  (1,368 bytes)
+[61] https://web.archive.org/web/20120704205152im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-R.png
+  SKIP  already downloaded
 
-[62] https://web.archive.org/web/20120804071630im_/http://cssimg.ngfiles.com/misc/vp-Stars.png
-  ✓  vp-Stars.png  (922 bytes)
+[62] https://web.archive.org/web/20120222012438im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-L.png
+  SKIP  already downloaded
 
-[63] https://web.archive.org/web/20120301165012im_/http://cssimg.ngfiles.com/bg-skins/podtops/podtop-gold.jpg
-  ✓  podtop-gold_688bce.jpg  (11,927 bytes)
+[63] https://web.archive.org/web/20120222012438im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-R.png
+  SKIP  already downloaded
 
-[64] https://web.archive.org/web/20120301165012im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg
-  ✓  pod-33.jpg  (4,282 bytes)
+[64] https://web.archive.org/web/20120326010736im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-R.png
+  SKIP  already downloaded
 
-[65] https://web.archive.org/web/20120211115524im_/http://cssimg.ngfiles.com/bg-main/podstripe.gif
-  ✓  podstripe.gif  (578 bytes)
+[65] https://web.archive.org/web/20120429120835im_/http://cssimg.ngfiles.com/icons/a-portalicons.png
+  SKIP  already downloaded
 
-[66] https://www.newgrounds.com/
-  ✓  c37b77bd912d.bin  (145,046 bytes)
+[66] https://web.archive.org/web/20120222012438im_/http://cssimg.ngfiles.com/misc/ul-calendar.png
+  SKIP  already downloaded
 
-[67] https://web.archive.org/web/20130624011139im_/http://cssimg.ngfiles.com/bg-skins/fp-outer.jpg
-  ✓  fp-outer.jpg  (46,167 bytes)
+[67] https://web.archive.org/web/20120326010736im_/http://cssimg.ngfiles.com/icons/hovers/rankandrate.png
+  SKIP  already downloaded
 
-[68] https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/news2012.png
-  ✓  news2012.png  (23,959 bytes)
+[68] https://web.archive.org/web/20120326010736im_/http://cssimg.ngfiles.com/icons/tinyicons-vert.png
+  SKIP  already downloaded
 
-[69] https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/news1.png
-  ✓  news1.png  (23,818 bytes)
+[69] https://web.archive.org/web/20120223062351im_/http://cssimg.ngfiles.com/bg-skins/blue0-body.gif
+  SKIP  already downloaded
 
-[70] https://web.archive.org/web/20120328203446im_/http://uimg.ngfiles.com/icons/0/1_large.gif
-  ✗  attempt 1/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120328203446im_/http://uimg.ngfiles.com/icons/0/1_large.gif (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 5s before retry …
-  ✗  attempt 2/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120328203446im_/http://uimg.ngfiles.com/icons/0/1_large.gif (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 10s before retry …
-  ✗  attempt 3/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120328203446im_/http://uimg.ngfiles.com/icons/0/1_large.gif (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 20s before retry …
-  ✗  attempt 4/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120328203446im_/http://uimg.ngfiles.com/icons/0/1_large.gif (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 30s before retry …
-  ✓  1_large.gif  (4,150 bytes)
+[70] https://web.archive.org/web/20120223062351im_/http://cssimg.ngfiles.com/bg-skins/blue0-outer.jpg
+  SKIP  already downloaded
 
-[71] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/tomfulppfps/alt.png
-  ✓  alt.png  (4,135 bytes)
+[71] https://web.archive.org/web/20130520154219im_/http://cssimg.ngfiles.com/bg-skins/blue2-outer.jpg
+  SKIP  already downloaded
 
-[72] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/tomfulppfps/fulp1.gif
-  ✓  fulp1.gif  (286 bytes)
+[72] https://web.archive.org/web/20120210202011im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-blue.jpg
+  SKIP  already downloaded
 
-[73] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/tomfulppfps/fulp2.gif
-  ✓  fulp2.gif  (2,217 bytes)
+[73] https://web.archive.org/web/20120804071630im_/http://cssimg.ngfiles.com/bg-skins/podtops/podtop-blue.jpg
+  SKIP  already downloaded
 
-[74] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/tomfulppfps/coolglass.png
-  ✓  coolglass.png  (7,059 bytes)
+[74] https://web.archive.org/web/20120614015817im_/http://cssimg.ngfiles.com/bg-skins/buttons/button-blue.gif
+  SKIP  already downloaded
 
-[75] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/orange/welcome2ng.png
-  ✓  welcome2ng.png  (72,546 bytes)
+[75] https://web.archive.org/web/20120802081323im_/http://cssimg.ngfiles.com/misc/link_stripes.png
+  SKIP  already downloaded
 
-[76] https://web.archive.org/web/20120704205152im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-R.png
-  ✗  attempt 1/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120704205152im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-R.png (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 5s before retry …
-  ✗  attempt 2/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120704205152im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-R.png (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 10s before retry …
-  ✗  attempt 3/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120704205152im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-R.png (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 20s before retry …
-  ✗  attempt 4/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120704205152im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-R.png (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 30s before retry …
-  ✓  hoverticks-R_534c32.png  (1,392 bytes)
+[76] https://web.archive.org/web/20120802081323im_/http://cssimg.ngfiles.com/bg-skins/blue-footer.jpg
+  SKIP  already downloaded
 
-[77] https://web.archive.org/web/20120222012438im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-L.png
-  ✓  hoverticks-L_3ebb6e.png  (1,368 bytes)
+[77] https://web.archive.org/web/20120804071630im_/http://cssimg.ngfiles.com/bg-main/pod-13.jpg
+  SKIP  already downloaded
 
-[78] https://web.archive.org/web/20120222012438im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-R.png
-  ✓  hoverticks-R_205f06.png  (1,392 bytes)
+[78] https://web.archive.org/web/20120210202011im_/http://cssimg.ngfiles.com/formstuff/select-fakearrow.gif
+  SKIP  already downloaded
 
-[79] https://web.archive.org/web/20120326010736im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-R.png
-  ✓  hoverticks-R_572025.png  (1,392 bytes)
+[79] https://web.archive.org/web/20120806090840im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
+  SKIP  already downloaded
 
-[80] https://web.archive.org/web/20120429120835im_/http://cssimg.ngfiles.com/icons/a-portalicons.png
-  ✓  a-portalicons_1debc8.png  (5,064 bytes)
+[80] https://web.archive.org/web/20120422170459im_/http://cssimg.ngfiles.com/bg-main/pod-23.jpg
+  SKIP  already downloaded
 
-[81] https://web.archive.org/web/20120222012438im_/http://cssimg.ngfiles.com/misc/ul-calendar.png
-  ✓  ul-calendar.png  (4,654 bytes)
+[81] https://web.archive.org/web/20120629023443im_/http://cssimg.ngfiles.com/bg-skins/red0-body.gif
+  SKIP  already downloaded
 
-[82] https://web.archive.org/web/20120326010736im_/http://cssimg.ngfiles.com/icons/hovers/rankandrate.png
-  ✓  rankandrate.png  (1,954 bytes)
+[82] https://web.archive.org/web/20130603102205im_/http://cssimg.ngfiles.com/bg-skins/red2-body.gif
+  SKIP  already downloaded
 
-[83] https://web.archive.org/web/20120326010736im_/http://cssimg.ngfiles.com/icons/tinyicons-vert.png
-  ✗  attempt 1/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120326010736im_/http://cssimg.ngfiles.com/icons/tinyicons-vert.png (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 5s before retry …
-  ✓  tinyicons-vert.png  (3,561 bytes)
+[83] https://web.archive.org/web/20120326075528im_/http://cssimg.ngfiles.com/bg-skins/red0-outer.jpg
+  SKIP  already downloaded
 
-[84] https://web.archive.org/web/20120223062351im_/http://cssimg.ngfiles.com/bg-skins/blue0-body.gif
-  ✗  attempt 1/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120223062351im_/http://cssimg.ngfiles.com/bg-skins/blue0-body.gif (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 5s before retry …
-  ✓  blue0-body.gif  (603 bytes)
+[84] https://web.archive.org/web/20121112132444im_/http://www.newgrounds.com/img/bg-skins/red2-outer.jpg
+  SKIP  already downloaded
 
-[85] https://web.archive.org/web/20120223062351im_/http://cssimg.ngfiles.com/bg-skins/blue0-outer.jpg
-  ✓  blue0-outer.jpg  (155,352 bytes)
+[85] https://web.archive.org/web/20120902073228im_/http://cssimg.ngfiles.com/bg-skins/buttons/button-red.gif
+  SKIP  already downloaded
 
-[86] https://web.archive.org/web/20130520154219im_/http://cssimg.ngfiles.com/bg-skins/blue2-outer.jpg
-  ✓  blue2-outer.jpg  (175,639 bytes)
+[86] https://web.archive.org/web/20120902073228im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-red.jpg
+  SKIP  already downloaded
 
-[87] https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/blueopen1.png
-  ✓  blueopen1.png  (18,261 bytes)
+[87] https://web.archive.org/web/20120902073228im_/http://cssimg.ngfiles.com/bg-skins/podtops/podtop-red.jpg
+  SKIP  already downloaded
 
-[88] https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/bluesearch1.png
-  ✓  bluesearch1.png  (7,747 bytes)
+[88] https://web.archive.org/web/20120710004603im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-red.jpg
+  SKIP  already downloaded
 
-[89] https://web.archive.org/web/20120210202011im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-blue.jpg
-  ✓  input-blue.jpg  (1,715 bytes)
+[89] https://web.archive.org/web/20130328225637im_/http://cssimg.ngfiles.com/bg-skins/red-footer.jpg
+  SKIP  already downloaded
 
-[90] https://web.archive.org/web/20120804071630im_/http://cssimg.ngfiles.com/bg-skins/podtops/podtop-blue.jpg
-  ✓  podtop-blue.jpg  (10,823 bytes)
+[90] https://web.archive.org/web/20120628095547im_/http://cssimg.ngfiles.com/bg-skins/green0-body.gif
+  SKIP  already downloaded
 
-[91] https://web.archive.org/web/20120614015817im_/http://cssimg.ngfiles.com/bg-skins/buttons/button-blue.gif
-  ✓  button-blue.gif  (2,963 bytes)
+[91] https://web.archive.org/web/20120719011330im_/http://cssimg.ngfiles.com/bg-skins/green0-outer.jpg
+  SKIP  already downloaded
 
-[92] https://web.archive.org/web/20120802081323im_/http://cssimg.ngfiles.com/misc/link_stripes.png
-  ✓  link_stripes_c04705.png  (1,096 bytes)
+[92] https://web.archive.org/web/20121115121342im_/http://www.newgrounds.com/img/bg-skins/green2-outer.jpg
+  SKIP  already downloaded
 
-[93] https://web.archive.org/web/20120802081323im_/http://cssimg.ngfiles.com/bg-skins/blue-footer.jpg
-  ✓  blue-footer.jpg  (39,272 bytes)
+[93] https://web.archive.org/web/20120929172523im_/http://cssimg.ngfiles.com/bg-skins/green1-outer.jpg
+  SKIP  already downloaded
 
-[94] https://www.newgrounds.com/games
-  ✓  f4d991498eee.bin  (60,619 bytes)
+[94] https://web.archive.org/web/20120719011330im_/http://cssimg.ngfiles.com/bg-skins/podtops/podtop-green.jpg
+  SKIP  already downloaded
 
-[95] https://www.newgrounds.com/games/featured
-  ✓  5256d610a79e.bin  (60,657 bytes)
+[95] https://web.archive.org/web/20120702211457im_/http://cssimg.ngfiles.com/bg-skins/buttons/button-green.gif
+  SKIP  already downloaded
 
-[96] https://www.newgrounds.com/games/browse
-  ✓  42fe8a59c8a9.bin  (60,190 bytes)
+[96] https://web.archive.org/web/20120702211457im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-green.jpg
+  SKIP  already downloaded
 
-[97] https://www.newgrounds.com/games/popular
-  ✓  994341ca8382.bin  (60,278 bytes)
+[97] https://web.archive.org/web/20120719011330im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-green.jpg
+  SKIP  already downloaded
 
-[98] https://web.archive.org/web/20120804071630im_/http://cssimg.ngfiles.com/bg-main/pod-13.jpg
-  ✓  pod-13_dffd94.jpg  (3,145 bytes)
+[98] https://web.archive.org/web/20120709100602im_/http://cssimg.ngfiles.com/bg-main/pod-13.jpg
+  SKIP  already downloaded
 
-[99] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/blue/browsecategories.png
-  ✓  browsecategories.png  (24,265 bytes)
+[99] https://web.archive.org/web/20120709100602im_/http://cssimg.ngfiles.com/bg-main/podstripe.gif
+  SKIP  already downloaded
 
-[100] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/grey/butthole.png
-  ✓  butthole.png  (20,171 bytes)
+[100] https://web.archive.org/web/20120210073231im_/http://cssimg.ngfiles.com/bg-main/pod-23.jpg
+  SKIP  already downloaded
 
-[101] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/orange/browseblank.png
-  ✓  browseblank.png  (2,606 bytes)
+[101] https://web.archive.org/web/20130329092444im_/http://cssimg.ngfiles.com/misc/vp-Stars.png
+  SKIP  already downloaded
 
-[102] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/orange/filter2.png
-  ✓  filter2.png  (15,018 bytes)
+[102] https://web.archive.org/web/20120309192626im_/http://cssimg.ngfiles.com/misc/vp-voteDarn.png
+  SKIP  already downloaded
 
-[103] https://web.archive.org/web/20120210202011im_/http://cssimg.ngfiles.com/formstuff/select-fakearrow.gif
-  ✓  select-fakearrow.gif  (94 bytes)
+[103] https://web.archive.org/web/20120212192645im_/http://cssimg.ngfiles.com/bg-skins/purple0-body.gif
+  SKIP  already downloaded
 
-[104] https://web.archive.org/web/20120806090840im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
-  ✓  podbreaker-33_7ae02f.jpg  (3,520 bytes)
+[104] https://web.archive.org/web/20120212192645im_/http://cssimg.ngfiles.com/bg-skins/purple0-outer.jpg
+  SKIP  already downloaded
 
-[105] https://web.archive.org/web/20120422170459im_/http://cssimg.ngfiles.com/bg-main/pod-23.jpg
-  ✗  attempt 1/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120422170459im_/http://cssimg.ngfiles.com/bg-main/pod-23.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 5s before retry …
-  ✗  attempt 2/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120422170459im_/http://cssimg.ngfiles.com/bg-main/pod-23.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 10s before retry …
-  ✗  attempt 3/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120422170459im_/http://cssimg.ngfiles.com/bg-main/pod-23.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 20s before retry …
-  ✗  attempt 4/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120422170459im_/http://cssimg.ngfiles.com/bg-main/pod-23.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 30s before retry …
-  ✓  pod-23_065998.jpg  (4,532 bytes)
+[105] https://web.archive.org/web/20120214054151im_/http://cssimg.ngfiles.com/icons/tinyicons-vert.png
+  SKIP  already downloaded
 
-[106] https://web.archive.org/web/20120629023443im_/http://cssimg.ngfiles.com/bg-skins/red0-body.gif
-  ✗  attempt 1/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120629023443im_/http://cssimg.ngfiles.com/bg-skins/red0-body.gif (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 5s before retry …
-  ✗  attempt 2/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120629023443im_/http://cssimg.ngfiles.com/bg-skins/red0-body.gif (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 10s before retry …
-  ✗  attempt 3/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120629023443im_/http://cssimg.ngfiles.com/bg-skins/red0-body.gif (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 20s before retry …
-  ✗  attempt 4/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120629023443im_/http://cssimg.ngfiles.com/bg-skins/red0-body.gif (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 30s before retry …
-  ✓  red0-body.gif  (1,337 bytes)
+[106] https://web.archive.org/web/20120214054151im_/http://cssimg.ngfiles.com/icons/ul-15grays.png
+  SKIP  already downloaded
 
-[107] https://web.archive.org/web/20130603102205im_/http://cssimg.ngfiles.com/bg-skins/red2-body.gif
-  ✓  red2-body.gif  (824 bytes)
+[107] https://web.archive.org/web/20120211115524im_/http://cssimg.ngfiles.com/icons/ul-15grays.png
+  SKIP  already downloaded
 
-[108] https://web.archive.org/web/20120326075528im_/http://cssimg.ngfiles.com/bg-skins/red0-outer.jpg
-  ✓  red0-outer.jpg  (147,068 bytes)
+[108] https://web.archive.org/web/20120211115524im_/http://cssimg.ngfiles.com/icons/ul-rating.png
+  SKIP  already downloaded
 
-[109] https://web.archive.org/web/20121112132444im_/http://www.newgrounds.com/img/bg-skins/red2-outer.jpg
-  ✓  red2-outer.jpg  (166,347 bytes)
+[109] https://web.archive.org/web/20120721010820im_/http://cssimg.ngfiles.com/bg-skins/pink0-outer.jpg
+  SKIP  already downloaded
 
-[110] http://cssimg.ngfiles.com/bg-skins/red1-outer.jpg
-  ✓  red1-outer.jpg  (197,629 bytes)
+[110] https://web.archive.org/web/20120930032542im_/http://cssimg.ngfiles.com/bg-skins/pink1-outer.jpg
+  SKIP  already downloaded
 
-[111] https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/redopen1.png
-  ✓  redopen1.png  (18,715 bytes)
+[111] https://web.archive.org/web/20120628112326im_/http://cssimg.ngfiles.com/bg-skins/pink0-body.gif
+  SKIP  already downloaded
 
-[112] https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/redsearch.png
-  ✓  redsearch.png  (7,486 bytes)
+[112] https://web.archive.org/web/20120702211457im_/http://cssimg.ngfiles.com/bg-skins/buttons/button-pink.gif
+  SKIP  already downloaded
 
-[113] https://web.archive.org/web/20120902073228im_/http://cssimg.ngfiles.com/bg-skins/buttons/button-red.gif
-  ✓  button-red.gif  (2,974 bytes)
+[113] https://web.archive.org/web/20120702211457im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-pink.jpg
+  SKIP  already downloaded
 
-[114] https://web.archive.org/web/20120902073228im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-red.jpg
-  ✓  input-red.jpg  (1,858 bytes)
+[114] https://web.archive.org/web/20120721010820im_/http://cssimg.ngfiles.com/bg-skins/podtops/podtop-pink.jpg
+  SKIP  already downloaded
 
-[115] https://web.archive.org/web/20120902073228im_/http://cssimg.ngfiles.com/bg-skins/podtops/podtop-red.jpg
-  ✓  podtop-red.jpg  (11,171 bytes)
+[115] https://web.archive.org/web/20120801032454im_/http://cssimg.ngfiles.com/bg-skins/gold-footer.jpg
+  SKIP  already downloaded
 
-[116] https://web.archive.org/web/20120710004603im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-red.jpg
-  ✓  input-red_c3a3b4.jpg  (1,858 bytes)
+[116] https://web.archive.org/web/20120211115524im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg
+  SKIP  already downloaded
 
-[117] https://web.archive.org/web/20130328225637im_/http://cssimg.ngfiles.com/bg-skins/red-footer.jpg
-  ✓  red-footer.jpg  (33,903 bytes)
+[117] https://web.archive.org/web/20120215083702im_/http://cssimg.ngfiles.com/bg-main/pod-23.jpg
+  SKIP  already downloaded
 
-[118] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/red/browsecategories.png
-  ✓  browsecategories_bcb122.png  (24,799 bytes)
+[118] https://web.archive.org/web/20120211115524im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
+  SKIP  already downloaded
 
-[119] https://web.archive.org/web/20120628095547im_/http://cssimg.ngfiles.com/bg-skins/green0-body.gif
-  ✗  attempt 1/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120628095547im_/http://cssimg.ngfiles.com/bg-skins/green0-body.gif (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 5s before retry …
-  ✓  green0-body.gif  (251 bytes)
+[119] https://web.archive.org/web/20120214021629im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg
+  SKIP  already downloaded
 
-[120] https://web.archive.org/web/20120719011330im_/http://cssimg.ngfiles.com/bg-skins/green0-outer.jpg
-  ✗  attempt 1/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120719011330im_/http://cssimg.ngfiles.com/bg-skins/green0-outer.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 5s before retry …
-  ✓  green0-outer.jpg  (97,785 bytes)
+[120] https://web.archive.org/web/20120214021629im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
+  SKIP  already downloaded
 
-[121] https://web.archive.org/web/20121115121342im_/http://www.newgrounds.com/img/bg-skins/green2-outer.jpg
-  ✓  green2-outer.jpg  (174,889 bytes)
+[121] https://web.archive.org/web/20120629210809im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
+  SKIP  already downloaded
 
-[122] https://web.archive.org/web/20120929172523im_/http://cssimg.ngfiles.com/bg-skins/green1-outer.jpg
-  ✓  green1-outer.jpg  (117,150 bytes)
+[122] https://web.archive.org/web/20121227230159im_/http://cssimg.ngfiles.com/misc/link_stripes.png
+  SKIP  already downloaded
 
-[123] https://web.archive.org/web/20120719011330im_/http://cssimg.ngfiles.com/bg-skins/podtops/podtop-green.jpg
-  ✓  podtop-green.jpg  (10,728 bytes)
+[123] https://web.archive.org/web/20121227230159im_/http://cssimg.ngfiles.com/icons/a-15yellows.png
+  SKIP  already downloaded
 
-[124] https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/greenopen1.png
-  ✓  greenopen1.png  (15,961 bytes)
+[124] https://web.archive.org/web/20120804071630im_/http://cssimg.ngfiles.com/bg-main/podstripe.gif
+  SKIP  already downloaded
 
-[125] https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/greensearch1.png
-  ✓  greensearch1.png  (6,563 bytes)
+[125] https://web.archive.org/web/20140307041333im_/http://cssimg.ngfiles.com/bg-main/podstripe.gif
+  SKIP  already downloaded
 
-[126] https://web.archive.org/web/20120702211457im_/http://cssimg.ngfiles.com/bg-skins/buttons/button-green.gif
-  ✓  button-green.gif  (2,976 bytes)
+[126] https://web.archive.org/web/20120606045234im_/http://cssimg.ngfiles.com/bg-skins/podtops/podtop-gold.jpg
+  SKIP  already downloaded
 
-[127] https://web.archive.org/web/20120702211457im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-green.jpg
-  ✓  input-green.jpg  (1,528 bytes)
+[127] https://web.archive.org/web/20120606045234im_/http://cssimg.ngfiles.com/misc/link_stripes.png
+  SKIP  already downloaded
 
-[128] https://web.archive.org/web/20120719011330im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-green.jpg
-  ✓  input-green_258f92.jpg  (1,528 bytes)
+[128] https://web.archive.org/web/20141122130622im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg
+  SKIP  already downloaded
 
-[129] https://www.newgrounds.com/audio
-  ✓  6ac71ce7a4cc.bin  (91,305 bytes)
+[129] https://web.archive.org/web/20141122130622im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
+  SKIP  already downloaded
 
-[130] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/green/browsecategories.png
-  ✓  browsecategories_92acf1.png  (23,974 bytes)
+[130] https://web.archive.org/web/20141122130622im_/http://cssimg.ngfiles.com/bg-main/podstripe.gif
+  SKIP  already downloaded
 
-[131] https://web.archive.org/web/20120709100602im_/http://cssimg.ngfiles.com/bg-main/pod-13.jpg
-  ✓  pod-13_b32584.jpg  (3,145 bytes)
+[131] https://web.archive.org/web/20120320165406im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg
+  SKIP  already downloaded
 
-[132] https://web.archive.org/web/20120709100602im_/http://cssimg.ngfiles.com/bg-main/podstripe.gif
-  ✓  podstripe_34c3c1.gif  (578 bytes)
+[132] https://web.archive.org/web/20120320165406im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
+  SKIP  already downloaded
 
-[133] https://web.archive.org/web/20120210073231im_/http://cssimg.ngfiles.com/bg-main/pod-23.jpg
-  ✗  attempt 1/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120210073231im_/http://cssimg.ngfiles.com/bg-main/pod-23.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 5s before retry …
-  ✗  attempt 2/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120210073231im_/http://cssimg.ngfiles.com/bg-main/pod-23.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 10s before retry …
-  ✗  attempt 3/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120210073231im_/http://cssimg.ngfiles.com/bg-main/pod-23.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 20s before retry …
-  ✗  attempt 4/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120210073231im_/http://cssimg.ngfiles.com/bg-main/pod-23.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 30s before retry …
-  ✓  pod-23_1e649d.jpg  (4,532 bytes)
+[133] https://web.archive.org/web/20120721010820im_/http://cssimg.ngfiles.com/icons/td-forum45.png
+  SKIP  already downloaded
 
-[134] https://web.archive.org/web/20130329092444im_/http://cssimg.ngfiles.com/misc/vp-Stars.png
-  ✗  attempt 1/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20130329092444im_/http://cssimg.ngfiles.com/misc/vp-Stars.png (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 5s before retry …
-  ✗  attempt 2/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20130329092444im_/http://cssimg.ngfiles.com/misc/vp-Stars.png (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 10s before retry …
-  ✗  attempt 3/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20130329092444im_/http://cssimg.ngfiles.com/misc/vp-Stars.png (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 20s before retry …
-  ✗  attempt 4/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20130329092444im_/http://cssimg.ngfiles.com/misc/vp-Stars.png (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 30s before retry …
-  ✓  vp-Stars_a8c855.png  (922 bytes)
+[134] https://web.archive.org/web/20120426101345im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg
+  SKIP  already downloaded
 
-[135] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/green/rategreenlogout.png
-  ✓  rategreenlogout.png  (42,235 bytes)
+[135] https://web.archive.org/web/20120426101345im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
+  SKIP  already downloaded
 
-[136] https://web.archive.org/web/20120309192626im_/http://cssimg.ngfiles.com/misc/vp-voteDarn.png
-  ✓  vp-voteDarn.png  (88,622 bytes)
+[136] https://web.archive.org/web/20120211004736im_/http://cssimg.ngfiles.com/misc/bbs-postStar.png
+  SKIP  already downloaded
 
-[137] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/green/reviews.png
-  ✓  reviews.png  (34,879 bytes)
+[137] https://web.archive.org/web/20120211004736im_/http://cssimg.ngfiles.com/misc/bbs-postStar_mid.png
+  SKIP  already downloaded
 
-[138] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/bars.png
-  ✓  bars.png  (17,692 bytes)
+[138] https://web.archive.org/web/20120211004736im_/http://cssimg.ngfiles.com/misc/bbs-postStar_bot.gif
+  SKIP  already downloaded
 
-[139] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/whiteframebar.gif
-  ✓  whiteframebar.gif  (180,303 bytes)
+[139] https://web.archive.org/web/20120211004736im_/http://cssimg.ngfiles.com/icons/tinyicons-vert.png
+  SKIP  already downloaded
 
-[140] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/shadow.png
-  ✓  shadow.png  (569 bytes)
+[140] https://web.archive.org/web/20120211004736im_/http://cssimg.ngfiles.com/bg-main/podstripe.gif
+  SKIP  already downloaded
 
-[141] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/play.png
-  ✓  play.png  (506 bytes)
+[141] https://web.archive.org/web/20120211004736im_/http://cssimg.ngfiles.com/icons/emotes.png
+  SKIP  already downloaded
 
-[142] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/playh.png
-  ✓  playh.png  (524 bytes)
+[142] https://web.archive.org/web/20120711024722im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg
+  SKIP  already downloaded
 
-[143] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/playa.png
-  ✓  playa.png  (471 bytes)
+[143] https://web.archive.org/web/20120711024722im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
+  SKIP  already downloaded
 
-[144] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/pause.png
-  ✓  pause.png  (286 bytes)
+[144] https://web.archive.org/web/20120711024722im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-gold.jpg
+  SKIP  already downloaded
 
-[145] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/pauseh.png
-  ✓  pauseh.png  (320 bytes)
+[145] https://web.archive.org/web/20120711024722im_/http://cssimg.ngfiles.com/bg-skins/buttons/button-gold.gif
+  SKIP  already downloaded
 
-[146] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/pausea.png
-  ✓  pausea.png  (286 bytes)
+[146] https://web.archive.org/web/20120327185324im_/http://cssimg.ngfiles.com/formstuff/input-checkboxes.jpg
+  SKIP  already downloaded
 
-[147] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/timeleftbg.png
-  ✓  timeleftbg.png  (265 bytes)
+[147] https://web.archive.org/web/20120327185324im_/http://cssimg.ngfiles.com/formstuff/input-check.png
+  SKIP  already downloaded
 
-[148] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/sekbarbg.png
-  ✓  sekbarbg.png  (431 bytes)
+[148] https://web.archive.org/web/20130409052128im_/https://www.newgrounds.com/img/passport/passport_bg3.jpg
+  SKIP  already downloaded
 
-[149] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/thebar.gif
-  ✓  thebar.gif  (57,999 bytes)
+[149] https://web.archive.org/web/20130310143316im_/https://www.newgrounds.com/img/passport/ngpassport_logo.png
+  SKIP  already downloaded
 
-[150] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/notmuteandloop.png
-  ✓  notmuteandloop.png  (1,801 bytes)
+[150] https://web.archive.org/web/20120801032454im_/http://cssimg.ngfiles.com/bg-footer/featuredcontent.jpg
+  SKIP  already downloaded
 
-[151] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/notmuteh.png
-  ✓  notmuteh.png  (558 bytes)
+[151] https://web.archive.org/web/20120801032454im_/http://cssimg.ngfiles.com/bg-footer/featuretitle.jpg
+  SKIP  already downloaded
 
-[152] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/notmutea.png
-  ✓  notmutea.png  (517 bytes)
+[152] https://web.archive.org/web/20120801032454im_/http://cssimg.ngfiles.com/bg-footer/featurebar.jpg
+  SKIP  already downloaded
 
-[153] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/mute.png
-  ✓  mute.png  (970 bytes)
+[153] https://web.archive.org/web/20130328225637im_/http://cssimg.ngfiles.com/bg-footer/footerfeature.png
+  SKIP  already downloaded
 
-[154] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/muteh.png
-  ✓  muteh.png  (733 bytes)
+[154] https://web.archive.org/web/20120721010820im_/http://cssimg.ngfiles.com/bg-footer/a-stripes.png
+  SKIP  already downloaded
 
-[155] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/mutea.png
-  ✓  mutea.png  (706 bytes)
+[155] https://web.archive.org/web/20120721010820im_/http://cssimg.ngfiles.com/icons/hovers/rankandrate.png
+  SKIP  already downloaded
 
-[156] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/audiobar.png
-  ✓  audiobar.png  (398 bytes)
+[156] https://web.archive.org/web/20120630190937im_/http://cssimg.ngfiles.com/bg-footer/logo-tiny.png
+  SKIP  already downloaded
 
-[157] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/audioslider.png
-  ✓  audioslider.png  (486 bytes)
+[157] https://web.archive.org/web/20120630190937im_/http://cssimg.ngfiles.com/misc/link_stripes.png
+  SKIP  already downloaded
 
-[158] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/loopdis.png
-  ✓  loopdis.png  (977 bytes)
-
-[159] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/loopdish.png
-  ✓  loopdish.png  (715 bytes)
-
-[160] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/loopdisa.png
-  ✓  loopdisa.png  (693 bytes)
-
-[161] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/loop.png
-  ✓  loop.png  (1,044 bytes)
-
-[162] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/looph.png
-  ✓  looph.png  (710 bytes)
-
-[163] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/loopa.png
-  ✓  loopa.png  (684 bytes)
-
-[164] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/fshe.png
-  ✓  fshe.png  (605 bytes)
-
-[165] https://web.archive.org/web/20120212192645im_/http://cssimg.ngfiles.com/bg-skins/purple0-body.gif
-  ✓  purple0-body.gif  (612 bytes)
-
-[166] https://web.archive.org/web/20120212192645im_/http://cssimg.ngfiles.com/bg-skins/purple0-outer.jpg
-  ✓  purple0-outer.jpg  (178,253 bytes)
-
-[167] https://newgrounds2012.neocities.org/rainbow.png
-  ✓  rainbow.png  (31,006,720 bytes)
-
-[168] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/portal/bg.png
-  ✓  bg.png  (5,218 bytes)
-
-[169] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/portal/rainbowoutline.png
-  ✓  rainbowoutline.png  (3,101,717 bytes)
-
-[170] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/portal/portalchar.png
-  ✓  portalchar.png  (230,064 bytes)
-
-[171] https://web.archive.org/web/20120214054151im_/http://cssimg.ngfiles.com/icons/tinyicons-vert.png
-  ✓  tinyicons-vert_813281.png  (3,561 bytes)
-
-[172] https://web.archive.org/web/20120214054151im_/http://cssimg.ngfiles.com/icons/ul-15grays.png
-  ✓  ul-15grays.png  (4,376 bytes)
-
-[173] https://web.archive.org/web/20120211115524im_/http://cssimg.ngfiles.com/icons/ul-15grays.png
-  ✓  ul-15grays_0a60dd.png  (4,376 bytes)
-
-[174] https://web.archive.org/web/20120211115524im_/http://cssimg.ngfiles.com/icons/ul-rating.png
-  ✓  ul-rating.png  (674 bytes)
-
-[175] https://web.archive.org/web/20120721010820im_/http://cssimg.ngfiles.com/bg-skins/pink0-outer.jpg
-  ✓  pink0-outer.jpg  (146,532 bytes)
-
-[176] https://web.archive.org/web/20120930032542im_/http://cssimg.ngfiles.com/bg-skins/pink1-outer.jpg
-  ✓  pink1-outer.jpg  (196,072 bytes)
-
-[177] https://web.archive.org/web/20120628112326im_/http://cssimg.ngfiles.com/bg-skins/pink0-body.gif
-  ✓  pink0-body.gif  (851 bytes)
-
-[178] https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/pinkopen1.png
-  ✓  pinkopen1.png  (18,019 bytes)
-
-[179] https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/pinksearch.png
-  ✓  pinksearch.png  (7,782 bytes)
-
-[180] https://web.archive.org/web/20120702211457im_/http://cssimg.ngfiles.com/bg-skins/buttons/button-pink.gif
-  ✓  button-pink.gif  (3,009 bytes)
-
-[181] https://web.archive.org/web/20120702211457im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-pink.jpg
-  ✓  input-pink.jpg  (1,709 bytes)
-
-[182] https://web.archive.org/web/20120721010820im_/http://cssimg.ngfiles.com/bg-skins/podtops/podtop-pink.jpg
-  ✓  podtop-pink.jpg  (10,951 bytes)
-
-[183] https://web.archive.org/web/20120801032454im_/http://cssimg.ngfiles.com/bg-skins/gold-footer.jpg
-  ✓  gold-footer.jpg  (41,050 bytes)
-
-[184] https://www.newgrounds.com/art
-  ✓  71599b4aa622.bin  (63,172 bytes)
-
-[185] https://web.archive.org/web/20120211115524im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg
-  ✓  pod-33_fc0472.jpg  (4,282 bytes)
-
-[186] https://web.archive.org/web/20120215083702im_/http://cssimg.ngfiles.com/bg-main/pod-23.jpg
-  ✓  pod-23_c9e343.jpg  (4,532 bytes)
-
-[187] https://web.archive.org/web/20120211115524im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
-  ✓  podbreaker-33_59e23e.jpg  (3,520 bytes)
-
-[188] https://web.archive.org/web/20120214021629im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg
-  ✗  attempt 1/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120214021629im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 5s before retry …
-  ✗  attempt 2/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120214021629im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 10s before retry …
-  ✗  attempt 3/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120214021629im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 20s before retry …
-  ✓  pod-33_e8e01a.jpg  (4,282 bytes)
-
-[189] https://web.archive.org/web/20120214021629im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
-  ✗  attempt 1/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120214021629im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 5s before retry …
-  ✗  attempt 2/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120214021629im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 10s before retry …
-  ✗  attempt 3/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120214021629im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 20s before retry …
-  ✗  attempt 4/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120214021629im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 30s before retry …
-  ✓  podbreaker-33_44a346.jpg  (3,520 bytes)
-
-[190] https://web.archive.org/web/20120629210809im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
-  ✓  podbreaker-33_679574.jpg  (3,520 bytes)
-
-[191] https://web.archive.org/web/20121227230159im_/http://cssimg.ngfiles.com/misc/link_stripes.png
-  ✗  attempt 1/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20121227230159im_/http://cssimg.ngfiles.com/misc/link_stripes.png (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 5s before retry …
-  ✗  attempt 2/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20121227230159im_/http://cssimg.ngfiles.com/misc/link_stripes.png (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 10s before retry …
-  ✓  link_stripes_9d9576.png  (1,096 bytes)
-
-[192] https://web.archive.org/web/20121227230159im_/http://cssimg.ngfiles.com/icons/a-15yellows.png
-  ✗  attempt 1/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20121227230159im_/http://cssimg.ngfiles.com/icons/a-15yellows.png (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 5s before retry …
-  ✓  a-15yellows_20c0d0.png  (75,161 bytes)
-
-[193] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/red/authorcomments.png
-  ✓  authorcomments.png  (38,241 bytes)
-
-[194] https://web.archive.org/web/20120804071630im_/http://cssimg.ngfiles.com/bg-main/podstripe.gif
-  ✗  attempt 1/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120804071630im_/http://cssimg.ngfiles.com/bg-main/podstripe.gif (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 5s before retry …
-  ✗  attempt 2/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120804071630im_/http://cssimg.ngfiles.com/bg-main/podstripe.gif (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 10s before retry …
-  ✓  podstripe_498d71.gif  (578 bytes)
-
-[195] https://web.archive.org/web/20140307041333im_/http://cssimg.ngfiles.com/bg-main/podstripe.gif
-  ✓  podstripe_52d518.gif  (578 bytes)
-
-[196] https://www.newgrounds.com/community
-  ✓  c78f114b9c55.bin  (73,250 bytes)
-
-[197] https://web.archive.org/web/20141122130622im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg
-  ✓  pod-33_2d7a5d.jpg  (4,270 bytes)
-
-[198] https://web.archive.org/web/20141122130622im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
-  ✓  podbreaker-33_1297bd.jpg  (3,499 bytes)
-
-[199] https://web.archive.org/web/20141122130622im_/http://cssimg.ngfiles.com/bg-main/podstripe.gif
-  ✓  podstripe_724f8f.gif  (570 bytes)
-
-[200] https://web.archive.org/web/20120320165406im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg
-  ✓  pod-33_9e32f8.jpg  (4,282 bytes)
-
-[201] https://web.archive.org/web/20120320165406im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
-  ✓  podbreaker-33_f6e7ae.jpg  (3,520 bytes)
-
-[202] https://web.archive.org/web/20120721010820im_/http://cssimg.ngfiles.com/icons/td-forum45.png
-  ✓  td-forum45.png  (35,224 bytes)
-
-[203] https://web.archive.org/web/20120426101345im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg
-  ✓  pod-33_e21cd4.jpg  (4,282 bytes)
-
-[204] https://web.archive.org/web/20120426101345im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
-  ✓  podbreaker-33_e5ae39.jpg  (3,520 bytes)
-
-[205] https://web.archive.org/web/20120211004736im_/http://cssimg.ngfiles.com/misc/bbs-postStar.png
-  ✓  bbs-postStar.png  (5,799 bytes)
-
-[206] https://web.archive.org/web/20120211004736im_/http://cssimg.ngfiles.com/misc/bbs-postStar_mid.png
-  ✓  bbs-postStar_mid.png  (120 bytes)
-
-[207] https://web.archive.org/web/20120211004736im_/http://cssimg.ngfiles.com/misc/bbs-postStar_bot.gif
-  ✓  bbs-postStar_bot.gif  (158 bytes)
-
-[208] http://cssimg.ngfiles.com/icons/tinyicons-vert.png
-  ✓  tinyicons-vert_88fe7c.png  (3,561 bytes)
-
-[209] https://web.archive.org/web/20120211004736im_/http://cssimg.ngfiles.com/icons/tinyicons-vert.png
-  ✗  attempt 1/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120211004736im_/http://cssimg.ngfiles.com/icons/tinyicons-vert.png (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 5s before retry …
-  ✓  tinyicons-vert_64e6ae.png  (3,561 bytes)
-
-[210] https://web.archive.org/web/20120211004736im_/http://cssimg.ngfiles.com/bg-main/podstripe.gif
-  ✓  podstripe_5daa84.gif  (578 bytes)
-
-[211] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/orange/text.png
-  ✓  text.png  (22,147 bytes)
-
-[212] https://web.archive.org/web/20120211004736im_/http://cssimg.ngfiles.com/icons/emotes.png
-  ✗  attempt 1/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120211004736im_/http://cssimg.ngfiles.com/icons/emotes.png (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 5s before retry …
-  ✗  attempt 2/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120211004736im_/http://cssimg.ngfiles.com/icons/emotes.png (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 10s before retry …
-  ✗  attempt 3/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120211004736im_/http://cssimg.ngfiles.com/icons/emotes.png (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 20s before retry …
-  ✓  emotes.png  (30,853 bytes)
-
-[213] https://web.archive.org/web/20120711024722im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg
-  ✗  attempt 1/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120711024722im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 5s before retry …
-  ✗  attempt 2/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120711024722im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 10s before retry …
-  ✗  attempt 3/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120711024722im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 20s before retry …
-  ✗  attempt 4/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120711024722im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 30s before retry …
-  ✓  pod-33_889699.jpg  (4,282 bytes)
-
-[214] https://web.archive.org/web/20120711024722im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
-  ✓  podbreaker-33_2b1f3a.jpg  (3,520 bytes)
-
-[215] https://web.archive.org/web/20120711024722im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-gold.jpg
-  ✗  attempt 1/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120711024722im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-gold.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 5s before retry …
-  ✓  input-gold_11aecf.jpg  (3,473 bytes)
-
-[216] https://web.archive.org/web/20120711024722im_/http://cssimg.ngfiles.com/bg-skins/buttons/button-gold.gif
-  ✗  attempt 1/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120711024722im_/http://cssimg.ngfiles.com/bg-skins/buttons/button-gold.gif (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 5s before retry …
-  ✓  button-gold_145c17.gif  (2,998 bytes)
-
-[217] https://web.archive.org/web/20120327185324im_/http://cssimg.ngfiles.com/formstuff/input-checkboxes.jpg
-  ✗  attempt 1/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120327185324im_/http://cssimg.ngfiles.com/formstuff/input-checkboxes.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 5s before retry …
-  ✗  attempt 2/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120327185324im_/http://cssimg.ngfiles.com/formstuff/input-checkboxes.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 10s before retry …
-  ✗  attempt 3/10 failed: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /web/20120327185324im_/http://cssimg.ngfiles.com/formstuff/input-checkboxes.jpg (Caused by NewConnectionError("HTTPSConnection(host='web.archive.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-     ↻  waiting 20s before retry …
-  ✓  input-checkboxes.jpg  (5,904 bytes)
-
-[218] https://web.archive.org/web/20120327185324im_/http://cssimg.ngfiles.com/formstuff/input-check.png
-  ✓  input-check.png  (238 bytes)
-
-[219] https://web.archive.org/web/20130409052128im_/https://www.newgrounds.com/img/passport/passport_bg3.jpg
-  ✓  passport_bg3.jpg  (57,336 bytes)
-
-[220] https://web.archive.org/web/20130310143316im_/https://www.newgrounds.com/img/passport/ngpassport_logo.png
-  ✓  ngpassport_logo.png  (2,132 bytes)
-
-[221] https://web.archive.org/web/20120801032454im_/http://cssimg.ngfiles.com/bg-footer/featuredcontent.jpg
-  ✓  featuredcontent.jpg  (24,746 bytes)
-
-[222] https://web.archive.org/web/20120801032454im_/http://cssimg.ngfiles.com/bg-footer/featuretitle.jpg
-  ✓  featuretitle.jpg  (30,005 bytes)
-
-[223] https://web.archive.org/web/20120801032454im_/http://cssimg.ngfiles.com/bg-footer/featurebar.jpg
-  ✓  featurebar.jpg  (19,712 bytes)
-
-[224] https://web.archive.org/web/20130328225637im_/http://cssimg.ngfiles.com/bg-footer/footerfeature.png
-  ✓  footerfeature.png  (5,503 bytes)
-
-[225] https://web.archive.org/web/20120721010820im_/http://cssimg.ngfiles.com/bg-footer/a-stripes.png
-  ✓  a-stripes.png  (182 bytes)
-
-[226] https://web.archive.org/web/20120721010820im_/http://cssimg.ngfiles.com/icons/hovers/rankandrate.png
-  ✓  rankandrate_d00529.png  (1,954 bytes)
-
-[227] https://web.archive.org/web/20120630190937im_/http://cssimg.ngfiles.com/bg-footer/logo-tiny.png
-  ✓  logo-tiny.png  (2,246 bytes)
-
-[228] https://web.archive.org/web/20120630190937im_/http://cssimg.ngfiles.com/misc/link_stripes.png
-  ✓  link_stripes_b3c817.png  (1,096 bytes)
-
-[229] https://web.archive.org/web/20120630190937im_/http://cssimg.ngfiles.com/bg-footer/nav-corners.gif
-  ✓  nav-corners.gif  (180 bytes)
-
-[230] https://web.archive.org/web/20120606045234im_/http://cssimg.ngfiles.com/bg-skins/podtops/podtop-gold.jpg
-  ✓  podtop-gold_6d0f6f.jpg  (11,927 bytes)
-
-[231] https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/orange/headernav.png
-  ✓  headernav.png  (71,600 bytes)
-
-[232] https://web.archive.org/web/20120606045234im_/http://cssimg.ngfiles.com/misc/link_stripes.png
-  ✓  link_stripes_4b0096.png  (1,096 bytes)
+[158] https://web.archive.org/web/20120630190937im_/http://cssimg.ngfiles.com/bg-footer/nav-corners.gif
+  SKIP  already downloaded
 
 ============================================================
 URL replacements:
   https://web.archive.org/web/20120809060441im_/http://cssimg.ngfiles.com/bg-skins/gold2-body.gif
-  → https://kakuyamii.github.io/NG12-theme/images/gold2-body.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/gold2-body.gif
 
   https://web.archive.org/web/20120209092835im_/http://cssimg.ngfiles.com/bg-skins/gold1-body.gif
-  → https://kakuyamii.github.io/NG12-theme/images/gold1-body.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/gold1-body.gif
 
   https://web.archive.org/web/20120329033828im_/http://cssimg.ngfiles.com/bg-skins/skin-closure-body.gif
-  → https://kakuyamii.github.io/NG12-theme/images/skin-closure-body.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/skin-closure-body.gif
 
   https://web.archive.org/web/20120510014025im_/http://img.ngfiles.com/bg-skins/picoday2012-body.gif
-  → https://kakuyamii.github.io/NG12-theme/images/picoday2012-body.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/picoday2012-body.gif
 
   https://web.archive.org/web/20130502002555im_/http://cssimg.ngfiles.com/bg-skins/gold2-body.gif
-  → https://kakuyamii.github.io/NG12-theme/images/gold2-body_077b70.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/gold2-body_077b70.gif
 
   https://web.archive.org/web/20120806050759im_/http://img.ngfiles.com/bg-skins/robotday2012-body.gif
-  → https://kakuyamii.github.io/NG12-theme/images/robotday2012-body.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/robotday2012-body.gif
 
   https://web.archive.org/web/20120815044057im_/http://img.ngfiles.com/bg-skins/clockday2012-body.gif
-  → https://kakuyamii.github.io/NG12-theme/images/clockday2012-body.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/clockday2012-body.gif
 
   https://web.archive.org/web/20120923023402im_/http://img.ngfiles.com/bg-skins/madnessday2012-body.gif
-  → https://kakuyamii.github.io/NG12-theme/images/madnessday2012-body.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/madnessday2012-body.gif
 
   https://web.archive.org/web/20121009173533/https://cssimg.ngfiles.com/bg-skins/halloween2012-body.gif
-  → https://kakuyamii.github.io/NG12-theme/images/halloween2012-body.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/halloween2012-body.gif
 
   https://web.archive.org/web/20130730221215im_/http://cssimg.ngfiles.com/bg-skins/gold2-body.gif
-  → https://kakuyamii.github.io/NG12-theme/images/gold2-body_d06802.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/gold2-body_d06802.gif
 
   https://web.archive.org/web/20121129130123im_/http://cssimg.ngfiles.com/bg-skins/gold4-body.gif
-  → https://kakuyamii.github.io/NG12-theme/images/gold4-body.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/gold4-body.gif
 
   https://web.archive.org/web/20120809060441im_/http://cssimg.ngfiles.com/bg-skins/gold2-outer.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/gold2-outer.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/gold2-outer.jpg
 
   https://web.archive.org/web/20121106014041im_/http://www.newgrounds.com/img/bg-skins/gold3-outer.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/gold3-outer.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/gold3-outer.jpg
 
   https://web.archive.org/web/20120209092835im_/http://cssimg.ngfiles.com/bg-skins/gold1-outer.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/gold1-outer.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/gold1-outer.jpg
 
   https://web.archive.org/web/20120329033828im_/http://cssimg.ngfiles.com/bg-skins/skin-closure.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/skin-closure.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/skin-closure.jpg
 
   https://web.archive.org/web/20120510014025im_/http://img.ngfiles.com/bg-skins/picoday2012-outer.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/picoday2012-outer.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/picoday2012-outer.jpg
 
   https://web.archive.org/web/20130502002555im_/http://cssimg.ngfiles.com/bg-skins/picoday2013-textless.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/picoday2013-textless.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/picoday2013-textless.jpg
 
   https://web.archive.org/web/20130427113357im_/http://cssimg.ngfiles.com/bg-skins/picoday2013.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/picoday2013.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/picoday2013.jpg
 
   https://web.archive.org/web/20120713031123im_/http://img.ngfiles.com/bg-skins/robotday2012-outer.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/robotday2012-outer.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/robotday2012-outer.jpg
 
   https://web.archive.org/web/20120815044110im_/http://img.ngfiles.com/bg-skins/clockday2012-outer.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/clockday2012-outer.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/clockday2012-outer.jpg
 
   https://web.archive.org/web/20120923023402im_/http://img.ngfiles.com/bg-skins/madnessday2012-outer.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/madnessday2012-outer.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/madnessday2012-outer.jpg
 
   https://web.archive.org/web/20121025014300/https://cssimg.ngfiles.com/bg-skins/halloween2012-outer.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/halloween2012-outer.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/halloween2012-outer.jpg
 
   https://web.archive.org/web/20130730221215im_/http://cssimg.ngfiles.com/bg-skins/robotday2013-textless.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/robotday2013-textless.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/robotday2013-textless.jpg
 
   https://web.archive.org/web/20130922205541im_/http://cssimg.ngfiles.com/bg-skins/madnessday2013.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/madnessday2013.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/madnessday2013.jpg
 
   https://web.archive.org/web/20131028203227im_/http://cssimg.ngfiles.com/bg-skins/halloween2013.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/halloween2013.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/halloween2013.jpg
 
   https://web.archive.org/web/20121129130123im_/http://cssimg.ngfiles.com/bg-skins/gold4-outer.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/gold4-outer.jpg
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/background/bgtest3.png
-  → https://kakuyamii.github.io/NG12-theme/images/bgtest3.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/background/bgtest1.png
-  → https://kakuyamii.github.io/NG12-theme/images/bgtest1.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/background/bgtest4.png
-  → https://kakuyamii.github.io/NG12-theme/images/bgtest4.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/background/bgtest2.png
-  → https://kakuyamii.github.io/NG12-theme/images/bgtest2.png
+  -> https://kakuyamii.github.io/NG12-theme/images/gold4-outer.jpg
 
   https://web.archive.org/web/20120719011330im_/http://cssimg.ngfiles.com/bg-header/sitelinks.png
-  → https://kakuyamii.github.io/NG12-theme/images/sitelinks.png
+  -> https://kakuyamii.github.io/NG12-theme/images/sitelinks.png
 
   https://web.archive.org/web/20120719011330im_/http://cssimg.ngfiles.com/bg-header/navigationTop.png
-  → https://kakuyamii.github.io/NG12-theme/images/navigationTop.png
+  -> https://kakuyamii.github.io/NG12-theme/images/navigationTop.png
 
   https://web.archive.org/web/20120929053305im_/http://cssimg.ngfiles.com/bg-header/logo.png
-  → https://kakuyamii.github.io/NG12-theme/images/logo.png
+  -> https://kakuyamii.github.io/NG12-theme/images/logo.png
 
   https://web.archive.org/web/20120630190942im_/http://cssimg.ngfiles.com/logo.png
-  → https://kakuyamii.github.io/NG12-theme/images/logo_773543.png
+  -> https://kakuyamii.github.io/NG12-theme/images/logo_773543.png
 
   https://web.archive.org/web/20120815044057im_/http://cssimg.ngfiles.com/logo-clockday.png
-  → https://kakuyamii.github.io/NG12-theme/images/logo-clockday.png
+  -> https://kakuyamii.github.io/NG12-theme/images/logo-clockday.png
 
   https://web.archive.org/web/20140730064842im_/http://cssimg.ngfiles.com/bg-header/logo.png
-  → https://kakuyamii.github.io/NG12-theme/images/logo_fd98f5.png
-
-  https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/search.png
-  → https://kakuyamii.github.io/NG12-theme/images/search.png
+  -> https://kakuyamii.github.io/NG12-theme/images/logo_fd98f5.png
 
   https://web.archive.org/web/20120605235416im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-gold.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/input-gold.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/input-gold.jpg
 
   https://web.archive.org/web/20120826024845im_/http://cssimg.ngfiles.com/bg-header/search.png
-  → https://kakuyamii.github.io/NG12-theme/images/search_16557e.png
-
-  https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/open1.png
-  → https://kakuyamii.github.io/NG12-theme/images/open1.png
+  -> https://kakuyamii.github.io/NG12-theme/images/search.png
 
   https://web.archive.org/web/20120605235416im_/http://cssimg.ngfiles.com/bg-skins/buttons/button-gold.gif
-  → https://kakuyamii.github.io/NG12-theme/images/button-gold.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/button-gold.gif
 
   https://web.archive.org/web/20120211004736im_/http://cssimg.ngfiles.com/icons/a-15yellows.png
-  → https://kakuyamii.github.io/NG12-theme/images/a-15yellows.png
+  -> https://kakuyamii.github.io/NG12-theme/images/a-15yellows.png
 
   https://web.archive.org/web/20120719011330im_/http://cssimg.ngfiles.com/bg-header/navbar.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/navbar.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/navbar.jpg
 
   https://web.archive.org/web/20140730064842im_/http://cssimg.ngfiles.com/bg-header/navbar2014.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/navbar2014.jpg
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/headerads/headerad2.png
-  → https://kakuyamii.github.io/NG12-theme/images/headerad2.png
+  -> https://kakuyamii.github.io/NG12-theme/images/navbar2014.jpg
 
   https://web.archive.org/web/20120719011330im_/http://cssimg.ngfiles.com/bg-main/bg-main.gif
-  → https://kakuyamii.github.io/NG12-theme/images/bg-main.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/bg-main.gif
 
   https://web.archive.org/web/20120823233518im_/http://cssimg.ngfiles.com/bg-main/pod-23.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/pod-23.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/pod-23.jpg
 
   https://web.archive.org/web/20120213173248im_/http://cssimg.ngfiles.com/bg-main/pod-13.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/pod-13.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/pod-13.jpg
 
   https://web.archive.org/web/20130102035309im_/http://cssimg.ngfiles.com/bg-main/podbreaker-13.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/podbreaker-13.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/podbreaker-13.jpg
 
   https://web.archive.org/web/20120823233518im_/http://cssimg.ngfiles.com/bg-main/podbreaker-23.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/podbreaker-23.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/podbreaker-23.jpg
 
   https://web.archive.org/web/20120721010820im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/podbreaker-33.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/podbreaker-33.jpg
 
   https://web.archive.org/web/20120213173248im_/http://cssimg.ngfiles.com/bg-main/podbreaker-13.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/podbreaker-13_a6606b.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/podbreaker-13_a6606b.jpg
 
   https://web.archive.org/web/20120929053305im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-L.png
-  → https://kakuyamii.github.io/NG12-theme/images/hoverticks-L.png
+  -> https://kakuyamii.github.io/NG12-theme/images/hoverticks-L.png
 
   https://web.archive.org/web/20120704205152im_/http://cssimg.ngfiles.com/bg-skins/podtops/podtop-gold.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/podtop-gold.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/podtop-gold.jpg
 
   https://web.archive.org/web/20120721010820im_/http://cssimg.ngfiles.com/icons/h2-all.png
-  → https://kakuyamii.github.io/NG12-theme/images/h2-all.png
+  -> https://kakuyamii.github.io/NG12-theme/images/h2-all.png
 
   https://web.archive.org/web/20120801032454im_/http://cssimg.ngfiles.com/misc/link_stripes.png
-  → https://kakuyamii.github.io/NG12-theme/images/link_stripes.png
+  -> https://kakuyamii.github.io/NG12-theme/images/link_stripes.png
 
   https://web.archive.org/web/20120326075528im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-R.png
-  → https://kakuyamii.github.io/NG12-theme/images/hoverticks-R.png
+  -> https://kakuyamii.github.io/NG12-theme/images/hoverticks-R.png
 
   https://web.archive.org/web/20120804071630im_/http://cssimg.ngfiles.com/icons/a-portalicons.png
-  → https://kakuyamii.github.io/NG12-theme/images/a-portalicons.png
+  -> https://kakuyamii.github.io/NG12-theme/images/a-portalicons.png
 
   https://web.archive.org/web/20120326075528im_/http://cssimg.ngfiles.com/icons/a-portalicons.png
-  → https://kakuyamii.github.io/NG12-theme/images/a-portalicons_3f570b.png
+  -> https://kakuyamii.github.io/NG12-theme/images/a-portalicons_3f570b.png
 
   https://web.archive.org/web/20120902073228im_/http://cssimg.ngfiles.com/icons/a-portalicons.png
-  → https://kakuyamii.github.io/NG12-theme/images/a-portalicons_8daca6.png
+  -> https://kakuyamii.github.io/NG12-theme/images/a-portalicons_8daca6.png
 
   https://web.archive.org/web/20120902000631im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-L.png
-  → https://kakuyamii.github.io/NG12-theme/images/hoverticks-L_c5f1de.png
+  -> https://kakuyamii.github.io/NG12-theme/images/hoverticks-L_c5f1de.png
 
   https://web.archive.org/web/20120804071630im_/http://cssimg.ngfiles.com/misc/vp-Stars.png
-  → https://kakuyamii.github.io/NG12-theme/images/vp-Stars.png
+  -> https://kakuyamii.github.io/NG12-theme/images/vp-Stars.png
 
   https://web.archive.org/web/20120301165012im_/http://cssimg.ngfiles.com/bg-skins/podtops/podtop-gold.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/podtop-gold_688bce.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/podtop-gold_688bce.jpg
 
   https://web.archive.org/web/20120301165012im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/pod-33.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/pod-33.jpg
 
   https://web.archive.org/web/20120211115524im_/http://cssimg.ngfiles.com/bg-main/podstripe.gif
-  → https://kakuyamii.github.io/NG12-theme/images/podstripe.gif
-
-  https://www.newgrounds.com/
-  → https://kakuyamii.github.io/NG12-theme/images/c37b77bd912d.bin
+  -> https://kakuyamii.github.io/NG12-theme/images/podstripe.gif
 
   https://web.archive.org/web/20130624011139im_/http://cssimg.ngfiles.com/bg-skins/fp-outer.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/fp-outer.jpg
-
-  https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/news2012.png
-  → https://kakuyamii.github.io/NG12-theme/images/news2012.png
-
-  https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/news1.png
-  → https://kakuyamii.github.io/NG12-theme/images/news1.png
+  -> https://kakuyamii.github.io/NG12-theme/images/fp-outer.jpg
 
   https://web.archive.org/web/20120328203446im_/http://uimg.ngfiles.com/icons/0/1_large.gif
-  → https://kakuyamii.github.io/NG12-theme/images/1_large.gif
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/tomfulppfps/alt.png
-  → https://kakuyamii.github.io/NG12-theme/images/alt.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/tomfulppfps/fulp1.gif
-  → https://kakuyamii.github.io/NG12-theme/images/fulp1.gif
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/tomfulppfps/fulp2.gif
-  → https://kakuyamii.github.io/NG12-theme/images/fulp2.gif
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/tomfulppfps/coolglass.png
-  → https://kakuyamii.github.io/NG12-theme/images/coolglass.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/orange/welcome2ng.png
-  → https://kakuyamii.github.io/NG12-theme/images/welcome2ng.png
+  -> https://kakuyamii.github.io/NG12-theme/images/1_large.gif
 
   https://web.archive.org/web/20120704205152im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-R.png
-  → https://kakuyamii.github.io/NG12-theme/images/hoverticks-R_534c32.png
+  -> https://kakuyamii.github.io/NG12-theme/images/hoverticks-R_534c32.png
 
   https://web.archive.org/web/20120222012438im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-L.png
-  → https://kakuyamii.github.io/NG12-theme/images/hoverticks-L_3ebb6e.png
+  -> https://kakuyamii.github.io/NG12-theme/images/hoverticks-L_3ebb6e.png
 
   https://web.archive.org/web/20120222012438im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-R.png
-  → https://kakuyamii.github.io/NG12-theme/images/hoverticks-R_205f06.png
+  -> https://kakuyamii.github.io/NG12-theme/images/hoverticks-R_205f06.png
 
   https://web.archive.org/web/20120326010736im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-R.png
-  → https://kakuyamii.github.io/NG12-theme/images/hoverticks-R_572025.png
+  -> https://kakuyamii.github.io/NG12-theme/images/hoverticks-R_572025.png
 
   https://web.archive.org/web/20120429120835im_/http://cssimg.ngfiles.com/icons/a-portalicons.png
-  → https://kakuyamii.github.io/NG12-theme/images/a-portalicons_1debc8.png
+  -> https://kakuyamii.github.io/NG12-theme/images/a-portalicons_1debc8.png
 
   https://web.archive.org/web/20120222012438im_/http://cssimg.ngfiles.com/misc/ul-calendar.png
-  → https://kakuyamii.github.io/NG12-theme/images/ul-calendar.png
+  -> https://kakuyamii.github.io/NG12-theme/images/ul-calendar.png
 
   https://web.archive.org/web/20120326010736im_/http://cssimg.ngfiles.com/icons/hovers/rankandrate.png
-  → https://kakuyamii.github.io/NG12-theme/images/rankandrate.png
+  -> https://kakuyamii.github.io/NG12-theme/images/rankandrate.png
 
   https://web.archive.org/web/20120326010736im_/http://cssimg.ngfiles.com/icons/tinyicons-vert.png
-  → https://kakuyamii.github.io/NG12-theme/images/tinyicons-vert.png
+  -> https://kakuyamii.github.io/NG12-theme/images/tinyicons-vert.png
 
   https://web.archive.org/web/20120223062351im_/http://cssimg.ngfiles.com/bg-skins/blue0-body.gif
-  → https://kakuyamii.github.io/NG12-theme/images/blue0-body.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/blue0-body.gif
 
   https://web.archive.org/web/20120223062351im_/http://cssimg.ngfiles.com/bg-skins/blue0-outer.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/blue0-outer.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/blue0-outer.jpg
 
   https://web.archive.org/web/20130520154219im_/http://cssimg.ngfiles.com/bg-skins/blue2-outer.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/blue2-outer.jpg
-
-  https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/blueopen1.png
-  → https://kakuyamii.github.io/NG12-theme/images/blueopen1.png
-
-  https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/bluesearch1.png
-  → https://kakuyamii.github.io/NG12-theme/images/bluesearch1.png
+  -> https://kakuyamii.github.io/NG12-theme/images/blue2-outer.jpg
 
   https://web.archive.org/web/20120210202011im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-blue.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/input-blue.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/input-blue.jpg
 
   https://web.archive.org/web/20120804071630im_/http://cssimg.ngfiles.com/bg-skins/podtops/podtop-blue.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/podtop-blue.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/podtop-blue.jpg
 
   https://web.archive.org/web/20120614015817im_/http://cssimg.ngfiles.com/bg-skins/buttons/button-blue.gif
-  → https://kakuyamii.github.io/NG12-theme/images/button-blue.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/button-blue.gif
 
   https://web.archive.org/web/20120802081323im_/http://cssimg.ngfiles.com/misc/link_stripes.png
-  → https://kakuyamii.github.io/NG12-theme/images/link_stripes_c04705.png
+  -> https://kakuyamii.github.io/NG12-theme/images/link_stripes_c04705.png
 
   https://web.archive.org/web/20120802081323im_/http://cssimg.ngfiles.com/bg-skins/blue-footer.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/blue-footer.jpg
-
-  https://www.newgrounds.com/games
-  → https://kakuyamii.github.io/NG12-theme/images/f4d991498eee.bin
-
-  https://www.newgrounds.com/games/featured
-  → https://kakuyamii.github.io/NG12-theme/images/5256d610a79e.bin
-
-  https://www.newgrounds.com/games/browse
-  → https://kakuyamii.github.io/NG12-theme/images/42fe8a59c8a9.bin
-
-  https://www.newgrounds.com/games/popular
-  → https://kakuyamii.github.io/NG12-theme/images/994341ca8382.bin
+  -> https://kakuyamii.github.io/NG12-theme/images/blue-footer.jpg
 
   https://web.archive.org/web/20120804071630im_/http://cssimg.ngfiles.com/bg-main/pod-13.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/pod-13_dffd94.jpg
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/blue/browsecategories.png
-  → https://kakuyamii.github.io/NG12-theme/images/browsecategories.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/grey/butthole.png
-  → https://kakuyamii.github.io/NG12-theme/images/butthole.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/orange/browseblank.png
-  → https://kakuyamii.github.io/NG12-theme/images/browseblank.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/orange/filter2.png
-  → https://kakuyamii.github.io/NG12-theme/images/filter2.png
+  -> https://kakuyamii.github.io/NG12-theme/images/pod-13_dffd94.jpg
 
   https://web.archive.org/web/20120210202011im_/http://cssimg.ngfiles.com/formstuff/select-fakearrow.gif
-  → https://kakuyamii.github.io/NG12-theme/images/select-fakearrow.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/select-fakearrow.gif
 
   https://web.archive.org/web/20120806090840im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/podbreaker-33_7ae02f.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/podbreaker-33_7ae02f.jpg
 
   https://web.archive.org/web/20120422170459im_/http://cssimg.ngfiles.com/bg-main/pod-23.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/pod-23_065998.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/pod-23_065998.jpg
 
   https://web.archive.org/web/20120629023443im_/http://cssimg.ngfiles.com/bg-skins/red0-body.gif
-  → https://kakuyamii.github.io/NG12-theme/images/red0-body.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/red0-body.gif
 
   https://web.archive.org/web/20130603102205im_/http://cssimg.ngfiles.com/bg-skins/red2-body.gif
-  → https://kakuyamii.github.io/NG12-theme/images/red2-body.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/red2-body.gif
 
   https://web.archive.org/web/20120326075528im_/http://cssimg.ngfiles.com/bg-skins/red0-outer.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/red0-outer.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/red0-outer.jpg
 
   https://web.archive.org/web/20121112132444im_/http://www.newgrounds.com/img/bg-skins/red2-outer.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/red2-outer.jpg
-
-  http://cssimg.ngfiles.com/bg-skins/red1-outer.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/red1-outer.jpg
-
-  https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/redopen1.png
-  → https://kakuyamii.github.io/NG12-theme/images/redopen1.png
-
-  https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/redsearch.png
-  → https://kakuyamii.github.io/NG12-theme/images/redsearch.png
+  -> https://kakuyamii.github.io/NG12-theme/images/red2-outer.jpg
 
   https://web.archive.org/web/20120902073228im_/http://cssimg.ngfiles.com/bg-skins/buttons/button-red.gif
-  → https://kakuyamii.github.io/NG12-theme/images/button-red.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/button-red.gif
 
   https://web.archive.org/web/20120902073228im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-red.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/input-red.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/input-red.jpg
 
   https://web.archive.org/web/20120902073228im_/http://cssimg.ngfiles.com/bg-skins/podtops/podtop-red.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/podtop-red.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/podtop-red.jpg
 
   https://web.archive.org/web/20120710004603im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-red.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/input-red_c3a3b4.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/input-red_c3a3b4.jpg
 
   https://web.archive.org/web/20130328225637im_/http://cssimg.ngfiles.com/bg-skins/red-footer.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/red-footer.jpg
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/red/browsecategories.png
-  → https://kakuyamii.github.io/NG12-theme/images/browsecategories_bcb122.png
+  -> https://kakuyamii.github.io/NG12-theme/images/red-footer.jpg
 
   https://web.archive.org/web/20120628095547im_/http://cssimg.ngfiles.com/bg-skins/green0-body.gif
-  → https://kakuyamii.github.io/NG12-theme/images/green0-body.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/green0-body.gif
 
   https://web.archive.org/web/20120719011330im_/http://cssimg.ngfiles.com/bg-skins/green0-outer.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/green0-outer.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/green0-outer.jpg
 
   https://web.archive.org/web/20121115121342im_/http://www.newgrounds.com/img/bg-skins/green2-outer.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/green2-outer.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/green2-outer.jpg
 
   https://web.archive.org/web/20120929172523im_/http://cssimg.ngfiles.com/bg-skins/green1-outer.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/green1-outer.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/green1-outer.jpg
 
   https://web.archive.org/web/20120719011330im_/http://cssimg.ngfiles.com/bg-skins/podtops/podtop-green.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/podtop-green.jpg
-
-  https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/greenopen1.png
-  → https://kakuyamii.github.io/NG12-theme/images/greenopen1.png
-
-  https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/greensearch1.png
-  → https://kakuyamii.github.io/NG12-theme/images/greensearch1.png
+  -> https://kakuyamii.github.io/NG12-theme/images/podtop-green.jpg
 
   https://web.archive.org/web/20120702211457im_/http://cssimg.ngfiles.com/bg-skins/buttons/button-green.gif
-  → https://kakuyamii.github.io/NG12-theme/images/button-green.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/button-green.gif
 
   https://web.archive.org/web/20120702211457im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-green.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/input-green.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/input-green.jpg
 
   https://web.archive.org/web/20120719011330im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-green.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/input-green_258f92.jpg
-
-  https://www.newgrounds.com/audio
-  → https://kakuyamii.github.io/NG12-theme/images/6ac71ce7a4cc.bin
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/green/browsecategories.png
-  → https://kakuyamii.github.io/NG12-theme/images/browsecategories_92acf1.png
+  -> https://kakuyamii.github.io/NG12-theme/images/input-green_258f92.jpg
 
   https://web.archive.org/web/20120709100602im_/http://cssimg.ngfiles.com/bg-main/pod-13.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/pod-13_b32584.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/pod-13_b32584.jpg
 
   https://web.archive.org/web/20120709100602im_/http://cssimg.ngfiles.com/bg-main/podstripe.gif
-  → https://kakuyamii.github.io/NG12-theme/images/podstripe_34c3c1.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/podstripe_34c3c1.gif
 
   https://web.archive.org/web/20120210073231im_/http://cssimg.ngfiles.com/bg-main/pod-23.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/pod-23_1e649d.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/pod-23_1e649d.jpg
 
   https://web.archive.org/web/20130329092444im_/http://cssimg.ngfiles.com/misc/vp-Stars.png
-  → https://kakuyamii.github.io/NG12-theme/images/vp-Stars_a8c855.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/green/rategreenlogout.png
-  → https://kakuyamii.github.io/NG12-theme/images/rategreenlogout.png
+  -> https://kakuyamii.github.io/NG12-theme/images/vp-Stars_a8c855.png
 
   https://web.archive.org/web/20120309192626im_/http://cssimg.ngfiles.com/misc/vp-voteDarn.png
-  → https://kakuyamii.github.io/NG12-theme/images/vp-voteDarn.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/green/reviews.png
-  → https://kakuyamii.github.io/NG12-theme/images/reviews.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/bars.png
-  → https://kakuyamii.github.io/NG12-theme/images/bars.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/whiteframebar.gif
-  → https://kakuyamii.github.io/NG12-theme/images/whiteframebar.gif
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/shadow.png
-  → https://kakuyamii.github.io/NG12-theme/images/shadow.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/play.png
-  → https://kakuyamii.github.io/NG12-theme/images/play.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/playh.png
-  → https://kakuyamii.github.io/NG12-theme/images/playh.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/playa.png
-  → https://kakuyamii.github.io/NG12-theme/images/playa.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/pause.png
-  → https://kakuyamii.github.io/NG12-theme/images/pause.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/pauseh.png
-  → https://kakuyamii.github.io/NG12-theme/images/pauseh.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/pausea.png
-  → https://kakuyamii.github.io/NG12-theme/images/pausea.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/timeleftbg.png
-  → https://kakuyamii.github.io/NG12-theme/images/timeleftbg.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/sekbarbg.png
-  → https://kakuyamii.github.io/NG12-theme/images/sekbarbg.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/thebar.gif
-  → https://kakuyamii.github.io/NG12-theme/images/thebar.gif
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/notmuteandloop.png
-  → https://kakuyamii.github.io/NG12-theme/images/notmuteandloop.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/notmuteh.png
-  → https://kakuyamii.github.io/NG12-theme/images/notmuteh.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/notmutea.png
-  → https://kakuyamii.github.io/NG12-theme/images/notmutea.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/mute.png
-  → https://kakuyamii.github.io/NG12-theme/images/mute.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/muteh.png
-  → https://kakuyamii.github.io/NG12-theme/images/muteh.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/mutea.png
-  → https://kakuyamii.github.io/NG12-theme/images/mutea.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/audiobar.png
-  → https://kakuyamii.github.io/NG12-theme/images/audiobar.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/audioslider.png
-  → https://kakuyamii.github.io/NG12-theme/images/audioslider.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/loopdis.png
-  → https://kakuyamii.github.io/NG12-theme/images/loopdis.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/loopdish.png
-  → https://kakuyamii.github.io/NG12-theme/images/loopdish.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/loopdisa.png
-  → https://kakuyamii.github.io/NG12-theme/images/loopdisa.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/loop.png
-  → https://kakuyamii.github.io/NG12-theme/images/loop.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/looph.png
-  → https://kakuyamii.github.io/NG12-theme/images/looph.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/loopa.png
-  → https://kakuyamii.github.io/NG12-theme/images/loopa.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/fshe.png
-  → https://kakuyamii.github.io/NG12-theme/images/fshe.png
+  -> https://kakuyamii.github.io/NG12-theme/images/vp-voteDarn.png
 
   https://web.archive.org/web/20120212192645im_/http://cssimg.ngfiles.com/bg-skins/purple0-body.gif
-  → https://kakuyamii.github.io/NG12-theme/images/purple0-body.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/purple0-body.gif
 
   https://web.archive.org/web/20120212192645im_/http://cssimg.ngfiles.com/bg-skins/purple0-outer.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/purple0-outer.jpg
-
-  https://newgrounds2012.neocities.org/rainbow.png
-  → https://kakuyamii.github.io/NG12-theme/images/rainbow.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/portal/bg.png
-  → https://kakuyamii.github.io/NG12-theme/images/bg.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/portal/rainbowoutline.png
-  → https://kakuyamii.github.io/NG12-theme/images/rainbowoutline.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/portal/portalchar.png
-  → https://kakuyamii.github.io/NG12-theme/images/portalchar.png
+  -> https://kakuyamii.github.io/NG12-theme/images/purple0-outer.jpg
 
   https://web.archive.org/web/20120214054151im_/http://cssimg.ngfiles.com/icons/tinyicons-vert.png
-  → https://kakuyamii.github.io/NG12-theme/images/tinyicons-vert_813281.png
+  -> https://kakuyamii.github.io/NG12-theme/images/tinyicons-vert_813281.png
 
   https://web.archive.org/web/20120214054151im_/http://cssimg.ngfiles.com/icons/ul-15grays.png
-  → https://kakuyamii.github.io/NG12-theme/images/ul-15grays.png
+  -> https://kakuyamii.github.io/NG12-theme/images/ul-15grays.png
 
   https://web.archive.org/web/20120211115524im_/http://cssimg.ngfiles.com/icons/ul-15grays.png
-  → https://kakuyamii.github.io/NG12-theme/images/ul-15grays_0a60dd.png
+  -> https://kakuyamii.github.io/NG12-theme/images/ul-15grays_0a60dd.png
 
   https://web.archive.org/web/20120211115524im_/http://cssimg.ngfiles.com/icons/ul-rating.png
-  → https://kakuyamii.github.io/NG12-theme/images/ul-rating.png
+  -> https://kakuyamii.github.io/NG12-theme/images/ul-rating.png
 
   https://web.archive.org/web/20120721010820im_/http://cssimg.ngfiles.com/bg-skins/pink0-outer.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/pink0-outer.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/pink0-outer.jpg
 
   https://web.archive.org/web/20120930032542im_/http://cssimg.ngfiles.com/bg-skins/pink1-outer.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/pink1-outer.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/pink1-outer.jpg
 
   https://web.archive.org/web/20120628112326im_/http://cssimg.ngfiles.com/bg-skins/pink0-body.gif
-  → https://kakuyamii.github.io/NG12-theme/images/pink0-body.gif
-
-  https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/pinkopen1.png
-  → https://kakuyamii.github.io/NG12-theme/images/pinkopen1.png
-
-  https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/pinksearch.png
-  → https://kakuyamii.github.io/NG12-theme/images/pinksearch.png
+  -> https://kakuyamii.github.io/NG12-theme/images/pink0-body.gif
 
   https://web.archive.org/web/20120702211457im_/http://cssimg.ngfiles.com/bg-skins/buttons/button-pink.gif
-  → https://kakuyamii.github.io/NG12-theme/images/button-pink.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/button-pink.gif
 
   https://web.archive.org/web/20120702211457im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-pink.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/input-pink.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/input-pink.jpg
 
   https://web.archive.org/web/20120721010820im_/http://cssimg.ngfiles.com/bg-skins/podtops/podtop-pink.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/podtop-pink.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/podtop-pink.jpg
 
   https://web.archive.org/web/20120801032454im_/http://cssimg.ngfiles.com/bg-skins/gold-footer.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/gold-footer.jpg
-
-  https://www.newgrounds.com/art
-  → https://kakuyamii.github.io/NG12-theme/images/71599b4aa622.bin
+  -> https://kakuyamii.github.io/NG12-theme/images/gold-footer.jpg
 
   https://web.archive.org/web/20120211115524im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/pod-33_fc0472.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/pod-33_fc0472.jpg
 
   https://web.archive.org/web/20120215083702im_/http://cssimg.ngfiles.com/bg-main/pod-23.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/pod-23_c9e343.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/pod-23_c9e343.jpg
 
   https://web.archive.org/web/20120211115524im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/podbreaker-33_59e23e.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/podbreaker-33_59e23e.jpg
 
   https://web.archive.org/web/20120214021629im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/pod-33_e8e01a.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/pod-33_e8e01a.jpg
 
   https://web.archive.org/web/20120214021629im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/podbreaker-33_44a346.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/podbreaker-33_44a346.jpg
 
   https://web.archive.org/web/20120629210809im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/podbreaker-33_679574.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/podbreaker-33_679574.jpg
 
   https://web.archive.org/web/20121227230159im_/http://cssimg.ngfiles.com/misc/link_stripes.png
-  → https://kakuyamii.github.io/NG12-theme/images/link_stripes_9d9576.png
+  -> https://kakuyamii.github.io/NG12-theme/images/link_stripes_9d9576.png
 
   https://web.archive.org/web/20121227230159im_/http://cssimg.ngfiles.com/icons/a-15yellows.png
-  → https://kakuyamii.github.io/NG12-theme/images/a-15yellows_20c0d0.png
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/red/authorcomments.png
-  → https://kakuyamii.github.io/NG12-theme/images/authorcomments.png
+  -> https://kakuyamii.github.io/NG12-theme/images/a-15yellows_20c0d0.png
 
   https://web.archive.org/web/20120804071630im_/http://cssimg.ngfiles.com/bg-main/podstripe.gif
-  → https://kakuyamii.github.io/NG12-theme/images/podstripe_498d71.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/podstripe_498d71.gif
 
   https://web.archive.org/web/20140307041333im_/http://cssimg.ngfiles.com/bg-main/podstripe.gif
-  → https://kakuyamii.github.io/NG12-theme/images/podstripe_52d518.gif
-
-  https://www.newgrounds.com/community
-  → https://kakuyamii.github.io/NG12-theme/images/c78f114b9c55.bin
-
-  https://web.archive.org/web/20141122130622im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/pod-33_2d7a5d.jpg
-
-  https://web.archive.org/web/20141122130622im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/podbreaker-33_1297bd.jpg
-
-  https://web.archive.org/web/20141122130622im_/http://cssimg.ngfiles.com/bg-main/podstripe.gif
-  → https://kakuyamii.github.io/NG12-theme/images/podstripe_724f8f.gif
-
-  https://web.archive.org/web/20120320165406im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/pod-33_9e32f8.jpg
-
-  https://web.archive.org/web/20120320165406im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/podbreaker-33_f6e7ae.jpg
-
-  https://web.archive.org/web/20120721010820im_/http://cssimg.ngfiles.com/icons/td-forum45.png
-  → https://kakuyamii.github.io/NG12-theme/images/td-forum45.png
-
-  https://web.archive.org/web/20120426101345im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/pod-33_e21cd4.jpg
-
-  https://web.archive.org/web/20120426101345im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/podbreaker-33_e5ae39.jpg
-
-  https://web.archive.org/web/20120211004736im_/http://cssimg.ngfiles.com/misc/bbs-postStar.png
-  → https://kakuyamii.github.io/NG12-theme/images/bbs-postStar.png
-
-  https://web.archive.org/web/20120211004736im_/http://cssimg.ngfiles.com/misc/bbs-postStar_mid.png
-  → https://kakuyamii.github.io/NG12-theme/images/bbs-postStar_mid.png
-
-  https://web.archive.org/web/20120211004736im_/http://cssimg.ngfiles.com/misc/bbs-postStar_bot.gif
-  → https://kakuyamii.github.io/NG12-theme/images/bbs-postStar_bot.gif
-
-  http://cssimg.ngfiles.com/icons/tinyicons-vert.png
-  → https://kakuyamii.github.io/NG12-theme/images/tinyicons-vert_88fe7c.png
-
-  https://web.archive.org/web/20120211004736im_/http://cssimg.ngfiles.com/icons/tinyicons-vert.png
-  → https://kakuyamii.github.io/NG12-theme/images/tinyicons-vert_64e6ae.png
-
-  https://web.archive.org/web/20120211004736im_/http://cssimg.ngfiles.com/bg-main/podstripe.gif
-  → https://kakuyamii.github.io/NG12-theme/images/podstripe_5daa84.gif
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/orange/text.png
-  → https://kakuyamii.github.io/NG12-theme/images/text.png
-
-  https://web.archive.org/web/20120211004736im_/http://cssimg.ngfiles.com/icons/emotes.png
-  → https://kakuyamii.github.io/NG12-theme/images/emotes.png
-
-  https://web.archive.org/web/20120711024722im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/pod-33_889699.jpg
-
-  https://web.archive.org/web/20120711024722im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/podbreaker-33_2b1f3a.jpg
-
-  https://web.archive.org/web/20120711024722im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-gold.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/input-gold_11aecf.jpg
-
-  https://web.archive.org/web/20120711024722im_/http://cssimg.ngfiles.com/bg-skins/buttons/button-gold.gif
-  → https://kakuyamii.github.io/NG12-theme/images/button-gold_145c17.gif
-
-  https://web.archive.org/web/20120327185324im_/http://cssimg.ngfiles.com/formstuff/input-checkboxes.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/input-checkboxes.jpg
-
-  https://web.archive.org/web/20120327185324im_/http://cssimg.ngfiles.com/formstuff/input-check.png
-  → https://kakuyamii.github.io/NG12-theme/images/input-check.png
-
-  https://web.archive.org/web/20130409052128im_/https://www.newgrounds.com/img/passport/passport_bg3.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/passport_bg3.jpg
-
-  https://web.archive.org/web/20130310143316im_/https://www.newgrounds.com/img/passport/ngpassport_logo.png
-  → https://kakuyamii.github.io/NG12-theme/images/ngpassport_logo.png
-
-  https://web.archive.org/web/20120801032454im_/http://cssimg.ngfiles.com/bg-footer/featuredcontent.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/featuredcontent.jpg
-
-  https://web.archive.org/web/20120801032454im_/http://cssimg.ngfiles.com/bg-footer/featuretitle.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/featuretitle.jpg
-
-  https://web.archive.org/web/20120801032454im_/http://cssimg.ngfiles.com/bg-footer/featurebar.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/featurebar.jpg
-
-  https://web.archive.org/web/20130328225637im_/http://cssimg.ngfiles.com/bg-footer/footerfeature.png
-  → https://kakuyamii.github.io/NG12-theme/images/footerfeature.png
-
-  https://web.archive.org/web/20120721010820im_/http://cssimg.ngfiles.com/bg-footer/a-stripes.png
-  → https://kakuyamii.github.io/NG12-theme/images/a-stripes.png
-
-  https://web.archive.org/web/20120721010820im_/http://cssimg.ngfiles.com/icons/hovers/rankandrate.png
-  → https://kakuyamii.github.io/NG12-theme/images/rankandrate_d00529.png
-
-  https://web.archive.org/web/20120630190937im_/http://cssimg.ngfiles.com/bg-footer/logo-tiny.png
-  → https://kakuyamii.github.io/NG12-theme/images/logo-tiny.png
-
-  https://web.archive.org/web/20120630190937im_/http://cssimg.ngfiles.com/misc/link_stripes.png
-  → https://kakuyamii.github.io/NG12-theme/images/link_stripes_b3c817.png
-
-  https://web.archive.org/web/20120630190937im_/http://cssimg.ngfiles.com/bg-footer/nav-corners.gif
-  → https://kakuyamii.github.io/NG12-theme/images/nav-corners.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/podstripe_52d518.gif
 
   https://web.archive.org/web/20120606045234im_/http://cssimg.ngfiles.com/bg-skins/podtops/podtop-gold.jpg
-  → https://kakuyamii.github.io/NG12-theme/images/podtop-gold_6d0f6f.jpg
-
-  https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/orange/headernav.png
-  → https://kakuyamii.github.io/NG12-theme/images/headernav.png
+  -> https://kakuyamii.github.io/NG12-theme/images/podtop-gold_6d0f6f.jpg
 
   https://web.archive.org/web/20120606045234im_/http://cssimg.ngfiles.com/misc/link_stripes.png
-  → https://kakuyamii.github.io/NG12-theme/images/link_stripes_4b0096.png
+  -> https://kakuyamii.github.io/NG12-theme/images/link_stripes_4b0096.png
+
+  https://web.archive.org/web/20141122130622im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/pod-33_2d7a5d.jpg
+
+  https://web.archive.org/web/20141122130622im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/podbreaker-33_1297bd.jpg
+
+  https://web.archive.org/web/20141122130622im_/http://cssimg.ngfiles.com/bg-main/podstripe.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/podstripe_724f8f.gif
+
+  https://web.archive.org/web/20120320165406im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/pod-33_9e32f8.jpg
+
+  https://web.archive.org/web/20120320165406im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/podbreaker-33_f6e7ae.jpg
+
+  https://web.archive.org/web/20120721010820im_/http://cssimg.ngfiles.com/icons/td-forum45.png
+  -> https://kakuyamii.github.io/NG12-theme/images/td-forum45.png
+
+  https://web.archive.org/web/20120426101345im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/pod-33_e21cd4.jpg
+
+  https://web.archive.org/web/20120426101345im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/podbreaker-33_e5ae39.jpg
+
+  https://web.archive.org/web/20120211004736im_/http://cssimg.ngfiles.com/misc/bbs-postStar.png
+  -> https://kakuyamii.github.io/NG12-theme/images/bbs-postStar.png
+
+  https://web.archive.org/web/20120211004736im_/http://cssimg.ngfiles.com/misc/bbs-postStar_mid.png
+  -> https://kakuyamii.github.io/NG12-theme/images/bbs-postStar_mid.png
+
+  https://web.archive.org/web/20120211004736im_/http://cssimg.ngfiles.com/misc/bbs-postStar_bot.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/bbs-postStar_bot.gif
+
+  https://web.archive.org/web/20120211004736im_/http://cssimg.ngfiles.com/icons/tinyicons-vert.png
+  -> https://kakuyamii.github.io/NG12-theme/images/tinyicons-vert_64e6ae.png
+
+  https://web.archive.org/web/20120211004736im_/http://cssimg.ngfiles.com/bg-main/podstripe.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/podstripe_5daa84.gif
+
+  https://web.archive.org/web/20120211004736im_/http://cssimg.ngfiles.com/icons/emotes.png
+  -> https://kakuyamii.github.io/NG12-theme/images/emotes.png
+
+  https://web.archive.org/web/20120711024722im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/pod-33_889699.jpg
+
+  https://web.archive.org/web/20120711024722im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/podbreaker-33_2b1f3a.jpg
+
+  https://web.archive.org/web/20120711024722im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-gold.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/input-gold_11aecf.jpg
+
+  https://web.archive.org/web/20120711024722im_/http://cssimg.ngfiles.com/bg-skins/buttons/button-gold.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/button-gold_145c17.gif
+
+  https://web.archive.org/web/20120327185324im_/http://cssimg.ngfiles.com/formstuff/input-checkboxes.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/input-checkboxes.jpg
+
+  https://web.archive.org/web/20120327185324im_/http://cssimg.ngfiles.com/formstuff/input-check.png
+  -> https://kakuyamii.github.io/NG12-theme/images/input-check.png
+
+  https://web.archive.org/web/20130409052128im_/https://www.newgrounds.com/img/passport/passport_bg3.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/passport_bg3.jpg
+
+  https://web.archive.org/web/20130310143316im_/https://www.newgrounds.com/img/passport/ngpassport_logo.png
+  -> https://kakuyamii.github.io/NG12-theme/images/ngpassport_logo.png
+
+  https://web.archive.org/web/20120801032454im_/http://cssimg.ngfiles.com/bg-footer/featuredcontent.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/featuredcontent.jpg
+
+  https://web.archive.org/web/20120801032454im_/http://cssimg.ngfiles.com/bg-footer/featuretitle.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/featuretitle.jpg
+
+  https://web.archive.org/web/20120801032454im_/http://cssimg.ngfiles.com/bg-footer/featurebar.jpg
+  -> https://kakuyamii.github.io/NG12-theme/images/featurebar.jpg
+
+  https://web.archive.org/web/20130328225637im_/http://cssimg.ngfiles.com/bg-footer/footerfeature.png
+  -> https://kakuyamii.github.io/NG12-theme/images/footerfeature.png
+
+  https://web.archive.org/web/20120721010820im_/http://cssimg.ngfiles.com/bg-footer/a-stripes.png
+  -> https://kakuyamii.github.io/NG12-theme/images/a-stripes.png
+
+  https://web.archive.org/web/20120721010820im_/http://cssimg.ngfiles.com/icons/hovers/rankandrate.png
+  -> https://kakuyamii.github.io/NG12-theme/images/rankandrate_d00529.png
+
+  https://web.archive.org/web/20120630190937im_/http://cssimg.ngfiles.com/bg-footer/logo-tiny.png
+  -> https://kakuyamii.github.io/NG12-theme/images/logo-tiny.png
+
+  https://web.archive.org/web/20120630190937im_/http://cssimg.ngfiles.com/misc/link_stripes.png
+  -> https://kakuyamii.github.io/NG12-theme/images/link_stripes_b3c817.png
+
+  https://web.archive.org/web/20120630190937im_/http://cssimg.ngfiles.com/bg-footer/nav-corners.gif
+  -> https://kakuyamii.github.io/NG12-theme/images/nav-corners.gif
 
 
-Result: 232/232 downloaded, 0 failed.
+Result: 158/158 downloaded, 0 failed.

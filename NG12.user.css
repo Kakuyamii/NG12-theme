@@ -1,0 +1,6069 @@
+/* ==UserStyle==
+@name           NG12-dev4-3 beta 1
+@namespace      https://discord.gg/fAnRm8gs5h
+@version        2025.6.25
+@description   hazel thanks | Tom Fulp approved
+@author         Soul
+@var  select  background 'Choose background' {
+'Default (2012)': 'default',
+' "No Smoking" ':  'gold1',
+' Closure': 'closure',
+'Pico Day 2012':  'picoday2012',
+'Robot Day 2012': 'robotday12',
+'Clock Day 2012': 'clockday12',
+'Madness Day 2012': 'mad2012',
+'Halloween 2012':  'hl2012',
+' December 2012 ':  'gold4',
+'Pico Day 2013 (Textless)':  'picoday2013',
+'Pico Day 2013 ':   'picoday20132',
+'Robot Day 2013':  'robotday13',
+'Madness Day 2013': 'madness2013',
+'Halloween 2013':   'halloween2013',
+'Halloween 2014':  'halloween2014'
+
+}
+@var checkbox currentbackground 'Use current backgrounds' 0
+@var select layout 'Choose layout' {
+' Default (2012)': 'default',
+' Early 2012 (WIP) ':  'E2012',
+' 2013 (WIP) ': '2013',
+'2014 (WIP)':  '2014',
+'2015 (WIP)' : '2015'
+}
+@var select fulp 'Choose Tom Fulp pfp' {
+'Default (2012)': 'def',
+'Alt': 'alt',
+'Febuary 2012': 'F2012',
+'later Febuary 2012': 'LF2012',
+'April 2013': 'A2013'
+}
+@var checkbox headerads 'Show header ads ' 0
+@var checkbox hp 'Show Welcome to Newgrounds screen (for 2013)' 1
+@var select portaltheme 'PLACEHOLDER' {
+'Movies': 'Movies',
+'Games':  'Games'
+}
+@var select cutoff 'how much content that shows in portals (requires range on all)' {
+'All': 'all',
+'1 row': '1row',
+'2 row': '2row',
+'3 row': '3row',
+'4 row': '4row',
+'5 row': '5row',
+'6 row': '6row',
+'7 row': '7row',
+'8 row': '8row',
+'9 row': '9row',
+'10 row': '10row',
+'11 row': '11row',
+'12 row': '12row',
+'13 row': '13row',
+'14 row': '14row',
+'15 row': '15row',
+
+}
+
+@var select selectportal 'What is shown on the Sort Box' {
+'Current Newgrounds': 'default',
+off: 'off',
+'By year': 'byyear'
+}
+
+@var select videosize 'Video Size [lol]' {
+'Full Width': 'full',
+'SD': 'half'
+}
+
+@var select visualization 'Audio Player Background settings' {
+'None':  'none',
+'Custom Image/Gif': 'bgc',
+'Custom Background': 'bg'
+}
+@var          color    bgc "Audio Player custom background color"    #808080
+@var          text     bgi  "Custom image/gif link" "'https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/ngimg.gif'"
+@preprocessor stylus
+
+==/UserStyle== */
+@-moz-document domain("newgrounds.com"),
+url-prefix("https://www.newgrounds.com") {
+
+	/* header */
+	body {
+		width: 100%;
+		height: 100%;
+		margin: 0px;
+		padding: 0px;
+		background-color: #000!important;
+	}
+	body {
+		position: relative;
+		if background==default {
+			background: #000 url(https://kakuyamii.github.io/NG12-theme/images/gold2-body.gif) top center repeat-y;
+		}
+		if background==gold1 {
+			background: #000 url(https://kakuyamii.github.io/NG12-theme/images/gold1-body.gif) top center repeat-y;
+		}
+		/* closure is #000 so we dont need it BUT stylus says so */
+		if background==closure {
+			background: url(https://kakuyamii.github.io/NG12-theme/images/skin-closure-body.gif) top center repeat-y;
+		}
+		if background==picoday2012 {
+			background: url(https://kakuyamii.github.io/NG12-theme/images/picoday2012-body.gif) top center repeat-y;
+		}
+		if background==picoday2013 or picoday20132 {
+			background: #000 url(https://kakuyamii.github.io/NG12-theme/images/gold2-body_077b70.gif) top center repeat-y;
+		}
+		if background==robotday12 {
+			background: url(https://kakuyamii.github.io/NG12-theme/images/robotday2012-body.gif) top center repeat-y;
+		}
+		if background==clockday12 {
+			background: #000 url(https://kakuyamii.github.io/NG12-theme/images/clockday2012-body.gif) top center repeat-y;
+		}
+		if background==mad2012 {
+			background: url(https://kakuyamii.github.io/NG12-theme/images/madnessday2012-body.gif) top center repeat-y;
+		}
+		if background==hl2012 {
+			background: url(https://kakuyamii.github.io/NG12-theme/images/halloween2012-body.gif) top center repeat-y;
+		}
+		if background==robotday13 {
+			background: #000 url(https://kakuyamii.github.io/NG12-theme/images/gold2-body_d06802.gif) top center repeat-y;
+		}
+		if background==gold4 {
+			background: url(https://kakuyamii.github.io/NG12-theme/images/gold4-body.gif) top center repeat-y;
+		}
+	}
+	body:after {
+		content: '';
+		height: 1250px;
+		display: block;
+		top: -50px;
+		position: relative;
+		if background==default {
+			background: url(https://kakuyamii.github.io/NG12-theme/images/gold2-outer.jpg) top center no-repeat;
+		}
+		if background==default and layout==2013 {
+			background: url(https://kakuyamii.github.io/NG12-theme/images/gold3-outer.jpg) top center no-repeat!important;
+		}
+		if background==gold1 {
+			background: url(https://kakuyamii.github.io/NG12-theme/images/gold1-outer.jpg) top center no-repeat;
+		}
+
+		if background==closure {
+			background: url(https://kakuyamii.github.io/NG12-theme/images/skin-closure.jpg) top center no-repeat;
+		}
+		if background==picoday2012 {
+			background: url(https://kakuyamii.github.io/NG12-theme/images/picoday2012-outer.jpg) top center no-repeat;
+		}
+		if background==picoday2013 {
+			background: url(https://kakuyamii.github.io/NG12-theme/images/picoday2013-textless.jpg) top center no-repeat;
+		}
+		if background==picoday20132 {
+			background: url(https://kakuyamii.github.io/NG12-theme/images/picoday2013.jpg) top center no-repeat;
+		}
+		if background==robotday12 {
+			background: url(https://kakuyamii.github.io/NG12-theme/images/robotday2012-outer.jpg) top center no-repeat;
+		}
+		/* we run newgrounds LOL */
+		if background==clockday12 {
+			background: url(https://kakuyamii.github.io/NG12-theme/images/clockday2012-outer.jpg) top center no-repeat;
+		}
+		if background==mad2012 {
+			background: url(https://kakuyamii.github.io/NG12-theme/images/madnessday2012-outer.jpg) top center no-repeat;
+		}
+
+		if background==hl2012 {
+			background: url(https://kakuyamii.github.io/NG12-theme/images/halloween2012-outer.jpg) top center no-repeat!important;
+		}
+		if background==robotday13 {
+			background: url(https://kakuyamii.github.io/NG12-theme/images/robotday2013-textless.jpg) top center no-repeat;
+		}
+		if background==madness2013 {
+			background: url(https://kakuyamii.github.io/NG12-theme/images/madnessday2013.jpg) top center no-repeat;
+		}
+		if background==halloween2013 {
+			background: url(https://kakuyamii.github.io/NG12-theme/images/halloween2013.jpg) top center no-repeat;
+		}
+		if background==gold4 {
+			background: url(https://kakuyamii.github.io/NG12-theme/images/gold4-outer.jpg) top center no-repeat!important;
+		}
+	}
+
+	if layout==2013 or layout==2014 {
+		body:after {
+			top: -50px!important;
+		}
+	}
+
+	if currentbackground==0 {
+		body:not(.skin-userpage) div.outer div.skin-wrapper {
+			display: none;
+		}
+	}
+	if currentbackground==1 {
+		body {
+			background: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/background/bgtest3.png) top center repeat-y!important;
+			z-index: 1;
+
+			&:after {
+				background: none!important;
+				background-image: none!important;
+			}
+		}
+	}
+	if currentbackground==1 {
+		body {
+			background: #000 url("https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/background/bgtest3.png") 183px repeat-y !important;
+			z-index: 1;
+		}
+	}
+	if currentbackground==1 {
+		body:not(.skin-userpage) div.outer div.skin-wrapper {
+			top: -50px;
+			left: -7px;
+			z-index: 9;
+		}
+	}
+	if currentbackground==1 {
+		body:not(.skin-userpage) div.outer div.skin-inner::before {
+			content: '';
+			background: url("https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/background/bgtest1.png");
+			display: block;
+			position: absolute;
+			width: 1510px;
+			height: 1250px;
+			z-index: 999;
+			left: 202px;
+			margin: auto;
+		}
+	}
+	if layout==2013 and currentbackground==1 {
+		body:not(.skin-userpage) div.outer div.skin-inner::before {
+			background: url("https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/background/bgtest4.png");
+		}
+	}
+	if currentbackground==1 {
+		body:not(.skin-userpage) div.outer div.skin-inner div.background::after {
+			content: '';
+			background: url("https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/background/bgtest2.png") repeat;
+			position: absolute;
+			width: 1509px;
+			height: 3000px;
+			z-index: 999;
+			left: 12px;
+			margin: auto;
+			top: 1250px;
+		}
+	}
+	div.notification-bar {
+		position: absolute!important;
+		top: 0;
+		height: 48px;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/sitelinks.png) top center no-repeat;
+		box-shadow: none;
+	}
+	#header-nav-row {
+		position: relative;
+		top: 120px;
+		if layout==2013 or layout==2014 {
+			top: 65px;
+		}
+	}
+
+	div.header-nav-container {
+		height: 54px;
+		padding-top: 1px;
+		border-radius: 2px 0px 0px 2px;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/navigationTop.png) top left no-repeat;
+		&:before {
+			background-color: transparent;
+		}
+	}
+
+	div.notification-bar .logo a {
+		position: absolute;
+		bottom: -68px;
+		width: 256px;
+		height: 63px;
+		display: block;
+		overflow: visible;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/logo.png) bottom right no-repeat;
+		left: 7px;
+	}
+
+	div.notification-bar .logo a,
+	div.PassportLogo {
+		position: absolute;
+		bottom: -121px;
+		width: 291px;
+		height: 115px;
+		display: block;
+		overflow: visible;
+		background: url("https://kakuyamii.github.io/NG12-theme/images/logo_773543.png");
+		left: 7px;
+		if background==clockday12 {
+			background: url(https://kakuyamii.github.io/NG12-theme/images/logo-clockday.png) bottom left no-repeat;
+		}
+		if layout==2013 or layout==2014 {
+			position: absolute;
+			bottom: -68px;
+			margin: 0;
+			width: 256px;
+			height: 63px;
+			background: url(https://kakuyamii.github.io/NG12-theme/images/logo_fd98f5.png) bottom right no-repeat;
+		}
+	}
+
+
+
+	div.notification-bar .logo:hover {
+		filter: none;
+	}
+	div.notification-bar .search {
+		flex: 1;
+		text-align: revert;
+		position: relative;
+		left: 292px;
+		&:after {
+			content: url(https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/search.png);
+			position: relative;
+			top: -15px;
+			left: 206px;
+		}
+	}
+	/* rocky maivia */
+	div.notification-bar .search input {
+		float: left;
+		margin-right: 5px;
+		left: 50px;
+		width: 145px;
+		top: 13px;
+		position: relative;
+		border: 0;
+		font-size: 1.2em;
+		font-weight: bold;
+		height: 19px;
+		padding: 3px 5px;
+		border-radius: 0px;
+		color: #000;
+		background: #ea8d42 url(https://kakuyamii.github.io/NG12-theme/images/input-gold.jpg) top left repeat-x;
+		&:before {
+			content: "lol";
+			display: block;
+		}
+	}
+	div.notification-bar .search form {
+		white-space: nowrap;
+		width: 155px;
+		top: 7px;
+		position: relative;
+	}
+	.fa-magnifying-glass::before,
+	.fa-search::before {
+		content: " ";
+	}
+
+	#topsearch_text::placeholder {
+		color: transparent;
+	}
+	ul.ui-autocomplete.ui-widget-content,
+	ul.ui-autocomplete.ui-widget-content.ui-widget-content {
+		display: none!important;
+	}
+	div.notification-bar .search button {
+		order: 1;
+		width: 20px;
+		height: 25px;
+		padding-left: 20px;
+		background: url("https://kakuyamii.github.io/NG12-theme/images/search.png") 0 0 no-repeat;
+		left: -108px;
+		top: 11px;
+		position: relative;
+	}
+	.notification-login-side:before {
+		content: url(https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/open1.png);
+		filter: none!important;
+		width: 327px;
+		display: block;
+		height: 25px;
+	}
+
+	.notification-login-side {
+		width: 550px;
+		left: -677px;
+		position: relative;
+		top: 1px;
+		height: 50px;
+		font-size: 0;
+	}
+	#passport_login {
+		width: 66px;
+		height: 25px;
+		display: inline-block;
+		margin-left: 5px;
+		border: 0;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/button-gold.gif) right 0 no-repeat;
+		color: #eeb221!important;
+		font-size: 12px;
+		line-height: 2.0em;
+		font-weight: bold;
+		text-align: center;
+		top: -15px;
+		left: 17px;
+		text-indent: -9999px;
+		&:hover {
+			background-position: right -25px;
+			color: #FFF!important;
+		}
+	}
+
+	#passport_login:after {
+		content: 'Log In';
+		font-size: 12px;
+		line-height: 2.0em;
+		font-weight: bold;
+		text-align: center;
+		text-indent: -1px;
+		position: relative;
+		top: -23px;
+		display: block;
+	}
+
+
+	#passport_create {
+		font-size: 11px;
+		color: #eeb21100!important;
+		font-weight: normal;
+		top: -37px;
+		text-indent: -9999px;
+		&:hover {
+			color: #fff!important;
+		}
+		&:before {
+			content: "Not a member? Sign Up!";
+			color: #eeb221!important;
+			/* float: left; */
+			height: 24px;
+			padding-left: 10px;
+			margin-left: 10px;
+			border-left: 2px solid #5a5454;
+			filter: none !important;
+			left: 20px;
+			position: relative;
+			font-size: 10px;
+		}
+	}
+	div.notification-bar .notifications > div:not([class]) {
+		margin-left: 0px;
+	}
+	div.notification-bar .notifications > div:not([class]) {
+		left: -675px;
+		position: relative
+	}
+	#notification-buttons > div > div.flex-1:nth-of-type(4) {
+		order: 1;
+		max-width: max-content;
+		min-width: min-content;
+		/* oh oh oh the itch to bite */
+		height: 20px;
+		top: -2px;
+		position: relative;
+		left: -10px;
+		& svg.svgmask.s0 > image {
+			clip-path: none;
+			width: calc(100% - 10px);
+		}
+	}
+	#notification-buttons > div > div.flex-1:nth-of-type(2) {
+		order: 2;
+	}
+	#notification-buttons > div > div.flex-1:nth-of-type(1) {
+		order: 3;
+	}
+	#notification-buttons > div > div.flex-1:nth-of-type(3) {
+		order: 4;
+	}
+	[class^="ngicon-25-"]::before,
+	[class^="nohue-ngicon-25-"]::before {
+		/*	background: none; */
+		/*	filter: none !important; */
+	}
+	div.header-dropdown {
+		visibility: visible!important;
+		left: 1080.5px;
+		height: 383.5px;
+		position: absolute;
+		top: 50px;
+		z-index: 11001;
+		width: 360px;
+		background-color: #202427;
+	}
+	/*	#notify_messages {
+		display: block;
+		background: #4f280e;
+		width: 25px;
+		height: 25px;
+		&:before {
+			content: '';
+			background: url("https://kakuyamii.github.io/NG12-theme/images/a-15yellows.png") 255px 0px no-repeat!important;
+			display: block;
+			width: 15px;
+			height: 15px;
+			filter: none !important;
+			top: 5px;
+			position: relative;
+			margin: 0 auto;
+		}
+	}
+	#notify_messages:after {
+		content: '';
+		display: block;
+		height: 7px;
+		min-width: 8px;
+		margin: 2px 2px 0 2px;
+		padding: 0 4px;
+		font-size: 1.1em;
+		font-weight: bold;
+		line-height: 1.5em;
+		background: #6b3613;
+		text-align: center;
+		overflow: visible;
+	} */
+	/*	 https://kakuyamii.github.io/NG12-theme/images/ul-pmflags.png (/)
+	/*div.notification-bar .notifications a::before {
+  filter: brightness(100%) saturate(100) !important;
+} */
+	div.flex-1 {
+
+		& .user-icon {
+			width: 200%;
+			display: block;
+			height: 20px;
+			&:after {
+				content: attr(title);
+				color: #eeb211 !important;
+				font-weight: bold;
+				font-size: 11px;
+				position: relative;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				width: fit-content;
+				display: block;
+				float: left;
+				line-height: 20px;
+				left: 24px;
+				text-align: left;
+				height: 25px;
+				&:hover {
+					color: #fff !important;
+				}
+			}
+		}
+	}
+	div.notification-bar .notifications a.user-icon svg {
+		width: 20px;
+		height: auto;
+		top: 2px;
+		left: 15px;
+	}
+	div.notification-bar .notifications a.user-icon img,
+	div.notification-bar .notifications a.user-icon svg {
+		position: relative;
+		display: block;
+		float: left;
+	}
+	div.header-nav-container,
+	nav.header-nav-buttons {
+		background-color: transparent;
+		width: 976px;
+		margin: 0 auto;
+	}
+	nav.header-nav-buttons a {
+		display: block;
+		float: left;
+		width: 100%;
+		height: 40px;
+		border-bottom: solid 1px #1b1717;
+		text-indent: -4040em;
+		overflow: hidden;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/navbar.jpg) top left no-repeat!important;
+		transition: none!important;
+		if layout==2014 {
+			background: url(https://kakuyamii.github.io/NG12-theme/images/navbar2014.jpg) top left no-repeat!important;
+		}
+	}
+	nav.header-nav-buttons a,
+	nav.header-nav-buttons a:hover,
+	nav.header-nav-buttons a[class^="header-nav-button"],
+	nav.header-nav-buttons a[class^="header-nav-button"]:hover {
+		border: none!important;
+		transition: none!important;
+	}
+	nav.header-nav-buttons a {
+		flex: 0.1394;
+	}
+	nav.header-nav-buttons {
+		position: relative;
+		height: 40px;
+		margin: 7px 8px 0 8px;
+	}
+	.header-nav-button-games {
+		order: 1;
+		&:hover {
+			background-position: 0 -40px !important;
+		}
+		&:active {
+			background-position: 0 -80px !important;
+		}
+	}
+	.header-nav-button-movies,
+	nav.header-nav-buttons a.header-nav-button-movies {
+		order: 2;
+		background-position: -136px 0!important;
+		&:hover {
+			background-position: -136px -40px !important;
+		}
+		&:active {
+			background-position: -136px -80px !important;
+		}
+	}
+	.header-nav-button-audio,
+	nav.header-nav-buttons a.header-nav-button-audio {
+		order: 3;
+		background-position: -272px 0!important;
+		&:hover {
+			background-position: -272px -40px !important;
+		}
+		&:active {
+			background-position: -272px -80px !important;
+		}
+	}
+	.header-nav-button-art,
+	nav.header-nav-buttons a.header-nav-button-art {
+		order: 4;
+		background-position: -408px 0!important;
+		&:hover {
+			background-position: -408px -40px !important;
+		}
+		&:active {
+			background-position: -408px -80px !important;
+		}
+	}
+	.header-nav-button-channels,
+	nav.header-nav-buttons a.header-nav-button-channels {
+		order: 5;
+		background-position: -544px 0!important;
+		flex: 0.1466;
+		&:hover {
+			background-position: -544px -40px !important;
+		}
+		&:active {
+			background-position: -544px -80px !important;
+		}
+	}
+	nav.header-nav-buttons a.header-nav-button-community {
+		order: 6;
+		flex: 0.1468;
+		background-position: -687px 0!important;
+		&:hover {
+			background-position: -687px -40px !important;
+		}
+		&:active {
+			background-position: -687px -80px !important;
+		}
+	}
+	nav.header-nav-buttons a.header-nav-button-feed {
+		order: 7;
+		background-position: -830px 0!important;
+		flex: 0.1332;
+		&:hover {
+			background-position: -830px -40px !important;
+		}
+		&:active {
+			background-position: -830px -80px !important;
+		}
+	}
+	svg.svgmask.s0 > image,
+	svg.svgmask.s2 > image,
+	svg.svgmask > image {
+		clip-path: none!important;
+	}
+	svg.svgmask > use {
+		display: none;
+	}
+}
+@-moz-document domain("newgrounds.com"),
+url-prefix("https://newgrounds.com") {
+	/* body base */
+	* {
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	body {
+		font-size: 62.5%;
+	}
+
+	a,
+	a:active {
+		color: #eeb211!important;
+		&:hover {
+			color: #fff!important;
+		}
+	}
+	a:visited {
+		color: #b96f10!important;
+		&:hover {
+			color: #fff!important;
+		}
+	}
+	div.ng-latest-supporter-wide {
+		display: none;
+		if layout==2014 or layout==2013 and background==halloween2013 {
+			display: block!important;
+		}
+	}
+	div.ng-latest-supporter-wide {
+		background: rgba(0, 0, 0, 0);
+		padding: 0;
+		border-radius: 0;
+		top: -113px;
+		position: relative;
+		height: 0px;
+		max-width: 416px;
+		margin: 0 auto;
+	}
+	div.ng-latest-supporter-wide div.ng-latest-supporter-inner {
+		margin: 0px auto;
+		display: flex;
+		align-items: center;
+		height: 17px;
+		background: rgba(0, 0, 0, .5);
+		padding: 4px 8px;
+		width: fit-content;
+	}
+	div.ng-latest-supporter-wide div.ng-latest-supporter-image {
+		display: none;
+	}
+	div.ng-latest-supporter-wide div.ng-latest-supporter-meta p.ng-latest-supporter-message {
+		display: none;
+	}
+	div.ng-latest-supporter-wide div.ng-latest-supporter-meta p.ng-latest-supporter-title {
+		font-size: 0px;
+		white-space: nowrap;
+		color: transparent;
+		&:before {
+			content: 'Latest News: ';
+			color: #fff;
+			font-size: 12px;
+		}
+		& > a {
+			color: #eeb211 !important;
+			font-size: 12px;
+			/*  left: -87px; */
+			position: relative;
+			&:hover {
+				color: #fff !important;
+			}
+			&:after {
+				content: ' just became a Supporter!';
+				pointer-events: none!important;
+				color: #fff;
+			}
+		}
+	}
+	div.ng-latest-supporter-wide div.ng-latest-supporter-meta {
+		padding: 0;
+	}
+	div.ng-latest-supporter-meta:nth-of-type(3) {
+		left: -36px;
+		position: relative;
+		& p {
+			display: none;
+		}
+	}
+
+	div.ng-latest-supporter-wide a.ng-latest-supporter-button {
+		padding: 0;
+		border-radius: 0;
+		font-size: 12px;
+		color: #fff;
+		font-weight: normal;
+		background: none;
+		border-left: 2px solid #5a5454;
+		position: relative;
+		left: 36px;
+		text-indent: 1px;
+	}
+	/*
+	.blackout-hover {
+		display: none!important;
+	}
+	body div.blackout {
+		display: none!important;
+	}
+	.blackout-hover .blackout-inner {
+		display: none!important;
+	} */
+	/* i did the leaked version at first LOL */
+	if headerads==1 {
+		#header-insert {
+			position: relative;
+			width: 976px;
+			height: 112px;
+			margin: -2px auto 0 auto;
+			background: url("https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/headerads/headerad2.png") top center no-repeat;
+			top: 120px;
+			z-index: 9;
+			if layout==2013 or layout==2014 {
+				top: 65px;
+			}
+		}
+	}
+	div.body-main {
+		position: relative;
+		top: 120px;
+		width: 950px;
+		margin: 0 auto;
+		padding: 10px 13px 0 13px;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/bg-main.gif) top center repeat-y;
+		z-index: 999;
+		if layout==2013 or layout==2014 {
+			top: 65px;
+		}
+	}
+
+	div.body-skin-shim {
+		height: 0;
+	}
+	div.body-center {
+		max-width: 950px;
+		width: 950px;
+	}
+	div.body-guts {
+		padding: 0;
+	}
+	div.outer,
+	div.outer-userpage {
+		min-width: 976px;
+		max-height: 1250px;
+		display: block;
+	}
+
+
+	div.pod,
+	{
+		margin: 0px;
+		margin-bottom: 10px;
+		position: relative;
+		display: block;
+		border: solid 4px #000;
+		border-radius: 2px;
+		box-shadow: 0 5px 10px #000;
+		background-color: transparent
+	}
+	div.fatcol,
+	.ui-sortable.right.wide.column,
+	div .column.wide {
+		float: right;
+		width: 630px;
+		& > div.pod {
+			background-image: url(https://kakuyamii.github.io/NG12-theme/images/pod-23.jpg)!important;
+			background-color: transparent;
+			width: 622px;
+		}
+	}
+	div .column.wide > div > div.pod {
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/pod-23.jpg)!important;
+		background-color: transparent;
+		width: 622px;
+	}
+	div .column.thin,
+	div .thincol,
+	article .column.thin,
+	article .thincol,
+	section .column.thin,
+	section .thincol {
+		width: 310px!important;
+		float: left;
+		& > div.pod {
+			width: 302px !important;
+			background-image: url(https://kakuyamii.github.io/NG12-theme/images/pod-13.jpg) !important;
+			& > div.pod-body {
+				background-image: url(https://kakuyamii.github.io/NG12-theme/images/podbreaker-13.jpg)!important;
+			}
+		}
+	}
+	div.column.thin > div > div.pod {
+		width: 302px !important;
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/pod-13.jpg) !important;
+		& > div.pod-body {
+			background-image: url(https://kakuyamii.github.io/NG12-theme/images/podbreaker-13.jpg)!important;
+		}
+	}
+
+	div .column {
+		width: 950px;
+	}
+
+	div.pod-body,
+	article.pod-body,
+	section.pod-body,
+	form.pod-body,
+	footer.pod-body,
+	form.podcontent,
+	div.podcontent {
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/podbreaker-23.jpg);
+		background-repeat: no-repeat;
+		background-position: 0 -10px;
+		padding: 21px 11px 11px 11px;
+		background-color: transparent;
+		border: none;
+		box-shadow: none;
+		/* top: -2px; */
+		position: relative;
+		border-radius: 0px!important;
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			display: block;
+			height: 6px;
+			right: 0;
+			left: 0;
+			border: solid 1px #28242c00;
+			/*	border-top: 0; */
+			background: url(https://kakuyamii.github.io/NG12-theme/images/podbreaker-33.jpg) -1px 1px no-repeat;
+		}
+	}
+	div .column.thin > div.pod-body {
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/podbreaker-13_a6606b.jpg);
+	}
+
+	div .column {
+		width: 950px;
+	}
+
+
+	div .column.thin > div.pod-body {
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/podbreaker-13_a6606b.jpg);
+	}
+
+	a.item-forumthread {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		height: 60px;
+		&:hover {
+			background: #3d1d0d url(https://kakuyamii.github.io/NG12-theme/images/hoverticks-L.png) 582px -20px no-repeat;
+			background-position: -160px -25px;
+		}
+	}
+	div.pod-head,
+	header.pod-head,
+	div.pod-fakehead,
+	header.pod-fakehead,
+	div.podtop,
+	.header-gradient {
+		position: relative;
+		display: block;
+		height: 41px;
+		background: #4f280e url(https://kakuyamii.github.io/NG12-theme/images/podtop-gold.jpg) left 0 no-repeat;
+		border-radius: 0px;
+		border: none;
+		margin: 0px;
+		padding-right: 0px;
+		&:before {
+			content: '';
+			position: absolute;
+			padding-right: 3px;
+			height: 100%;
+			right: 0;
+			background: inherit;
+			background-position: right 0;
+		}
+		& h2 {
+			float: left;
+			height: 31px;
+			overflow: hidden;
+			margin: 5px;
+			padding-left: 36px;
+			color: #fff;
+			font-size: 23px;
+			line-height: 31px;
+			font-weight: normal;
+			text-transform: capitalize;
+			background-image: url(https://kakuyamii.github.io/NG12-theme/images/h2-all.png)!important;
+			background-repeat: no-repeat;
+			&:before {
+				display: none!important;
+			}
+		}
+	}
+	.pod-head ~ .pod-body,
+	.pod-body ~ .pod-body,
+	div.pod > div > .pod-body,
+	div.column:nth-child(4) > div:nth-child(1) > div.pod-body,
+	div.column:nth-child(3) > div:nth-child(1) > div.pod-body {
+		background-position: 0 -6px;
+	}
+
+	.pod-head span {
+		margin-left: 0px;
+		padding: 0px 3px 0px 0px;
+		float: right;
+	}
+	.pod-head span a:not([class]),
+	.pod-head span a[class^="icon"] {
+		border-radius: 0px;
+		margin: 8px 5px 0 0;
+		padding: 0 10px!important;
+		float: left;
+		cursor: default;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/link_stripes.png) -300px 0 no-repeat;
+		font-weight: bold;
+		line-height: 2.1em;
+		color: #eeb211;
+		background-position: 0 0;
+		&:hover {
+			color: #1b1717;
+			cursor: pointer;
+			background: url(https://kakuyamii.github.io/NG12-theme/images/link_stripes.png) -300px 0 no-repeat;
+		}
+	}
+
+	/* portal cards */
+	div.column.wide div.pod-body .portalsubmission-icons,
+	div.column.wide footer.pod-body .portalsubmission-icons,
+	div.column.wide div.podcontent .portalsubmission-icons,
+	article.column.wide div.pod-body .portalsubmission-icons,
+	article.column.wide footer.pod-body .portalsubmission-icons,
+	article.column.wide div.podcontent .portalsubmission-icons,
+	section.column.wide div.pod-body .portalsubmission-icons,
+	section.column.wide footer.pod-body .portalsubmission-icons,
+	section.column.wide div.podcontent .portalsubmission-icons {
+		margin: 0 auto;
+		width: calc(100% + 22px);
+		padding: 0px;
+	}
+	div.portalsubmission-cards div.portalsubmission-cell a.inline-card-portalsubmission {
+		display: inline-block;
+		width: 150px;
+		padding: 0;
+		border-radius: 0;
+		background-color: rgba(255,
+		255,
+		255,
+		0.08);
+		height: 138px;
+		&:hover {
+			background: #4f280e url(https://kakuyamii.github.io/NG12-theme/images/hoverticks-R.png) center center no-repeat;
+			background-position: -10px bottom;
+		}
+	}
+
+	div.portalsubmission-cards div.portalsubmission-cell a.inline-card-portalsubmission img.card-img {
+		border-radius: 0;
+		width: 140px;
+		height: 90px;
+		padding: 5px;
+	}
+	div.portalsubmission-cards div.portalsubmission-cell div.card-title {
+		display: block;
+		position: absolute;
+		left: 5px;
+		bottom: 5px;
+		right: 5px;
+		height: 33px;
+		line-height: 17px;
+		overflow: hidden;
+		padding-top: 5px;
+		color: #7d7575;
+		text-align: center;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/a-portalicons.png) -18px top no-repeat;
+	}
+	div.portalsubmission-cards div.portalsubmission-cell {
+		position: relative;
+		width: 150px;
+	}
+	div.portalsubmission-cards div.portalsubmission-cell div.card-title span {
+		display: none;
+	}
+	div.portalsubmission-cards div.portalsubmission-cell div.card-title h4 {
+		display: block;
+		padding: 0 3px;
+		height: 13px;
+		white-space: nowrap;
+		line-height: 12px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		color: #fff;
+	}
+	div.portalsubmission-cards div.portalsubmission-cell div.card-title h4 {
+		font-size: 10px;
+	}
+	a.inline-card-portalsubmission div.score-frame {
+		background-color: transparent!important;
+		padding: 0;
+
+		& div.star-score {
+			display: inline-block;
+			width: 64px;
+			height: 12px;
+			margin-top: 3px;
+			text-indent: -5810em;
+			overflow: hidden;
+			background: url(https://kakuyamii.github.io/NG12-theme/images/a-portalicons_3f570b.png) -40px -52px no-repeat;
+			& span {
+				float: left;
+				height: 12px;
+				margin: 0;
+				text-indent: -5810em;
+				overflow: hidden;
+				background: url(https://kakuyamii.github.io/NG12-theme/images/a-portalicons_8daca6.png) -40px -40px no-repeat;
+			}
+		}
+	}
+	div.portalsubmission-cards div.portalsubmission-cell a.inline-card-portalsubmission div.score-frame {
+		top: 115px;
+		right: 40px;
+	}
+	div.portalsubmission-cards div.portalsubmission-cell a.inline-card-portalsubmission {
+		background-color: transparent;
+	}
+	div.portalsubmission-cards div.portalsubmission-cell a.inline-card-portalsubmission img.card-img {
+		-webkit-clip-path: none;
+		&:hover {
+			background: url(https://kakuyamii.github.io/NG12-theme/images/hoverticks-L_c5f1de.png) center center no-repeat;
+			background-position: -10px top;
+		}
+	}
+	div.portalsubmission-cards div.portalsubmission-cell a.inline-card-portalsubmission:not(:hover) div.score-frame {
+		display: block;
+	}
+	div.portalsubmission-cards div.portalsubmission-cell a.inline-card-portalsubmission div.rating {
+		visibility: hidden;
+		&:hover {
+			visibility: visible;
+		}
+	}
+
+	/* portal ratings idk where to put this LOL */
+	div.rated-e::after,
+	span.rated-e::after {
+		if layout==E2012 {
+			background-position: -20px -0px;
+		}
+	}
+	div.rated-t::after,
+	span.rated-t::after {
+		if layout==E2012 {
+			background-position: -20px -20px;
+		}
+	}
+	div.rated-m::after,
+	span.rated-m::after {
+		if layout==E2012 {
+			background-position: -20px -40px;
+		}
+	}
+	/* hey you never know */
+	div.rated-a::after,
+	span.rated-a::after {
+		if layout==E2012 {
+			background-position: -20px -60px;
+		}
+	}
+	div.topbar-menu a.logo,
+	div.notification-bar .logo a,
+	.pod-head h2:not([class^="rated"])::before,
+	.pod-head a[class^="icon"]::before,
+	.pod-head button[class^="icon"]::before,
+	h6.wall-artist a,
+	[class^="ngicon-"]:not(.noshift)::before,
+	div.user-buttons div.user-button div > a,
+	span[class^="flag-"] label::before,
+	div[class^="flag-"] label::before,
+	li[class^="flag-"] label::before,
+	.star-score,
+	.star-variable,
+	div.vote-input div.star-bar,
+	#waveform > div,
+	#waveform > wave,
+	div.ui-datepicker .ui-datepicker-header a.ui-datepicker-prev:not(.ui-state-hover),
+	div.ui-datepicker .ui-datepicker-header a.ui-datepicker-next:not(.ui-state-hover) {
+		filter: none;
+	}
+	/* pod-head icons */
+	.pod-head > .movie {
+		background-position: 0 -279px;
+	}
+	.pod-head > .game {
+		background-position: 0 -248px;
+	}
+	.pod-head > .pbot {
+		background-position: 0 -1116px;
+	}
+	.pod-head > .users {
+		background-position: 0 -93px;
+	}
+	.pod-head > .audio {
+		background-position: 0 -310px;
+	}
+	.pod-head > .art {
+		background-position: 0 -341px;
+	}
+	#featured_fp_content_6 > .pod-head > h2 {
+		background-position: 0 -775px;
+	}
+	div.pod-head h2.rated-e,
+	header.pod-head h2.rated-e,
+	div.podtop h2.rated-e {
+		background-position: 0 -1395px;
+	}
+	div.pod-head h2.rated-t,
+	header.pod-head h2.rated-t,
+	div.podtop h2.rated-t {
+		background-position: 0 -1426px;
+	}
+	div.pod-head h2.rated-m,
+	header.pod-head h2.rated-m,
+	div.podtop h2.rated-m {
+		background-position: 0 -1457px;
+	}
+
+	div.pod-head h2.document,
+	header.pod-head h2.document div.podtop h2.document {
+		background-position: 0 -899px;
+	}
+	div.item-audiosubmission-medium div.item-icon img,
+	div.item-audiosubmission-medium div.item-icon svg,
+	div.item-audiosubmission-medium div.item-icon {
+		height: 35px;
+		width: 35px;
+	}
+	div.item-audiosubmission-medium a.item-link h4.detail-title {
+		font-size: 11px;
+		line-height: 11px
+	}
+	div.audio-wrapper a[class^="play-control"]:not(.playing):not(.paused):hover,
+	div.audio-wrapper a[class^="play-control"].paused {
+		display: none;
+	}
+	div.item-follow-user span.favefollow-buttons span.favefollow-add a {
+		display: none;
+	}
+	div.pod-head h2.user,
+	header.pod-head h2.user,
+	div.podtop h2.user {
+		background-position: 0 -62px;
+	}
+	/* */
+	div.star-score {
+		width: 88px;
+		height: 15px;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/vp-Stars.png) top left no-repeat;
+		& span {
+			float: left;
+			height: 15px;
+			text-indent: -999em;
+			overflow: hidden;
+			background: url(https://kakuyamii.github.io/NG12-theme/images/vp-Stars.png) no-repeat;
+			background-position: 0 -15px;
+		}
+	}
+	/* login */
+	#passport_main {
+		height: 999px;
+	}
+	.box-shadow {
+		border-radius: 0px;
+		max-width: 950px;
+	}
+	div.PassportHead {
+		max-width: 942px;
+		height: 41px;
+		background: #4f280e url(https://kakuyamii.github.io/NG12-theme/images/podtop-gold_688bce.jpg) left 0 no-repeat;
+		padding: 0;
+		margin: 0;
+		border: 4px solid #000;
+		border-radius: 0;
+		&:before {
+			content: '';
+			position: absolute;
+			padding-right: 3px;
+			height: 100%;
+			right: 0;
+			background: inherit;
+			background-position: right 0;
+		}
+		& h2 {
+			float: left;
+			height: 31px;
+			overflow: hidden;
+			margin: 5px;
+			padding-left: 36px;
+			color: #fff;
+			font-size: 23px;
+			line-height: 31px;
+			font-weight: normal;
+			text-transform: capitalize;
+			background-image: url(https://kakuyamii.github.io/NG12-theme/images/h2-all.png)!important;
+			background-repeat: no-repeat;
+			&:before {
+				display: none!important;
+			}
+		}
+	}
+	div.PassportPodBody {
+		max-width: 942px;
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/pod-33.jpg);
+		border: solid 4px #000;
+		padding: 0;
+		margin: 0;
+	}
+	hr,
+	hr:not([class]) {
+		clear: both;
+		height: 2px;
+		margin: 5px 0;
+		border-left: solid 1px #211b1b;
+		border-right: solid 1px #211b1b;
+		background: #000 url(https://kakuyamii.github.io/NG12-theme/images/podstripe.gif) -1px bottom repeat-x;
+	}
+}
+
+
+@-moz-document url("https://www.newgrounds.com/"),
+url("newgrounds.com/") {
+
+	/* homepage */
+	body::after {
+		height: 2934px;
+	}
+	if layout==2013 or layout==2014 {
+		body::after {
+			background-image: url(https://kakuyamii.github.io/NG12-theme/images/fp-outer.jpg);
+			width: 1510px;
+			margin: 0 auto;
+		}
+	}
+	div.header-ad-space:not(:empty),
+	div.header-deck:not(:empty) {
+		display: none;
+	}
+	div.pod:not(:first-child):not(:first-of-type):not(.embed),
+	article.pod:not(:first-child),
+	section.pod:not(:first-child) {
+		margin-top: 0px;
+	}
+
+	div .column.thin > div:nth-child(1):before {
+		content: ' ';
+		position: relative;
+		display: block;
+		height: 41px;
+		background: #4f280e url("https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/news2012.png") left 0 no-repeat !important;
+		if layout==E2012 {
+			background: #4f280e url("https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/news1.png") left 0 no-repeat !important;
+		}
+		if layout==2014 {
+			display: none;
+		}
+	}
+
+
+	if layout==2014 {
+		div.column:nth-child(4) > div:nth-child(1) > div.pod-body:nth-child(1) {
+			background-position: 0 -10px!important;
+		}
+	}
+	div.column:nth-child(4) > div:nth-child(1) > div.pod-body,
+	#featured_fp_content_1 > div:nth-child(2) {
+		padding-top: 15px;
+	}
+	/* tom fulp */
+	.item-forumthread > .item-icon {
+		margin-top: 4px;
+		margin-left: 4px;
+		& div {
+			height: 60px;
+			if fulp==def {
+				background-image: url(https://kakuyamii.github.io/NG12-theme/images/1_large.gif);
+			}
+			if fulp==alt {
+				background-image: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/tomfulppfps/alt.png);
+			}
+			if fulp==F2012 {
+				background-image: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/tomfulppfps/fulp1.gif);
+			}
+			if fulp==LF2012 {
+				background-image: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/tomfulppfps/fulp2.gif);
+			}
+			if fulp==A2013 {
+				background-image: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/tomfulppfps/coolglass.png);
+			}
+		}
+	}
+
+	svg.svgmask.s2 > image {
+		display: none;
+	}
+	if layout==2013 and hp==1 {
+		#frontpage_sortables:before {
+			content: '';
+			background: url('https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/orange/welcome2ng.png');
+			box-shadow: 0 5px 10px #000;
+			display: block;
+			position: relative;
+			height: 135px;
+			margin-bottom: 10px;
+		}
+	}
+	a.item-forumthread div.item-details div.item-user {
+		font-size: 11px;
+	}
+
+	#frontpage_sortables {
+		display: grid;
+	}
+	#frontpage_sortables > div:nth-child(1) {
+		display: none;
+	}
+
+	#featured_fp_content_1 {
+		order: 1;
+	}
+
+
+	#featured_fp_content_2 {
+		order: 2
+	}
+	#featured_fp_content_4 {
+		order: 3
+	}
+	#featured_fp_content_5 {
+		order: 4
+	}
+	#featured_fp_content_6 {
+		order: 5
+	}
+	#featured_fp_content_3 {
+		order: 6
+	}
+
+	.ui-sortable.right.wide.column {
+		position: relative;
+	}
+
+
+	div.column.wide div.pod-body .portalsubmission-icons div.span-1 {
+		width: 150px;
+		height: 138px;
+		margin: 0;
+		background: #0f0b0c;
+		&:hover {
+			background: #4f280e url(https://kakuyamii.github.io/NG12-theme/images/hoverticks-R_534c32.png) center center no-repeat;
+			background-position: -10px bottom;
+		}
+		if layout==E2012 {
+			width: 150px;
+			height: 100px;
+		}
+	}
+
+	a.item-portalsubmission-small {
+		padding: 0;
+		margin: 0;
+		width: 150px;
+		height: 138px;
+		&:hover {
+			background: #4f280e00 url(https://kakuyamii.github.io/NG12-theme/images/hoverticks-R_534c32.png) center center no-repeat;
+			background-position: -10px top;
+		}
+		if layout==E2012 {
+			width: 150px;
+			height: 100px;
+			&:hover {
+				background: #4f280e url(https://kakuyamii.github.io/NG12-theme/images/hoverticks-L_3ebb6e.png) center center no-repeat;
+				background-position: -10px top;
+			}
+		}
+	}
+	if not layout==E2012 {
+		a.item-portalsubmission-small div.item-icon .item-icon-img {
+			position: absolute;
+			top: -5px;
+			left: -5px;
+			padding: 5px;
+			height: 90px;
+			&:hover {
+				background: url(https://kakuyamii.github.io/NG12-theme/images/hoverticks-R_205f06.png) center center no-repeat;
+				background-position: -10px bottom;
+			}
+		}
+	}
+	a.item-portalsubmission-small div.item-icon {
+		width: 150px;
+		height: 100px;
+		margin-left: 5px;
+		top: 5px;
+		if layout==E2012 {
+			width: 140px;
+			height: 90px;
+			padding: 5px;
+			&:hover {
+				background: url(https://kakuyamii.github.io/NG12-theme/images/hoverticks-R_205f06.png) center center no-repeat;
+				background-position: -10px bottom;
+			}
+		}
+	}
+
+
+
+	a.item-portalsubmission:hover {
+		cursor: pointer;
+		background: #3d1d0d url(https://kakuyamii.github.io/NG12-theme/images/hoverticks-R_572025.png) -160px -20px no-repeat !important;
+		background-position: 272px -25px !important;
+	}
+	a.item-portalsubmission-small div.item-details {
+		display: block;
+		position: relative;
+		margin-left: 10px;
+		bottom: 5px;
+		right: 5px;
+		height: 30px;
+		line-height: 17px;
+		overflow: hidden;
+		padding-top: 5px;
+		color: #7d7575;
+		text-align: center;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/a-portalicons_1debc8.png) -18px top no-repeat!important;
+		if layout==E2012 {
+			background: #000000bf;
+			height: 11px;
+			padding: 3px 5px;
+			margin: 0;
+			top: -22px;
+			left: 5px;
+			width: 130px;
+		}
+	}
+
+
+	a.item-portalsubmission-small div.item-details span:first-child {
+		height: 13px;
+		line-height: 12px;
+		color: #fff;
+		padding: 0px;
+		padding: 0 3px;
+		if layout==E2012 {
+			font-weight: normal;
+			font-size: 11px;
+			height: auto;
+			text-align: left;
+			padding: 0;
+		}
+	}
+
+	a.item-portalsubmission-small:hover a.item-portalsubmission-small div.item-details span:first-child:hover {
+		color: #000;
+	}
+	a.item-portalsubmission-small div.item-details span:last-child {
+		height: 13px;
+		line-height: 13px;
+		padding: 0px;
+		font-size: 10px;
+		&:before {
+			content: 'by '
+		}
+		if layout==E2012 {
+			display: none;
+		}
+	}
+	a.item-portalsubmission-small div.item-icon div.item-icon-hover,
+	a.item-portalsubmission-small div.item-icon div.item-icon-hover div.item-genre {
+		background-color: rgba(0, 0, 0, 0.85);
+		if layout==E2012 {
+			visibility: hidden;
+			color: #fff0;
+			background: none;
+		}
+	}
+	a.item-portalsubmission-small div.item-icon div.item-icon-hover div.item-suitability {
+		border-radius: 0px;
+		width: 18px;
+		height: 18px;
+		padding: 0;
+		background: none!important;
+
+		if layout==E2012 {
+			bottom: 70px;
+			right: 120px;
+			padding: 0px;
+			border-bottom-right-radius: 7px;
+			width: 20px;
+			height: 20px;
+			background: #a52e2e!important;
+			opacity: 0.75;
+		}
+	}
+	if layout==E2012 {
+		#featured_fp_content_1 > div.pod-body .portalsubmission-icons div.span-1 > a.item-portalsubmission-small > div.item-details {
+			background: #000000bf!important;
+			visibility: hidden;
+			color: #fff0;
+		}
+	}
+	if layout==E2012 {
+		#featured_fp_content_1 > div.pod-body .portalsubmission-icons div.span-1 > a.item-portalsubmission-small:hover > div.item-details {
+			background: #a52e2ebf!important;
+			visibility: visible;
+			color: #fff;
+		}
+	}
+
+	if layout==E2012 {
+		#featured_fp_content_2 > div.pod-body .portalsubmission-icons div.span-1 > a.item-portalsubmission-small div.item-icon div.item-icon-hover div.item-suitability {
+			background: #296395!important;
+		}
+	}
+	if layout==E2012 {
+		#featured_fp_content_2 > div.pod-body .portalsubmission-icons div.span-1 > a.item-portalsubmission-small > div.item-details {
+			visibility: hidden;
+			color: #fff0;
+		}
+	}
+	if layout==E2012 {
+		#featured_fp_content_2 > div.pod-body .portalsubmission-icons div.span-1 > a.item-portalsubmission-small:hover > div.item-details {
+			background: #296395bf!important;
+			visibility: visible;
+			color: #fff;
+		}
+	}
+	if layout==E2012 {
+		a.item-portalitem-art-small div.item-details {
+			background-color: #9c366cbf;
+			visibility: hidden;
+			color: #fff0;
+		}
+	}
+	if layout==E2012 {
+		a.item-portalitem-art-small:hover div.item-details {
+			background-color: #9c366cbf;
+			visibility: visible;
+			color: #fff;
+		}
+	}
+	if layout==E2012 {
+		a.item-portalitem-art-small > div[class^="rated-"]:before {
+			background-color: #9c366c;
+			opacity: 0.75
+		}
+	}
+	.artist-news-container > ul.itemlist.alternating > li.alternate {
+		background: transparent;
+	}
+	ul.itemlist.alternating > li:nth-child(2n + 2):not(.artist-news-container > ul.itemlist.alternating > li:nth-child(2n + 2)),
+	ul.itemlist.alternating > li.alternate {
+		background-color: #2e1a0e;
+	}
+	ul.itemlist.alternating > li:nth-child(2n + 1),
+	ul.itemlist.alternating > li.alternate {
+		background-color: transparent!important;
+	}
+
+	div.item-audiosubmission-medium {
+		padding: 5px;
+		height: 35px;
+	}
+	div.item-audiosubmission-medium a.item-author {
+		height: 35px;
+		width: 135px;
+		padding-left: 40px;
+		padding-right: 5px;
+		vertical-align: middle;
+		text-align: left;
+		position: relative;
+		&:hover {
+			background-color: #4f280e;
+			color: #fff
+		}
+		& svg.svgmask.sz-medium {
+			max-width: 25px;
+			left: -36px;
+			position: relative;
+		}
+	}
+	div.item-audiosubmission-medium a.item-author > strong {
+		left: -36px;
+		position: relative;
+	}
+
+	if layout==E2012 {
+		span[class^="rated-"]::after,
+		span[class^="rank-"]::after {
+			left: -1px;
+			top: -1px;
+		}
+	}
+	svg.svgmask.s2 > image {
+		clip-path: none;
+	}
+	svg.svgmask.sz-large > use {
+		stroke-width: 8px;
+		display: none;
+	}
+
+	/* */
+	div.itemblock a[class^="item-"] {
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+	}
+	a.item-forumthread {
+		height: 70px;
+	}
+	a.item-forumthread div.item-details div.item-user {
+		display: inline-block;
+		width: 100%;
+		padding-bottom: 5px;
+		line-height: 12px;
+	}
+	a.item-forumthread div.item-details h4.item-title {
+		margin-top: 3px;
+		padding-top: 5px;
+		border-top: solid 1px #363232;
+		width: 100%;
+		padding-bottom: 5px;
+		line-height: 12px;
+	}
+	ul.links:nth-child(1) > li:nth-child(7),
+	ul.links:nth-child(1) > li:nth-child(8),
+	ul.links:nth-child(1) > li:nth-child(9), ul.links:nth-child(1) > li:nth-child(10) {
+		display: none;
+	}
+	if layout==E2012 {
+		ul.links:nth-child(1) > li:nth-child(5),
+		ul.links:nth-child(1) > li:nth-child(6),
+		ul.links:nth-child(1) > li:nth-child(7),
+		ul.links:nth-child(1) > li:nth-child(8),
+		ul.links:nth-child(1) > li:nth-child(9), ul.links:nth-child(1) > li:nth-child(10) {
+			display: none;
+		}
+	}
+	ul.links.boxes {
+		margin: 0;
+		width: 280px;
+		left: -0px;
+		position: relative;
+		if layout==E2012 {
+			padding: 2px 0;
+			width: 288px;
+		}
+	}
+	ul.links.boxes li {
+		margin: 0px;
+		width: 270px;
+		height: 30px;
+		display: block;
+		padding: 0 5px;
+		font-size: 1.1em;
+		font-weight: bold;
+		background: #2e1a0f;
+		if layout==E2012 {
+			float: left;
+			width: 118px;
+			padding: 5px;
+			margin: 5px 6px!important;
+			height: 70px;
+			position: relative;
+			background: url(https://kakuyamii.github.io/NG12-theme/images/ul-calendar.png) 0 -25px no-repeat;
+		}
+	}
+	a.item-calendar-list {
+		padding: 0;
+		display: block;
+		height: 30px;
+		width: 270px;
+		line-height: 30px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		background-color: transparent!important;
+		if layout==E2012 {
+			height: fit-content;
+			width: fit-content;
+			color: #fff0 !important
+		}
+	}
+	if layout==E2012 {
+		a.item-calendar-list > span {
+			position: absolute;
+			top: 25px;
+			z-index: 9999;
+			left: 30px;
+			width: 95px;
+			padding: 0;
+			line-height: 13px;
+			white-space: normal;
+			word-wrap: break-word;
+			color: #eeb211 !important;
+			&:hover {
+				color: #fff!important;
+			}
+		}
+	}
+
+	a.item-calendar-list > strong {
+		color: #fff;
+		white-space: nowrap;
+		min-width: 40px;
+		display: inline-block;
+		if layout==E2012 {
+			position: relative;
+			top: -10px;
+			font-weight: normal;
+			height: 22px;
+			padding: 0;
+			color: #c9bebe!important;
+			line-height: 12px;
+			/*  direction: rtl;
+  unicode-bidi: bidi-override;
+ transform: scaleX(-1); */
+		}
+	}
+	ul.links.boxes li:not(:last-of-type) {
+		margin-bottom: 2px;
+	}
+
+	svg.svgmask.s2 > image {
+		clip-path: none;
+	}
+
+
+	div.column:nth-child(4) > div:nth-child(1) > div:nth-child(2) {
+		padding-top: 21px;
+		background-position: 0 0;
+		margin-top: -6px;
+	}
+
+	/* p bot */
+	div[class^="rank-"]::before {
+		display: block;
+		position: absolute;
+		z-index: 1;
+		width: 20px;
+		bottom: auto;
+		margin: 0;
+		height: 20px;
+		text-indent: -999em;
+		overflow: hidden;
+		opacity: .85;
+		-moz-border-radius-bottomright: 7px;
+		-webkit-border-bottom-right-radius: 7px;
+		background-color: #1b1717;
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/rankandrate.png);
+	}
+	.rank-2:before {
+		background-position: 0 -20px;
+	}
+	.rank-3:before {
+		background-position: 0 -40px;
+	}
+	.rank-4:before {
+		background-position: 0 -60px;
+	}
+	.rank-5:before {
+		background-position: 0 -80px;
+	}
+
+	a.item-portalsubmission div.item-details-main div.detail-title {
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+	}
+	a.item-portalsubmission div.item-details-main div.detail-title h4 {
+		padding-bottom: 5px;
+		line-height: 12px;
+	}
+
+	.column.thin a.item-portalsubmission div.item-details div.item-details-meta dl {
+		display: flex;
+		width: 169px;
+		margin-top: 3px;
+		padding-top: 2px;
+		border-top: solid 1px #363232;
+		line-height: 1.1em;
+		font-size: 10px;
+		color: #7d7575!important;
+	}
+	.color-movie,
+	.color-game {
+		color: #7d7575!important;
+		font-weight: normal;
+	}
+
+	.column.thin a.item-portalsubmission div.item-details div.item-details-meta dd {
+		display: inline;
+		height: 12px;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/tinyicons-vert.png) 0 -98px no-repeat !important;
+		padding-right: 0;
+		border-right: 0;
+		margin-right: 0;
+		border: none!important;
+	}
+	.column.thin a.item-portalsubmission div.item-details div.item-details-meta dd + dd {
+		padding-left: 3px;
+		margin-left: 4px;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/tinyicons-vert.png) 0 -98px no-repeat !important;
+	}
+	.column.thin a.item-portalsubmission div.item-details div.item-details-meta dd:last-child {
+		padding-left: 5px;
+	}
+
+	div.item-details-meta dd:nth-of-type(1) {
+		order: 1;
+	}
+	div.item-details-meta dd:nth-of-type(2) {
+		order: 3;
+		border-right: none!important;
+		text-indent: 3px;
+		left: -21px;
+		position: relative;
+		width: 38%;
+	}
+	div.item-details-meta dd:nth-of-type(3) {
+		order: 2;
+		width: fit-content;
+		width: 100%;
+	}
+	a.item-portalsubmission div.item-details-meta {
+		height: 18px;
+	}
+	.column.thin a.item-portalsubmission div.item-details div.item-details-meta dd > span.rated-e {
+		font-size: 0;
+		text-indent: -31px;
+		width: 39.7333px;
+		&:before {
+			content: 'Rated E';
+			font-size: 11px;
+			background: none!important;
+			left: 29px;
+			position: relative;
+		}
+		&:after {
+			display: none;
+		}
+	}
+	.column.thin a.item-portalsubmission div.item-details div.item-details-meta dd > span.rated-t {
+		font-size: 0;
+		text-indent: -31px;
+		&:before {
+			content: 'Rated T';
+			font-size: 11px;
+			background: none!important;
+			left: 29px;
+			position: relative;
+		}
+		&:after {
+			display: none;
+		}
+	}
+
+	.column.thin a.item-portalsubmission div.item-details div.item-details-meta dd > span.rated-m {
+		font-size: 0;
+		text-indent: -31px;
+		&:before {
+			content: 'Rated M';
+			font-size: 11px;
+			background: none!important;
+			left: 29px;
+			position: relative;
+		}
+		&:after {
+			display: none;
+		}
+	}
+	a.item-user {
+		padding: 0;
+	}
+	a.item-user svg.sz-large {
+		/*	padding: 0 0 0 101px;
+		padding-left: 70px !important; */
+		margin: 5px 8px 5px 5px;
+	}
+	a.item-user div.news-author-small {
+		padding-bottom: 0;
+	}
+	a.item-user div.news-title-small {
+		margin-top: 3px;
+		padding-top: 5px;
+		border-top: solid 1px #363232;
+		padding-bottom: 5px;
+		line-height: 12px;
+	}
+}
+
+@-moz-document url-prefix("https://www.newgrounds.com/games"),
+url-prefix("https://www.newgrounds.com/search/conduct/games") {
+
+	/* games theme */
+	body {
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/blue0-body.gif);
+		position: relative;
+	}
+
+
+	body:after {
+		content: '';
+		background-image: url("https://kakuyamii.github.io/NG12-theme/images/blue0-outer.jpg") !important;
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-color: #000;
+		if layout==2013 or layout==2014 {
+			background-image: url(https://kakuyamii.github.io/NG12-theme/images/blue2-outer.jpg)!important;
+		}
+	}
+
+	.notification-login-side:before {
+		content: url(https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/blueopen1.png);
+		filter: none!important;
+		width: 327px;
+		display: block;
+		height: 25px;
+	}
+	div.notification-bar .search:after {
+		content: url(https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/bluesearch1.png);
+		position: relative;
+	}
+	div.notification-bar .search input {
+		background-color: #75bbec;
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/input-blue.jpg);
+	}
+	div.notification-bar .search button {
+		background-position: -25px top;
+	}
+	.header-nav-button-games,
+	nav.header-nav-buttons a.header-nav-button-games {
+		background-position: 0 -80px !important;
+	}
+	div.notification-bar .search:after {
+		content: url(https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/bluesearch1.png);
+		position: relative;
+		top: -15px;
+		left: 206px;
+	}
+
+	/* header */
+	div.pod-head,
+	header.pod-head,
+	div.pod-fakehead,
+	header.pod-fakehead,
+	div.podtop,
+	.header-gradient {
+		background: #173249 url(https://kakuyamii.github.io/NG12-theme/images/podtop-blue.jpg) top left no-repeat;
+		float: right;
+		width: 622px;
+		border: solid 4px #000;
+		z-index: 999999;
+		top: -4px;
+	}
+	#passport_login {
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/button-blue.gif);
+		color: #eeb211 !important;
+		&:hover {
+			color: #fff!important;
+		}
+	}
+
+	select {
+		background-color: #75bbec;
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/input-blue.jpg);
+		height: 25px;
+		padding-left: 5px;
+	}
+	.searchform-options .searchform-sort a,
+	.searchform-options .searchform-sort strong {
+		color: #eeb211!important;
+		margin: 5px!important;
+		padding-left: 10px;
+		height: 30px;
+		line-height: 2.1em;
+
+		background: #173249 url(https://kakuyamii.github.io/NG12-theme/images/link_stripes_c04705.png) left top repeat-y;
+	}
+	div.portalsubmission-cards div.portalsubmission-cell a.inline-card-portalsubmission:hover {
+		background-color: #173249;
+	}
+	div.footer-feature-buttons h3 {
+		background-position: 0 -40px!important;
+	}
+	div.footer-main div.footer-navigation-cell li > a {
+		border-color: #3a94e0!important;
+		background-position: right -46px!important;
+	}
+	div.footer-main {
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/blue-footer.jpg)!important;
+	}
+}
+@-moz-document url("https://www.newgrounds.com/games"),
+url("https://www.newgrounds.com/games/featured"),
+url("https://www.newgrounds.com/games/browse"),
+url("https://www.newgrounds.com/games/popular") {
+	/* games portal */
+	div.pod,
+	article.pod,
+	section.pod,
+	div.thincol > *,
+	div.fatcol > * {
+		width: 950px;
+		border: 0;
+		margin: 0;
+		height: 0;
+	}
+
+	div.pod-body:first-child {
+		width: 928px;
+		float: left;
+		display: grid;
+		height: 351px;
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/pod-13_dffd94.jpg) !important;
+		position: relative;
+		top: -52px;
+		&:before {
+			content: '';
+			background-image: url("https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/blue/browsecategories.png");
+			background-repeat: no-repeat;
+			position: relative;
+			top: -21px;
+			left: -11px;
+			width: 302px;
+			height: 51px;
+			border: 4px solid #000;
+			box-shadow: 0 5px 10px #000;
+			border-bottom: none;
+		}
+	}
+
+	if background==gray01 {
+		div.pod-body:first-child:before {
+			background-image: url("https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/grey/butthole.png")!important;
+		}
+		if layout==2014 {
+			div.pod-body:first-child:before {
+				background-image: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/orange/browseblank.png)!important;
+			}
+		}
+	}
+	.pod-body .form-inline,
+	.pod-like .form-inline {
+		display: inline-flex;
+		order: 1;
+		z-index: 9999;
+		width: 622px;
+		top: -35px;
+		left: 309px;
+		position: relative;
+		background-image: url("https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/orange/filter2.png");
+		height: 61px;
+		padding: 0;
+		border: 4px solid #000;
+		box-shadow: 0 5px 10px #000;
+	}
+	div.padded-top:nth-child(2) > div:nth-child(7) {
+		width: 150px;
+	}
+	.pod-body .form-inline div.select-wrapper {
+		margin: 5px 5px 0 5px;
+		height: 25px;
+	}
+
+
+	if selectportal==off {
+		.pod-body .form-inline {
+			display: none;
+		}
+	}
+	if selectportal==byyear {
+		div.form-inline.padded-top.flexbox:nth-of-type(2) > div:nth-of-type(7),
+		div.form-inline.padded-top.flexbox:nth-of-type(2) > div:nth-of-type(5) {
+			display: none;
+		}
+	}
+	if selectportal==byyear {
+		.pod-body .form-inline label,
+		.searchform-options label {
+			font-size: 1.3em;
+			line-height: 2.7em;
+			color: #7d7575;
+			margin-right: 0.1em;
+		}
+	}
+	if selectportal==byyear {
+		div.form-inline.padded-top.flexbox:nth-of-type(2) > div:nth-of-type(1) {
+			position: relative;
+			left: 16px;
+			top: 2px;
+		}
+	}
+	if selectportal==byyear {
+		div.form-inline.padded-top.flexbox:nth-of-type(2) > div:nth-of-type(3) {
+			position: relative;
+			left: -85px;
+			top: 2px;
+		}
+	}
+
+	div.padded-top:nth-child(2) > div:nth-child(5) > div:nth-child(2) > select:nth-child(1) {
+		padding-right: 0;
+		width: 205px;
+	}
+	.select-wrapper::after {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 26px;
+		height: 25px;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/select-fakearrow.gif) top left no-repeat;
+		border: none;
+	}
+
+	.searchform-options {
+		display: flex;
+		align-items: center;
+		order: 2;
+		&:before {
+			content: '';
+			background-image: none;
+			background-repeat: no-repeat;
+			position: relative;
+			top: -190px;
+			left: -11px;
+			width: 302px;
+			height: 269px;
+			border: 4px solid #000;
+			border-top: none;
+			box-shadow: 0 5px 10px #000;
+		}
+	}
+	.searchform-options::after {
+		content: '';
+		background: url("https://kakuyamii.github.io/NG12-theme/images/podbreaker-33_7ae02f.jpg") -1px 1px no-repeat;
+		height: 6px;
+		width: 302px;
+		position: absolute;
+		top: 214px;
+		left: 4px;
+		border-bottom: 4px solid #000;
+
+		/*    box-shadow: 0 5px 10px #000; */
+	}
+	.searchform-options .searchform-sort {
+		flex: 1;
+		width: 302px;
+		display: grid;
+		font-size: 14px;
+		top: -147px;
+		position: relative;
+		left: -317px;
+		z-index: 9;
+		background-image: url("https://kakuyamii.github.io/NG12-theme/images/pod-13_dffd94.jpg") !important;
+		max-width: 302px;
+		if selectportal==off {
+			top: -89px;
+		}
+	}
+	if selectportal==default and off {
+		.searchform-options .searchform-extra {
+			display: none;
+		}
+	}
+	if selectportal==byyear {
+		.searchform-options .searchform-extra {
+			top: -207px;
+			position: relative;
+			z-index: 9999;
+			left: 140px;
+		}
+	}
+	if selectportal==byyear {
+		.searchform-options .searchform-extra label {
+			padding-right: 0;
+		}
+	}
+	.searchform-options .searchform-sort a,
+	.searchform-options .searchform-sort strong {
+		color: #eeb211!important;
+		margin: 5px!important;
+		padding-left: 10px;
+		height: 30px;
+		line-height: 2.1em;
+		width: 270px;
+		position: relative;
+		left: 5px;
+		&:hover {
+			color: #1b1717!important;
+			cursor: pointer;
+			background-position: -300px 0;
+		}
+	}
+	.searchform-options .searchform-sort a.current {
+		color: #fff!important;
+		background-color: #296395;
+	}
+
+	.searchform-sort > a.no-visited:nth-child(5) {
+		display: none;
+	}
+	div.pod-body:last-child {
+		float: right;
+		border: solid 4px #000;
+		z-index: 9999;
+		top: -330px;
+		border-top: none;
+		&:before {
+			content: '';
+			background-image: url(https://kakuyamii.github.io/NG12-theme/images/pod-23_065998.jpg);
+			display: block;
+			position: relative;
+			width: 302px;
+			width: 622px;
+			height: 50000px;
+			top: -11px;
+			left: -11px;
+		}
+	}
+	div.pod-body:first-child::after {
+		width: 301px;
+		top: 193px;
+		position: absolute;
+		left: -1px;
+	}
+	div.pod-body:last-child {
+		width: 600px;
+		if cutoff==1row {
+			height: 139px;
+		}
+		if cutoff==2row {
+			height: 278px;
+		}
+		if cutoff==3row {
+			height: 417px;
+		}
+		if cutoff==4row {
+			height: 556px;
+		}
+		if cutoff==5row {
+			height: 695px;
+		}
+		if cutoff==6row {
+			height: 834px;
+		}
+		if cutoff==7row {
+			height: 973px;
+		}
+		if cutoff==8row {
+			height: 1112px;
+		}
+		if cutoff==9row {
+			height: 1251px;
+		}
+		if cutoff==10row {
+			height: 1390px;
+		}
+		if cutoff==11row {
+			height: 1529px;
+		}
+		if cutoff==12row {
+			height: 1668px;
+		}
+		if cutoff==13row {
+			height: 1807px;
+		}
+		if cutoff==14row {
+			height: 1946px;
+		}
+		if cutoff==15row {
+			height: 2085px;
+		}
+	}
+
+
+	div.portalsubmission-cards {
+		display: grid;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		gap: 6px;
+		grid-gap: 1px;
+		position: relative;
+		top: -50000px;
+	}
+}
+
+@-moz-document url-prefix("https://www.newgrounds.com/movies"),
+url-prefix("https://www.newgrounds.com/search/conduct/movies") {
+	/* movies theme */
+	body {
+		content: '';
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/red0-body.gif);
+		if layout==2013 or layout==2014 {
+			background-image: url(https://kakuyamii.github.io/NG12-theme/images/red2-body.gif);
+		}
+	}
+
+	body:after {
+		background-image: url("https://kakuyamii.github.io/NG12-theme/images/red0-outer.jpg")!important;
+		background-color: #000;
+		if layout==2013 or layout==2014 {
+			background-image: url(https://kakuyamii.github.io/NG12-theme/images/red2-outer.jpg)!important;
+		}
+		if layout==2013 and background==default {
+			background: #000 url(http://cssimg.ngfiles.com/bg-skins/red1-outer.jpg) top center no-repeat!important;
+			background-image: url(http://cssimg.ngfiles.com/bg-skins/red1-outer.jpg)!important;
+		}
+	}
+	.notification-login-side:before {
+		content: url(https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/redopen1.png);
+		filter: none!important;
+		width: 327px;
+		display: block;
+		height: 25px;
+	}
+	div.notification-bar .search:after {
+		content: url(https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/redsearch.png);
+		position: relative;
+	}
+	#passport_login {
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/button-red.gif);
+		&:hover {
+			color: #fff!important;
+		}
+	}
+
+	div.notification-bar .search input {
+		background-color: #fa7070;
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/input-red.jpg);
+	}
+	div.notification-bar .search button {
+		background-position: -50px top;
+	}
+	.header-nav-button-movies,
+	nav.header-nav-buttons a.header-nav-button-movies {
+		background-position: -136px -80px!important;
+	}
+	div.pod-head {
+		background: #521b1b url(https://kakuyamii.github.io/NG12-theme/images/podtop-red.jpg) top left no-repeat;
+		float: right;
+		width: 622px;
+		border: solid 4px #000;
+		z-index: 999999;
+		top: -4px;
+	}
+	select {
+		background-color: #fa7070;
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/input-red_c3a3b4.jpg);
+		height: 25px;
+		padding-left: 5px;
+	}
+	.searchform-options .searchform-sort a,
+	.searchform-options .searchform-sort strong {
+		color: #eeb211!important;
+		margin: 5px!important;
+		padding-left: 10px;
+		height: 30px;
+		line-height: 2.1em;
+
+		background: #521b1b url(https://kakuyamii.github.io/NG12-theme/images/link_stripes_c04705.png) left top repeat-y;
+	}
+	/* i really want this to be global */
+	div.footer-feature-buttons h3 {
+		background-position: 0 -80px!important;
+	}
+	div.footer-main div.footer-navigation-cell li > a {
+		border-color: #f74040!important;
+		background-position: right -46px!important;
+	}
+
+	div.footer-main {
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/red-footer.jpg)!important;
+	}
+	div.footer-main div.footer-navigation-cell li > a {
+		border-color: #f74040!important;
+		background-position: right -71px!important;
+	}
+}
+@-moz-document url-prefix("https://www.newgrounds.com/movies") {
+	/* movie portal */
+	div.pod,
+	article.pod,
+	section.pod,
+	div.thincol > *,
+	div.fatcol > * {
+		width: 950px;
+		border: 0;
+		margin: 0;
+		height: 0;
+	}
+	div.pod-body:first-child {
+		width: 928px;
+		float: left;
+		display: grid;
+		height: 351px;
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/pod-13_dffd94.jpg) !important;
+		position: relative;
+		top: -52px;
+		&:before {
+			content: '';
+			background-image: url("https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/red/browsecategories.png");
+			background-repeat: no-repeat;
+			position: relative;
+			top: -21px;
+			left: -11px;
+			width: 302px;
+			height: 51px;
+			border: 4px solid #000;
+			box-shadow: 0 5px 10px #000;
+
+			border-bottom: none;
+		}
+	}
+	.pod-body .form-inline,
+	.pod-like .form-inline {
+		display: inline-flex;
+		order: 1;
+		z-index: 9999;
+		width: 622px;
+		top: -35px;
+		left: 309px;
+		position: relative;
+		background-image: url("https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/orange/filter2.png");
+		height: 61px;
+		padding: 0;
+		border: 4px solid #000;
+		box-shadow: 0 5px 10px #000;
+	}
+	div.padded-top:nth-child(2) > div:nth-child(7) {
+		width: 150px;
+	}
+	.pod-body .form-inline div.select-wrapper {
+		margin: 5px 5px 0 5px;
+		height: 25px;
+	}
+
+
+	if selectportal==off {
+		.pod-body .form-inline {
+			display: none;
+		}
+	}
+	if selectportal==byyear {
+		div.form-inline.padded-top.flexbox:nth-of-type(2) > div:nth-of-type(7),
+		div.form-inline.padded-top.flexbox:nth-of-type(2) > div:nth-of-type(5) {
+			display: none;
+		}
+	}
+	if selectportal==byyear {
+		.pod-body .form-inline label,
+		.searchform-options label {
+			font-size: 1.3em;
+			line-height: 2.7em;
+			color: #7d7575;
+			margin-right: 0.1em;
+		}
+	}
+	if selectportal==byyear {
+		div.form-inline.padded-top.flexbox:nth-of-type(2) > div:nth-of-type(1) {
+			position: relative;
+			left: 16px;
+			top: 2px;
+		}
+	}
+	if selectportal==byyear {
+		div.form-inline.padded-top.flexbox:nth-of-type(2) > div:nth-of-type(3) {
+			position: relative;
+			left: -85px;
+			top: 2px;
+		}
+	}
+
+	div.padded-top:nth-child(2) > div:nth-child(5) > div:nth-child(2) > select:nth-child(1) {
+		padding-right: 0;
+		width: 205px;
+	}
+	.select-wrapper::after {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 26px;
+		height: 25px;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/select-fakearrow.gif) top left no-repeat;
+		border: none;
+	}
+	.searchform-options {
+		display: flex;
+		align-items: center;
+		order: 2;
+		&:before {
+			content: '';
+			background-image: none;
+			background-repeat: no-repeat;
+			position: relative;
+			top: -190px;
+			left: -11px;
+			width: 302px;
+			height: 269px;
+			border: 4px solid #000;
+			border-top: none;
+			box-shadow: 0 5px 10px #000;
+		}
+	}
+	.searchform-options::after {
+		content: '';
+		background: url("https://kakuyamii.github.io/NG12-theme/images/podbreaker-33_7ae02f.jpg") -1px 1px no-repeat;
+		height: 6px;
+		width: 302px;
+		position: absolute;
+		top: 214px;
+		left: 4px;
+		border-bottom: 4px solid #000;
+
+		/*    box-shadow: 0 5px 10px #000; */
+	}
+	.searchform-options .searchform-sort {
+		flex: 1;
+		width: 302px;
+		display: grid;
+		font-size: 14px;
+		top: -147px;
+		position: relative;
+		left: -317px;
+		z-index: 9;
+		background-image: url("https://kakuyamii.github.io/NG12-theme/images/pod-13_dffd94.jpg") !important;
+		max-width: 302px;
+	}
+	if selectportal==default and off {
+		.searchform-options .searchform-extra {
+			display: none;
+		}
+	}
+	/*	.searchform-options {
+		display: flex;
+		align-items: center;
+		order: 2;
+		&:before {
+			content: '';
+			background-image: none;
+			background-repeat: no-repeat;
+			position: relative;
+			top: -190px;
+			left: -11px;
+			width: 302px;
+			height: 308px;
+			border: 4px solid #000;
+			border-top: none;
+			box-shadow: 0 5px 10px #000;
+		}
+	}
+	.searchform-options::after {
+		content: '';
+		background: url("https://kakuyamii.github.io/NG12-theme/images/podbreaker-33_7ae02f.jpg") -1px 1px no-repeat;
+		height: 6px;
+		width: 302px;
+		position: absolute;
+		top: 214px;
+		left: 4px;
+		border-bottom: 4px solid #000;
+	}
+		
+	
+	.searchform-options .searchform-sort {
+		flex: 1;
+		width: 302px;
+		display: grid;
+		font-size: 14px;
+		top: -146px;
+		position: relative;
+		left: -317px;
+		z-index: 9;
+		background-image: url("https://kakuyamii.github.io/NG12-theme/images/pod-13_dffd94.jpg") !important;
+		max-width: 302px;
+	}
+	if selectportal==default and off {
+		.searchform-options .searchform-extra {
+			display: none;
+		}
+	}*/
+	if selectportal==byyear {
+		.searchform-options .searchform-extra {
+			top: -207px;
+			position: relative;
+			z-index: 9999;
+			left: 140px;
+		}
+	}
+	if selectportal==byyear {
+		.searchform-options .searchform-extra label {
+			padding-right: 0;
+		}
+	}
+	.searchform-options .searchform-sort a,
+	.searchform-options .searchform-sort strong {
+		color: #eeb211!important;
+		margin: 5px!important;
+		padding-left: 10px;
+		height: 30px;
+		line-height: 2.1em;
+		width: 270px;
+		position: relative;
+		left: 5px;
+		&:hover {
+			color: #1b1717!important;
+			cursor: pointer;
+			background-position: -300px 0;
+		}
+	}
+	.searchform-sort > a.no-visited:nth-child(5) {
+		display: none;
+	}
+	div.pod-body:last-child {
+		float: right;
+		border: solid 4px #000;
+		z-index: 9999;
+		top: -330px;
+		border-top: none;
+		&:before {
+			content: '';
+			background-image: url(https://kakuyamii.github.io/NG12-theme/images/pod-23_065998.jpg);
+			display: block;
+			position: relative;
+			width: 302px;
+			width: 622px;
+			height: 50000px;
+			top: -11px;
+			left: -11px;
+		}
+	}
+	div.pod-body:first-child::after {
+		width: 301px;
+		top: 193px;
+		position: absolute;
+		left: -1px;
+	}
+	div.pod-body:last-child {
+		width: 600px;
+		if cutoff==1row {
+			height: 139px;
+		}
+		if cutoff==2row {
+			height: 278px;
+		}
+		if cutoff==3row {
+			height: 417px;
+		}
+		if cutoff==4row {
+			height: 556px;
+		}
+		if cutoff==5row {
+			height: 695px;
+		}
+		if cutoff==6row {
+			height: 834px;
+		}
+		if cutoff==7row {
+			height: 973px;
+		}
+		if cutoff==8row {
+			height: 1112px;
+		}
+		if cutoff==9row {
+			height: 1251px;
+		}
+		if cutoff==10row {
+			height: 1390px;
+		}
+		if cutoff==11row {
+			height: 1529px;
+		}
+		if cutoff==12row {
+			height: 1668px;
+		}
+		if cutoff==13row {
+			height: 1807px;
+		}
+		if cutoff==14row {
+			height: 1946px;
+		}
+		if cutoff==15row {
+			height: 2085px;
+		}
+	}
+
+
+	div.portalsubmission-cards {
+		display: grid;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		gap: 6px;
+		grid-gap: 1px;
+		position: relative;
+		top: -50000px;
+	}
+}
+
+@-moz-document url-prefix("https://www.newgrounds.com/audio"),
+url-prefix("https://www.newgrounds.com/search/conduct/audio") {
+	/* audio theme */
+	.header-nav-button-audio,
+	nav.header-nav-buttons a.header-nav-button-audio {
+		background-position: -272px -80px !important;
+	}
+	body {
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/green0-body.gif);
+	}
+	body:after {
+		content: '';
+		background: #000 url(https://kakuyamii.github.io/NG12-theme/images/green0-outer.jpg) top center no-repeat!important;
+		if layout==2013 or layout==2014 {
+			background-image: url(https://kakuyamii.github.io/NG12-theme/images/green2-outer.jpg)!important;
+		}
+		if layout==2013 and background==default {
+			background: #000 url(https://kakuyamii.github.io/NG12-theme/images/green1-outer.jpg) top center no-repeat!important;
+			background-image: url(https://kakuyamii.github.io/NG12-theme/images/green1-outer.jpg)!important;
+		}
+	}
+	div.pod-head {
+		background: #213915 url(https://kakuyamii.github.io/NG12-theme/images/podtop-green.jpg) top left no-repeat;
+	}
+	.notification-login-side:before {
+		content: url(https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/greenopen1.png);
+		background-size: 327px 25px;
+		filter: none!important;
+		width: 327px;
+		display: block;
+		height: 25px;
+	}
+	div.notification-bar .search:after {
+		content: url(https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/greensearch1.png);
+		position: relative;
+	}
+	#passport_login {
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/button-green.gif);
+		&:hover {
+			color: #fff!important;
+		}
+	}
+	div.notification-bar .search button {
+		background-position: -75px top;
+	}
+	div.notification-bar .search input {
+		background-color: #90cc6a;
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/input-green.jpg);
+	}
+	ul.itemlist.alternating > li:nth-child(2n + 2),
+	ul.itemlist.alternating > li.alternate,
+	li:nth-child(2n + 2) {
+		background-color: #111d0b;
+		position: relative;
+	}
+	a.item-audiosubmission:hover {
+		background: none!important;
+	}
+	ul[class^="itemlist"] li a.item-audiosubmission {
+		padding: 0px;
+		height: 45px;
+	}
+	a.item-audiosubmission div.item-details-main div.detail-title h4 {
+		color: #eeb211;
+		font-size: 11px!important;
+		&:hover {
+			color: #fff
+		}
+	}
+
+	a.item-audiosubmission div.item-details-main div.detail-description {
+		display: none;
+	}
+	ul.itemlist.alternating > li:nth-child(2n + 1) {
+		background: none;
+	}
+	a.item-audiosubmission div.item-icon > div > img {
+		width: 35px;
+		height: 35px;
+	}
+	select {
+		background-color: #90cc6a;
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/input-green_258f92.jpg);
+		height: 25px;
+		padding-left: 5px;
+	}
+	.searchform-options .searchform-sort a,
+	.searchform-options .searchform-sort strong,
+	nav.searchnav a {
+		color: #eeb211!important;
+		margin: 5px!important;
+		padding-left: 10px;
+		height: 30px;
+		line-height: 2.1em;
+
+		background: #213915 url(https://kakuyamii.github.io/NG12-theme/images/link_stripes_c04705.png) left top repeat-y;
+	}
+}
+@-moz-document url("https://www.newgrounds.com/audio") {
+	/* audio portal */
+	/* movie portal */
+	div.pod,
+	article.pod,
+	section.pod,
+	div.thincol > *,
+	div.fatcol > * {
+		width: 950px;
+		border: 0;
+		margin: 0;
+		height: 0;
+	}
+	div.pod-head {
+		width: 622px;
+		float: right;
+		border: 4px solid #000;
+		top: -4px;
+	}
+	div.pod-body:first-child {
+		width: 928px;
+		float: left;
+		display: grid;
+		height: 380px;
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/pod-13_dffd94.jpg) !important;
+		position: relative;
+		top: -52px;
+		&:before {
+			content: '';
+			background-image: url("https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/green/browsecategories.png");
+			background-repeat: no-repeat;
+			position: relative;
+			top: -21px;
+			left: -11px;
+			width: 302px;
+			height: 51px;
+			border: 4px solid #000;
+			box-shadow: 0 5px 10px #000;
+
+			border-bottom: none;
+		}
+	}
+	.pod-body .form-inline,
+	.pod-like .form-inline {
+		display: inline-flex;
+		order: 1;
+		z-index: 9999;
+		width: 622px;
+		top: -224px;
+		left: 309px;
+		position: relative;
+		background-image: url("https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/orange/filter2.png");
+		height: 61px;
+		padding: 0;
+		border: 4px solid #000;
+		box-shadow: 0 5px 10px #000;
+		border-top: none;
+	}
+	div.padded-top:nth-child(2) > div:nth-child(7) {
+		width: 150px;
+	}
+	.pod-body .form-inline div.select-wrapper {
+		margin: 5px 5px 0 5px;
+		height: 25px;
+		top: 0px;
+		left: 50px
+	}
+	div.flexbox:nth-child(3) > div:nth-child(3) > div:nth-child(2) {
+		left: 55px;
+	}
+
+	div.flexbox:nth-child(3) > div:nth-child(1) {
+		width: 150px;
+	}
+	.pod-body .form-inline label {
+		display: inline-block;
+		margin-left: 5px;
+		font-size: 1.3em;
+		line-height: 2.7em;
+		vertical-align: top;
+		color: #7d7575;
+		font-style: italic;
+		font-weight: bold;
+		margin-right: 0;
+		position: absolute
+	}
+	div.flexbox:nth-child(3) > div:nth-child(2),
+	div.flexbox:nth-child(3) > div:nth-child(4) {
+		display: none;
+	}
+
+	if selectportal==off {
+		.pod-body .form-inline {
+			display: none;
+		}
+	}
+	if selectportal==byyear {
+		div.form-inline.padded-top.flexbox:nth-of-type(3) > div:nth-of-type(5),
+		div.flexbox:nth-child(3) > div:nth-child(2),
+		div.flexbox:nth-child(3) > div:nth-child(4) {
+			display: none;
+		}
+	}
+	if selectportal==byyear {
+		.pod-body .form-inline label,
+		.searchform-options label {
+			font-size: 1.3em;
+			line-height: 2.7em;
+			color: #7d7575;
+			margin-right: 0.1em;
+		}
+	}
+	if selectportal==byyear {
+		div.form-inline.padded-top.flexbox:nth-of-type(2) > div:nth-of-type(1) {
+			position: relative;
+			left: 16px;
+			top: 2px;
+		}
+	}
+	if selectportal==byyear {
+		div.form-inline.padded-top.flexbox:nth-of-type(2) > div:nth-of-type(3) {
+			position: relative;
+			left: -85px;
+			top: 2px;
+		}
+	}
+
+	div.padded-top:nth-child(2) > div:nth-child(5) > div:nth-child(2) > select:nth-child(1) {
+		padding-right: 0;
+		width: 205px;
+	}
+	.select-wrapper::after {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 26px;
+		height: 25px;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/select-fakearrow.gif) top left no-repeat;
+		border: none;
+	}
+
+	.searchform-options {
+		display: flex;
+		align-items: center;
+		order: 2;
+		&:before {
+			content: '';
+			background-image: none;
+			background-repeat: no-repeat;
+			position: relative;
+			top: -215px;
+			left: -11px;
+			width: 302px;
+			height: 290px;
+			border: 4px solid #000;
+			border-top: none;
+			box-shadow: 0 5px 10px #000;
+		}
+	}
+	.searchform-options::after {
+		content: '';
+		background: url("https://kakuyamii.github.io/NG12-theme/images/podbreaker-33_7ae02f.jpg") -1px 1px no-repeat;
+		height: 6px;
+		width: 302px;
+		position: absolute;
+		top: 401px;
+		left: 4px;
+		border-bottom: 4px solid #000;
+
+		/*    box-shadow: 0 5px 10px #000; */
+	}
+	.searchform-options .searchform-sort {
+		flex: 1;
+		width: 302px;
+		display: grid;
+		font-size: 14px;
+		top: -158px;
+		position: relative;
+		left: -317px;
+		z-index: 9;
+		background-image: url("https://kakuyamii.github.io/NG12-theme/images/pod-13_dffd94.jpg") !important;
+		max-width: 302px;
+	}
+	nav.searchnav {
+		position: relative;
+		left: 8px;
+	}
+	div.searchnav-options {
+		display: grid;
+		align-items: normal;
+		width: 302px;
+		position: relative;
+		top: -21px;
+		left: -11px;
+		border: 4px solid #000;
+		border-bottom: none;
+		border-top: none;
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/pod-13_b32584.jpg) !important;
+		z-index: 999999;
+		&:after {
+			content: '';
+			clear: both;
+			width: 280px;
+			display: block;
+			height: 2px;
+			margin: 10px 5px 0;
+			position: relative;
+			left: 5px;
+			top: -14px;
+			border-left: solid 1px #211b1b;
+			border-right: solid 1px #211b1b;
+			background: #000 url(https://kakuyamii.github.io/NG12-theme/images/podstripe_34c3c1.gif) -275px bottom repeat-x;
+		}
+	}
+	if selectportal==default and off {
+		.searchform-options .searchform-extra {
+			display: none;
+		}
+	}
+	if selectportal==byyear {
+		.searchform-options .searchform-extra {
+			top: -223px;
+			position: relative;
+			z-index: 9999;
+			left: 140px;
+		}
+	}
+	if selectportal==byyear {
+		.searchform-options .searchform-extra label {
+			padding-right: 0;
+		}
+	}
+	.searchform-options .searchform-sort a,
+	.searchform-options .searchform-sort strong,
+	nav.searchnav a {
+		color: #eeb211!important;
+		margin: 5px!important;
+		padding-left: 10px;
+		height: 30px;
+		line-height: 2.1em;
+		width: 270px;
+		position: relative;
+		left: 5px;
+		font-size: 14px;
+		text-align: left;
+		&:hover {
+			color: #1b1717!important;
+			cursor: pointer;
+			background-position: -300px 0;
+		}
+	}
+	nav.searchnav a.current {
+		color: #fff;
+		border-bottom: none;
+	}
+	div.pod-body:first-child::after {
+		width: 301px;
+		top: 381px;
+		position: absolute;
+		left: 3px;
+	}
+
+	div.pod-body:last-child {
+		float: left;
+		left: 320px;
+		top: -326px;
+		width: 600px;
+		z-index: 9999;
+		background-repeat: repeat-x;
+		border: 4px solid #000;
+		border-top: none;
+		&:before {
+			content: '';
+			width: 622px;
+			height: 100%;
+			display: block;
+			background-image: url("https://kakuyamii.github.io/NG12-theme/images/pod-23_1e649d.jpg");
+			top: 10px;
+			left: 0px;
+			position: absolute;
+		}
+	}
+}
+
+@-moz-document url-prefix("https://www.newgrounds.com/search/conduct/audio") {
+	/* search audio */
+	ul.itemlist.alternating > li:nth-child(2n + 1),
+	ul.itemlist.alternating > li.alternate,
+	li:nth-child(2n + 1) {
+		background-color: #111d0b;
+	}
+	ul.itemlist.alternating > li:nth-child(2n + 2),
+	ul.itemlist.alternating > li.alternate,
+	li:nth-child(2n + 2) {
+		background-color: transparent;
+	}
+	ul[class^="itemlist"] li a.item-audiosubmission {
+		height: 80px;
+	}
+	a.item-audiosubmission div.item-icon > div > img {
+		width: 60px;
+		height: 60px;
+		padding: 5px;
+		margin: 5px;
+	}
+	a.item-audiosubmission div.item-details-main div.detail-title {
+		border-bottom: 1px solid #213915;
+	}
+	mark.search-highlight {
+		color: #eeb211;
+		text-decoration: none;
+		font-weight: 1.1em!important;
+	}
+	a.item-audiosubmission div.item-details-main div.detail-description {
+		display: block;
+	}
+	.column:not(.thin) a.item-audiosubmission div.item-details div.item-details-meta div.star-score {
+		width: 88px;
+		height: 15px;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/vp-Stars_a8c855.png) top left no-repeat;
+		& span {
+			float: left;
+			height: 15px;
+			text-indent: -999em;
+			overflow: hidden;
+			background: url(https://kakuyamii.github.io/NG12-theme/images/vp-Stars_a8c855.png) no-repeat;
+			background-position: 0 -15px;
+		}
+	}
+	.column:not(.thin) a.item-audiosubmission div.item-details div.item-details-meta div.star-score {
+		margin-bottom: 3px;
+		display: none;
+	}
+}
+
+@-moz-document url-prefix("https://www.newgrounds.com/audio/listen") {
+	/* listening page */
+body { 
+	height: 1900px;
+}
+	div.body-main {
+		height: 1525px;
+	}
+	div .column.thin {
+		top: 124px;
+		position: relative;
+	}
+
+	div .column.thin > div.pod:nth-child(1):before {
+		content: url("https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/green/rategreenlogout.png");
+		display: block;
+		width: 302px;
+		height: 92px;
+		border: 4px solid #000;
+		border-radius: 2px;
+		box-shadow: 0 5px 10px #000;
+		margin-top: -100px;
+		bottom: 14px;
+		right: 4px;
+		position: relative;
+	}
+	div.column.thin div.item-user {
+		position: relative;
+		display: block;
+		height: 35px;
+		padding: 5px 5px 5px 50px;
+		font-size: 1.2em;
+		line-height: 16px;
+		font-weight: bold;
+		background-repeat: no-repeat;
+		background-position: 5px 5px;
+	}
+	div.item-user a.item-icon {
+		width: 35px;
+		height: 35px;
+		position: absolute;
+		left: 5px;
+		& > div.user-icon-bordered {
+			width: 35px;
+			height: 35px;
+			& > svg {
+				width: 35px;
+				height: 35px;
+			}
+		}
+	}
+	div.item-user div.item-details,
+	a.item-user div.item-details {
+		display: grid;
+		height: 34px;
+		top: 0px;
+		position: absolute;
+		left: 48px;
+	}
+	div.item-user div.item-details div.item-details-meta,
+	a.item-user div.item-details div.item-details-meta {
+		color: #c9bebe;
+		font-size: 12px;
+		order: 1;
+	}
+	div.item-user div.item-details div.item-details-main,
+	a.item-user div.item-details div.item-details-main {
+		padding: 0;
+		margin: 0;
+		order: 2;
+	}
+	div.item-user div.item-details div.item-details-main h4,
+	a.item-user div.item-details div.item-details-main h4 {
+		font-size: 12px;
+	}
+	/*div .column.wide > div.pod:nth-child(5) {
+		display: none;
+	}*/
+	/*	div .column.wide {
+		display: grid;
+	}
+*/
+	#review_vote {
+		/*	order: 1;
+		left: -320px; */
+		z-index: 999;
+		background: none;
+		border: none;
+		box-shadow: none;
+	}
+	/*div.vote-input div.star-blam {
+  background-image: url(https://kakuyamii.github.io/NG12-theme/images/vp-voteDarn.png);
+  width: 50px;
+  height: 55px;
+  background-position: left bottom;
+} */
+	/*	div.pod.embed {
+		order: 2;
+	}
+	div.pod:nth-child(4) {
+		order: 3;
+	}
+	div.pod:nth-child(6) {
+		order: 4;
+	} */
+	div.audio-wrapper > div:nth-child(1) > a:nth-child(1) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+		width: 35px;
+		height: 35px;
+		margin-top: 4px;
+	}
+	.column:not(.thin) a.item-audiosubmission div.item-details div.item-details-meta div.star-score {
+		display: none;
+	}
+
+	div.pod-head span button.icon-download,
+	div.pod-head span a.icon-download,
+	header.pod-head span button.icon-download,
+	header.pod-head span a.icon-download,
+	div.podtop span button.icon-download,
+	div.podtop span a.icon-download {
+		width: 118px;
+		&:before {
+			content: '';
+			display: none;
+			background-image: none;
+		}
+	}
+	.embed.pod > div.pod-head {
+		/*	display: flex; */
+		& h2 {
+			background-position: 0 -310px!important;
+			order: 1;
+		}
+	}
+	.pod-head > span:nth-child(6) {
+		order: 2;
+	}
+	#ffr_ffr_6841e2a61b506_1 {
+		display: none;
+	}
+	div.pod:has(.text-align-center.pod-body > h3) {
+		display: none;
+	}
+	.column.wide > div.pod:nth-child(6):before {
+		content: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/green/reviews.png);
+		height: 41px;
+		display: block;
+		border-bottom: 4px solid #000;
+	}
+	#audio_player_embed {
+		max-height: 300px!important;
+	}
+
+
+	if visualization==none {
+		.audio-listen-wrapper {
+			background: #292929 !important;
+		}
+	}
+	if visualization==bg {
+		.audio-listen-wrapper {
+			background: bgc !important;
+			/*  animation: animated-filter 3s infinite!important; */
+		}
+	}
+
+
+	@keyframes animated-filter {
+		0% {
+			filter: hue-rotate( 0deg)
+		}
+		50% {
+			filter: hue-rotate(360deg)
+		}
+		100% {
+			filter: hue-rotate( 0deg)
+		}
+	}
+
+
+	.audio-listen-wrapper {
+		background: url(bgi);
+		& > .audio-listen-container {
+			filter: none;
+			width: 310px;
+			background: none!important;
+		}
+	}
+	#waveform > div,
+	.audio-listen-container,
+	.audio-listen-wrapper {
+		height: 290px!important;
+		width: 590px;
+		/*	z-index: 99; */
+		position: relative;
+		border: none!important;
+		/*	background: none !important; */
+	}
+	#waveform > div {
+		height: 11px !important;
+		width: 310px !important;
+		border-radius: 0;
+		background: none!important;
+		top: 259px;
+		left: 157px;
+	}
+	.audio-listen-player {
+		height: 300px;
+		margin: 0;
+		width: 590px;
+		background: transparent!important;
+		border: none !important;
+		left: 5px;
+		top: -1px;
+		position: relative;
+	}
+	.audio-listen-wrapper .outer-frame {
+		background: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/bars.png);
+		box-shadow: none;
+		border-radius: 0;
+		z-index: auto!important;
+		&:before {
+			content: url('https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/whiteframebar.gif');
+			opacity: 5%;
+			z-index: 99!important;
+		}
+		&:after {
+			content: url("https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/shadow.png");
+			display: block;
+			position: absolute;
+			width: 574px;
+			height: 100px;
+			top: 182px;
+			left: 8px;
+		}
+	}
+	.audio-listen-wrapper {
+		width: 100%;
+		height: 130px;
+		position: relative;
+		overflow: hidden;
+	}
+	.audio-listen-controls {
+		display: flex;
+		padding: 0;
+		top: -43px;
+		left: -7px;
+		position: relative;
+		margin: auto;
+		width: 560px;
+		background: rgba(0, 0, 0, 0);
+		z-index: auto;
+	}
+	button#audio-listen-play.audio-listen-btn {
+		border-radius: 5px 0px 0px 5px;
+		width: 50px;
+		background: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/play.png);
+		height: 35px;
+		line-height: 35px;
+		font-size: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+		display: block;
+		&:hover {
+			background: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/playh.png)!important;
+		}
+		&:active {
+			/* shout out xionico */
+			background: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/playa.png)!important;
+		}
+	}
+
+	#audio-listen-pause {
+		border-radius: 5px 0px 0px 5px;
+		width: 50px;
+		background: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/pause.png);
+		height: 35px;
+		line-height: 35px;
+		font-size: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+		display: block;
+		&:hover {
+			background: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/pauseh.png)!important;
+		}
+		&:active {
+			background: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/pausea.png)!important;
+		}
+	}
+	#audio-listen-duration {
+		color: #be7911;
+		text-shadow: #000 1px 1px 1px;
+	}
+	div.playback-info {
+		background: url("https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/timeleftbg.png");
+		max-width: 91px;
+		height: 36px;
+		margin: 0;
+		left: 1px;
+		position: relative;
+		color: transparent;
+		font-size: 12px;
+		line-height: 32px;
+		&:after {
+			content: '';
+			background: url("https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/sekbarbg.png");
+			display: block;
+			height: 38px !important;
+			width: 324px !important;
+			filter: none !important;
+			top: -34px;
+			position: relative;
+			left: 91px;
+		}
+	}
+
+	div.ui-slider:nth-child(1) > img:nth-child(1) {
+		width: 310px;
+		visibility: hidden;
+	}
+	.audio-listen-container .overlay {
+		filter: none !important;
+		height: 11px !important;
+		background: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/thebar.gif) !important;
+		& > div {
+			display: none;
+		}
+	}
+	.audio-listen-container .ui-state-default,
+	.audio-listen-container .ui-widget-content .ui-state-default,
+	.audio-listen-container .ui-slider-handle {
+		margin-left: 0;
+		left: 0!important;
+		top: 0!important;
+		width: 310px!important;
+		opacity: 0.5;
+		border-radius: 0;
+		background: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/thebar.gif) !important;
+	}
+	.sound-controls {
+		display: flex!important;
+		left: 326px;
+		position: relative;
+		border-radius: 0px 0px 5px 0px;
+	}
+	#audio-listen-volumeToggle {
+		order: 1;
+		width: 37px;
+		background: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/notmuteandloop.png);
+		height: 36px;
+		line-height: 36px;
+		font-size: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+		display: block;
+		border-radius: 0;
+		&:hover {
+			background: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/notmuteh.png);
+		}
+		&:active {
+			background: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/notmutea.png);
+		}
+	}
+	#audio-listen-volumeToggle:has(.fa-volume-off) {
+		background: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/mute.png);
+		&:hover {
+			background: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/muteh.png);
+		}
+		&:active {
+			background: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/mutea.png);
+		}
+	}
+	#audio-listen-volume {
+		margin: -84px 0 0 0px;
+		background: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/audiobar.png)!important;
+		width: 35px;
+		height: 84px;
+		border: none!important;
+		border-radius: 0px;
+	}
+	.ui-slider-vertical .ui-slider-range-min {
+		max-height: 55px;
+		background: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/audioslider.png);
+		rotate: 180deg;
+		margin-bottom: 7px;
+		filter: drop-shadow(0px 0px 0.45px #fff);
+	}
+	.ui-state-focus,
+	.ui-widget-content .ui-state-focus {
+		display: none;
+	}
+	#audio-listen-repeat {
+		order: 2;
+		left: -1px;
+		position: relative;
+		width: 37px;
+		background: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/loopdis.png);
+		height: 36px;
+		line-height: 36px;
+		font-size: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+		display: block;
+		border-radius: 0;
+		&:hover {
+			background: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/loopdish.png)
+		}
+		&:active {
+			background: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/loopdisa.png)
+		}
+	}
+
+	.repeat-once.active.audio-listen-btn {
+		background: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/loop.png)!important;
+		&:hover {
+			background: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/looph.png)!important;
+		}
+		&:active {
+			background: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/loopa.png)!important;
+		}
+	}
+	#audio-listen-volume > .ui-state-default.ui-corner-all.ui-slider-handle {
+		display: none;
+	}
+	.sound-controls:after {
+		content: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/ngaudio/fshe.png)!important;
+		order: 3;
+		position: relative;
+		left: -2px;
+		display: block;
+	}
+}
+@-moz-document url-prefix("https://www.newgrounds.com/series") {
+	/* collections and series  */
+	body {
+		background: #000 url(https://kakuyamii.github.io/NG12-theme/images/purple0-body.gif) top center repeat-y!important;
+		&:after {
+			background-image: url(https://kakuyamii.github.io/NG12-theme/images/purple0-outer.jpg)!important;
+		}
+	}
+	nav.header-nav-buttons a.header-nav-button-channels {
+		background-position: -544px -80px!important;
+	}
+	div.column:nth-child(2) > div:nth-child(1) {
+		display: none;
+	}
+	#playlist-player {
+		display: none;
+	}
+}
+
+@-moz-document url-prefix("https://www.newgrounds.com/portal") {
+	/* portal */
+	.right.wide.column > div > .pod {
+		background: url("https://newgrounds2012.neocities.org/rainbow.png") no-repeat!important;
+		padding: 0;
+		height: 200px;
+		width: 660px;
+		position: relative;
+		z-index: 99999;
+		border: none;
+		box-shadow: none;
+		border-radius: 0;
+		top: 1px;
+		left: 3px;
+		margin: 0;
+		& > .pod-body {
+			background: url("https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/portal/bg.png") no-repeat;
+			width: 660px !important;
+			height: 200px;
+			left: -23px;
+			top: -17px;
+			& > .text-align-center {
+				background: url("https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/portal/rainbowoutline.png");
+				display: block;
+				height: 181px;
+				top: -13px;
+				position: relative;
+				left: 7px;
+				z-index: 999;
+				width: 631px;
+				filter: blur(3px) drop-shadow(1px 1px 1px #fff);
+				opacity: 0.5;
+				& > img {
+					display: none;
+				}
+			}
+			& > [class^="flexbox"].align-right {
+				display: none;
+			}
+		}
+	}
+	.right.wide.column > div > .pod:after {
+		content: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/portal/portalchar.png);
+		display: block;
+		position: absolute;
+		top: -25px;
+		left: -22px;
+	}
+	/* https://newgrounds2012.neocities.org/rainbow.png */
+	.right.wide.column > div > .pod > div.pod-body::after {
+		display: none;
+	}
+
+	div.column.thin > div {
+		top: -4px;
+		position: relative;
+		& > div.pod > div.portal-legend {
+			height: 66px;
+			& > div {
+				padding: 0;
+				height: 20px;
+				left: -2px;
+				&:not(.padded-top) {
+					top: -6px;
+					position: relative;
+				}
+			}
+		}
+	}
+	.padded-top {
+		top: 6px;
+		position: relative;
+	}
+	div.portal-legend > div > div {
+		max-width: 135px;
+		height: 20px;
+		margin: auto;
+	}
+	div.portal-legend > div > div > div:not(.icon) {
+		display: inline-block;
+		width: 115px;
+		height: 20px;
+		font-size: 12px;
+		line-height: 21px;
+		font-style: italic;
+		font-weight: bold;
+	}
+	div.portal-legend > div > div > div.icon {
+		width: 20px;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/tinyicons-vert_813281.png) 5px -295px no-repeat;
+		height: 21px;
+		&:before {
+			display: none!important;
+		}
+	}
+	.padded-half-bottom > div > .verge.icon {
+		background-position: 5px -270px!important;
+	}
+	div.icon.great {
+		background-position: 5px -170px!important;
+	}
+	div.icon.awesome {
+		background-position: 5px -145px!important;
+	}
+
+	.padded-top [href^="https://www.newgrounds.com/movies/browse"],
+	.padded-top [href^="https://www.newgrounds.com/games/browse"] {
+		color: #c9bebe!important;
+		text-decoration: none;
+		pointer-events: none;
+		left: -6px;
+		position: relative;
+	}
+	.disabled.icon:has(.ngicon-small-movie) {
+		background: url(https://kakuyamii.github.io/NG12-theme/images/ul-15grays.png) 3px -2px no-repeat;
+		width: 30px;
+		& > em:before {
+			display: none;
+		}
+	}
+	.disabled.icon:has(.ngicon-small-game) {
+		background: url(https://kakuyamii.github.io/NG12-theme/images/ul-15grays.png) 3px -27px no-repeat;
+		width: 30px;
+		& > em:before {
+			display: none;
+		}
+	}
+	h4 {
+		margin: 0 !important;
+		padding: 2px 5px 0 5px;
+		font-style: italic;
+		font-size: 14px;
+		color: #7d7575;
+		top: 15px;
+		position: absolute;
+	}
+
+	hr,
+	hr:not([class]) {
+		background-position: -275px bottom;
+		top: 34px;
+		position: absolute;
+		width: 280px;
+	}
+	ol.classic-portal-list:has(.judgement) {
+		top: 26px;
+		position: relative;
+	}
+	ol.classic-portal-list .item {
+		font-size: 12px!important;
+		height: 15px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 27px;
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/ul-15grays_0a60dd.png);
+		background-repeat: no-repeat;
+		line-height: 25px;
+		background-position: 5px 0px;
+		& > div {
+			padding-left: 47px;
+			padding-right: 25px;
+			height: 25px;
+			width: 210px;
+			left: 0;
+			position: absolute;
+			top: 0;
+			background: url(https://kakuyamii.github.io/NG12-theme/images/ul-rating.png) 260px 0 no-repeat;
+		}
+	}
+
+
+ol.classic-portal-list a.item:hover {
+	background-color: #3d1d0d;
+}
+ol.classic-portal-list .item > div:has(li.judgement > .item > .dark.disabled > .ngicon-small-rated-e) {
+	background-position: 5px -25px!important;
+}
+
+.judgement a:not(:hover),
+a.judgement:not(:hover) {
+	color: #c64be2!important;
+}
+.verge a:not(:hover),
+a.verge:not(:hover) {
+	color: #f74040!important;
+}
+.awesome a:not(:hover), a.awesome:not(:hover) {
+  color: #2684de!important
+}
+.great a:not(:hover), a.great:not(:hover) {
+  color: #47b32a!important
+}
+span.disabled {
+	display: none!important;
+}
+
+span.sequence {
+	position: absolute;
+	left: 25px;
+}
+div.thin:nth-child(2) {
+	float: right;
+}
+}
+@-moz-document url-prefix("https://www.newgrounds.com/art") {
+	/* art theme */
+	body {
+		background-repeat: top center repeat-y !important;
+		background-image: url("https://kakuyamii.github.io/NG12-theme/images/pink0-outer.jpg") !important;
+		background-color: #000 !important;
+		if background==default and layout==2013 {
+			background: #000 url(https://kakuyamii.github.io/NG12-theme/images/pink1-outer.jpg) top center no-repeat!important;
+		}
+		if layout==2013 {
+			background: #000 url(https://kakuyamii.github.io/NG12-theme/images/pink1-outer.jpg) top center no-repeat!important;
+		}
+	}
+	body:after {
+		content: '';
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/pink0-body.gif);
+	}
+	.notification-login-side:before {
+		content: url(https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/pinkopen1.png);
+		background-size: 327px 25px;
+		filter: none!important;
+		width: 327px;
+		display: block;
+		height: 25px;
+	}
+	div.notification-bar .search:after {
+		content: url(https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/pinksearch.png);
+		position: relative;
+	}
+	#passport_login {
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/button-pink.gif);
+	}
+	div.notification-bar .search button {
+		background-position: 0 bottom;
+	}
+	div.notification-bar .search input {
+		background-color: #f386c5;
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/input-pink.jpg);
+	}
+
+	.header-nav-button-art,
+	nav.header-nav-buttons a.header-nav-button-art {
+		background-position: -408px -80px!important;
+	}
+	div.pod-head {
+		background: #4c1d36 url(https://kakuyamii.github.io/NG12-theme/images/podtop-pink.jpg) top left no-repeat;
+	}
+	/* */
+	a.item-portalitem-art-medium {
+		background-color: transparent!important
+	}
+	a.item-portalitem-art-medium div.item-icon img.animated,
+	a.item-portalitem-art-medium div.item-icon img.multi,
+	a.item-portalitem-art-medium div.item-icon img {
+		clip-path: none;
+		border-radius: 0;
+	}
+
+	div.footer-main {
+		background: url("https://kakuyamii.github.io/NG12-theme/images/gold-footer.jpg") 3px bottom no-repeat;
+	}
+}
+@-moz-document url("https://www.newgrounds.com/art") {
+	/* art portal */
+	div.pod {
+		width: 942px;
+		background: none;
+		box-shadow: none;
+		border: none;
+	}
+	div.pod-head {
+		float: right;
+		width: 622px;
+		border: solid 4px #000;
+		z-index: 999999;
+		top: -4px;
+	}
+	div.pod-body:first-child {
+		width: 928px;
+		float: left;
+		display: grid;
+		height: 351px;
+		background-image: url("https://kakuyamii.github.io/NG12-theme/images/pod-13_dffd94.jpg") !important;
+		position: relative;
+		top: -52px;
+		&:before {
+			content: '';
+			background-image: url("https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/blue/browsecategories.png");
+			background-repeat: no-repeat;
+			position: relative;
+			top: -21px;
+			left: -11px;
+			width: 302px;
+			height: 51px;
+			border: 4px solid #000;
+			box-shadow: 0 5px 10px #000;
+			border-bottom: none;
+		}
+	}
+	.pod-body .form-inline,
+	.pod-like .form-inline {
+		display: inline-flex;
+		order: 1;
+		z-index: 9999;
+		width: 622px;
+		top: -35px;
+		left: 309px;
+		position: relative;
+		background-image: url("https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/orange/filter2.png");
+		height: 61px;
+		padding: 0;
+		border: 4px solid #000;
+		box-shadow: 0 5px 10px #000;
+	}
+	.searchform-options {
+		display: flex;
+		align-items: center;
+		order: 2;
+	}
+	div.pod-body:last-child {
+		width: 600px;
+		float: right;
+	}
+}
+@-moz-document url-prefix("https://www.newgrounds.com/search/") {
+	/* search */
+	div.pod {
+		width: 950px;
+		float: right;
+		background: none;
+		border: none;
+		box-shadow: none;
+		& > div.pod-head {
+			width: 622px;
+			float: right;
+			border: 4px solid #000;
+		}
+		& > div.pod-body {
+			width: 950px;
+			background: none;
+			& > form {
+				width: 950px;
+				& > div:last-child {
+					width: 622px;
+					float: right;
+					border: 4px solid #000;
+					top: -49px;
+					left: -11px;
+					position: relative;
+				}
+			}
+		}
+	}
+	div.searchnav-options,
+	.tags-inline.form-row {
+		width: 320px;
+	}
+}
+
+@-moz-document url-prefix("https://www.newgrounds.com/portal/view") {
+	/* Video Page */
+	body {
+		height: 3000px;
+		if portaltheme==Movies {
+			background-image: url(https://kakuyamii.github.io/NG12-theme/images/red0-body.gif)!important;
+		}
+
+		if portaltheme==Games {
+			background-image: url("https://kakuyamii.github.io/NG12-theme/images/blue0-body.gif");
+		}
+	}
+	if portaltheme==Movies {
+		body:after {
+			background-image: url("https://kakuyamii.github.io/NG12-theme/images/red0-outer.jpg") !important;
+			background-color: #000;
+		}
+	}
+	if portaltheme==Games {
+		body:after {
+			background-image: url("https://kakuyamii.github.io/NG12-theme/images/blue0-outer.jpg") !important;
+		}
+	}
+	div.body-main {
+		height: 2500px;
+	}
+	if portaltheme==Movies {
+		.notification-login-side::before {
+			content: url("https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/redopen1.png");
+		}
+	}
+	if portaltheme==Games {
+		.notification-login-side::before {
+			content: url("https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/blueopen1.png");
+		}
+	}
+
+	if portaltheme==Movies {
+		#passport_login {
+			background-image: url("https://kakuyamii.github.io/NG12-theme/images/button-red.gif");
+		}
+	}
+	if portaltheme==Games {
+		#passport_login {
+			background-image: url("https://kakuyamii.github.io/NG12-theme/images/button-blue.gif");
+		}
+	}
+	if portaltheme==Movies {
+		div.notification-bar .search input {
+			background-color: #fa7070;
+			background-image: url("https://kakuyamii.github.io/NG12-theme/images/input-red.jpg");
+		}
+	}
+	if portaltheme==Games {
+		div.notification-bar .search input {
+			background-color: #75bbec;
+			background-image: url("https://kakuyamii.github.io/NG12-theme/images/input-blue.jpg");
+		}
+	}
+	if portaltheme==Movies {
+		div.notification-bar .search button {
+			background-position: -50px top;
+		}
+	}
+	if portaltheme==Games {
+		div.notification-bar .search button {
+			background-position: -25px top;
+		}
+	}
+	if portaltheme==Movies {
+		div.notification-bar .search::after {
+			content: url("https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/redsearch.png");
+		}
+	}
+	if portaltheme==Games {
+		div.notification-bar .search::after {
+			content: url("https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/bluesearch1.png");
+		}
+	}
+
+	if portaltheme==Movies {
+		.header-nav-button-movies,
+		nav.header-nav-buttons a.header-nav-button-movies {
+			background-position: -136px -80px !important;
+		}
+	}
+	if portaltheme==Games {
+		.header-nav-button-games,
+		nav.header-nav-buttons a.header-nav-button-games {
+			background-position: 0 -80px !important;
+		}
+	}
+	if portaltheme==Movies {
+		div.pod-head {
+			background: #521b1b url("https://kakuyamii.github.io/NG12-theme/images/podtop-red.jpg") top left no-repeat;
+		}
+	}
+	if portaltheme==Games {
+		div.pod-head {
+			background: #173249 url("https://kakuyamii.github.io/NG12-theme/images/podtop-blue.jpg") top left no-repeat;
+		}
+	}
+
+	#ng-global-video-player-wrapper.open {
+		box-shadow: none!important;
+		border: none!important;
+		background: none!important;
+		top: 140px!important;
+		margin: 0 auto;
+		z-index: 9999;
+		if videosize==half {
+			top: -220px!important;
+			left: 162px;
+		}
+	}
+	#ng-global-video-player-shimwrap {
+		height: 69px!important;
+		width: 720px!important;
+		if videosize==half {
+			height: 400px !important
+		}
+	}
+
+
+	div.body-center {
+		z-index: 2;
+	}
+
+	#ng-global-video-player-wrapper {
+		height: 405px!important;
+		width: 720px!important;
+		/*        left: 550px!important; */
+		top: 100px!important;
+		position: relative;
+		padding-top: 0px!important;
+		margin-top: 0px!important;
+		if videosize==half {
+			height: 400px !important;
+			width: 550px !important;
+		}
+	}
+	#ng-global-video-player-wrapper.locked {
+		position: relative!important;
+	}
+
+	.ng-video-player.clean,
+	.ng-video-player {
+		height: 405px!important;
+		width: 720px!important;
+		if videosize==half {
+			height: 400px !important;
+			width: 550px !important;
+		}
+	}
+
+
+	.inhousepromo {
+		display: none;
+	}
+
+
+	/*    div.pod:nth-of-type(1) {
+    visibility: hidden;
+& */
+	div.body-skin-shim {
+		height: 63px;
+	}
+	div.header-deck:not(:empty) {
+		margin-top: 50px;
+	}
+	div.header-deck > div.pod-body {
+		display: none;
+	}
+	#header-insert {
+		background: url("https://kakuyamii.github.io/NG12-theme/images/bg-main.gif") top center repeat-y;
+		display: block;
+		width: 970px;
+		height: 857px;
+		margin: 0 auto;
+		z-index: 9;
+		position: absolute;
+		top: 120px;
+		left: 465px;
+	}
+	/* this is pod code */
+	div.pod.embed {
+		width: 942px;
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/pod-33_fc0472.jpg);
+		if videosize==half {
+			width: 622px;
+			background-image: url(https://kakuyamii.github.io/NG12-theme/images/pod-23_c9e343.jpg);
+		}
+	}
+	.breakout.pod-body {
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/podbreaker-33_59e23e.jpg);
+	}
+	/* pod code: hiiii guys im new here >_< ~_~ */
+	.right.wide.column > div.pod:nth-of-type(1):has( #embed_header) {
+		top: -482px;
+		width: 942px;
+		left: -320px;
+		border-top: none;
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/pod-33_e8e01a.jpg);
+		height: 450px;
+		& #embed_header:not(div.pod.embed > #embed_header) {
+			top: -65px !important;
+			visibility: visible;
+			z-index: 9999 !important;
+			left: -4px !important;
+			width: 942px !important;
+			border: solid 4px #000;
+			border-radius: 2px;
+			border-bottom: none;
+		}
+	}
+	/* lucy bedroque: wsp gang dyk unmusique coming soon?*/
+	if videosize==half {
+		div.pod:nth-child(6):not(div.pod.embed) {
+			width: 622px;
+			left: -0px;
+			top: -800px;
+			height: 439px;
+			background-image: url(https://kakuyamii.github.io/NG12-theme/images/pod-23_c9e343.jpg);
+			& #embed_header:not(div.pod.embed > #embed_header) {
+				top: -65px !important;
+				visibility: visible;
+				z-index: 9999 !important;
+				left: -4px !important;
+				width: 622px !important;
+				border: solid 4px #000;
+				border-radius: 2px;
+				border-bottom: none;
+			}
+		}
+	}
+	/* me: *sends ts to lucycord */
+	div.pod:nth-child(6):not(div.pod.embed)::before {
+		content: '';
+		display: block;
+		position: relative;
+		background-image: url("https://kakuyamii.github.io/NG12-theme/images/podbreaker-33_44a346.jpg");
+		background-position: 0 -6px;
+		background-repeat: no-repeat;
+		padding-top: 15px;
+		height: 6px;
+	}
+	/* everybody in the lucycord: hooray */
+	div.pod:nth-child(6):not(div.pod.embed)::after {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		height: 6px;
+		right: 0;
+		left: 0;
+		border: solid 1px #28242c;
+		border-top: 0;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/podbreaker-33_679574.jpg) -1px 1px no-repeat;
+	}
+	div.pod.embed {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+	/* stupid athor comments */
+	.right.wide.column > div.pod:last-child {
+		top: 50px;
+	}
+	#embed_header ~ #author_comments {
+		top: 416px;
+		width: 600px;
+		border: solid 4px #000;
+		box-shadow: 0 5px 10px #000;
+		border-radius: 2px;
+		height: fit-content;
+		left: 315px;
+		if videosize==half {
+			top: 400px;
+			left: 0px!important;
+		}
+	}
+	#author_comments:before {
+		content: '';
+		width: 622px;
+		height: 581px;
+		top: 10px;
+		left: 0px;
+		display: block;
+		position: absolute;
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/pod-23_c9e343.jpg);
+	}
+
+
+	#author_comments > p {
+		z-index: 999;
+		position: relative;
+		font-size: 1.2em;
+		line-height: 1.4em;
+		height: 10%;
+		margin: 5px;
+	}
+	#author_comments > p + p {
+		margin-top: 10px!important;
+	}
+	#author_comments > p:has(br) {
+		display: none;
+	}
+	div.pod:nth-of-type(2) > .text-align-center.pod-body,
+	.right.wide.column > div.pod:nth-of-type(2) {
+		display: none;
+	}
+
+	div.item-follow-user span.favefollow-buttons span.favefollow-add a {
+		display: block;
+		padding: 0;
+		width: 25px !important;
+		height: 25px;
+		background: url("https://kakuyamii.github.io/NG12-theme/images/link_stripes_9d9576.png") 0 0 no-repeat!important;
+		border-radius: 0px;
+		box-shadow: none;
+		font-size: 0;
+		position: relative;
+		left: -10px;
+		&:hover {
+			background-position: -300px 0!important;
+		}
+	}
+	div.item-follow-user span.favefollow-buttons span.favefollow-add a span {
+		font-size: 15px;
+		width: 15px;
+		height: 15px;
+		top: 5px;
+		position: relative;
+		color: transparent;
+		text-indent: -9999em;
+		overflow: hidden;
+		background-image: url("https://kakuyamii.github.io/NG12-theme/images/a-15yellows_20c0d0.png");
+		background-repeat: no-repeat;
+		background-position: -255px 0;
+		display: block;
+		left: 5px;
+		&:hover {
+			background-position: -255px -15px;
+		}
+	}
+	div .column.thin {
+		top: 0px;
+		position: relative;
+		if videosize==half {
+			top: -842px;
+		}
+	}
+	/* finally */
+	if portaltheme==Games {
+		ul.authorlinks li:nth-child(2n),
+		div.item-user:nth-child(2n) {
+			background-color: #0c1925;
+		}
+	}
+	if portaltheme==Movies {
+		div.item-user:nth-child(2n),
+		ul.authorlinks li:nth-child(2n) {
+			background-color: #290e0e;
+		}
+	}
+
+	div.column.thin div.item-user {
+		padding: 0!important;
+		height: 45px;
+	}
+	div.item-user a.item-icon {
+		width: 35px;
+		height: 35px;
+		margin-right: -70px;
+		& > div.user-icon-bordered {
+			width: 35px;
+			height: 35px;
+			& > svg {
+				width: 35px;
+				height: 35px;
+				margin: 0;
+			}
+		}
+	}
+	div.item-user div.item-details {
+		flex: 1;
+		overflow: hidden;
+		display: grid;
+		padding-left: 70px;
+		margin: 5px;
+	}
+
+	div.item-user div.item-details div.item-details-meta,
+	a.item-user div.item-details div.item-details-meta {
+		color: #c9bebe;
+		font-size: 12px;
+		order: 1;
+		font-weight: bold;
+	}
+
+	div.item-user div.item-details div.item-details-main,
+	a.item-user div.item-details div.item-details-main {
+		padding-bottom: 4px;
+		margin-bottom: 4px;
+		display: flex;
+		order: 2;
+	}
+
+	div.item-user div.item-details div.item-details-main h4,
+	a.item-user div.item-details div.item-details-main h4 {
+		font-size: 12px;
+	}
+
+	div.audio-wrapper {
+		& > div.item-audiosubmission-small {
+			padding: 0;
+			& > a.item-link {
+				position: relative;
+				display: block;
+				height: 35px;
+				padding: 5px 5px 5px 50px;
+				font-size: 1.2em;
+				line-height: 16px;
+				font-weight: bold;
+				background-repeat: no-repeat;
+				background-position: 5px 5px;
+			}
+		}
+	}
+	div.item-audiosubmission-small div.item-icon {
+		height: 35px;
+		width: 35px;
+		position: absolute;
+		left: 5px;
+		top: 5px;
+	}
+	div.item-audiosubmission-small a:hover {
+		background: none;
+	}
+	/* comments */
+	.right.wide.column > div.pod:last-child:before {
+		content: url("https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/red/authorcomments.png");
+		display: block;
+		height: 41px;
+		border-bottom: 4px solid #000;
+	}
+
+	.pod-body div.pagenav div.align-right {
+		float: left;
+		& a {
+			background: #4f280e;
+			float: left;
+			height: 20px;
+			margin-left: 3px;
+			border-color: #000;
+			border-style: solid;
+			border-width: 0 1px 2px 1px;
+			padding: 0;
+			& span {
+				display: block;
+				height: 7px;
+				min-width: 8px;
+				margin: 2px 2px 0 2px;
+				padding: 0 4px;
+				font-size: 1.1em;
+				font-weight: bold;
+				line-height: 1.5em;
+				text-align: center;
+				overflow: visible;
+				color: #eeb211;
+				background: #6b3613;
+			}
+		}
+	}
+	if portaltheme==Movies {
+		.pod-body div.pagenav div.align-right {}
+	}
+	if portaltheme==Games {}
+	if portaltheme==Movies {}
+	if portaltheme==Games {}
+
+	.pod-body div.pagenav a:not([href]),
+	.pod-body div.pagenav a:hover {
+		background: #9d4f18!important;
+		& span {
+			color: #fff!important;
+			background: #eb7522!important;
+		}
+	}
+	if portaltheme==Games {}
+	if portaltheme==Movies {}
+	if portaltheme==Games {}
+	if portaltheme==Movies {}
+	.pod-body div.pagenav div.sort {
+		float: right;
+		top: -2px;
+		line-height: 1.6em;
+		font-size: 1.3em;
+		& span:nth-child(1) {
+			font-weight: bold;
+			color: #7d7575;
+		}
+	}
+	.pod-body div.pagenav div.sort a,
+	.pod-like div.pagenav div.sort a {
+		border-left: 1px solid #7d7575;
+		height: 15px;
+	}
+	div.review-meta {
+		height: 30px;
+		line-height: 3em;
+		margin-bottom: 22px;
+		padding: 5px 5px 0 5px;
+		color: #7d7575;
+		&:after {
+			content: '';
+			border-left: solid 1px #211b1b;
+			border-right: solid 1px #211b1b;
+			background: #000 url(https://kakuyamii.github.io/NG12-theme/images/podstripe_498d71.gif) -1px bottom repeat-x;
+			height: 2px;
+			width: 598px;
+			margin: 10px 0;
+			margin-top: 65px !important;
+			position: absolute;
+			left: 10px;
+		}
+	}
+
+	svg.svgmask.sz-45 {
+		max-width: 30px;
+	}
+	div.review div.review-body {
+		max-width: 600px;
+		word-wrap: break-word;
+		margin: 5px;
+		margin-top: 10px;
+		font-size: 1.2em;
+		line-height: 1.4em;
+		&:after {
+			content: '';
+			display: block;
+			height: 2px;
+			margin: 10px 0;
+			border-left: solid 1px #211b1b;
+			border-right: solid 1px #211b1b;
+			background: #000 url(https://kakuyamii.github.io/NG12-theme/images/podstripe_52d518.gif) -1px bottom repeat-x;
+			width: 598px;
+			left: -6px;
+			position: relative;
+		}
+	}
+	div.review div.authresponse {
+		position: relative;
+		margin: 5px;
+		padding: 0;
+		padding-bottom: 10px;
+		background: #9d4f1836;
+	}
+	div.review div.authresponse strong:first-child {
+		position: relative;
+		z-index: 1;
+		display: block;
+		margin: 0 10px;
+		padding: 8px 0 5px 0;
+		font-weight: normal;
+		color: #c9bebe;
+		border-bottom: solid 1px #4f280e;
+		& > svg {
+			display: none;
+		}
+		div.authresponse > .text-content p {
+			font-size: 1.2em!important;
+			margin: 5px 10px 0 5px!important;
+		}
+		div.authresponse > .text-content p + p {
+			margin-top: 10px!important;
+		}
+	}
+}
+
+
+@-moz-document domain("newgrounds.com") {
+	/* profile page */
+	body.skin-userpage::after {
+		content: '';
+		height: 1250px;
+		display: block;
+		top: -1300px;
+		position: relative;
+		z-index: 0;
+		if layout==2013 or layout==2014 {
+			top: -1300px!important;
+		}
+	}
+	div.userbody div.body-center {
+		max-width: 950px;
+		width: 950px;
+	}
+	div.user-header-bg ~ div.body-main {
+		position: relative;
+		top: 70px;
+		left: 0px;
+		margin: 0 auto;
+		if layout==2013 or layout==2014 {
+			top: 15px;
+		}
+	}
+	div.userbody div.body-center {
+		position: relative;
+		top: 60px;
+	}
+	/* sole survivor i write with bobby womack hands :3 */
+	div.user-header-bg {
+		width: 942px;
+		height: 41px;
+		border: solid 4px #000;
+		border-radius: 2px;
+		box-shadow: 0 5px 10px #000;
+		background: #4f280e url(https://kakuyamii.github.io/NG12-theme/images/podtop-gold_6d0f6f.jpg) left 0 no-repeat;
+		background-color: transparent;
+		margin: 0 auto;
+		top: 130px;
+		position: relative;
+		z-index: 99;
+		& > div.user-header {
+			position: relative;
+			width: 942px;
+			margin: 0px auto;
+			height: 41px;
+		}
+	}
+	if layout==2013 or layout==2014 {
+		div.user-header-bg {
+			top: 75px;
+		}
+	}
+	.user-header-bg::before {
+		content: '';
+		background-color: transparent;
+	}
+	div.page-banner {
+		background: url("https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/orange/headernav.png") no-repeat;
+		height: 55px;
+		position: relative;
+		top: 120px;
+		left: 7px;
+		width: 976px;
+		margin: 0 auto;
+		z-index: 1;
+		if layout==2013 or layout==2014 {
+			top: 65px!important;
+		}
+	}
+	div.croppable-image-advanced div.croppable-image-advanced-inner img {
+		display: none;
+	}
+	svg.svgmask.sz-userpage.shadow {
+		display: none;
+	}
+	svg.svgmask.sz-userpage {
+		width: 25px;
+		height: 25px;
+	}
+	#user-header-icon {
+		top: 68px;
+		left: 8px;
+	}
+	svg.svgmask.c18 > use {
+		display: none;
+	}
+	svg.svgmask.s13 > image {
+		clip-path: none;
+	}
+	div.user-header span.user-header-name {
+		top: 0px;
+		left: 0px;
+	}
+	div.user-header span.user-header-name a.user-link {
+		float: left;
+		height: 31px;
+		overflow: hidden;
+		margin: 5px;
+		padding-left: 36px;
+		color: #fff;
+		font-size: 3em;
+		font-size-adjust: .4;
+		line-height: 1.1em;
+		font-weight: normal;
+		text-transform: capitalize;
+		font-family: "headerfont",
+		"Arial Narrow",
+		Tahoma,
+		Verdana,
+		Geneva,
+		Arial,
+		Helvetica,
+		sans-serif;
+		text-shadow: none;
+	}
+	a.user-header-button > div > strong {
+		margin-top: 4px;
+		font-size: 18px;
+		display: block;
+		display: none;
+	}
+	div.user-header span.user-header-name .user-status-icons:not(:empty),
+	div.user-header-mobile span.user-header-name .user-status-icons:not(:empty) {
+		display: none;
+	}
+	/*.split-menu.user-header-button */
+	div.user-header-buttons,
+	nav.user-header-nav div.scroll-area,
+	nav.user-header-nav {
+		width: 550px;
+	}
+	nav.user-header-nav {
+		top: -3px;
+		left: 370px;
+	}
+	a.user-header-button {
+		position: relative;
+		display: inline-block;
+		margin: 8px 5px 0 0;
+		vertical-align: top;
+		padding: 0 10px;
+		color: #1b1717;
+		cursor: default;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/link_stripes_4b0096.png) -0px 0 no-repeat;
+		height: 25.2px;
+	}
+	a.user-header-button.split-menu::after {
+		display: none;
+	}
+	a.user-header-button div.button-highlight {
+		display: none;
+	}
+	/* im gonna add like  another 10000 lines of code working on this page */
+	a.user-header-button > div {
+		margin-top: 0px;
+		margin-left: 0;
+		position: absolute;
+		width: auto;
+	}
+	a.user-header-button > div > span {
+		color: #eeb211;
+		font-size: 1.2em;
+		font-weight: bold;
+		line-height: 2.1em;
+	}
+	.split-menu.user-header-button:nth-of-type(1) {
+		max-width: 27.33px;
+		& div {
+			max-width: 27.33px;
+			& span {
+				visibility: hidden;
+				/* there's a reason why im doing this instead of using text-transform */
+				&:before {
+					content: 'Fans';
+					visibility: visible;
+				}
+			}
+		}
+	}
+	a.user-header-button:nth-of-type(2) {
+		max-width: 27.33px;
+		& div {
+			max-width: 27.33px;
+			& span {
+				visibility: hidden;
+				left: -2px;
+				position: relative;
+				&:before {
+					content: 'News';
+					visibility: visible;
+				}
+			}
+		}
+	}
+	a.user-header-button:nth-of-type(3) {
+		max-width: 40px;
+		& div {
+			max-width: 40px;
+			& span {
+				visibility: hidden;
+				&:before {
+					content: 'Games';
+					visibility: visible;
+				}
+			}
+		}
+	}
+	a.user-header-button:nth-of-type(4) {
+		max-width: 40.667px;
+		& div {
+			max-width: 40.667px;
+			& span {
+				visibility: hidden;
+				&:before {
+					content: 'Movies';
+					visibility: visible;
+				}
+			}
+		}
+	}
+	a.user-header-button:nth-of-type(5) {
+		max-width: 34px;
+		& div {
+			max-width: 34px;
+			& span {
+				visibility: hidden;
+				&:before {
+					content: 'Audio';
+					visibility: visible;
+				}
+			}
+		}
+	}
+	a.user-header-button:nth-of-type(6) {
+		max-width: 17.3334px;
+		& div {
+			max-width: 17.3334px;
+			& span {
+				visibility: hidden;
+				&:before {
+					content: 'Art';
+					visibility: visible;
+				}
+			}
+		}
+	}
+	a.user-header-button:nth-of-type(7) {
+		max-width: 53.3334px;
+		& div {
+			max-width: 53.3334px;
+			& span {
+				visibility: hidden;
+				&:before {
+					content: 'Favorites';
+					visibility: visible;
+				}
+			}
+		}
+	}
+	a.user-header-button:nth-of-type(8) {
+		max-width: 48px;
+		& div {
+			max-width: 48px;
+			& span {
+				visibility: hidden;
+				&:before {
+					content: 'Reviews';
+					visibility: visible;
+				}
+			}
+		}
+	}
+	/* how could u build ur worth when SHES NOT HEREEEEEEEEEEEEEEEEE */
+	a.user-header-button:nth-of-type(9) {
+		max-width: 32.6666px;
+		& div {
+			max-width: 32.6666px;
+			& span {
+				visibility: hidden;
+				&:before {
+					content: 'Posts';
+					visibility: visible;
+				}
+			}
+		}
+	}
+	div.user-header-actions a {
+		padding: 0;
+		width: 25px!important;
+		height: 25px;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/link_stripes_9d9576.png) 0 0 no-repeat;
+		border-radius: 0px;
+		box-shadow: none;
+		font-size: 0;
+		margin: 8px 5px 0 10px;
+		top: 43px;
+		position: relative;
+		left: -10px;
+	}
+	.follow-user .fa-plus-circle.fa {
+		font-size: 15px;
+		width: 15px;
+		height: 15px;
+		top: 5px;
+		position: relative;
+		color: transparent;
+		text-indent: -9999em;
+		overflow: hidden;
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/a-15yellows_20c0d0.png);
+		background-repeat: no-repeat;
+		background-position: -255px 0;
+	}
+	.userbody.body-main > .body-center > div > .userbody-guts > .edit-on.wide.column {
+		display: grid;
+	}
+	.userbody.body-main > .body-center > div > .userbody-guts > .edit-on.wide.column > #pod_type_11 {
+		order: 1;
+	}
+	.userbody.body-main > .body-center > div > .userbody-guts > .edit-on.wide.column > #pod_type_13 {
+		order: 2;
+	}
+	.userbody.body-main > .body-center > div > .userbody-guts > .edit-on.wide.column > #pod_type_1 {
+		order: 3;
+	}
+	.userbody.body-main > .body-center > div > .userbody-guts > .edit-on.wide.column > #pod_type_12 {
+		order: 4;
+	}
+	.userbody.body-main > .body-center > div > .userbody-guts > .edit-on.wide.column > #pod_type_10 {
+		order: 5;
+	}
+	.userbody.body-main > .body-center > div > .userbody-guts > .edit-on.wide.column > #pod_type_14 {
+		display: none;
+	}
+	div.pod.edit-only.not-visible {
+		display: none;
+	}
+	.userstats.pod-body {
+		display: grid;
+	}
+	.userstats.pod-body > div {
+		order: 1;
+		& > .span-1 {
+			font-size: 12px;
+			height: 17px;
+			padding: 1px 0 1px 5px;
+			margin-top: 4px;
+			& > p {
+				margin: 0;
+			}
+		}
+	}
+	div.userstats i.fa {
+		display: none;
+	}
+	.userstats.pod-body > hr {
+		order: 2;
+		clear: both;
+		height: 2px;
+		margin: 5px 0;
+		border-left: solid 1px #211b1b;
+		border-right: solid 1px #211b1b;
+		background: #000 url(https://kakuyamii.github.io/NG12-theme/images/podstripe_498d71.gif) -275px bottom;
+	}
+	.userstats.pod-body > .text-content.fill-space.general {
+		order: 3;
+		margin: 6px 0px;
+		font-size: 12px;
+	}
+	blockquote.general::before,
+	blockquote.general::after {
+		display: none;
+	}
+	div.footer-main.userpage div.footer-background,
+	body.skin-userpage,
+	body.userpage div.body-guts,
+	.custom-bg-color:not(.no-replace),
+	.custom-bg-color.userpage:not(.no-replace),
+	div.footer-feature-buttons {
+		background: none;
+	}
+}
+@-moz-document url("https://www.newgrounds.com/community") {
+	/* community */
+	div.body-main {
+		height: 600px;
+	}
+	div.column:nth-child(2) > div:nth-child(1),
+	ul.itemlist:nth-child(2),
+	div.forumthread-index,
+	div.column:nth-child(1) > div:nth-child(1),
+	div.column:nth-child(2) > div:nth-child(3),
+	div.column:nth-child(2) > div:nth-child(4),
+	div.column:nth-child(1) > div:nth-child(2),
+	div.column:nth-child(1) > div:nth-child(4),
+	div.column:nth-child(3) > div:nth-child(3),
+	div.column:nth-child(3) > div:nth-child(4) {
+
+		display: none;
+	}
+	div.column:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+		height: 97.9px;
+		border-top: none;
+		background-position: 0 -10px;
+	}
+	div .column.thin,
+	div .column.wide {
+		top: 120px;
+		position: relative;
+		& > div.pod {
+			width: 942px!important;
+			background-image: url(https://kakuyamii.github.io/NG12-theme/images/pod-33_2d7a5d.jpg)!important;
+			box-shadow: none;
+			& > div.pod-body {
+				background-image: url(https://kakuyamii.github.io/NG12-theme/images/podbreaker-33_1297bd.jpg)!important;
+			}
+		}
+	}
+	.thin.column > div.pod > .pod-head {
+		top: -132px;
+		border: 4px solid #000;
+		left: -4px;
+		width: 942px;
+	}
+	.pod-body > h3:first-child {
+		padding: 5px;
+		margin-top: 0;
+		margin-bottom: 5px;
+		font-size: 14px;
+		font-style: italic;
+		font-weight: bold;
+		display: block;
+		background: transparent url(https://kakuyamii.github.io/NG12-theme/images/podstripe_724f8f.gif) center bottom no-repeat !important;
+	}
+	.title-links p:last-child {
+		margin: 5px;
+		font-size: 1.2em;
+		line-height: 1.4em;
+	}
+	div .column.wide {
+		width: 942px;
+		top: -198px;
+		left: -8px;
+	}
+	div.column:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+		height: 0;
+		& > h2 {
+			display: none;
+		}
+	}
+	.pod-head span {
+		float: none;
+		line-height: 0;
+	}
+
+	/*div.column:nth-child(2) > div:nth-child(2) > div:nth-child(1) > span:nth-child(3) > a:nth-child(1) {
+background: none;
+  text-indent: -27px;
+  position: relative;
+  padding: 5px!important;
+  margin: 0px 0 5px 0px;
+  font-size: 1.4em;
+  font-style: italic;
+  font-weight: bold;
+  display: block;
+  left: -724px;
+  top: 55px;
+  &:after {
+	  content: " Our member forums are a great place to hang out with other users, get help with the site, talk video games or politics, etc... We also have forums for artists, creators, developers and programmers. You can share tips and discuss projects with your peers, and maybe find yourself involved in some cool collaborations!";
+	  margin: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.4em;
+  color: #fff;
+  }
+	}
+	/*	 save this for 2016+ layout	div.column:nth-child(2) > div:nth-child(2) {
+		height: 213px;
+	} 
+	div.column:nth-child(2) > div:nth-child(2) > div:nth-child(1) > span:nth-child(2) > a:nth-child(1)  {
+		top: -40px!important;
+		position: relative!important;
+	}
+	.thin.column > div.pod:nth-of-type(2) > .pod-body {
+		width: 280px!important;
+  top: -33px!important;
+	} */
+}
+
+@-moz-document url-prefix("https://www.newgrounds.com/bbs") {
+	/* BBS */
+	div.pod,
+	article.pod,
+	section.pod,
+	div.thincol > *,
+	div.fatcol > * {
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/pod-33_9e32f8.jpg);
+		width: 942px!important;
+		& .pod-body {
+			background-image: url(https://kakuyamii.github.io/NG12-theme/images/podbreaker-33_f6e7ae.jpg);
+		}
+	}
+
+	div.forum_list div.headings {
+		font-size: 12px;
+		font-style: italic;
+		text-align: left;
+		padding: 0;
+		border-bottom: 1px solid #000;
+		& div {
+			padding: 2px 5px 5px 5px;
+		}
+	}
+	div.forum_list div.row:not(:last-child) {
+		padding-bottom: 0px;
+	}
+	div.forum_list div.row {
+		padding-top: 0px;
+		border-top: 1px solid #2b2323;
+		background-color: #0F0B0C00;
+		height: 67px;
+	}
+	div.forum_list div.row:not(:last-child) {
+		padding-bottom: 0px;
+		border-bottom: 1px solid #000
+	}
+
+	div.forum_list div.forum > a {
+		padding-top: 7px;
+		padding-bottom: 5px;
+	}
+	div.forum_list div.forum > a div[class^="bbs-"] {
+		padding-left: 60px;
+		padding-right: 10px;
+		height: 55px;
+		width: 0px;
+		margin: 0;
+	}
+	div.forum_list div.forum [class^="bbs-"]::before {
+		display: table-cell;
+		height: 55px;
+		width: 425px;
+		/* padding-left: 60px;
+  padding-right: 10px; */
+		vertical-align: middle;
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/td-forum45.png);
+		background-repeat: no-repeat;
+		background-position: 0 -60px;
+	}
+	#bbs_forum_17 > .forum > [href] > .bbs-old:before,
+	#bbs_forum_17 > .forum > [href] > .bbs-new:before {
+		background-position: 0 -120px!important;
+	}
+	#bbs_forum_14 > .forum > [href] > .bbs-new:before,
+	#bbs_forum_14 > .forum > [href] > .bbs-old:before {
+		background-position: 0 -240px!important;
+	}
+	#bbs_forum_13 > .forum > [href] > .bbs-old:before,
+	#bbs_forum_13 > .forum > [href] > .bbs-new:before {
+		background-position: 0 -180px!important;
+	}
+
+	#bbs_forum_18 > .forum > [href] > .bbs-old:before,
+	#bbs_forum_18 > .forum > [href] > .bbs-new:before {
+		background-position: 0 -300px!important;
+	}
+	#bbs_forum_19 > .forum > [href] > .bbs-new:before,
+	#bbs_forum_19 > .forum > [href] > .bbs-old:before {
+		background-position: 0 -360px!important;
+	}
+	#bbs_forum_2 > .forum > [href] > .bbs-old:before,
+	#bbs_forum_7 > .forum > [href] > .bbs-new:before {
+		background-position: 0 -420px!important
+	}
+	/* we are at 4k lines :D */
+	#bbs_forum_5 > .forum > [href] > .bbs-new:before {
+		background-position: 0 -480px;
+	}
+
+	div.forum_list span.description {
+		font-size: 10px;
+	}
+	div.forum_list div.hot-topic {
+
+		& > a {
+			font-size: 13px;
+			padding-bottom: 2px;
+		}
+	}
+	div.footer-main.userpage {
+		padding: 0px;
+		min-height: 400px;
+		top: 450px;
+	}
+
+	ul.itemlist.alternating > li:nth-child(2n + 1),
+	ul.itemlist.alternating > li.alternate {
+		background-color: #2e1a0e;
+	}
+	div.footer-main.userpage div.footer-background {
+		background: none;
+	}
+}
+@-moz-document url-prefix("https://www.newgrounds.com/bbs/topic/") {
+	body::after {
+		content: '';
+		height: 10344px;
+	}
+	div.pod {
+		width: 942px;
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/pod-33_e21cd4.jpg);
+		& > .pod-body {
+			background-image: url(https://kakuyamii.github.io/NG12-theme/images/podbreaker-33_e5ae39.jpg);
+		}
+	}
+	#bbsthread_title_pod > div:nth-child(1) > div:nth-child(2) {
+		height: 24px;
+	}
+	#bbsthread_title_pod > div:nth-child(1) {
+		top: -4px;
+	}
+	div.bbs-post-author-bg {
+		position: absolute;
+		bottom: 6px;
+		width: 185px;
+		padding: 10px 0 10px 10px;
+		background: none;
+		filter: opacity(1);
+	}
+	div.bbs-post-author-bg.supporter > div:first-child {
+		background: url(https://kakuyamii.github.io/NG12-theme/images/bbs-postStar.png) 5px 5px no-repeat;
+		height: 230px;
+		width: 195px;
+		position: relative;
+		top: -15px;
+	}
+	div.bbs-post-author-bg.supporter {
+		margin-left: -15px;
+		width: 195px;
+	}
+	div.bbs-post-author-bg.supporter > div:nth-child(2) {
+		background: url(https://kakuyamii.github.io/NG12-theme/images/bbs-postStar_mid.png) right top repeat-y;
+		width: 45px;
+		margin-left: 141px;
+		position: relative;
+		top: -15px;
+	}
+	div.bbs-post-author-bg.supporter > div:last-child {
+		height: 15px;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/bbs-postStar_bot.gif) right bottom no-repeat;
+		left: 5px;
+		position: relative;
+		top: -18px;
+	}
+	.padded-half-horiz > div > a {
+		padding-bottom: 8px;
+		font-size: 1.2em;
+		font-weight: bold;
+		margin: 0px!important;
+	}
+	.padded-half-horiz > div > .padded-top.flexbox {
+		height: 60px;
+		background-repeat: no-repeat;
+		padding-top: 0;
+		position: relative;
+		top: 9px;
+		top: 8px;
+		left: -3px;
+	}
+	.padded-top.padded-left.flex-1 > .small > div > .flexbox-column {
+		padding: 4px 0;
+		font-size: 10px;
+	}
+	.small > .padded-half-top {
+		padding: 0;
+	}
+	.flex-1.padded-left.padded-top {
+		padding-top: 0;
+	}
+	span[class^="online-"] {
+		color: transparent;
+	}
+	span.online-no:before,
+	span.online-yes::before {
+		display: block;
+		padding-left: 17px !important;
+		padding-top: 4px;
+		padding-bottom: 4px;
+		background: url(http://cssimg.ngfiles.com/icons/tinyicons-vert.png) 0 -21px no-repeat;
+		height: 12px;
+		width: auto;
+		content: 'Offline.';
+		font-size: 10px;
+		color: #7d7575;
+	}
+	span.online-yes:before {
+		content: 'Online!';
+		color: #c9bebe !important;
+		display: block;
+		padding-left: 17px !important;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/tinyicons-vert_64e6ae.png) 0 -46px no-repeat;
+		background-position: 0 -46px;
+	}
+	.padded-top.flexbox ~ hr:not([class]) {
+		margin: 10px 0;
+		position: relative;
+		top: 5px;
+		background: #323232;
+		width: 160px;
+	}
+	.padded-top.flexbox ~ hr:nth-of-type(1) {
+		top: 13px;
+	}
+	.padded-top.flexbox ~ hr:nth-of-type(2) {
+		top: -7px;
+	}
+	hr ~ ul.text-links-small {
+		padding: 5px 0;
+	}
+	ul.text-links-small > li {
+		font-size: 10px;
+		line-height: 10px;
+		padding: 4px 0;
+	}
+	/* lol */
+	div.navabr-with-slot {
+		height: 22px;
+		margin: 5px 5px 3px 2px;
+		color: #7d7575;
+		align-items: normal;
+		top: 15px;
+		position: absolute;
+		& .navbar-slot {
+			line-height: 1.6em;
+			font-size: 1.3em;
+			font-weight: bold;
+			& div > span > a {
+				padding-left: 7px;
+				&:hover {
+					color: #fff!important;
+				}
+			}
+		}
+	}
+	.navbar-slot > div > span > a:nth-child(2) {
+		margin-left: -5px;
+	}
+	div.pagenav {
+		position: relative;
+		left: -25px;
+	}
+	.pod-head span.favefollow-buttons > span,
+	.pod-head span.favefollow-buttons {
+		display: none;
+	}
+	.user-not-blocked > div.pod > .pod-body {
+		padding-top: 12px;
+		background-position: 0 -10px;
+	}
+	div.bbs-post-content {
+		padding-left: 201px;
+		min-height: 238px;
+		margin: 0;
+	}
+	.flex-1.padded-half-left {
+		display: table;
+		width: 720px;
+		padding: 5px;
+		height: 228px;
+	}
+	div.bbs-title-wrapper {
+		padding: 0;
+	}
+	div.bbs-post-title {
+		padding-left: 30px;
+	}
+	div.bbs-post-title > p {
+		/*      left: -30px; */
+		position: relative;
+	}
+	div.bbs-post-title strong,
+	div.bbs-post-title strong > a {
+		font-size: 12px;
+		color: #c9bebe!important;
+	}
+	div.bbs-post-title > p > em {
+		display: block;
+		font-size: 11px;
+		font-style: normal;
+		line-height: 11px;
+		&:before {
+			content: 'Posted'
+		}
+	}
+	hr {
+		clear: both;
+		height: 2px;
+		margin: 5px 0;
+		border-left: solid 1px #211b1b;
+		border-right: solid 1px #211b1b;
+		border: transparent;
+		background: #000 url(https://kakuyamii.github.io/NG12-theme/images/podstripe_5daa84.gif) -1px bottom repeat-x;
+	}
+
+
+	.ql-body .ql-align-center,
+	.ql-body p {
+		margin: 10px 0 5px 0;
+		font-size: 1.2em;
+		line-height: 1.3em;
+	}
+
+	div > [href="https://tomfulp.newgrounds.com"] {
+		margin-top: 4px;
+		margin-left: 4px;
+		& svg {
+			height: 60px;
+			if fulp==def {
+				background-image: url(https://kakuyamii.github.io/NG12-theme/images/1_large.gif);
+			}
+			if fulp==F2012 {
+				background-image: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/tomfulppfps/fulp1.gif);
+			}
+			if fulp==LF2012 {
+				background-image: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/tomfulppfps/fulp2.gif);
+			}
+		}
+	}
+
+	div > a[href="https://tomfulp.newgrounds.com"] svg > image {
+		display: none!important;
+	}
+	.text-content p,
+	.text-content h1,
+	.text-content h2,
+	.text-content h3,
+	.text-content h4,
+	.text-content h5,
+	.text-content h6,
+	.text-content pre {
+		margin: 10px 0 5px 0;
+		font-size: 1.2em;
+		line-height: 1.3em;
+	}
+	.bbs-pageright.pod-body {
+		height: 21px;
+	}
+
+	.ql-editor {
+		background: #ea8d42 url("https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/orange/text.png");
+		background-size: auto;
+		background-size: 178px 100%;
+		box-shadow: none;
+		height: 95px;
+		border-radius: 0;
+	}
+	span[class^="emoteset-"]::before,
+	span[class^="emoteset-"].mood-6::before {
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/emotes.png)!important;
+		background-size: 25px 2000px !important;
+		background-position: 0 -1px;
+		background-repeat: no-repeat;
+	}
+	span[class^="emoteset-"].mood-6::before {
+		background-position: 0 0px!important;
+	}
+	span.emoteset-1.mood-1::before {
+		background-position: 0px -50px!important;
+	}
+	/* for real 2012 this is 0 -100 */
+	span.emoteset-1.mood-15::before {
+		background-position: 0px -100px;
+	}
+}
+@-moz-document url-prefix("https://www.newgrounds.com/login") {
+	#passport_main > div.pod {
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/pod-33_889699.jpg);
+		width: 942px;
+		height: 260px;
+		top: -4px;
+
+		& > .pod-body {
+			background-image: url(https://kakuyamii.github.io/NG12-theme/images/podbreaker-33_2b1f3a.jpg);
+			padding: 50px 150px !important;
+		}
+	}
+
+	div[id="passport_main"] .passport-shim-left {
+		display: none;
+	}
+	div.passportform {
+		max-width: 950px;
+		top: -10px;
+		left: 70px;
+	}
+	.highlight.strong.text-align-center {
+		display: none;
+	}
+	div.column ::placeholder {
+		color: #4C484800 !important;
+		font-weight: bold;
+	}
+
+	div.passportform input[type="text"],
+	div.passportform input[type="password"],
+	div.passportform input[type="email"],
+	div.passportform input[type="date"] {
+		font-size: 12px;
+		font-weight: bold;
+		height: 19px;
+		padding: 3px 5px;
+		border-color: #000;
+		border-style: solid;
+		border-width: 0 1px 2px 1px;
+		background: #ea8d42 url(https://kakuyamii.github.io/NG12-theme/images/input-gold_11aecf.jpg) top left repeat-x!important;
+		width: 185px;
+		box-shadow: none;
+		margin-bottom: 10px;
+		position: relative;
+		left: 5px;
+	}
+
+	form > div:before {
+		content: 'Username: ';
+		color: #c9bebe;
+		display: block;
+		position: relative;
+		font-size: 12px;
+		font-weight: bold;
+		top: 20px;
+		left: -63px;
+	}
+
+	form > div:nth-child(5):before {
+		content: 'Password: ';
+		color: #c9bebe;
+		display: block;
+		position: relative;
+		font-size: 12px;
+		font-weight: bold;
+		top: -33px;
+		left: -63px;
+	}
+	div.passportform button {
+		padding: none!important;
+		&:before {
+			content: 'Submit';
+			float: left;
+			margin: 0 25px 0 0;
+			height: 25px;
+			width: 66px;
+			color: #eeb211;
+			font-size: 12px;
+			line-height: 26px;
+			font-weight: bold;
+			border-color: #000!important;
+			border-left-width: 1px!important;
+			border-right-width: 1px!important;
+			border-bottom-width: 2px!important;
+			border-top: none!important;
+			border-style: solid;
+			background: url(https://kakuyamii.github.io/NG12-theme/images/button-gold_145c17.gif) left 0 no-repeat!important;
+			left: -65px;
+			position: relative;
+			top: -30px;
+			&:hover {
+				color: #fff!important;
+				cursor: pointer!important;
+				background-position: left -25px!important;
+			}
+		}
+	}
+	.checkboxes.twoX input[type="checkbox"]:not(.switch) + label {
+		background: url(https://kakuyamii.github.io/NG12-theme/images/input-checkboxes.jpg) 0 0 no-repeat;
+		display: block;
+		height: 16px;
+
+
+		&::before {
+			height: 16px;
+			line-height: 16px;
+			padding-left: 20px;
+			background: url("https://kakuyamii.github.io/NG12-theme/images/input-check.png") 0 0 no-repeat;
+			top: 159px;
+			width: 0px;
+		}
+	}
+	div.passportform button {
+		font-size: 0px;
+		width: 0%!important;
+		padding: 0 !important;
+		font-weight: normal !important;
+		border-radius: 0px !important;
+	}
+	div[id="passport_main"] .passport-shim-right:before {
+		color: #c9bebe;
+		font-size: 12px;
+		width: 200px;
+		content: "If you're not a member… You should die!";
+	}
+}
+@-moz-document url-prefix("https://www.newgrounds.com/passport") {
+	/* passport*/
+	body::after {
+		display: none;
+	}
+	body.PassportBackgroundImage {
+		background: #000!important;
+	}
+	#passport_main {
+		height: 681px;
+		width: 542px;
+		margin: 0 auto;
+		background: url('https://kakuyamii.github.io/NG12-theme/images/passport_bg3.jpg') no-repeat #28201D;
+	}
+	body.PassportBackgroundImage div.PassportLogo,
+	div.PassportLogo {
+		background: url("https://kakuyamii.github.io/NG12-theme/images/ngpassport_logo.png") no-repeat;
+		bottom: 0;
+		top: 5px;
+		left: 706px;
+	}
+	.box-shadow {
+		box-shadow: none;
+		border: none;
+		background: none;
+		border-radius: 0;
+		padding-top: 3.5em;
+		padding-left: 15.5em;
+		font-size: .8em;
+	}
+	div.PassportHead {
+		max-width: 0;
+		height: 0;
+		background: none;
+		padding: 0;
+		margin: 0;
+		border: none;
+		border-radius: 0;
+	}
+	div.PassportHead::before {
+		content: 'Challenge friends, earn in-game medals, compete for high scores and more! All you need is a Newgrounds account!';
+		color: #fff;
+		font-size: 11px;
+		line-height: 18px;
+		font-weight: bold;
+		padding-left: 30px;
+		padding-top: 40px;
+		margin-left: 14.1em;
+		display: block;
+		width: 342.8px;
+		height: 32px;
+		left: 690px;
+		top: 4px;
+	}
+	div.PassportHead h2 {
+		display: none;
+	}
+	div.PassportPodBody {
+		max-width: 343.6px;
+		background: none;
+		border: none;
+		padding: 0;
+		margin: 0;
+		top: 75px;
+		left: 65px;
+		position: relative;
+		box-shadow: none;
+	}
+	input.PassportTextfield {
+		width: 176px;
+		height: 16px;
+		display: block;
+		padding: 4px;
+		color: #000;
+		margin: 0 0 0 1.1em;
+		border-radius: 0;
+		font-size: 12px;
+		box-shadow: none;
+		border-color: #000!important;
+		border-style: solid!important;
+		border-width: 0 1px 2px 1px!important;
+		background: #ea8d42 url(https://kakuyamii.github.io/NG12-theme/images/input-gold.jpg) top left repeat-x;
+	}
+}
+
+@-moz-document domain("newgrounds.com") {
+	/* footer */
+	div.body-footer-wrapper {
+		width: 976px;
+		height: 0px;
+		margin: 0 auto;
+		top: 48px;
+		position: relative;
+		background: none;
+	}
+
+	div.body-footer-shim {
+		height: 8px!important;
+		margin: 0;
+		position: relative;
+	}
+
+	div.footer-features {
+		border-top: 0;
+		height: 194px;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/featuredcontent.jpg) top left no-repeat;
+		top: 9px;
+		position: relative;
+		z-index: 9;
+	}
+	div.footer-feature-buttons {
+		position: relative;
+		background-color: transparent;
+		border-bottom: none;
+		padding: 0;
+		height: 40px;
+		vertical-align: middle;
+		top: 9px;
+	}
+	div.footer-feature-buttons h3 {
+		float: left;
+		width: 258px;
+		height: 40px;
+		margin-left: 10px;
+		margin-top: 3px;
+		text-indent: -9999em;
+		overflow: hidden;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/featuretitle.jpg) 0 0 no-repeat;
+	}
+
+	/* its footer button time */
+	div.footer-feature-buttons > span {
+		width: 970px;
+	}
+	div.footer-feature-buttons div button,
+	div.footer-feature-buttons div button.footer-feature-btn-games:hover {
+		float: left;
+		width: 116px;
+		height: 30px;
+		margin-top: 5px;
+		padding: 0;
+		text-indent: -9999em;
+		overflow: hidden;
+		border: none;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/featurebar.jpg) top left no-repeat!important;
+	}
+	div.footer-features-items {
+		top: 20px;
+		padding-bottom: 0px;
+		position: relative;
+	}
+	div.footer-feature-buttons::before {
+		background-color: transparent;
+	}
+	div.footer-feature-buttons div button:after {
+		display: none;
+	}
+	.footer-feature-btn-games,
+	#footer-feature-btn-games {
+		background-position: 0 0;
+		&:hover {
+			background-position: 0 -30px!important;
+		}
+		&:active {
+			background-position: 0 -60px!important;
+		}
+	}
+
+	.footer-feature-btn-movies,
+	#footer-feature-btn-movies {
+		background-position: -116px 0!important;
+		&:hover {
+			background-position: -116px -30px!important;
+		}
+		&:active {
+			background-position: -116px -60px!important;
+		}
+	}
+	#footer-feature-btn-audio {
+		background-position: -232px 0!important;
+		&:hover {
+			background-position: -232px -30px!important;
+		}
+		&:active {
+			background-position: -232px -60px!important;
+		}
+	}
+	#footer-feature-btn-art {
+		background-position: -348px 0!important;
+		&:hover {
+			background-position: -348px -30px!important;
+		}
+		&:active {
+			background-position: -348px -60px!important;
+		}
+	}
+	#footer-feature-btn-channels {
+		background-position: -464px 0!important;
+		width: 118px;
+		&:hover {
+			background-position: -464px -30px!important;
+		}
+		&:active {
+			background-position: -464px -60px!important;
+		}
+	}
+	#footer-feature-btn-users {
+		background-position: -582px 0!important;
+		width: 115px;
+		&:hover {
+			background-position: -582px -30px !important;
+		}
+		&:active {
+			background-position: -582px -60px!important;
+		}
+	}
+	div.footer-features-items div.featured-items {
+		width: 1px;
+	}
+	div.footer-features-items .featured-item {
+		position: relative;
+		float: left;
+		width: 290px;
+		height: 110px;
+		margin-right: 1px;
+		padding-right: 6px;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/footerfeature.png) top left repeat;
+	}
+	div.footer-features-items a[class^="featureshift"] {
+		width: 25px;
+		height: 110px;
+		overflow: hidden;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/a-stripes.png) top left repeat;
+	}
+	a.portalsubmission-footer-feature h4 {
+		color: #eeb211;
+		padding: 0;
+		margin: 12px 0 8px 10px;
+		font-style: normal!important;
+		font-size: 14px;
+	}
+	div[class^="rated-"]::before,
+	div[class^="rank-"]::before {
+		display: block;
+		position: absolute;
+		z-index: 1;
+		width: 20px;
+		bottom: auto;
+		margin: 0;
+		height: 20px;
+		text-indent: -999em;
+		overflow: hidden;
+		opacity: .85;
+		background-color: #1b1717;
+		background-image: url(https://kakuyamii.github.io/NG12-theme/images/rankandrate_d00529.png);
+	}
+	if layout==E2012 {
+		a.portalsubmission-footer-feature.game div[class^="rated-"]::before {
+			background-color: #296395!important;
+		}
+	}
+	if layout==E2012 {
+		a.portalsubmission-footer-feature.movie div[class^="rated-"]::before {
+			background-color: #a52e2e!important;
+		}
+	}
+	div[class^="rated-e"]::before {
+		background-position: -40px 0;
+		if layout==E2012 {
+			background-position: -20px 0;
+		}
+	}
+	div[class^="rated-t"]::before {
+		background-position: -40px -20px;
+		if layout==E2012 {
+			background-position: -20px -20px;
+		}
+	}
+	div[class^="rated-m"]::before {
+		background-position: -40px -40px;
+		if layout==E2012 {
+			background-position: -20px -40px;
+		}
+	}
+
+	div.footer-main {
+		background: url(https://kakuyamii.github.io/NG12-theme/images/gold-footer.jpg) 3px bottom no-repeat;
+		height: 400px;
+		z-index: 9;
+		position: relative;
+	}
+	div.footer-main {
+		display: grid;
+	}
+	div.footer-copyright {
+		font-size: 1.2em;
+		line-height: 1.5em;
+		text-align: left;
+		position: absolute;
+		left: 23px;
+		display: block;
+		width: 644px;
+		height: 45px;
+		padding: 0 0 0 50px;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/logo-tiny.png) top left no-repeat;
+		font-weight: bold;
+		margin-top: 10px;
+		&:after {
+			content: 'newgrounds.com — Your #1 online entertainment & artist community! All your base are belong to us.';
+			font-weight: normal;
+			margin-left: 50px;
+			left: -50px;
+			position: relative;
+		}
+	}
+	div.footer-main div.footer-navigation {
+		width: 640px;
+		height: 212px;
+		margin: 0;
+		float: left;
+		left: 23px;
+		top: -5px;
+		position: relative;
+	}
+	div.footer-main div.footer-navigation-column {
+		padding: 0;
+		float: left;
+		width: 150px;
+		margin-right: 10px;
+	}
+	div.footer-main div.footer-navigation-cell h4 {
+		padding: 0px 0px 0px 5px;
+		font-size: 1.4em;
+		font-weight: bold;
+		line-height: 2.1em;
+		display: block;
+		height: 30px;
+	}
+	div.footer-main div.footer-navigation-cell li {
+		font-size: 12px;
+		line-height: 9px;
+		font-weight: bold;
+		position: relative;
+		display: block;
+		width: 150px;
+		height: 25px;
+		margin-bottom: 1px;
+		padding: 0;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/link_stripes_b3c817.png) 0 0 no-repeat;
+		&:hover {
+			background-position: -300px 0;
+			color: #000!important;
+		}
+	}
+	div.footer-main div.footer-navigation-cell li > a {
+		position: absolute;
+		top: 6px;
+		display: block;
+		width: 129px;
+		height: 13px;
+		line-height: 14px;
+		margin-left: 8px;
+		padding-left: 5px;
+		border-left: solid 2px #e15f20;
+		color: #eeb211!important;
+		background: url(https://kakuyamii.github.io/NG12-theme/images/nav-corners.gif) right -21px no-repeat;
+		&:hover {
+			border-color: #1b1717 !important;
+			color: #000!important;
+			background-position: right 4px !important;
+		}
+	}
+	div.footer-main div.footer-navigation-cell li:nth-of-type(2n),
+	div.footer-main div.footer-navigation-cell li:nth-of-type(2n) a {
+		background-position: -9px 0!important;
+	}
+
+	/* shout out to haydengriz */
+	div.footer-navigation-column:nth-child(2) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(7),
+	div.footer-navigation-column:nth-child(2) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(3),
+	div.footer-navigation-column:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(2),
+	div.footer-navigation-column:nth-child(4) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(4),
+	div.footer-navigation-column:nth-child(4) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(5),
+	div.footer-navigation-column:nth-child(4) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(3) {
+		display: none;
+	}
+	div.footer-main div.footer-user-message {
+		position: absolute;
+		bottom: 0px;
+		z-index: 666;
+		font-size: 1.2em;
+		line-height: 14px;
+		left: 20px;
+		padding: 0;
+	}
+	span.inline-user-link > a {
+		font-weight: normal;
+	}
+	span.inline-user-link > a em {
+		display: inline-block;
+		width: 25px;
+		height: 25px;
+		margin: -5px 8px 0 0;
+		vertical-align: middle;
+	}
+	span.inline-user-link > a em > img {
+		width: 25px;
+		height: 25px;
+		margin: 0px!important;
+	}
+	img.user-icon {
+		border-radius: 0 !important;
+	}
+	div.footer-main div.footer-background {
+		position: relative;
+		order: 2;
+	}
+	div.footer-main div.footer-decoration {
+		display: none;
+	}
+	div.footer-main div.footer-bottom {
+		padding-top: 46px;
+		background-color: transparent;
+	}
+	div.footer-wall-artist {
+		display: none;
+	}
+}
