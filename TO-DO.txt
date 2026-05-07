@@ -1,0 +1,3 @@
+Issues that are present in 4-3 and not in nightly:
+BBS forums are broken in 4-3
+4-3 PM, upload and notification buttons are stylistically wrong and don't use the same stylization as nightly
