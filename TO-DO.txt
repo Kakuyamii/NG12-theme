@@ -1,3 +1,115 @@
-Issues that are present in 4-3 and not in nightly:
-BBS forums are broken in 4-3
-4-3 PM, upload and notification buttons are stylistically wrong and don't use the same stylization as nightly
+Issues that are present in 4-3 and not in nightly (TESTED IN DEFAULT THEME, NOT ADDITIONAL THEMES):
+1. The "https://www.newgrounds.com/" Home page is mostly fine, however the "views" part in the "Latest From Your Friends & Favorites" section is misplaced. Everything else is OK and as intended.
+2. The "https://www.newgrounds.com/Commmunity" page is broken. The BBS forums themselves are Fine.
+3. (GENERAL, GLOBAL ISSUE) The upload and notification buttons are stylistically wrong and don't use the same stylization as nightly.
+4. The "https://www.newgrounds.com/search/conduct/games" and "https://www.newgrounds.com/games" listing sections are broken. So are "https://www.newgrounds.com/games/featured", "https://www.newgrounds.com/games/browse" and "https://www.newgrounds.com/games/popular".
+5. The "https://www.newgrounds.com/movies", "https://www.newgrounds.com/search/conduct/movies" Sections are broken.
+6. The "https://www.newgrounds.com/audio" Section is broken.
+7. The "https://www.newgrounds.com/search/conduct/audio" is moslty fine and useable, but visually buggy.
+8. "https://www.newgrounds.com/audio/listen" Is fine, for the most part, But the comments section overlaps over the section that shows other songs at the bottom. The "add to favorites" button is also out of place and visually broken.
+9. "https://www.newgrounds.com/series" is mostly fine, except for the top that looks a little cooky. Shouldn't be that much of an issue.
+10. "https://www.newgrounds.com/art" is visually broken. Same issues as 4-6.
+11. "https://www.newgrounds.com/search/summary" has the same issues as 7.
+12. "https://www.newgrounds.com/portal/view/" for movie and game viewing is extremely broken, notably by having the player be extremely out of place, The ability to comment and rate the movie being missing, the comments themselves being offcenter and making too much empty space in the page itself, and the "Main sections + Extra, extra! + community + NG related" titles being out of place and having their buttons overlap over them. This issue is also present when playing a game, but now the entire page is black, and share the same issues as before, seemingly trying to use movie viewing code for the game viewing..
+/* Aditionally, issues 4-6 and 9 don't get fixed when changing the "how much content that shows in portals (requires range on all)" option. *\
+13. The profile page ([USERNAME].newgrounds.com) Has a few glaring issues, being the missing profile picture, the missing banner, the re-usal of the main page layout, the sections not being in the same order that was chosen by the user, the background cutting off at a certain section of the site, and the favorites and uploads sections themselves clipping at the bottom of the page.
+14. Checking an art page (https://www.newgrounds.com/art/view/*) shares the favorite button issue that issue 8 has.
+
+Comparing to the nightly version of the .css script, the following issues are not present:
+Issue 1 is not present.
+Issue 2 is not present.
+Issue 3 is not present and buttons are correct.
+Issue 4 is not present, but the games blue page theme is missing due to lack of implementation and sharing the theme with the main script theming.
+Issue 5 is not present, but the red theme of the movies page is missing due to lack of implementation and sharing the theme with the main script theming.
+Issue 6 is not present, but the green theme of the audio page is missing due to lack of implementation and sharing the theme with the main script theming.
+Issue 7 is not present, Sharing visuals with https://www.newgrounds.com/search/conduct/movies but missing it's theming due to lack of implementaton and sharing the theme with the main script theming.
+Issue 8 is not present as the audio/listen page is not themed and sharing the theme with the main script theming.
+Issue 9 is not present, but the theme for the series page is missing due to lack of implementation and sharing the theme with the main script theming..
+Issue 10 is not present, but the pink art page theme is missing due to lack of implementation and sharing the theme with the main script theming.
+Issue 11 is the same as issue 7.
+Issue 12 is somehow more broken than the original, However post ratings remains.
+Issue 13 is worse despite now having the profile picture and banners.
+Issue 14 is shared.
+
+Ideally the correct thing to do to fix these issues is port some of the nightly code into 4-3 (That I left as 4-4 unofficial in my version), and also get some of the wayback machine code for these sections to at LEAST fix the 2012 (default) theme...
+I'll leave these links here for me to go back for them later, I'll be getting links for the .html of these sections and their respective .css all from febuary in the wayback machine, or after if febuary is not present....
+TO NOTE;
+search/conduct/(TYPE OF PORTAL) pages didn't actually exist until circa 2017. Neither did search/summary
+Main page:
+view-source:https://web.archive.org/web/20120223084026/https://www.newgrounds.com/
+https://web.archive.org/web/20120223062351cs_/http://css.ngfiles.com/ng_publish.css?1329940898
+Community page (Was only implemented in 2014, in 2012 the community button redirected to the BBS page. Ideally, this wouldn't need to be recreated to a tee as the modern one is QUITE different.):
+view-source:https://web.archive.org/web/20141121125312/https://www.newgrounds.com/community
+https://web.archive.org/web/20141122130622cs_/http://css.ngfiles.com/ng_publish.css?1416571316
+Games page:
+view-source:https://web.archive.org/web/20120223120436/http://www.newgrounds.com/games
+https://web.archive.org/web/20120223062351cs_/http://css.ngfiles.com/ng_publish.css?1329940898
+Game view page (example game):
+view-source:https://web.archive.org/web/20120222092026/http://www.newgrounds.com/portal/view/381115
+https://web.archive.org/web/20120222065301cs_/http://css.ngfiles.com/ng_publish.css?1329342619
+Movies page:
+view-source:https://web.archive.org/web/20120218105553/http://www.newgrounds.com/movies
+https://web.archive.org/web/20120218142518cs_/http://css.ngfiles.com/ng_publish.css?1329342619
+Movie view page (example movie):
+view-source:https://web.archive.org/web/20120220175348/http://www.newgrounds.com/portal/view/161181
+https://web.archive.org/web/20120220165053cs_/http://css.ngfiles.com/ng_publish.css?1329342619
+Audio page:
+view-source:https://web.archive.org/web/20120218110002/http://www.newgrounds.com/audio
+https://web.archive.org/web/20120218142518cs_/http://css.ngfiles.com/ng_publish.css?1329342619
+Movie Search page (madness combat search query as an example):
+view-source:https://web.archive.org/web/20120428173700/http://www.newgrounds.com/portal/search/movies/madness%20combat
+https://web.archive.org/web/20120429120835cs_/http://css.ngfiles.com/ng_publish.css?1335296472
+Art Search page (from 2015, but close. Madness combat search query as an example)
+view-source:https://web.archive.org/web/20150317173735/http://www.newgrounds.com/art/search/Madness%20Combat
+https://web.archive.org/web/20150317170052cs_/http://css.ngfiles.com/ng_publish.css?1426502658
+Games search page (Madness combat search query as an example)
+view-source:https://web.archive.org/web/20121011232853/http://www.newgrounds.com/portal/search/games/madness%20combat
+https://web.archive.org/web/20121011204309cs_/http://css.ngfiles.com/ng_publish.css?1349970896
+Audio search page (from 2013, but close. Madness combat search query as an example)
+view-source:https://web.archive.org/web/20130329101137/http://www.newgrounds.com/audio/search/title/madness%20combat
+https://web.archive.org/web/20130329092444cs_/http://css.ngfiles.com/ng_publish.css?1363642260
+Audio listen page (Track is an example.):
+view-source:https://web.archive.org/web/20130103202910/http://www.newgrounds.com/audio/listen/501397
+https://web.archive.org/web/20130103192609cs_/http://css.ngfiles.com/ng_publish.css?1357153036
+Series page:
+view-source:https://web.archive.org/web/20120309174459/http://www.newgrounds.com/collection/series
+https://web.archive.org/web/20120309192626cs_/http://css.ngfiles.com/ng_publish.css?1331221095
+Art page:
+view-source:https://web.archive.org/web/20120219210130/http://www.newgrounds.com/art
+https://web.archive.org/web/20120219231147cs_/http://css.ngfiles.com/ng_publish.css?1329342619
+Art view page (example artwork):
+view-source:https://web.archive.org/web/20120217063220/http://www.newgrounds.com/art/view/johnnyutah/ng-staff-gayparty
+https://web.archive.org/web/20120217040433cs_/http://css.ngfiles.com/ng_publish.css?1329342619
+Profile page (example profile)
+view-source:https://web.archive.org/web/20120219215024/http://tomfulp.newgrounds.com/
+https://web.archive.org/web/20120219231147cs_/http://css.ngfiles.com/ng_publish.css?1329342619
+
+The following are the links from CURRENT newgrounds, only needing one CSS file ASSUMING as the current one is universal knowing it's what every link in the newgrounds right now should use.....
+CSS file:
+view-source:https://css.ngfiles.com/ng_2015.69fbf02e9a552.css?stamp=1778118702
+Main page:
+view-source:https://www.newgrounds.com/
+Community page:
+view-source:https://www.newgrounds.com/community
+Games page:
+view-source:http://www.newgrounds.com/games
+Game view page, example game:
+view-source:http://www.newgrounds.com/portal/view/381115
+Movies page:
+view-source:http://www.newgrounds.com/movies
+Movie view page, example movie:
+view-source:http://www.newgrounds.com/portal/view/161181
+Audio page:
+view-source:http://www.newgrounds.com/audio
+Search page:
+view-source:https://www.newgrounds.com/search/summary
+Audio view page, example audio:
+view-source:http://www.newgrounds.com/audio/listen/501397
+Series page:
+view-source:http://www.newgrounds.com/collection/series
+Art page:
+view-source:http://www.newgrounds.com/art
+Art view, example artwork:
+view-source:http://www.newgrounds.com/art/view/johnnyutah/ng-staff-gayparty
+Profile page, example profile:
+view-source:http://tomfulp.newgrounds.com/

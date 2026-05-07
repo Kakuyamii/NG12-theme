@@ -1,0 +1,2897 @@
+        /* ==UserStyle==
+@name           NG12 Clean Slate [Nightly]
+@namespace      google.com
+@version        6666.9999.8
+@description   I fucked up | Tom Fulp approved
+@author        ma
+@var  select  background 'Choose background' {
+'Default (2012)': 'default',
+'Current':        'current',
+'2011 (Leaked Redesign)':        'gold0',
+' "No Smoking" ':  'gold1',
+' Closure': 'closure',
+'Pico Day 2012':  'picoday2012',
+'Robot Day 2012': 'robotday12',
+'Clock Day 2012': 'clockday12',
+'Madness Day 2012': 'mad2012',
+'Halloween 2012':  'hl2012',
+' December 2012 ':  'gold4',
+'Pico Day 2013 (Textless)':  'picoday2013',
+'Pico Day 2013 ':   'picoday20132',
+'Robot Day 2013':  'robotday13',
+'Madness Day 2013': 'madness2013',
+'Halloween 2013':   'halloween2013',
+'Halloween 2014':  'halloween2014'
+
+}
+
+@var select layout 'Choose layout' {
+' Default (2012)': 'default',
+' Early 2012':  'E2012',
+' 2013 (WIP) ': '2013',
+'2014 (WIP)':  '2014',
+}
+@var checkbox yourfeed 'Replace Shop NG button with Your Feed' 1
+@var select fulp 'Choose Tom Fulp pfp' {
+'Default (2012)': 'def',
+'Alt': 'alt',
+'Febuary 2012': 'F2012',
+'later Febuary 2012': 'LF2012',
+'April 2013': 'A2013'
+}
+@var checkbox headerads 'Show header ads ' 0
+@var checkbox hp 'Show Welcome to Newgrounds screen (for 2013)' 1
+
+@var select videosize 'Video Size [lol]' {
+'Full Width': 'full',
+'SD': 'half'
+}
+
+@preprocessor stylus
+
+==/UserStyle== */
+        @-moz-document domain("newgrounds.com"),
+        url-prefix("https://www.newgrounds.com") {
+            /* Code Base */
+            /* All NG12 Must follow the code if it doesnt it goes straight to hell */
+            @font-face {
+                font-family: "headerfont";
+                src: url("https://web.archive.org/web/20120709100602im_/http://css.ngfiles.com/fonts/pakenham.eot#iefix") format("embedded-opentype"), url("https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/fonts/pakenham.woff") format("woff"), url("https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/fonts/pakenham.ttf") format("truetype"), url("https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/fonts/pakenham.svg") format("svg")
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 10px;
+                margin: 0px;
+                padding: 0px;
+                background-color: #000!important;
+                position: relative;
+                if background==default {
+                    background: #000 url(https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-skins/gold2-body.gif) top center repeat-y;
+                }
+
+                if background==current {
+                    background: #000 url(https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-skins/background/body/custombody.png) top center repeat-y;
+                }
+
+                if background==gold0 {
+                    background: #000 url(https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/gold0-body.gif) top center repeat-y;
+                }
+
+                if background==gold1 {
+                    background: #000 url(https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/gold1-body.gif) top center repeat-y;
+                }
+
+                if background==closure {
+                    background: url(https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/skin-closure-body.gif) top center repeat-y;
+                }
+
+                if background==picoday2012 {
+                    background: url(https://web.archive.org/web/20120510014025im_/http://img.ngfiles.com/bg-skins/picoday2012-body.gif) top center repeat-y;
+                }
+
+                if background==picoday2013 or picoday20132 {
+                    background: #000 url(https://web.archive.org/web/20130502002555im_/http://cssimg.ngfiles.com/bg-skins/gold2-body.gif) top center repeat-y;
+                }
+
+                if background==robotday12 {
+                    background: url(https://web.archive.org/web/20120806050759im_/http://img.ngfiles.com/bg-skins/robotday2012-body.gif) top center repeat-y;
+                }
+
+                if background==clockday12 {
+                    background: #000 url(https://web.archive.org/web/20120815044057im_/http://img.ngfiles.com/bg-skins/clockday2012-body.gif) top center repeat-y;
+                }
+
+                if background==mad2012 {
+                    background: url(https://web.archive.org/web/20120923023402im_/http://img.ngfiles.com/bg-skins/madnessday2012-body.gif) top center repeat-y;
+                }
+
+                if background==hl2012 {
+                    background: url(https://web.archive.org/web/20121009173533/https://cssimg.ngfiles.com/bg-skins/halloween2012-body.gif) top center repeat-y;
+                }
+
+                if background==robotday13 {
+                    background: #000 url(https://web.archive.org/web/20130730221215im_/http://cssimg.ngfiles.com/bg-skins/gold2-body.gif) top center repeat-y;
+                }
+
+                if background==gold4 {
+                    background: url(https://web.archive.org/web/20121129130123im_/http://cssimg.ngfiles.com/bg-skins/gold4-body.gif) top center repeat-y;
+                }
+
+                if background==current {
+                    background: #000 url(https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-skins/background/body/custombody.png) top center repeat-y!important;
+                    z-index: 1;
+                    &:after {
+                        background: none!important;
+                        background-image: none!important;
+                    }
+                }
+
+                if layout==2013 or layout==2014 and background==current {
+                    background: #000 url("https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-skins/background/outer/custombody.png") 183px repeat-y !important;
+                    z-index: 1;
+                }
+
+                & a {
+                    color: #eeb211;
+                    &:visited {
+                        color: #b96f10;
+                    }
+                }
+
+                & div.notification-bar {
+                    height: 48px;
+                    background: url(https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-header/sitelinks.png) top center no-repeat;
+                    box-shadow: none;
+                    position: absolute!important;
+                    top: 0!important;
+                    & div.wrapper {
+                        width: 976px;
+                        & .logo {
+                            padding: 0;
+                            filter: none;
+                            position: absolute;
+                            top: 54px;
+                            & a {
+                                position: absolute;
+                                top: 0;
+                                bottom: 56px;
+                                margin: 0;
+                                width: 291px;
+                                height: 115px;
+                                background: url(https://web.archive.org/web/20120704205152im_/http://cssimg.ngfiles.com/logo.png) bottom left no-repeat;
+                            }
+
+                            if layout==2013 or layout==2014 or layout==2015 {
+                                top: 53px;
+                                & a {
+                                    width: 256px;
+                                    height: 63px;
+                                    background: url(https://web.archive.org/web/20130730221215im_/http://cssimg.ngfiles.com/bg-header/logo.png) bottom right no-repeat;
+                                }
+                            }
+                        }
+
+                        & .notifications {
+                            order: 2;
+                            width: 550px;
+                            padding: 0;
+                            /*   height: 48px; */
+                            & .notification-login-side {
+                                font-size: 0px;
+                                font-weight: normal;
+                                height: 25px;
+                                width: 550px;
+                                display: flex;
+                                margin: 15px 10px;
+                                left: 0;
+                                position: relative;
+                                top: -3px;
+                                &:before {
+                                    content: '';
+                                    background: url('https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-skins/signingold.png');
+                                    display: block;
+                                    width: 322px;
+                                    height: 25px;
+                                    order: 1;
+                                    position: relative;
+                                    top: 1px;
+                                    left: 5px;
+                                }
+
+                                & a:nth-child(1) {
+                                    width: 66px;
+                                    height: 25px;
+                                    margin-left: 5px;
+                                    border: 0;
+                                    text-align: center;
+                                    color: #eeb211;
+                                    top: 1px;
+                                    line-height: 2.0em;
+                                    font-weight: bold;
+                                    display: block;
+                                    order: 2;
+                                    background: url(https://web.archive.org/web/20130730221215im_/http://cssimg.ngfiles.com/bg-skins/buttons/button-gold.gif) right 0 no-repeat;
+                                    &:hover {
+                                        background-position: right -25px;
+                                    }
+
+                                    &:after {
+                                        content: 'Log In';
+                                        line-height: 26px;
+                                        font-size: 12px;
+                                    }
+                                }
+
+                                & a:nth-child(2) {
+                                    order: 3;
+                                    padding-left: 10px;
+                                    margin-left: 10px;
+                                    border-left: 2px solid #5a5454;
+                                    height: 24px;
+                                    color: #eeb211;
+                                    top: 1.5px;
+                                    left: 0.4px;
+                                    &:before {
+                                        content: 'Not a member? Sign Up! ';
+                                        font-size: 10px;
+                                        filter: none!important;
+                                        line-height: 12px;
+                                        text-indent: 0px;
+                                        /* top: 1px; */
+                                        position: relative;
+                                    }
+
+                                    /* Imagine if firefox let us use GDI text rendering goodly */
+                                    &:after {
+                                        content: 'Forgot login?';
+                                        font-size: 10px;
+                                        line-height: 13px;
+                                        filter: none !important;
+                                        display: block;
+                                        text-align: left;
+                                    }
+
+                                    /* Cleartype is rlly nasty I love mactype */
+                                }
+                            }
+
+                            & div:not(.notification-login-side):not(div.flex-1) {
+                                width: 550px;
+                                margin: 15px 10px;
+                                height: 25px;
+                                left: 0;
+                                position: relative;
+                                top: -3px;
+                                & div.flex-1:not(:nth-of-type(4)) {
+                                    flex: 0;
+                                    width: 25px;
+                                    height: 25px;
+                                    & a {
+                                        width: 25px;
+                                        height: 25px;
+                                        display: block;
+                                        background: #4f280e;
+                                        if layout==E2012 and background==gold0 {
+                                            width: 35px!important;
+                                            &:before {
+                                                max-width: 23px!important;
+                                                width: 23px;
+                                            }
+
+                                            &:after {
+                                                left: -7.5px;
+                                            }
+                                        }
+
+                                        /* INACCURATE PROBABLY */
+                                        &:before {
+                                            filter: none!important;
+                                            display: block;
+                                            height: 9px;
+                                            max-width: 13px;
+                                            margin: 2px 2px 0 2px;
+                                            padding: 0 4px;
+                                            top: 12px;
+                                            position: absolute;
+                                            overflow: visible;
+                                            color: #fff;
+                                            background: #6b3613!important;
+                                        }
+
+                                        &:after {
+                                            content: '';
+                                            width: 15px;
+                                            height: 15px;
+                                            background: url(https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/icons/a-15yellows.png);
+                                            display: block;
+                                            background-position-y: 0px;
+                                            z-index: 99;
+                                            position: relative;
+                                            margin: auto;
+                                            top: 5px;
+                                            if layout==E2012 and background==gold0 {
+                                                content: '0';
+                                                text-indent: 19px;
+                                                font-size: 10px;
+                                                line-height: 5px;
+                                                font-weight: bold;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                & div.flex-1:nth-of-type(4) {
+                                    order: 1;
+                                    max-width: 250px;
+                                    flex: 0;
+                                    text-align: left;
+                                    padding-right: 5px;
+                                    border-right: 2px solid #5a5454;
+                                    if layout==E2012 and background==gold0 {
+                                        width: calc(100% + 50px)!important;
+                                    }
+
+                                    & a {
+                                        color: #eeb211!important;
+                                        display: inline-block;
+                                        position: relative;
+                                        height: 25px;
+                                        if layout==E2012 and background==gold0 {
+                                            width: calc(100% + 50px);
+                                            &:before {
+                                                content: 'Good evening, ';
+                                                font-size: 11px;
+                                                display: block;
+                                                position: relative;
+                                                filter: none !important;
+                                                font-weight: normal;
+                                                color: #c9bebe;
+                                                height: 0px;
+                                                line-height: 25px;
+                                            }
+                                        }
+
+                                        &:hover {
+                                            color: #fff!important;
+                                        }
+
+                                        /* Finally!! Not 100% accurate to how real 2012 layout does it but WHO TF CARES */
+                                        &:after {
+                                            content: attr(title);
+                                            font-size: 11px;
+                                            font-weight: bold;
+                                            text-indent: 30px;
+                                            display: block;
+                                            position: relative;
+                                            width: fit-content;
+                                            line-height: 25px;
+                                            top: 0px;
+                                            height: 25px;
+                                            if layout==E2012 and background==gold0 {
+                                                content: attr(title)'!';
+                                                height: 11px;
+                                                text-indent: 73px;
+                                            }
+
+                                            /* i just found this cool extended multitrack leak of driving me wild https://www.youtube.com/watch?v=NAHDS4H6iVA */
+                                        }
+                                    }
+
+                                    & a.user-icon svg {
+                                        width: 25px;
+                                        height: 25px;
+                                        position: absolute;
+                                        if layout==E2012 and background==gold0 {
+                                            width: 0;
+                                        }
+                                    }
+                                }
+
+                                & div.flex-1:nth-of-type(2) {
+                                    order: 2;
+                                    margin-left: 5px;
+                                    margin-right: 5px;
+                                    & a:after {
+                                        background-position-x: -465px;
+                                    }
+
+                                    if layout==E2012 and background==gold0 {
+                                        margin-left: 10px;
+                                        margin-right: 15px;
+                                    }
+                                }
+
+                                & div.flex-1:nth-of-type(3) {
+                                    order: 4;
+                                    margin-right: 5px;
+                                    & a:after {
+                                        background-position-x: -270px;
+                                    }
+
+                                    if layout==E2012 and background==gold0 {
+                                        margin-right: 15px;
+                                        margin-left: 0px;
+                                    }
+                                }
+
+                                & div.flex-1:nth-of-type(1) {
+                                    order: 3;
+                                    margin-right: 5px;
+                                    & a:after {
+                                        background-position-x: -525px;
+                                    }
+
+                                    if layout==E2012 and background==gold0 {
+                                        margin-right: 15px;
+                                    }
+                                }
+                            }
+                        }
+
+                        & .search {
+                            order: 3;
+                            max-width: 351px;
+                            position: absolute;
+                            top: 10px;
+                            right: 12px;
+                            /* Stop playing eyetag w me and come holla at ur girl */
+                            /* Come holla at me instead nigga stop playing w me*/
+                            & form {
+                                width: 228px;
+                                height: 25px;
+                                padding-left: 20px;
+                                background: url(https://web.archive.org/web/20120718025024im_/http://cssimg.ngfiles.com/bg-header/search.png) 0 0 no-repeat;
+                                display: flex;
+                                & input {
+                                    float: left;
+                                    /*  margin-right: 5px; */
+                                    width: 145px;
+                                    border: 0;
+                                    font-size: 12px;
+                                    font-weight: bold;
+                                    height: 19px;
+                                    padding: 3px 5px;
+                                    background: #ea8d42 url(https://web.archive.org/web/20120718025024im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-gold.jpg) top left repeat-x;
+                                    border-radius: 0;
+                                    color: #000;
+                                    &::placeholder {
+                                        color: transparent!important;
+                                        /* dont turn ur back on the wolfpac */
+                                    }
+                                }
+
+                                & button {
+                                    font-size: 0;
+                                    background: url(https://web.archive.org/web/20120718025024im_/http://cssimg.ngfiles.com/bg-skins/buttons/button-gold.gif) right 0 no-repeat;
+                                    width: 66px;
+                                    height: 25px;
+                                    margin: 0 0 0 5px;
+                                    border: 0;
+                                    background-position: right 0;
+                                    &:after {
+                                        content: 'Search';
+                                        color: #eeb211;
+                                        font-size: 12px;
+                                        font-family: arial;
+                                        line-height: 2.0em;
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                & div.header-dropdown {
+                    top: 48px;
+                    left: 472px;
+                    background-color: #1a1616;
+                }
+
+                /* easier way for background implementations i found during rewrite */
+                & div.outer {
+                    & div.skin-wrapper {
+                        display: block!important;
+                        background-repeat: no-repeat!important;
+                        if not background==current {
+                            top: -50px!important;
+                        }
+
+                        if background==current {
+                            /* TODO: Fix misalignment on different zoom sizes */
+                            top: -50px!important;
+                            left: 3px!important;
+                            z-index: 9!important;
+                            background: #000 url(https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-skins/background/outer/custom1.png) top center no-repeat!important;
+                        }
+
+                        if layout==2013 or layout==2014 and background==current {
+                            background: #000 url(https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-skins/background/outer/custom1.png) top center no-repeat!important;
+                        }
+
+                        if background==default {
+                            background: url(https://web.archive.org/web/20120809060441im_/http://cssimg.ngfiles.com/bg-skins/gold2-outer.jpg) top center no-repeat;
+                        }
+
+                        if background==gold0 {
+                            background: url("https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-skins/background/outer/gold0-outer.jpg") top center no-repeat;
+                        }
+
+                        if background==default and layout==2013 {
+                            background: url(https://web.archive.org/web/20121106014041im_/http://www.newgrounds.com/img/bg-skins/gold3-outer.jpg) top center no-repeat!important;
+                        }
+
+                        if background==gold1 {
+                            background: url(https://web.archive.org/web/20120209092835im_/http://cssimg.ngfiles.com/bg-skins/gold1-outer.jpg) top center no-repeat;
+                        }
+
+                        if background==closure {
+                            background: url(https://web.archive.org/web/20120329033828im_/http://cssimg.ngfiles.com/bg-skins/skin-closure.jpg) top center no-repeat;
+                        }
+
+                        if background==picoday2012 {
+                            background: url(https://web.archive.org/web/20120510014025im_/http://img.ngfiles.com/bg-skins/picoday2012-outer.jpg) top center no-repeat;
+                        }
+
+                        if background==picoday2013 {
+                            background: url(https://web.archive.org/web/20130502002555im_/http://cssimg.ngfiles.com/bg-skins/picoday2013-textless.jpg) top center no-repeat;
+                        }
+
+                        if background==picoday20132 {
+                            background: url(https://web.archive.org/web/20130427113357im_/http://cssimg.ngfiles.com/bg-skins/picoday2013.jpg) top center no-repeat;
+                        }
+
+                        if background==robotday12 {
+                            background: url(https://web.archive.org/web/20120713031123im_/http://img.ngfiles.com/bg-skins/robotday2012-outer.jpg) top center no-repeat;
+                        }
+
+                        if background==clockday12 {
+                            background: url(https://web.archive.org/web/20120815044110im_/http://img.ngfiles.com/bg-skins/clockday2012-outer.jpg) top center no-repeat;
+                        }
+
+                        if background==mad2012 {
+                            background: url(https://web.archive.org/web/20120923023402im_/http://img.ngfiles.com/bg-skins/madnessday2012-outer.jpg) top center no-repeat;
+                        }
+
+                        if background==hl2012 {
+                            background: url(https://web.archive.org/web/20121025014300/https://cssimg.ngfiles.com/bg-skins/halloween2012-outer.jpg) top center no-repeat!important;
+                        }
+
+                        if background==robotday13 {
+                            background: url(https://web.archive.org/web/20130730221215im_/http://cssimg.ngfiles.com/bg-skins/robotday2013-textless.jpg) top center no-repeat;
+                        }
+
+                        if background==madness2013 {
+                            background: url(https://web.archive.org/web/20130922205541im_/http://cssimg.ngfiles.com/bg-skins/madnessday2013.jpg) top center no-repeat;
+                        }
+
+                        if background==halloween2013 {
+                            background: url(https://web.archive.org/web/20131028203227im_/http://cssimg.ngfiles.com/bg-skins/halloween2013.jpg) top center no-repeat;
+                        }
+
+                        if background==gold4 {
+                            background: url(https://web.archive.org/web/20121129130123im_/http://cssimg.ngfiles.com/bg-skins/gold4-outer.jpg) top center no-repeat!important;
+                        }
+
+                        & div.skin-inner {
+                            background: #22252a url("https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-skins/background/body/custombody.png") top right 8px repeat-y !important;
+                            & div.background:after {
+                                content: '';
+                                background: url("https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-skins/background/outer/custom0.png") top center no-repeat !important;
+                                display: block;
+                                position: absolute;
+                                width: 1510px;
+                                height: 1103px;
+                                top: 0;
+                                left: 2px;
+                            }
+
+                            if not background==current {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    & .header-nav-row {
+                        width: 976px;
+                        height: 54px;
+                        padding-top: 1px;
+                        background: url(https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-header/navigationTop.png) top left no-repeat;
+                        margin: auto;
+                        position: relative;
+                        z-index: 10000;
+                        top: 120px;
+                        if layout==2013 or layout==2014 {
+                            top: 65px;
+                        }
+
+                        & div.header-nav-container {
+                            width: 960px!important;
+                            background: transparent;
+                            &:before {
+                                display: none;
+                            }
+
+                            & nav.header-nav-buttons {
+                                position: relative;
+                                height: 40px;
+                                margin: 7px 8px 0 8px;
+                                width: 960px!important;
+                                & a {
+                                    border: none!important;
+                                    flex: auto!important;
+                                    height: 40px;
+                                    border-bottom: solid 1px #1b1717!important;
+                                    text-indent: -4040em;
+                                    overflow: hidden;
+                                    background: url(https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-header/navbar.jpg) top left no-repeat;
+                                    background-repeat: no-repeat!important;
+                                    font-size: 0;
+                                    transition: height 0.1s ease-in-out;
+                                    &:before {
+                                        content: '';
+                                        display: block;
+                                        position: relative;
+                                        top: 40px;
+                                        width: 135px;
+                                        max-height: 100%;
+                                        height: 0px;
+                                        z-index: 99999;
+                                        /* dont let em see it... the LAZIness */
+                                        transition: height 0.1s ease-in-out;
+                                    }
+
+                                    if layout==2014 {
+                                        background-image: url(https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-header/navbar2014.jpg)
+                                    }
+                                }
+
+                                /* thinking back on it using flex is the worst implementation you could ever use to recreate the button's width */
+                                & a.header-nav-button-games {
+                                    order: 1;
+                                    min-width: 136px;
+                                    max-width: 136px;
+                                    background-position: 0 0;
+                                    transition: height 0.1s ease-in-out;
+                                    /*   height: 999px; */
+                                    &:before {
+                                        content: '';
+                                        background: url('https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-header/gamesdd.png');
+                                        max-height: 100%;
+                                        if layout==2013 {
+                                            background: url('https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-header/gamesdd2013.png')!important;
+                                            max-height: 258px!important;
+                                        }
+                                    }
+
+                                    &:hover {
+                                        background-position-y: -40px;
+                                        height: 227px;
+                                        if layout==2013 {
+                                            height: 258px;
+                                            &:before {
+                                                height: 218px;
+                                            }
+                                        }
+
+                                        &:before {
+                                            height: 100%;
+                                        }
+                                    }
+
+                                    &:active {
+                                        background-position-y: -80px;
+                                    }
+                                }
+
+                                & a.header-nav-button-movies {
+                                    order: 2;
+                                    min-width: 136px;
+                                    max-width: 136px;
+                                    background-position: -136px 0;
+                                    &:before {
+                                        content: '';
+                                        background: url('https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-header/moviesdd.png');
+                                        max-height: 100%;
+                                        if layout==2013 {
+                                            background: url('https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-header/moviesdd2013.png')!important;
+                                            max-height: 258px!important;
+                                        }
+                                    }
+
+                                    &:hover {
+                                        background-position-y: -40px;
+                                        height: 227px;
+                                        if layout==2013 {
+                                            height: 258px;
+                                            &:before {
+                                                height: 218px;
+                                            }
+                                        }
+
+                                        &:before {
+                                            height: 100%;
+                                        }
+                                    }
+
+                                    &:active {
+                                        background-position-y: -80px;
+                                    }
+                                }
+
+                                /* 4 U code wanderers wondering what the rewrite is,, After i released 4-3 the code was too shitty for me to work on so i recreated another newgrounds userstyle from stratch. I had a new easy codebase so that i dont gotta keep copy and pasting shit, 100% accurate homepage and a almost complete 2012-2016 header finished before something went wrong with my laptop and i had to reinstall windows and remove all my data (CAUSE BITLOCKER IS A BITCHhhh PLEASE DISABLE IT FIRST THING U DO WHEN U INSTALL WINDOWS 10+) */
+                                & a.header-nav-button-audio {
+                                    order: 3;
+                                    min-width: 136px;
+                                    max-width: 136px;
+                                    background-position: -272px 0;
+                                    &:before {
+                                        content: '';
+                                        background: url('https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-header/audiodd.png');
+                                        max-height: 100%;
+                                        if layout==2013 {
+                                            background: url('https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-header/audiodd2013.png')!important;
+                                            max-height: 218px!important;
+                                        }
+                                    }
+
+                                    &:hover {
+                                        background-position-y: -40px;
+                                        height: 196px;
+                                        if layout==2013 {
+                                            height: 227px;
+                                            &:before {
+                                                height: 218px;
+                                            }
+                                        }
+
+                                        &:before {
+                                            height: 100%;
+                                        }
+                                    }
+
+                                    &:active {
+                                        background-position-y: -80px;
+                                    }
+                                }
+
+                                & a.header-nav-button-art {
+                                    order: 4;
+                                    min-width: 136px;
+                                    max-width: 136px;
+                                    background-position: -408px 0;
+                                    &:before {
+                                        content: '';
+                                        background: url('https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-header/artdd.png');
+                                        max-height: 100%;
+                                        if layout==2013 {
+                                            background: url('https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-header/artdd2013.png')!important;
+                                            max-height: 258px!important;
+                                        }
+                                    }
+
+                                    &:hover {
+                                        background-position-y: -40px;
+                                        height: 196px;
+                                        if layout==2013 {
+                                            height: 227px;
+                                            &:before {
+                                                height: 218px;
+                                            }
+                                        }
+
+                                        &:before {
+                                            height: 100%;
+                                        }
+                                    }
+
+                                    &:active {
+                                        background-position-y: -80px;
+                                    }
+                                }
+
+                                & a.header-nav-button-channels {
+                                    order: 4;
+                                    min-width: 143px;
+                                    max-width: 143px;
+                                    background-position: -544px 0;
+                                    &:before {
+                                        content: '';
+                                        background: url('https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-header/channelsdd.png');
+                                        max-height: 100%;
+                                        min-width: 142px;
+                                        if layout==2013 {
+                                            background: url('https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-header/channelsdd2013.png')!important;
+                                            max-height: 258px!important;
+                                        }
+                                    }
+
+                                    &:hover {
+                                        background-position-y: -40px;
+                                        height: 134px;
+                                        if layout==2013 {
+                                            height: 165px;
+                                            &:before {
+                                                height: 218px;
+                                            }
+                                        }
+
+                                        &:before {
+                                            height: 100%;
+                                        }
+                                    }
+
+                                    &:active {
+                                        background-position-y: -80px;
+                                    }
+                                }
+
+                                & a.header-nav-button-community {
+                                    order: 5;
+                                    min-width: 143px;
+                                    max-width: 143px;
+                                    background-position: -687px 0;
+                                    &:before {
+                                        content: '';
+                                        background: url('https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-header/communitydd.png');
+                                        max-height: 100%;
+                                        min-width: 142px;
+                                        if layout==2013 {
+                                            background: url('https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-header/communitydd2013.png')!important;
+                                            max-height: 258px!important;
+                                        }
+                                    }
+
+                                    &:hover {
+                                        background-position-y: -40px;
+                                        height: 227px;
+                                        if layout==2013 {
+                                            height: 258px;
+                                            &:before {
+                                                height: 218px;
+                                            }
+                                        }
+
+                                        &:before {
+                                            height: 100%;
+                                        }
+                                    }
+
+                                    &:active {
+                                        background-position-y: -80px;
+                                    }
+                                }
+
+                                & a.header-nav-button-feed {
+                                    order: 6;
+                                    min-width: 130px;
+                                    max-width: 130px;
+                                    background-position: -830px 0;
+                                    if yourfeed==1 {
+                                        background-image: url(https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-header/navbar2014.jpg);
+                                    }
+
+                                    &:before {
+                                        content: '';
+                                        background: url('https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-header/shopngdd.png');
+                                        max-height: 100%;
+                                        min-width: 130px;
+                                        if layout==2014 or yourfeed==1 {
+                                            background: url('https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/bg-header/yourfeeddd.png')!important;
+                                            max-height: 258px!important;
+                                        }
+                                    }
+
+                                    &:hover {
+                                        background-position-y: -40px;
+                                        height: 166px;
+                                        if layout==2014 or yourfeed==1 {
+                                            height: 70px;
+                                            &:before {
+                                                height: 30px;
+                                            }
+                                        }
+
+                                        &:before {
+                                            height: 100%;
+                                        }
+                                    }
+
+                                    &:active {
+                                        background-position-y: -80px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    if headerads==1 {
+                        & #header-insert {
+                            position: relative;
+                            width: 976px;
+                            height: 112px;
+                            margin: -2px auto 0 auto;
+                            background: url("https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/misc/headerre1.png") top center no-repeat;
+                            top: 120px;
+                            z-index: 9;
+                            if layout==E2012 and background==gold0 {
+                                background: url("https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/misc/2011.png") top center no-repeat;
+                            }
+
+                            if layout==2013 or layout==2014 {
+                                top: 65px;
+                            }
+                        }
+                    }
+
+                    & .body-skin-shim {
+                        display: none;
+                    }
+
+                    & div.body-main {
+                        position: relative;
+                        display: block;
+                        width: 950px;
+                        margin: 0 auto;
+                        padding: 10px 13px 0 13px;
+                        background: url(https://web.archive.org/web/20120709100602im_/http://cssimg.ngfiles.com/bg-main/bg-main.gif) top center repeat-y;
+                        top: 120px;
+                        z-index: 9999;
+                        if layout==2013 or layout==2014 {
+                            top: 65px;
+                        }
+
+                        & .body-center {
+                            max-width: 950px;
+                            width: 950px;
+                            & .body-guts {
+                                padding: 0;
+                                & div.header-deck {
+                                    margin: 0;
+                                    & div.ng-latest-supporter-wide {
+                                        display: none;
+                                        if layout==2014 {
+                                            display: block;
+                                            text-align: center;
+                                            max-width: 600px;
+                                            left: 280px;
+                                            padding: 0;
+                                            margin: 0;
+                                            border-radius: 0;
+                                            background: none;
+                                            height: 0;
+                                            position: absolute;
+                                            top: -122px;
+                                            & .ng-latest-supporter-inner {
+                                                max-width: 600px;
+                                                font-size: 1.2em;
+                                                display: inline-block;
+                                                padding: 4px 8px;
+                                                background: rgba(0, 0, 0, .5);
+                                                color: #fff;
+                                                height: 15px;
+                                                position: absolute;
+                                                top: 23px;
+                                                display: flex;
+                                                & div.ng-latest-supporter-image {
+                                                    display: none;
+                                                }
+
+                                                & .ng-latest-supporter-meta {
+                                                    padding-left: 0px;
+                                                    font-family: Arial;
+                                                    & p {
+                                                        font-size: 12px;
+                                                        white-space: nowrap;
+                                                        overflow: hidden;
+                                                        text-overflow: ellipsis;
+                                                    }
+
+                                                    & p:first-child {
+                                                        &:before {
+                                                            content: 'Latest News: ';
+                                                        }
+                                                    }
+
+                                                    & p.ng-latest-supporter-message:nth-of-type(2),
+                                                    p.ng-latest-supporter-message:nth-of-type(3) {
+                                                        display: none;
+                                                    }
+                                                }
+
+                                                & .ng-latest-supporter-meta:nth-child(3) {
+                                                    & p {
+                                                        display: none;
+                                                    }
+
+                                                    & a {
+                                                        background: none;
+                                                        padding: 0;
+                                                        border-radius: 0;
+                                                        font-size: 12px;
+                                                        color: #fff;
+                                                        font-weight: normal;
+                                                        font-weight: normal;
+                                                        margin-left: 5px;
+                                                        border-left: 2px solid #5a5454;
+                                                        padding-left: 5px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                & .column,
+                                div > .column {
+                                    width: 950px;
+                                }
+
+                                & .pod,
+                                div > .pod {
+                                    width: 942px;
+                                    margin: 0 0 10px;
+                                    background-color: transparent;
+                                    position: relative;
+                                    display: block;
+                                    border: solid 4px #000;
+                                    border-radius: 2px;
+                                    box-shadow: 0 5px 10px #000;
+                                    background-image: url(https://web.archive.org/web/20120709100602im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg);
+                                    & .pod-head {
+                                        position: relative;
+                                        display: flex;
+                                        height: 41px;
+                                        background: #4f280e url(https://web.archive.org/web/20120709100602im_/http://cssimg.ngfiles.com/bg-skins/podtops/podtop-gold.jpg) left 0 no-repeat;
+                                        border-radius: 0;
+                                        border: 0;
+                                        &:after {
+                                            content: '';
+                                            position: absolute;
+                                            padding-right: 3px;
+                                            height: 100%;
+                                            right: 0;
+                                            background: inherit;
+                                            background-position: right 0;
+                                        }
+
+                                        & h2 {
+                                            float: left;
+                                            height: 31px;
+                                            overflow: hidden;
+                                            margin: 5px;
+                                            padding-left: 36px;
+                                            color: #fff;
+                                            font-size: 3em;
+                                            font-size-adjust: .4;
+                                            line-height: 1.1em;
+                                            font-weight: normal;
+                                            text-transform: capitalize;
+                                            background-image: url(https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/icons/h2-all.png)!important;
+                                            background-repeat: no-repeat!important;
+                                            &:before {
+                                                display: none;
+                                            }
+                                        }
+
+                                        & span {
+                                            background: none!important;
+                                            float: right;
+                                            padding: 0;
+                                            width: auto;
+                                            height: 41px;
+                                            vertical-align: top;
+                                            display: block;
+                                            margin: 0;
+                                            & a {
+                                                cursor: default;
+                                                color: #eeb211;
+                                                background: url(https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/misc/link_stripes.png) 0 0 no-repeat;
+                                                position: relative;
+                                                display: inline-block;
+                                                margin: 8px 5px 0 0;
+                                                vertical-align: top;
+                                                padding: 0 10px;
+                                                font-size: 1.2em;
+                                                font-weight: bold;
+                                                line-height: 2.1em;
+                                                border-radius: 0;
+                                                &:hover {
+                                                    color: #1b1717;
+                                                    cursor: pointer;
+                                                    background-position: -300px 0;
+                                                }
+                                            }
+
+                                            & a[class] {
+                                                height: 15px;
+                                                width: 15px;
+                                                padding: 5px;
+                                            }
+                                        }
+
+                                        & .pod-move {
+                                            order: 1;
+                                            width: 25px;
+                                            margin: 8px 5px 0 15px;
+                                            height: 25px;
+                                            /*     & a[title]:hover:after {
+  content: attr(title);
+  position: absolute;
+  z-index: 9001;
+  right: -5px;
+  padding-left: 10px;
+  background: url(https://web.archive.org/web/20120510073705im_/http://cssimg.ngfiles.com/icons/hovers/hovertip.png) bottom left no-repeat !important;
+  top: 10px;
+ 
+} */
+                                            & a {
+                                                margin: 0;
+                                                &:hover {
+                                                    &:before {
+                                                        background-position: -90px -15px!important;
+                                                    }
+                                                }
+
+                                                &:before {
+                                                    background-position: -90px 0;
+                                                    background-image: url(https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main//icons/a-15yellows.png);
+                                                    margin: 0;
+                                                    vertical-align: super;
+                                                }
+                                            }
+
+                                            if layout==E2012 {
+                                                display: none;
+                                            }
+                                        }
+
+                                        & h2 {
+                                            background: 0 0
+                                        }
+
+                                        & h2.info {
+                                            background-position: 0 -31px
+                                        }
+
+                                        & h2.user {
+                                            background-position: 0 -62px
+                                        }
+
+                                        & h2.users {
+                                            background-position: 0 -93px
+                                        }
+
+                                        & h2.settings {
+                                            background-position: 0 -124px
+                                        }
+
+                                        & h2.links {
+                                            background-position: 0 -155px
+                                        }
+
+                                        & h2.game,
+                                        h2.Game {
+                                            background-position: 0 -248px
+                                        }
+
+                                        & h2.movie,
+                                        h2.Movie {
+                                            background-position: 0 -279px
+                                        }
+
+                                        & h2.audio,
+                                        & h2.Audio {
+                                            background-position: 0 -310px
+                                        }
+
+                                        & h2.art,
+                                        & h2.Art {
+                                            background-position: 0 -341px
+                                        }
+
+                                        & h2.lit,
+                                        & h2.Lit {
+                                            background-position: 0 -372px
+                                        }
+
+                                        & h2.flag {
+                                            background-position: 0 -434px
+                                        }
+
+                                        & h2.feature {
+                                            background-position: 0 -465px
+                                        }
+
+                                        & h2.fave {
+                                            background-position: 0 -496px
+                                        }
+
+                                        & h2.error {
+                                            background-position: 0 -527px
+                                        }
+
+                                        & h2.money {
+                                            background-position: 0 -558px
+                                        }
+
+                                        & h2.question {
+                                            background-position: 0 -589px
+                                        }
+
+                                        & h2.exclamation {
+                                            background-position: 0 -620px
+                                        }
+
+                                        & h2.news {
+                                            background-position: 0 -651px
+                                        }
+
+                                        & h2.cc {
+                                            background-position: 0 -713px
+                                        }
+
+                                        & h2.folder {
+                                            background-position: 0 -744px
+                                        }
+
+                                        & h2.gallery {
+                                            background-position: 0 -775px
+                                        }
+
+                                        & h2.forum {
+                                            background-position: 0 -806px
+                                        }
+
+                                        & h2.list {
+                                            background-position: 0 -837px
+                                        }
+
+                                        & h2.icon {
+                                            background-position: 0 -868px
+                                        }
+
+                                        & h2.document {
+                                            background-position: 0 -899px
+                                        }
+
+                                        & h2.mail {
+                                            background-position: 0 -930px
+                                        }
+
+                                        & h2.trophies {
+                                            background-position: 0 -961px
+                                        }
+
+                                        & h2.levels {
+                                            background-position: 0 -992px
+                                        }
+
+                                        & h2.scores {
+                                            background-position: 0 -1023px
+                                        }
+
+                                        & h2.medals {
+                                            background-position: 0 -1054px
+                                        }
+
+                                        & h2.moderate {
+                                            background-position: 0 -1085px
+                                        }
+
+                                        & h2.pbot {
+                                            background-position: 0 -1116px
+                                        }
+
+                                        & h2.skull {
+                                            background-position: 0 -1147px
+                                        }
+
+                                        & h2.comments {
+                                            background-position: 0 -1178px
+                                        }
+
+                                        & h2.rss {
+                                            background-position: 0 -1209px
+                                        }
+
+                                        & h2.download {
+                                            background-position: 0 -1240px
+                                        }
+
+                                        & h2.upload {
+                                            background-position: 0 -1271px
+                                        }
+
+                                        & h2.search {
+                                            background-position: 0 -1302px
+                                        }
+
+                                        & h2.power {
+                                            background-position: 0 -1333px
+                                        }
+
+                                        & h2.check {
+                                            background-position: 0 -1364px
+                                        }
+
+                                        & h2.rated-e {
+                                            background-position: 0 -1395px
+                                        }
+
+                                        & h2.rated-t {
+                                            background-position: 0 -1426px
+                                        }
+
+                                        & h2.rated-m {
+                                            background-position: 0 -1457px
+                                        }
+
+                                        & h2.rated-a {
+                                            background-position: 0 -1488px
+                                        }
+                                    }
+
+                                    & .pod-head ~ .pod-body {
+                                        padding-top: 15px;
+                                        background-position: 0 -6px;
+                                    }
+
+                                    & .pod-body {
+                                        border-radius: 0;
+                                        background-color: transparent;
+                                        background-image: url(https://web.archive.org/web/20120709100602im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg);
+                                        padding: 21px 11px 11px 11px;
+                                        background-repeat: no-repeat;
+                                        border: 0;
+                                        box-shadow: none;
+                                        /* Im lazy lets cut down the work i need to do for other pages significantly */
+                                        & ul.itemlist {
+                                            margin: 0;
+                                            & li:hover {
+                                                background: #3d1d0d url(https://web.archive.org/web/20120510073705im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-R.png) 272px -25px no-repeat !important;
+                                                & a {
+                                                    background: transparent url(https://web.archive.org/web/20120510073705im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-L.png) -160px -25px no-repeat;
+                                                }
+                                            }
+                                        }
+
+                                        & .alternating.itemlist {
+                                            & li:nth-child(2n + 1) {
+                                                background: transparent;
+                                            }
+
+                                            & li:nth-of-type(2n + 2) {
+                                                background-color: #2e1a0e;
+                                            }
+                                        }
+                                        /* Portal Base */
+                                        &:after {
+                                            content: '';
+                                            position: absolute;
+                                            bottom: 0;
+                                            display: block;
+                                            height: 6px;
+                                            right: 0;
+                                            left: 0;
+                                            border: solid 1px #28242c;
+                                            border-top: 0;
+                                            background: url(https://web.archive.org/web/20120709100602im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg) -1px 1px no-repeat;
+                                        }
+                                    }
+                                }
+
+                                & .column.wide,
+                                div > .column.wide {
+                                    float: right;
+                                    width: 630px;
+                                    .pod {
+                                        width: 622px;
+                                        background-image: url(https://web.archive.org/web/20120709100602im_/http://cssimg.ngfiles.com/bg-main/pod-23.jpg);
+                                        & .pod-body {
+                                            background-image: url(https://web.archive.org/web/20120709100602im_/http://cssimg.ngfiles.com/bg-main/podbreaker-23.jpg);
+                                        }
+                                    }
+                                }
+
+                                & .column.thin,
+                                div > .column.thin {
+                                    float: left;
+                                    width: 310px;
+                                    & .pod,
+                                    div > .pod {
+                                        width: 302px;
+                                        background-image: url(https://web.archive.org/web/20120709100602im_/http://cssimg.ngfiles.com/bg-main/pod-13.jpg) !important;
+                                        & .pod-body {
+                                            background-image: url(https://web.archive.org/web/20120709100602im_/http://cssimg.ngfiles.com/bg-main/podbreaker-13.jpg);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            svg.svgmask.s0 > image,
+            svg.svgmask.s2 > image,
+            svg.svgmask > image {
+                clip-path: none!important;
+            }
+
+            svg.svgmask > use {
+                display: none;
+            }
+        }
+
+        @-moz-document url("https://www.newgrounds.com/"),
+        url("newgrounds.com/") {
+            /* homepage */
+            .body-guts {
+                & .column.wide {
+                    display: grid;
+                    & div.pod-body {
+                        & .portalsubmission-icons {
+                            width: 600px;
+                            height: 100%;
+                            margin: 0;
+                            & div.span-1 {
+                                margin: 0;
+                                width: 150px;
+                                height: 138px;
+                                &:hover {
+                                    background: #4f280e url(https://web.archive.org/web/20120510073705im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-R.png) -10px bottom no-repeat;
+                                    & .item-icon-img {
+                                        background: url(https://web.archive.org/web/20120510073705im_/http://cssimg.ngfiles.com/icons/hovers/hoverticks-L.png) -10px top no-repeat;
+                                    }
+                                }
+
+                                & a {
+                                    padding: 0;
+                                    margin: 0;
+                                    width: 150px;
+                                    height: 138px;
+                                    &:hover {
+                                        background-color: transparent;
+                                    }
+
+                                    & div.item-icon {
+                                        width: 140px;
+                                        height: 90px;
+                                        padding: 5px;
+                                        & .item-icon-img {
+                                            height: 90px;
+                                            padding: 5px;
+                                        }
+
+                                        & .item-icon-hover {
+                                            top: 5px;
+                                            left: 5px;
+                                            padding: 5px;
+                                            width: 130px;
+                                            height: 80px;
+                                            background: rgba(0, 0, 0, 0.85);
+                                            font-size: 11px;
+                                            line-height: 12px;
+                                            & .item-suitability {
+                                                background: url(https://web.archive.org/web/20120510073705im_/http://cssimg.ngfiles.com/icons/a-portalicons.png) 112px 0 no-repeat;
+                                            }
+                                        }
+                                    }
+
+                                    & div.item-details {
+                                        display: block;
+                                        position: relative;
+                                        left: 5px;
+                                        bottom: 5px;
+                                        right: 5px;
+                                        height: 33px;
+                                        line-height: 17px;
+                                        overflow: hidden;
+                                        width: 140px;
+                                        padding: 5px 0 0 0;
+                                        color: #7d7575;
+                                        text-align: center;
+                                        background: url(https://web.archive.org/web/20120309192626im_/http://cssimg.ngfiles.com/icons/a-portalicons.png) -18px top no-repeat;
+                                        & span:first-child {
+                                            display: block;
+                                            padding: 0 3px;
+                                            height: 13px;
+                                            white-space: nowrap;
+                                            line-height: 12px;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            color: #fff;
+                                            font-size: 10px;
+                                            max-width: 134px;
+                                        }
+
+                                        & span:last-child:not(:first-child) {
+                                            padding: 0;
+                                            font-size: 10px;
+                                            color: #7d7575;
+                                            &:before {
+                                                content: 'by ';
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    & div.pod:has(.relative.pod-body) {
+                        display: none!important;
+                    }
+
+                    & #featured_fp_content_1 {
+                        order: 1;
+                    }
+
+                    & #featured_fp_content_2 {
+                        order: 2;
+                    }
+
+                    & #featured_fp_content_4 {
+                        order: 3;
+                    }
+
+                    & #featured_fp_content_5 {
+                        order: 4;
+                    }
+
+                    & #featured_fp_content_6 {
+                        order: 6;
+                    }
+
+                    & #featured_fp_content_3 {
+                        order: 7;
+                    }
+                }
+
+                & .column.thin {}
+            }
+        }
+
+        @-moz-document url-prefix("https://www.newgrounds.com/portal/view") {
+            /* Video Page */
+            body {
+                height: 3000px;
+                /*   if portaltheme==Movies {
+            background-image: url(https://web.archive.org/web/20120629023443im_/http://cssimg.ngfiles.com/bg-skins/red0-body.gif)!important;
+        }
+
+        if portaltheme==Games {
+            background-image: url("https://web.archive.org/web/20120223062351im_/http://cssimg.ngfiles.com/bg-skins/blue0-body.gif");
+        }
+    }
+    if portaltheme==Movies {
+        body:after {
+            background-image: url("https://web.archive.org/web/20120326075528im_/http://cssimg.ngfiles.com/bg-skins/red0-outer.jpg") !important;
+            background-color: #000;
+        }
+    }
+    if portaltheme==Games {
+        body:after {
+            background-image: url("https://web.archive.org/web/20120223062351im_/http://cssimg.ngfiles.com/bg-skins/blue0-outer.jpg") !important;
+        } */
+            }
+
+            div.body-main {
+                height: 2500px;
+            }
+
+            /*    if portaltheme==Movies {
+        .notification-login-side::before {
+            content: url("https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/redopen1.png");
+        }
+    }
+    if portaltheme==Games {
+        .notification-login-side::before {
+            content: url("https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/blueopen1.png");
+        }
+    }
+
+    if portaltheme==Movies {
+        #passport_login {
+            background-image: url("https://web.archive.org/web/20120902073228im_/http://cssimg.ngfiles.com/bg-skins/buttons/button-red.gif");
+        }
+    }
+    if portaltheme==Games {
+        #passport_login {
+            background-image: url("https://web.archive.org/web/20120614015817im_/http://cssimg.ngfiles.com/bg-skins/buttons/button-blue.gif");
+        }
+    }
+    if portaltheme==Movies {
+        div.notification-bar .search input {
+            background-color: #fa7070;
+            background-image: url("https://web.archive.org/web/20120902073228im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-red.jpg");
+        }
+    }
+    if portaltheme==Games {
+        div.notification-bar .search input {
+            background-color: #75bbec;
+            background-image: url("https://web.archive.org/web/20120210202011im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-blue.jpg");
+        }
+    }
+    if portaltheme==Movies {
+        div.notification-bar .search button {
+            background-position: -50px top;
+        }
+    }
+    if portaltheme==Games {
+        div.notification-bar .search button {
+            background-position: -25px top;
+        }
+    }
+    if portaltheme==Movies {
+        div.notification-bar .search::after {
+            content: url("https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/redsearch.png");
+        }
+    }
+    if portaltheme==Games {
+        div.notification-bar .search::after {
+            content: url("https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/bluesearch1.png");
+        }
+    }
+
+    if portaltheme==Movies {
+        .header-nav-button-movies,
+        nav.header-nav-buttons a.header-nav-button-movies {
+            background-position: -136px -80px !important;
+        }
+    }
+    if portaltheme==Games {
+        .header-nav-button-games,
+        nav.header-nav-buttons a.header-nav-button-games {
+            background-position: 0 -80px !important;
+        }
+    }
+    if portaltheme==Movies {
+        div.pod-head {
+            background: #521b1b url("https://web.archive.org/web/20120902073228im_/http://cssimg.ngfiles.com/bg-skins/podtops/podtop-red.jpg") top left no-repeat;
+        }
+    }
+    if portaltheme==Games {
+        div.pod-head {
+            background: #173249 url("https://web.archive.org/web/20120804071630im_/http://cssimg.ngfiles.com/bg-skins/podtops/podtop-blue.jpg") top left no-repeat;
+        }
+    }
+*/
+            #ng-global-video-player-wrapper.open {
+                box-shadow: none!important;
+                border: none!important;
+                background: none!important;
+                top: 140px!important;
+                margin: 0 auto;
+                z-index: 9999;
+                if videosize==half {
+                    top: -220px!important;
+                    left: 162px;
+                }
+            }
+
+            #ng-global-video-player-shimwrap {
+                height: 69px!important;
+                width: 720px!important;
+                if videosize==half {
+                    height: 400px !important
+                }
+            }
+
+            div.body-center {
+                z-index: 2;
+            }
+
+            #ng-global-video-player-wrapper {
+                height: 405px!important;
+                width: 720px!important;
+                /*        left: 550px!important; */
+                top: 100px!important;
+                position: relative;
+                padding-top: 0px!important;
+                margin-top: 0px!important;
+                if videosize==half {
+                    height: 400px !important;
+                    width: 550px !important;
+                }
+            }
+
+            #ng-global-video-player-wrapper.locked {
+                position: relative!important;
+            }
+
+            .ng-video-player.clean,
+            .ng-video-player {
+                height: 405px!important;
+                width: 720px!important;
+                if videosize==half {
+                    height: 400px !important;
+                    width: 550px !important;
+                }
+            }
+
+            .inhousepromo {
+                display: none;
+            }
+
+            /*    div.pod:nth-of-type(1) {
+    visibility: hidden;
+& */
+            div.body-skin-shim {
+                height: 63px;
+            }
+
+            div.header-deck:not(:empty) {
+                margin-top: 50px;
+            }
+
+            div.header-deck > div.pod-body {
+                display: none;
+            }
+
+            #header-insert {
+                background: url("https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/misc/2011.png") top center repeat-y;
+                display: block;
+                width: 970px;
+                height: 857px;
+                margin: 0 auto;
+                z-index: 9;
+                position: absolute;
+                top: 120px;
+                left: 465px;
+            }
+
+            /* this is pod code */
+            div.pod.embed {
+                width: 942px;
+                background-image: url(https://web.archive.org/web/20120211115524im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg);
+                if videosize==half {
+                    width: 622px;
+                    background-image: url(https://web.archive.org/web/20120215083702im_/http://cssimg.ngfiles.com/bg-main/pod-23.jpg);
+                }
+            }
+
+            .breakout.pod-body {
+                background-image: url(https://web.archive.org/web/20120211115524im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg);
+            }
+
+            /* pod code: hiiii guys im new here >_< ~_~ */
+            .right.wide.column > div.pod:nth-of-type(1):has( #embed_header) {
+                top: -482px;
+                width: 942px;
+                left: -320px;
+                border-top: none;
+                background-image: url(https://web.archive.org/web/20120214021629im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg);
+                height: 450px;
+                & #embed_header:not(div.pod.embed > #embed_header) {
+                    top: -65px !important;
+                    visibility: visible;
+                    z-index: 9999 !important;
+                    left: -4px !important;
+                    width: 942px !important;
+                    border: solid 4px #000;
+                    border-radius: 2px;
+                    border-bottom: none;
+                }
+            }
+
+            /* lucy bedroque: wsp gang dyk unmusique coming soon?*/
+            if videosize==half {
+                div.pod:nth-child(6):not(div.pod.embed) {
+                    width: 622px;
+                    left: -0px;
+                    top: -800px;
+                    height: 439px;
+                    background-image: url(https://web.archive.org/web/20120215083702im_/http://cssimg.ngfiles.com/bg-main/pod-23.jpg);
+                    & #embed_header:not(div.pod.embed > #embed_header) {
+                        top: -65px !important;
+                        visibility: visible;
+                        z-index: 9999 !important;
+                        left: -4px !important;
+                        width: 622px !important;
+                        border: solid 4px #000;
+                        border-radius: 2px;
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            /* me: *sends ts to lucycord */
+            div.pod:nth-child(6):not(div.pod.embed)::before {
+                content: '';
+                display: block;
+                position: relative;
+                background-image: url("https://web.archive.org/web/20120214021629im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg");
+                background-position: 0 -6px;
+                background-repeat: no-repeat;
+                padding-top: 15px;
+                height: 6px;
+            }
+
+            /* everybody in the lucycord: hooray */
+            div.pod:nth-child(6):not(div.pod.embed)::after {
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: 0;
+                height: 6px;
+                right: 0;
+                left: 0;
+                border: solid 1px #28242c;
+                border-top: 0;
+                background: url(https://web.archive.org/web/20120629210809im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg) -1px 1px no-repeat;
+            }
+
+            div.pod.embed {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            /* stupid athor comments */
+            .right.wide.column > div.pod:last-child {
+                top: 50px;
+            }
+
+            #embed_header ~ #author_comments {
+                top: 416px;
+                width: 600px;
+                border: solid 4px #000;
+                box-shadow: 0 5px 10px #000;
+                border-radius: 2px;
+                height: fit-content;
+                left: 315px;
+                if videosize==half {
+                    top: 400px;
+                    left: 0px!important;
+                }
+            }
+
+            #author_comments:before {
+                content: '';
+                width: 622px;
+                height: 581px;
+                top: 10px;
+                left: 0px;
+                display: block;
+                position: absolute;
+                background-image: url(https://web.archive.org/web/20120215083702im_/http://cssimg.ngfiles.com/bg-main/pod-23.jpg);
+            }
+
+            #author_comments > p {
+                z-index: 999;
+                position: relative;
+                font-size: 1.2em;
+                line-height: 1.4em;
+                height: 10%;
+                margin: 5px;
+            }
+
+            #author_comments > p + p {
+                margin-top: 10px!important;
+            }
+
+            #author_comments > p:has(br) {
+                display: none;
+            }
+
+            div.pod:nth-of-type(2) > .text-align-center.pod-body,
+            .right.wide.column > div.pod:nth-of-type(2) {
+                display: none;
+            }
+
+            div.item-follow-user span.favefollow-buttons span.favefollow-add a {
+                display: block;
+                padding: 0;
+                width: 25px !important;
+                height: 25px;
+                background: url("https://web.archive.org/web/20121227230159im_/http://cssimg.ngfiles.com/misc/link_stripes.png") 0 0 no-repeat!important;
+                border-radius: 0px;
+                box-shadow: none;
+                font-size: 0;
+                position: relative;
+                left: -10px;
+                &:hover {
+                    background-position: -300px 0!important;
+                }
+            }
+
+            div.item-follow-user span.favefollow-buttons span.favefollow-add a span {
+                font-size: 15px;
+                width: 15px;
+                height: 15px;
+                top: 5px;
+                position: relative;
+                color: transparent;
+                text-indent: -9999em;
+                overflow: hidden;
+                background-image: url("https://web.archive.org/web/20121227230159im_/http://cssimg.ngfiles.com/icons/a-15yellows.png");
+                background-repeat: no-repeat;
+                background-position: -255px 0;
+                display: block;
+                left: 5px;
+                &:hover {
+                    background-position: -255px -15px;
+                }
+            }
+
+            div .column.thin {
+                top: 0px;
+                position: relative;
+                if videosize==half {
+                    top: -842px;
+                }
+            }
+
+            /*if portaltheme==Games {
+        ul.authorlinks li:nth-child(2n),
+        div.item-user:nth-child(2n) {
+            background-color: #0c1925;
+        }
+    }
+    if portaltheme==Movies {
+        div.item-user:nth-child(2n),
+        ul.authorlinks li:nth-child(2n) {
+            background-color: #290e0e;
+        }
+    }
+*/
+            div.column.thin div.item-user {
+                padding: 0!important;
+                height: 45px;
+            }
+
+            div.item-user a.item-icon {
+                width: 35px;
+                height: 35px;
+                margin-right: -70px;
+                & > div.user-icon-bordered {
+                    width: 35px;
+                    height: 35px;
+                    & > svg {
+                        width: 35px;
+                        height: 35px;
+                        margin: 0;
+                    }
+                }
+            }
+
+            div.item-user div.item-details {
+                flex: 1;
+                overflow: hidden;
+                display: grid;
+                padding-left: 70px;
+                margin: 5px;
+            }
+
+            div.item-user div.item-details div.item-details-meta,
+            a.item-user div.item-details div.item-details-meta {
+                color: #c9bebe;
+                font-size: 12px;
+                order: 1;
+                font-weight: bold;
+            }
+
+            div.item-user div.item-details div.item-details-main,
+            a.item-user div.item-details div.item-details-main {
+                padding-bottom: 4px;
+                margin-bottom: 4px;
+                display: flex;
+                order: 2;
+            }
+
+            div.item-user div.item-details div.item-details-main h4,
+            a.item-user div.item-details div.item-details-main h4 {
+                font-size: 12px;
+            }
+
+            div.audio-wrapper {
+                & > div.item-audiosubmission-small {
+                    padding: 0;
+                    & > a.item-link {
+                        position: relative;
+                        display: block;
+                        height: 35px;
+                        padding: 5px 5px 5px 50px;
+                        font-size: 1.2em;
+                        line-height: 16px;
+                        font-weight: bold;
+                        background-repeat: no-repeat;
+                        background-position: 5px 5px;
+                    }
+                }
+            }
+
+            div.item-audiosubmission-small div.item-icon {
+                height: 35px;
+                width: 35px;
+                position: absolute;
+                left: 5px;
+                top: 5px;
+            }
+
+            div.item-audiosubmission-small a:hover {
+                background: none;
+            }
+
+            /* comments */
+            .right.wide.column > div.pod:last-child:before {
+                content: url("https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/red/authorcomments.png");
+                display: block;
+                height: 41px;
+                border-bottom: 4px solid #000;
+            }
+
+            .pod-body div.pagenav div.align-right {
+                float: left;
+                & a {
+                    background: #4f280e;
+                    float: left;
+                    height: 20px;
+                    margin-left: 3px;
+                    border-color: #000;
+                    border-style: solid;
+                    border-width: 0 1px 2px 1px;
+                    padding: 0;
+                    & span {
+                        display: block;
+                        height: 7px;
+                        min-width: 8px;
+                        margin: 2px 2px 0 2px;
+                        padding: 0 4px;
+                        font-size: 1.1em;
+                        font-weight: bold;
+                        line-height: 1.5em;
+                        text-align: center;
+                        overflow: visible;
+                        color: #eeb211;
+                        background: #6b3613;
+                    }
+                }
+            }
+
+            if portaltheme==Movies {
+                .pod-body div.pagenav div.align-right {}
+            }
+
+            if portaltheme==Games {}
+            if portaltheme==Movies {}
+            if portaltheme==Games {}
+            .pod-body div.pagenav a:not([href]),
+            .pod-body div.pagenav a:hover {
+                background: #9d4f18!important;
+                & span {
+                    color: #fff!important;
+                    background: #eb7522!important;
+                }
+            }
+
+            if portaltheme==Games {}
+            if portaltheme==Movies {}
+            if portaltheme==Games {}
+            if portaltheme==Movies {}
+            .pod-body div.pagenav div.sort {
+                float: right;
+                top: -2px;
+                line-height: 1.6em;
+                font-size: 1.3em;
+                & span:nth-child(1) {
+                    font-weight: bold;
+                    color: #7d7575;
+                }
+            }
+
+            .pod-body div.pagenav div.sort a,
+            .pod-like div.pagenav div.sort a {
+                border-left: 1px solid #7d7575;
+                height: 15px;
+            }
+
+            div.review-meta {
+                height: 30px;
+                line-height: 3em;
+                margin-bottom: 22px;
+                padding: 5px 5px 0 5px;
+                color: #7d7575;
+                &:after {
+                    content: '';
+                    border-left: solid 1px #211b1b;
+                    border-right: solid 1px #211b1b;
+                    background: #000 url(https://web.archive.org/web/20120804071630im_/http://cssimg.ngfiles.com/bg-main/podstripe.gif) -1px bottom repeat-x;
+                    height: 2px;
+                    width: 598px;
+                    margin: 10px 0;
+                    margin-top: 65px !important;
+                    position: absolute;
+                    left: 10px;
+                }
+            }
+
+            svg.svgmask.sz-45 {
+                max-width: 30px;
+            }
+
+            div.review div.review-body {
+                max-width: 600px;
+                word-wrap: break-word;
+                margin: 5px;
+                margin-top: 10px;
+                font-size: 1.2em;
+                line-height: 1.4em;
+                &:after {
+                    content: '';
+                    display: block;
+                    height: 2px;
+                    margin: 10px 0;
+                    border-left: solid 1px #211b1b;
+                    border-right: solid 1px #211b1b;
+                    background: #000 url(https://web.archive.org/web/20140307041333im_/http://cssimg.ngfiles.com/bg-main/podstripe.gif) -1px bottom repeat-x;
+                    width: 598px;
+                    left: -6px;
+                    position: relative;
+                }
+            }
+
+            div.review div.authresponse {
+                position: relative;
+                margin: 5px;
+                padding: 0;
+                padding-bottom: 10px;
+                background: #9d4f1836;
+            }
+
+            div.review div.authresponse strong:first-child {
+                position: relative;
+                z-index: 1;
+                display: block;
+                margin: 0 10px;
+                padding: 8px 0 5px 0;
+                font-weight: normal;
+                color: #c9bebe;
+                border-bottom: solid 1px #4f280e;
+                & > svg {
+                    display: none;
+                }
+
+                div.authresponse > .text-content p {
+                    font-size: 1.2em!important;
+                    margin: 5px 10px 0 5px!important;
+                }
+
+                div.authresponse > .text-content p + p {
+                    margin-top: 10px!important;
+                }
+            }
+        }
+
+        @-moz-document url-prefix("https://www.newgrounds.com/bbs") {
+            /* BBS */
+            div.forum_list {
+                margin-bottom: 5px;
+                font-size: 10px;
+                & div.headings {
+                    font-size: 1.2em;
+                    font-style: italic;
+                    text-align: left;
+                    color: #7d7575;
+                    padding: 2px 5px 5px 5px;
+                }
+            }
+        }
+
+        @-moz-document url-prefix("https://www.newgrounds.com/bbs/topic/") {}
+
+        @-moz-document url-prefix("https://www.newgrounds.com/chat") {
+            /* NG Featureless Chat */
+            div.pod {
+                width: 942px;
+                margin: 0 0 10px;
+                background-color: transparent;
+                position: relative;
+                display: block;
+                border: solid 4px #000;
+                border-radius: 2px;
+                box-shadow: 0 5px 10px #000;
+                background-image: url(https://web.archive.org/web/20120709100602im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg);
+                height: 1000px;
+                & .pod-head {
+                    position: relative;
+                    display: block;
+                    height: 41px;
+                    background: #4f280e url(https://web.archive.org/web/20120709100602im_/http://cssimg.ngfiles.com/bg-skins/podtops/podtop-gold.jpg) left 0 no-repeat;
+                    border-radius: 0;
+                    border: 0;
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        padding-right: 3px;
+                        height: 100%;
+                        right: 0;
+                        background: inherit;
+                        background-position: right 0;
+                    }
+
+                    & h2 {
+                        float: left;
+                        height: 31px;
+                        overflow: hidden;
+                        margin: 5px;
+                        padding-left: 36px;
+                        color: #fff;
+                        font-size: 0;
+                        font-size-adjust: .4;
+                        line-height: 1.1em;
+                        font-weight: normal;
+                        text-transform: capitalize;
+                        background-image: url(https://raw.githubusercontent.com/syxxed/newgrounds-2012/refs/heads/main/icons/h2-all.png)!important;
+                        background-repeat: no-repeat!important;
+                        &:before {
+                            display: none;
+                        }
+
+                        &:after {
+                            content: 'Newgrounds Featureless Chat: No new features, ever!';
+                            font-size: 30px;
+                            font-size-adjust: 0.4;
+                            line-height: 1.1em;
+                        }
+                    }
+                }
+
+                & h2 {
+                    background: 0 0
+                }
+
+                & .pod-head ~ .pod-body {
+                    padding-top: 15px;
+                    background-position: 0 -6px;
+                }
+
+                & .pod-body {
+                    border-radius: 0;
+                    background-color: transparent;
+                    background-image: url(https://web.archive.org/web/20120709100602im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg);
+                    padding: 21px 11px 11px 11px;
+                    background-repeat: no-repeat;
+                    border: 0;
+                    box-shadow: none;
+                    /* Im lazy lets cut down the work i need to do for other pages significantly */
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        display: block;
+                        height: 6px;
+                        right: 0;
+                        left: 0;
+                        border: solid 1px #28242c;
+                        border-top: 0;
+                        background: url(https://web.archive.org/web/20120709100602im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg) -1px 1px no-repeat;
+                    }
+                }
+            }
+        }
+
+        @-moz-document domain("chat.newgrounds.com") {
+            body {
+                background: none !important;
+                & .grid-x.auto.cell {
+                    & .grid-y.medium-auto.cell {}
+                }
+            }
+        }
+
+        @-moz-document url-prefix("https://www.newgrounds.com/login") {
+            #passport_main > div.pod {
+                background-image: url(https://web.archive.org/web/20120711024722im_/http://cssimg.ngfiles.com/bg-main/pod-33.jpg);
+                width: 942px;
+                height: 260px;
+                top: -4px;
+                & > .pod-body {
+                    background-image: url(https://web.archive.org/web/20120711024722im_/http://cssimg.ngfiles.com/bg-main/podbreaker-33.jpg);
+                    padding: 50px 150px !important;
+                }
+            }
+
+            div[id="passport_main"] .passport-shim-left {
+                display: none;
+            }
+
+            div.passportform {
+                max-width: 950px;
+                top: -10px;
+                left: 70px;
+            }
+
+            .highlight.strong.text-align-center {
+                display: none;
+            }
+
+            div.column ::placeholder {
+                color: #4C484800 !important;
+                font-weight: bold;
+            }
+
+            div.passportform input[type="text"],
+            div.passportform input[type="password"],
+            div.passportform input[type="email"],
+            div.passportform input[type="date"] {
+                font-size: 12px;
+                font-weight: bold;
+                height: 19px;
+                padding: 3px 5px;
+                border-color: #000;
+                border-style: solid;
+                border-width: 0 1px 2px 1px;
+                background: #ea8d42 url(https://web.archive.org/web/20120711024722im_/http://cssimg.ngfiles.com/bg-skins/inputs/input-gold.jpg) top left repeat-x!important;
+                width: 185px;
+                box-shadow: none;
+                margin-bottom: 10px;
+                position: relative;
+                left: 5px;
+            }
+
+            form > div:before {
+                content: 'Username: ';
+                color: #c9bebe;
+                display: block;
+                position: relative;
+                font-size: 12px;
+                font-weight: bold;
+                top: 20px;
+                left: -63px;
+            }
+
+            form > div:nth-child(5):before {
+                content: 'Password: ';
+                color: #c9bebe;
+                display: block;
+                position: relative;
+                font-size: 12px;
+                font-weight: bold;
+                top: -33px;
+                left: -63px;
+            }
+
+            div.passportform button {
+                padding: none!important;
+                &:before {
+                    content: 'Submit';
+                    float: left;
+                    margin: 0 25px 0 0;
+                    height: 25px;
+                    width: 66px;
+                    color: #eeb211;
+                    font-size: 12px;
+                    line-height: 26px;
+                    font-weight: bold;
+                    border-color: #000!important;
+                    border-left-width: 1px!important;
+                    border-right-width: 1px!important;
+                    border-bottom-width: 2px!important;
+                    border-top: none!important;
+                    border-style: solid;
+                    background: url(https://web.archive.org/web/20120711024722im_/http://cssimg.ngfiles.com/bg-skins/buttons/button-gold.gif) left 0 no-repeat!important;
+                    left: -65px;
+                    position: relative;
+                    top: -30px;
+                    &:hover {
+                        color: #fff!important;
+                        cursor: pointer!important;
+                        background-position: left -25px!important;
+                    }
+                }
+            }
+
+            .checkboxes.twoX input[type="checkbox"]:not(.switch) + label {
+                background: url(https://web.archive.org/web/20120327185324im_/http://cssimg.ngfiles.com/formstuff/input-checkboxes.jpg) 0 0 no-repeat;
+                display: block;
+                height: 16px;
+                &::before {
+                    height: 16px;
+                    line-height: 16px;
+                    padding-left: 20px;
+                    background: url("https://web.archive.org/web/20120327185324im_/http://cssimg.ngfiles.com/formstuff/input-check.png") 0 0 no-repeat;
+                    top: 159px;
+                    width: 0px;
+                }
+            }
+
+            div.passportform button {
+                font-size: 0px;
+                width: 0%!important;
+                padding: 0 !important;
+                font-weight: normal !important;
+                border-radius: 0px !important;
+            }
+
+            div[id="passport_main"] .passport-shim-right:before {
+                color: #c9bebe;
+                font-size: 12px;
+                width: 200px;
+                content: "If you're not a member… You should die!";
+            }
+        }
+
+        @-moz-document url-prefix("https://www.newgrounds.com/passport") {
+            /* passport*/
+            body::after {
+                display: none;
+            }
+
+            body.PassportBackgroundImage {
+                background: #000!important;
+            }
+
+            #passport_main {
+                height: 681px;
+                width: 542px;
+                margin: 0 auto;
+                background: url('https://web.archive.org/web/20130409052128im_/https://www.newgrounds.com/img/passport/passport_bg3.jpg') no-repeat #28201D;
+            }
+
+            body.PassportBackgroundImage div.PassportLogo,
+            div.PassportLogo {
+                background: url("https://web.archive.org/web/20130310143316im_/https://www.newgrounds.com/img/passport/ngpassport_logo.png") no-repeat;
+                bottom: 0;
+                top: 5px;
+                left: 706px;
+            }
+
+            .box-shadow {
+                box-shadow: none;
+                border: none;
+                background: none;
+                border-radius: 0;
+                padding-top: 3.5em;
+                padding-left: 15.5em;
+                font-size: .8em;
+            }
+
+            div.PassportHead {
+                max-width: 0;
+                height: 0;
+                background: none;
+                padding: 0;
+                margin: 0;
+                border: none;
+                border-radius: 0;
+            }
+
+            div.PassportHead::before {
+                content: 'Challenge friends, earn in-game medals, compete for high scores and more! All you need is a Newgrounds account!';
+                color: #fff;
+                font-size: 11px;
+                line-height: 18px;
+                font-weight: bold;
+                padding-left: 30px;
+                padding-top: 40px;
+                margin-left: 14.1em;
+                display: block;
+                width: 342.8px;
+                height: 32px;
+                left: 690px;
+                top: 4px;
+            }
+
+            div.PassportHead h2 {
+                display: none;
+            }
+
+            div.PassportPodBody {
+                max-width: 343.6px;
+                background: none;
+                border: none;
+                padding: 0;
+                margin: 0;
+                top: 75px;
+                left: 65px;
+                position: relative;
+                box-shadow: none;
+            }
+
+            input.PassportTextfield {
+                width: 176px;
+                height: 16px;
+                display: block;
+                padding: 4px;
+                color: #000;
+                margin: 0 0 0 1.1em;
+                border-radius: 0;
+                font-size: 12px;
+                box-shadow: none;
+                border-color: #000!important;
+                border-style: solid!important;
+                border-width: 0 1px 2px 1px!important;
+                background: #ea8d42 url(//web.archive.org/web/20130409052128im_/https://www.newgrounds.com/img/bg-skins/inputs/input-gold.jpg) top left repeat-x;
+            }
+        }
+
+        @-moz-document domain("newgrounds.com") {
+            /* footer */
+            div.body-footer-wrapper {
+                width: 976px;
+                height: 0px;
+                margin: 0 auto;
+                top: 48px;
+                position: relative;
+                background: none;
+            }
+
+            div.body-footer-shim {
+                height: 8px!important;
+                margin: 0;
+                position: relative;
+            }
+
+            div.footer-features {
+                border-top: 0;
+                height: 194px;
+                background: url(https://web.archive.org/web/20120801032454im_/http://cssimg.ngfiles.com/bg-footer/featuredcontent.jpg) top left no-repeat;
+                top: 9px;
+                position: relative;
+                z-index: 9;
+            }
+
+            div.footer-feature-buttons {
+                position: relative;
+                background-color: transparent;
+                border-bottom: none;
+                padding: 0;
+                height: 40px;
+                vertical-align: middle;
+                top: 9px;
+            }
+
+            div.footer-feature-buttons h3 {
+                float: left;
+                width: 258px;
+                height: 40px;
+                margin-left: 10px;
+                margin-top: 3px;
+                text-indent: -9999em;
+                overflow: hidden;
+                background: url(https://web.archive.org/web/20120801032454im_/http://cssimg.ngfiles.com/bg-footer/featuretitle.jpg) 0 0 no-repeat;
+            }
+
+            /* its footer button time */
+            div.footer-feature-buttons > span {
+                width: 970px;
+            }
+
+            div.footer-feature-buttons div button,
+            div.footer-feature-buttons div button.footer-feature-btn-games:hover {
+                float: left;
+                width: 116px;
+                height: 30px;
+                margin-top: 5px;
+                padding: 0;
+                text-indent: -9999em;
+                overflow: hidden;
+                border: none;
+                background: url(https://web.archive.org/web/20120801032454im_/http://cssimg.ngfiles.com/bg-footer/featurebar.jpg) top left no-repeat!important;
+            }
+
+            div.footer-features-items {
+                top: 20px;
+                padding-bottom: 0px;
+                position: relative;
+            }
+
+            div.footer-feature-buttons::before {
+                background-color: transparent;
+            }
+
+            div.footer-feature-buttons div button:after {
+                display: none;
+            }
+
+            .footer-feature-btn-games,
+            #footer-feature-btn-games {
+                background-position: 0 0;
+                &:hover {
+                    background-position: 0 -30px!important;
+                }
+
+                &:active {
+                    background-position: 0 -60px!important;
+                }
+            }
+
+            .footer-feature-btn-movies,
+            #footer-feature-btn-movies {
+                background-position: -116px 0!important;
+                &:hover {
+                    background-position: -116px -30px!important;
+                }
+
+                &:active {
+                    background-position: -116px -60px!important;
+                }
+            }
+
+            #footer-feature-btn-audio {
+                background-position: -232px 0!important;
+                &:hover {
+                    background-position: -232px -30px!important;
+                }
+
+                &:active {
+                    background-position: -232px -60px!important;
+                }
+            }
+
+            #footer-feature-btn-art {
+                background-position: -348px 0!important;
+                &:hover {
+                    background-position: -348px -30px!important;
+                }
+
+                &:active {
+                    background-position: -348px -60px!important;
+                }
+            }
+
+            #footer-feature-btn-channels {
+                background-position: -464px 0!important;
+                width: 118px;
+                &:hover {
+                    background-position: -464px -30px!important;
+                }
+
+                &:active {
+                    background-position: -464px -60px!important;
+                }
+            }
+
+            #footer-feature-btn-users {
+                background-position: -582px 0!important;
+                width: 115px;
+                &:hover {
+                    background-position: -582px -30px !important;
+                }
+
+                &:active {
+                    background-position: -582px -60px!important;
+                }
+            }
+
+            div.footer-features-items div.featured-items {
+                width: 1px;
+            }
+
+            div.footer-features-items .featured-item {
+                position: relative;
+                float: left;
+                width: 290px;
+                height: 110px;
+                margin-right: 1px;
+                padding-right: 6px;
+                background: url(https://web.archive.org/web/20130328225637im_/http://cssimg.ngfiles.com/bg-footer/footerfeature.png) top left repeat;
+            }
+
+            div.footer-features-items a[class^="featureshift"] {
+                width: 25px;
+                height: 110px;
+                overflow: hidden;
+                background: url(https://web.archive.org/web/20120721010820im_/http://cssimg.ngfiles.com/bg-footer/a-stripes.png) top left repeat;
+            }
+
+            a.portalsubmission-footer-feature h4 {
+                color: #eeb211;
+                padding: 0;
+                margin: 12px 0 8px 10px;
+                font-style: normal!important;
+                font-size: 14px;
+            }
+
+            div[class^="rated-"]::before,
+            div[class^="rank-"]::before {
+                display: block;
+                position: absolute;
+                z-index: 1;
+                width: 20px;
+                bottom: auto;
+                margin: 0;
+                height: 20px;
+                text-indent: -999em;
+                overflow: hidden;
+                opacity: .85;
+                background-color: #1b1717;
+                background-image: url(https://web.archive.org/web/20120721010820im_/http://cssimg.ngfiles.com/icons/hovers/rankandrate.png);
+            }
+
+            if layout==E2012 {
+                a.portalsubmission-footer-feature.game div[class^="rated-"]::before {
+                    background-color: #296395!important;
+                }
+            }
+
+            if layout==E2012 {
+                a.portalsubmission-footer-feature.movie div[class^="rated-"]::before {
+                    background-color: #a52e2e!important;
+                }
+            }
+
+            div[class^="rated-e"]::before {
+                background-position: -40px 0;
+                if layout==E2012 {
+                    background-position: -20px 0;
+                }
+            }
+
+            div[class^="rated-t"]::before {
+                background-position: -40px -20px;
+                if layout==E2012 {
+                    background-position: -20px -20px;
+                }
+            }
+
+            div[class^="rated-m"]::before {
+                background-position: -40px -40px;
+                if layout==E2012 {
+                    background-position: -20px -40px;
+                }
+            }
+
+            div.footer-main {
+                background: url(https://web.archive.org/web/20120801032454im_/http://cssimg.ngfiles.com/bg-skins/gold-footer.jpg) 3px bottom no-repeat;
+                height: 400px;
+                z-index: 9;
+                position: relative;
+            }
+
+            div.footer-main {
+                display: grid;
+            }
+
+            div.footer-copyright {
+                font-size: 1.2em;
+                line-height: 1.5em;
+                text-align: left;
+                position: absolute;
+                left: 23px;
+                display: block;
+                width: 644px;
+                height: 45px;
+                padding: 0 0 0 50px;
+                background: url(https://web.archive.org/web/20120630190937im_/http://cssimg.ngfiles.com/bg-footer/logo-tiny.png) top left no-repeat;
+                font-weight: bold;
+                margin-top: 10px;
+                &:after {
+                    content: 'newgrounds.com — Your #1 online entertainment & artist community! All your base are belong to us.';
+                    font-weight: normal;
+                    margin-left: 50px;
+                    left: -50px;
+                    position: relative;
+                }
+            }
+
+            div.footer-main div.footer-navigation {
+                width: 640px;
+                height: 212px;
+                margin: 0;
+                float: left;
+                left: 23px;
+                top: -5px;
+                position: relative;
+            }
+
+            div.footer-main div.footer-navigation-column {
+                padding: 0;
+                float: left;
+                width: 150px;
+                margin-right: 10px;
+            }
+
+            div.footer-main div.footer-navigation-cell h4 {
+                padding: 0px 0px 0px 5px;
+                font-size: 1.4em;
+                font-weight: bold;
+                line-height: 2.1em;
+                display: block;
+                height: 30px;
+            }
+
+            div.footer-main div.footer-navigation-cell li {
+                font-size: 12px;
+                line-height: 9px;
+                font-weight: bold;
+                position: relative;
+                display: block;
+                width: 150px;
+                height: 25px;
+                margin-bottom: 1px;
+                padding: 0;
+                background: url(https://web.archive.org/web/20120630190937im_/http://cssimg.ngfiles.com/misc/link_stripes.png) 0 0 no-repeat;
+                &:hover {
+                    background-position: -300px 0;
+                    color: #000!important;
+                }
+            }
+
+            div.footer-main div.footer-navigation-cell li > a {
+                position: absolute;
+                top: 6px;
+                display: block;
+                width: 129px;
+                height: 13px;
+                line-height: 14px;
+                margin-left: 8px;
+                padding-left: 5px;
+                border-left: solid 2px #e15f20;
+                color: #eeb211!important;
+                background: url(https://web.archive.org/web/20120630190937im_/http://cssimg.ngfiles.com/bg-footer/nav-corners.gif) right -21px no-repeat;
+                &:hover {
+                    border-color: #1b1717 !important;
+                    color: #000!important;
+                    background-position: right 4px !important;
+                }
+            }
+
+            div.footer-main div.footer-navigation-cell li:nth-of-type(2n),
+            div.footer-main div.footer-navigation-cell li:nth-of-type(2n) a {
+                background-position: -9px 0!important;
+            }
+
+            /* shout out to haydengriz */
+            div.footer-navigation-column:nth-child(2) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(7),
+            div.footer-navigation-column:nth-child(2) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(3),
+            div.footer-navigation-column:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(2),
+            div.footer-navigation-column:nth-child(4) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(4),
+            div.footer-navigation-column:nth-child(4) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(5),
+            div.footer-navigation-column:nth-child(4) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(3) {
+                display: none;
+            }
+
+            div.footer-main div.footer-user-message {
+                position: absolute;
+                bottom: 0px;
+                z-index: 666;
+                font-size: 1.2em;
+                line-height: 14px;
+                left: 20px;
+                padding: 0;
+            }
+
+            span.inline-user-link > a {
+                font-weight: normal;
+            }
+
+            span.inline-user-link > a em {
+                display: inline-block;
+                width: 25px;
+                height: 25px;
+                margin: -5px 8px 0 0;
+                vertical-align: middle;
+            }
+
+            span.inline-user-link > a em > img {
+                width: 25px;
+                height: 25px;
+                margin: 0px!important;
+            }
+
+            img.user-icon {
+                border-radius: 0 !important;
+            }
+
+            div.footer-main div.footer-background {
+                position: relative;
+                order: 2;
+            }
+
+            div.footer-main div.footer-decoration {
+                display: none;
+            }
+
+            div.footer-main div.footer-bottom {
+                padding-top: 46px;
+                background-color: transparent;
+            }
+
+            div.footer-wall-artist {
+                display: none;
+            }
+        }
