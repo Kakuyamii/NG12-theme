@@ -1284,6 +1284,9 @@ url("newgrounds.com/") {
 		}
 	}
 
+	svg.svgmask.s2 > image {
+		display: none;
+	}
 	a.item-forumthread div.item-details div.item-user {
 		font-size: 11px;
 	}
@@ -4998,6 +5001,9 @@ background: none;
 		}
 	}
 
+	div > a[href="https://tomfulp.newgrounds.com"] svg > image {
+		display: none!important;
+	}
 	.text-content p,
 	.text-content h1,
 	.text-content h2,
