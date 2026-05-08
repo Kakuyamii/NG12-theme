@@ -23,44 +23,10 @@
 
 }
 @var checkbox currentbackground 'Use current backgrounds' 0
-@var select layout 'Choose layout' {
-' Default (2012)': 'default',
-' Early 2012 (WIP) ':  'E2012',
-' 2013 (WIP) ': '2013',
-'2014 (WIP)':  '2014',
-'2015 (WIP)' : '2015'
-}
-@var select fulp 'Choose Tom Fulp pfp' {
-'Default (2012)': 'def',
-'Alt': 'alt',
-'Febuary 2012': 'F2012',
-'later Febuary 2012': 'LF2012',
-'April 2013': 'A2013'
-}
 @var checkbox headerads 'Show header ads ' 0
-@var checkbox hp 'Show Welcome to Newgrounds screen (for 2013)' 1
 @var select portaltheme 'PLACEHOLDER' {
 'Movies': 'Movies',
 'Games':  'Games'
-}
-@var select cutoff 'how much content that shows in portals (requires range on all)' {
-'All': 'all',
-'1 row': '1row',
-'2 row': '2row',
-'3 row': '3row',
-'4 row': '4row',
-'5 row': '5row',
-'6 row': '6row',
-'7 row': '7row',
-'8 row': '8row',
-'9 row': '9row',
-'10 row': '10row',
-'11 row': '11row',
-'12 row': '12row',
-'13 row': '13row',
-'14 row': '14row',
-'15 row': '15row',
-
 }
 
 @var select selectportal 'What is shown on the Sort Box' {
@@ -188,12 +154,6 @@ url-prefix("https://www.newgrounds.com") {
 		}
 	}
 
-	if layout==2013 or layout==2014 {
-		body:after {
-			top: -50px!important;
-		}
-	}
-
 	if currentbackground==0 {
 		body:not(.skin-userpage) div.outer div.skin-wrapper {
 			display: none;
@@ -236,11 +196,6 @@ url-prefix("https://www.newgrounds.com") {
 			margin: auto;
 		}
 	}
-	if layout==2013 and currentbackground==1 {
-		body:not(.skin-userpage) div.outer div.skin-inner::before {
-			background: url("https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/background/bgtest4.png");
-		}
-	}
 	if currentbackground==1 {
 		body:not(.skin-userpage) div.outer div.skin-inner div.background::after {
 			content: '';
@@ -264,9 +219,6 @@ url-prefix("https://www.newgrounds.com") {
 	#header-nav-row {
 		position: relative;
 		top: 120px;
-		if layout==2013 or layout==2014 {
-			top: 65px;
-		}
 	}
 
 	div.header-nav-container {
@@ -303,17 +255,7 @@ url-prefix("https://www.newgrounds.com") {
 		if background==clockday12 {
 			background: url(https://kakuyamii.github.io/NG12-theme/images/2012/logo-clockday.png) bottom left no-repeat;
 		}
-		if layout==2013 or layout==2014 {
-			position: absolute;
-			bottom: -68px;
-			margin: 0;
-			width: 256px;
-			height: 63px;
-			background: url(https://kakuyamii.github.io/NG12-theme/images/2014/bg-header/logo.png) bottom right no-repeat;
-		}
 	}
-
-
 
 	div.notification-bar .logo:hover {
 		filter: none;
@@ -427,7 +369,6 @@ url-prefix("https://www.newgrounds.com") {
 		top: -23px;
 		display: block;
 	}
-
 
 	#passport_create {
 		font-size: 11px;
@@ -588,9 +529,6 @@ url-prefix("https://www.newgrounds.com") {
 		overflow: hidden;
 		background: url(https://kakuyamii.github.io/NG12-theme/images/2012/bg-header/navbar.jpg) top left no-repeat!important;
 		transition: none!important;
-		if layout==2014 {
-			background: url(https://kakuyamii.github.io/NG12-theme/images/2014/bg-header/navbar2014.jpg) top left no-repeat!important;
-		}
 	}
 	nav.header-nav-buttons a,
 	nav.header-nav-buttons a:hover,
@@ -717,9 +655,6 @@ url-prefix("https://newgrounds.com") {
 	}
 	div.ng-latest-supporter-wide {
 		display: none;
-		if layout==2014 or layout==2013 and background==halloween2013 {
-			display: block!important;
-		}
 	}
 	div.ng-latest-supporter-wide {
 		background: rgba(0, 0, 0, 0);
@@ -813,9 +748,6 @@ url-prefix("https://newgrounds.com") {
 			background: url("https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/headerads/headerad2.png") top center no-repeat;
 			top: 120px;
 			z-index: 9;
-			if layout==2013 or layout==2014 {
-				top: 65px;
-			}
 		}
 	}
 	div.body-main {
@@ -826,9 +758,6 @@ url-prefix("https://newgrounds.com") {
 		padding: 10px 13px 0 13px;
 		background: url(https://kakuyamii.github.io/NG12-theme/images/2012/bg-main/bg-main.gif) top center repeat-y;
 		z-index: 999;
-		if layout==2013 or layout==2014 {
-			top: 65px;
-		}
 	}
 
 	div.body-skin-shim {
@@ -847,7 +776,6 @@ url-prefix("https://newgrounds.com") {
 		max-height: 1250px;
 		display: block;
 	}
-
 
 	div.pod,
 	{
@@ -941,7 +869,6 @@ url-prefix("https://newgrounds.com") {
 	div .column {
 		width: 950px;
 	}
-
 
 	div .column.thin > div.pod-body {
 		background-image: url(https://kakuyamii.github.io/NG12-theme/images/2012/bg-main/podbreaker-13.jpg);
@@ -1149,28 +1076,16 @@ url-prefix("https://newgrounds.com") {
 	/* portal ratings idk where to put this LOL */
 	div.rated-e::after,
 	span.rated-e::after {
-		if layout==E2012 {
-			background-position: -20px -0px;
-		}
 	}
 	div.rated-t::after,
 	span.rated-t::after {
-		if layout==E2012 {
-			background-position: -20px -20px;
-		}
 	}
 	div.rated-m::after,
 	span.rated-m::after {
-		if layout==E2012 {
-			background-position: -20px -40px;
-		}
 	}
 	/* hey you never know */
 	div.rated-a::after,
 	span.rated-a::after {
-		if layout==E2012 {
-			background-position: -20px -60px;
-		}
 	}
 	div.topbar-menu a.logo,
 	div.notification-bar .logo a,
@@ -1331,20 +1246,12 @@ url-prefix("https://newgrounds.com") {
 	}
 }
 
-
 @-moz-document url("https://www.newgrounds.com/"),
 url("newgrounds.com/") {
 
 	/* homepage */
 	body::after {
 		height: 2934px;
-	}
-	if layout==2013 or layout==2014 {
-		body::after {
-			background-image: url(https://kakuyamii.github.io/NG12-theme/images/2013/bg-skins/fp-outer.jpg);
-			width: 1510px;
-			margin: 0 auto;
-		}
 	}
 	div.header-ad-space:not(:empty),
 	div.header-deck:not(:empty) {
@@ -1362,20 +1269,8 @@ url("newgrounds.com/") {
 		display: block;
 		height: 41px;
 		background: #4f280e url("https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/news2012.png") left 0 no-repeat !important;
-		if layout==E2012 {
-			background: #4f280e url("https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/news1.png") left 0 no-repeat !important;
-		}
-		if layout==2014 {
-			display: none;
-		}
 	}
 
-
-	if layout==2014 {
-		div.column:nth-child(4) > div:nth-child(1) > div.pod-body:nth-child(1) {
-			background-position: 0 -10px!important;
-		}
-	}
 	div.column:nth-child(4) > div:nth-child(1) > div.pod-body,
 	#featured_fp_content_1 > div:nth-child(2) {
 		padding-top: 15px;
@@ -1386,37 +1281,11 @@ url("newgrounds.com/") {
 		margin-left: 4px;
 		& div {
 			height: 60px;
-			if fulp==def {
-				background-image: url(https://web.archive.org/web/20120328203446im_/http://uimg.ngfiles.com/icons/0/1_large.gif);
-			}
-			if fulp==alt {
-				background-image: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/tomfulppfps/alt.png);
-			}
-			if fulp==F2012 {
-				background-image: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/tomfulppfps/fulp1.gif);
-			}
-			if fulp==LF2012 {
-				background-image: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/tomfulppfps/fulp2.gif);
-			}
-			if fulp==A2013 {
-				background-image: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/tomfulppfps/coolglass.png);
-			}
 		}
 	}
 
 	svg.svgmask.s2 > image {
 		display: none;
-	}
-	if layout==2013 and hp==1 {
-		#frontpage_sortables:before {
-			content: '';
-			background: url('https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/orange/welcome2ng.png');
-			box-shadow: 0 5px 10px #000;
-			display: block;
-			position: relative;
-			height: 135px;
-			margin-bottom: 10px;
-		}
 	}
 	a.item-forumthread div.item-details div.item-user {
 		font-size: 11px;
@@ -1432,7 +1301,6 @@ url("newgrounds.com/") {
 	#featured_fp_content_1 {
 		order: 1;
 	}
-
 
 	#featured_fp_content_2 {
 		order: 2
@@ -1454,7 +1322,6 @@ url("newgrounds.com/") {
 		position: relative;
 	}
 
-
 	div.column.wide div.pod-body .portalsubmission-icons div.span-1 {
 		width: 150px;
 		height: 138px;
@@ -1463,10 +1330,6 @@ url("newgrounds.com/") {
 		&:hover {
 			background: #4f280e url(https://kakuyamii.github.io/NG12-theme/images/2012/icons/hovers/hoverticks-R.png) center center no-repeat;
 			background-position: -10px bottom;
-		}
-		if layout==E2012 {
-			width: 150px;
-			height: 100px;
 		}
 	}
 
@@ -1479,26 +1342,16 @@ url("newgrounds.com/") {
 			background: #4f280e00 url(https://kakuyamii.github.io/NG12-theme/images/2012/icons/hovers/hoverticks-R.png) center center no-repeat;
 			background-position: -10px top;
 		}
-		if layout==E2012 {
-			width: 150px;
-			height: 100px;
-			&:hover {
-				background: #4f280e url(https://kakuyamii.github.io/NG12-theme/images/2012/icons/hovers/hoverticks-L.png) center center no-repeat;
-				background-position: -10px top;
-			}
-		}
 	}
-	if not layout==E2012 {
-		a.item-portalsubmission-small div.item-icon .item-icon-img {
-			position: absolute;
-			top: -5px;
-			left: -5px;
-			padding: 5px;
-			height: 90px;
-			&:hover {
-				background: url(https://kakuyamii.github.io/NG12-theme/images/2012/icons/hovers/hoverticks-R.png) center center no-repeat;
-				background-position: -10px bottom;
-			}
+	a.item-portalsubmission-small div.item-icon .item-icon-img {
+		position: absolute;
+		top: -5px;
+		left: -5px;
+		padding: 5px;
+		height: 90px;
+		&:hover {
+			background: url(https://kakuyamii.github.io/NG12-theme/images/2012/icons/hovers/hoverticks-R.png) center center no-repeat;
+			background-position: -10px bottom;
 		}
 	}
 	a.item-portalsubmission-small div.item-icon {
@@ -1506,18 +1359,7 @@ url("newgrounds.com/") {
 		height: 100px;
 		margin-left: 5px;
 		top: 5px;
-		if layout==E2012 {
-			width: 140px;
-			height: 90px;
-			padding: 5px;
-			&:hover {
-				background: url(https://kakuyamii.github.io/NG12-theme/images/2012/icons/hovers/hoverticks-R.png) center center no-repeat;
-				background-position: -10px bottom;
-			}
-		}
 	}
-
-
 
 	a.item-portalsubmission:hover {
 		cursor: pointer;
@@ -1537,17 +1379,7 @@ url("newgrounds.com/") {
 		color: #7d7575;
 		text-align: center;
 		background: url(https://kakuyamii.github.io/NG12-theme/images/2012/icons/a-portalicons.png) -18px top no-repeat!important;
-		if layout==E2012 {
-			background: #000000bf;
-			height: 11px;
-			padding: 3px 5px;
-			margin: 0;
-			top: -22px;
-			left: 5px;
-			width: 130px;
-		}
 	}
-
 
 	a.item-portalsubmission-small div.item-details span:first-child {
 		height: 13px;
@@ -1555,13 +1387,6 @@ url("newgrounds.com/") {
 		color: #fff;
 		padding: 0px;
 		padding: 0 3px;
-		if layout==E2012 {
-			font-weight: normal;
-			font-size: 11px;
-			height: auto;
-			text-align: left;
-			padding: 0;
-		}
 	}
 
 	a.item-portalsubmission-small:hover a.item-portalsubmission-small div.item-details span:first-child:hover {
@@ -1575,18 +1400,10 @@ url("newgrounds.com/") {
 		&:before {
 			content: 'by '
 		}
-		if layout==E2012 {
-			display: none;
-		}
 	}
 	a.item-portalsubmission-small div.item-icon div.item-icon-hover,
 	a.item-portalsubmission-small div.item-icon div.item-icon-hover div.item-genre {
 		background-color: rgba(0, 0, 0, 0.85);
-		if layout==E2012 {
-			visibility: hidden;
-			color: #fff0;
-			background: none;
-		}
 	}
 	a.item-portalsubmission-small div.item-icon div.item-icon-hover div.item-suitability {
 		border-radius: 0px;
@@ -1595,70 +1412,8 @@ url("newgrounds.com/") {
 		padding: 0;
 		background: none!important;
 
-		if layout==E2012 {
-			bottom: 70px;
-			right: 120px;
-			padding: 0px;
-			border-bottom-right-radius: 7px;
-			width: 20px;
-			height: 20px;
-			background: #a52e2e!important;
-			opacity: 0.75;
-		}
-	}
-	if layout==E2012 {
-		#featured_fp_content_1 > div.pod-body .portalsubmission-icons div.span-1 > a.item-portalsubmission-small > div.item-details {
-			background: #000000bf!important;
-			visibility: hidden;
-			color: #fff0;
-		}
-	}
-	if layout==E2012 {
-		#featured_fp_content_1 > div.pod-body .portalsubmission-icons div.span-1 > a.item-portalsubmission-small:hover > div.item-details {
-			background: #a52e2ebf!important;
-			visibility: visible;
-			color: #fff;
-		}
 	}
 
-	if layout==E2012 {
-		#featured_fp_content_2 > div.pod-body .portalsubmission-icons div.span-1 > a.item-portalsubmission-small div.item-icon div.item-icon-hover div.item-suitability {
-			background: #296395!important;
-		}
-	}
-	if layout==E2012 {
-		#featured_fp_content_2 > div.pod-body .portalsubmission-icons div.span-1 > a.item-portalsubmission-small > div.item-details {
-			visibility: hidden;
-			color: #fff0;
-		}
-	}
-	if layout==E2012 {
-		#featured_fp_content_2 > div.pod-body .portalsubmission-icons div.span-1 > a.item-portalsubmission-small:hover > div.item-details {
-			background: #296395bf!important;
-			visibility: visible;
-			color: #fff;
-		}
-	}
-	if layout==E2012 {
-		a.item-portalitem-art-small div.item-details {
-			background-color: #9c366cbf;
-			visibility: hidden;
-			color: #fff0;
-		}
-	}
-	if layout==E2012 {
-		a.item-portalitem-art-small:hover div.item-details {
-			background-color: #9c366cbf;
-			visibility: visible;
-			color: #fff;
-		}
-	}
-	if layout==E2012 {
-		a.item-portalitem-art-small > div[class^="rated-"]:before {
-			background-color: #9c366c;
-			opacity: 0.75
-		}
-	}
 	.artist-news-container > ul.itemlist.alternating > li.alternate {
 		background: transparent;
 	}
@@ -1698,13 +1453,6 @@ url("newgrounds.com/") {
 		position: relative;
 	}
 
-	if layout==E2012 {
-		span[class^="rated-"]::after,
-		span[class^="rank-"]::after {
-			left: -1px;
-			top: -1px;
-		}
-	}
 	svg.svgmask.s2 > image {
 		clip-path: none;
 	}
@@ -1741,24 +1489,11 @@ url("newgrounds.com/") {
 	ul.links:nth-child(1) > li:nth-child(9), ul.links:nth-child(1) > li:nth-child(10) {
 		display: none;
 	}
-	if layout==E2012 {
-		ul.links:nth-child(1) > li:nth-child(5),
-		ul.links:nth-child(1) > li:nth-child(6),
-		ul.links:nth-child(1) > li:nth-child(7),
-		ul.links:nth-child(1) > li:nth-child(8),
-		ul.links:nth-child(1) > li:nth-child(9), ul.links:nth-child(1) > li:nth-child(10) {
-			display: none;
-		}
-	}
 	ul.links.boxes {
 		margin: 0;
 		width: 280px;
 		left: -0px;
 		position: relative;
-		if layout==E2012 {
-			padding: 2px 0;
-			width: 288px;
-		}
 	}
 	ul.links.boxes li {
 		margin: 0px;
@@ -1769,15 +1504,6 @@ url("newgrounds.com/") {
 		font-size: 1.1em;
 		font-weight: bold;
 		background: #2e1a0f;
-		if layout==E2012 {
-			float: left;
-			width: 118px;
-			padding: 5px;
-			margin: 5px 6px!important;
-			height: 70px;
-			position: relative;
-			background: url(https://kakuyamii.github.io/NG12-theme/images/2012/misc/ul-calendar.png) 0 -25px no-repeat;
-		}
 	}
 	a.item-calendar-list {
 		padding: 0;
@@ -1789,28 +1515,6 @@ url("newgrounds.com/") {
 		white-space: nowrap;
 		text-overflow: ellipsis;
 		background-color: transparent!important;
-		if layout==E2012 {
-			height: fit-content;
-			width: fit-content;
-			color: #fff0 !important
-		}
-	}
-	if layout==E2012 {
-		a.item-calendar-list > span {
-			position: absolute;
-			top: 25px;
-			z-index: 9999;
-			left: 30px;
-			width: 95px;
-			padding: 0;
-			line-height: 13px;
-			white-space: normal;
-			word-wrap: break-word;
-			color: #eeb211 !important;
-			&:hover {
-				color: #fff!important;
-			}
-		}
 	}
 
 	a.item-calendar-list > strong {
@@ -1818,18 +1522,6 @@ url("newgrounds.com/") {
 		white-space: nowrap;
 		min-width: 40px;
 		display: inline-block;
-		if layout==E2012 {
-			position: relative;
-			top: -10px;
-			font-weight: normal;
-			height: 22px;
-			padding: 0;
-			color: #c9bebe!important;
-			line-height: 12px;
-			/*  direction: rtl;
-  unicode-bidi: bidi-override;
- transform: scaleX(-1); */
-		}
 	}
 	ul.links.boxes li:not(:last-of-type) {
 		margin-bottom: 2px;
@@ -1838,7 +1530,6 @@ url("newgrounds.com/") {
 	svg.svgmask.s2 > image {
 		clip-path: none;
 	}
-
 
 	div.column:nth-child(4) > div:nth-child(1) > div:nth-child(2) {
 		padding-top: 21px;
@@ -2011,16 +1702,12 @@ url-prefix("https://www.newgrounds.com/search/conduct/games") {
 		position: relative;
 	}
 
-
 	body:after {
 		content: '';
 		background-image: url("https://kakuyamii.github.io/NG12-theme/images/2012/bg-skins/blue0-outer.jpg") !important;
 		background-repeat: no-repeat;
 		background-position: top center;
 		background-color: #000;
-		if layout==2013 or layout==2014 {
-			background-image: url(https://kakuyamii.github.io/NG12-theme/images/2013/bg-skins/blue2-outer.jpg)!important;
-		}
 	}
 
 	.notification-login-side:before {
@@ -2147,11 +1834,6 @@ url("https://www.newgrounds.com/games/popular") {
 		div.pod-body:first-child:before {
 			background-image: url("https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/grey/butthole.png")!important;
 		}
-		if layout==2014 {
-			div.pod-body:first-child:before {
-				background-image: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/orange/browseblank.png)!important;
-			}
-		}
 	}
 	.pod-body .form-inline,
 	.pod-like .form-inline {
@@ -2175,7 +1857,6 @@ url("https://www.newgrounds.com/games/popular") {
 		margin: 5px 5px 0 5px;
 		height: 25px;
 	}
-
 
 	if selectportal==off {
 		.pod-body .form-inline {
@@ -2339,53 +2020,7 @@ url("https://www.newgrounds.com/games/popular") {
 	}
 	div.pod-body:last-child {
 		width: 600px;
-		if cutoff==1row {
-			height: 139px;
-		}
-		if cutoff==2row {
-			height: 278px;
-		}
-		if cutoff==3row {
-			height: 417px;
-		}
-		if cutoff==4row {
-			height: 556px;
-		}
-		if cutoff==5row {
-			height: 695px;
-		}
-		if cutoff==6row {
-			height: 834px;
-		}
-		if cutoff==7row {
-			height: 973px;
-		}
-		if cutoff==8row {
-			height: 1112px;
-		}
-		if cutoff==9row {
-			height: 1251px;
-		}
-		if cutoff==10row {
-			height: 1390px;
-		}
-		if cutoff==11row {
-			height: 1529px;
-		}
-		if cutoff==12row {
-			height: 1668px;
-		}
-		if cutoff==13row {
-			height: 1807px;
-		}
-		if cutoff==14row {
-			height: 1946px;
-		}
-		if cutoff==15row {
-			height: 2085px;
-		}
 	}
-
 
 	div.portalsubmission-cards {
 		display: grid;
@@ -2403,21 +2038,11 @@ url-prefix("https://www.newgrounds.com/search/conduct/movies") {
 	body {
 		content: '';
 		background-image: url(https://kakuyamii.github.io/NG12-theme/images/2012/bg-skins/red0-body.gif);
-		if layout==2013 or layout==2014 {
-			background-image: url(https://kakuyamii.github.io/NG12-theme/images/2013/bg-skins/red2-body.gif);
-		}
 	}
 
 	body:after {
 		background-image: url("https://kakuyamii.github.io/NG12-theme/images/2012/bg-skins/red0-outer.jpg")!important;
 		background-color: #000;
-		if layout==2013 or layout==2014 {
-			background-image: url(https://web.archive.org/web/20121112132444im_/http://www.newgrounds.com/img/bg-skins/red2-outer.jpg)!important;
-		}
-		if layout==2013 and background==default {
-			background: #000 url(http://cssimg.ngfiles.com/bg-skins/red1-outer.jpg) top center no-repeat!important;
-			background-image: url(http://cssimg.ngfiles.com/bg-skins/red1-outer.jpg)!important;
-		}
 	}
 	.notification-login-side:before {
 		content: url(https://raw.githubusercontent.com/hmajora/newgrounds-2012/refs/heads/main/redopen1.png);
@@ -2546,7 +2171,6 @@ url-prefix("https://www.newgrounds.com/search/conduct/movies") {
 		margin: 5px 5px 0 5px;
 		height: 25px;
 	}
-
 
 	if selectportal==off {
 		.pod-body .form-inline {
@@ -2748,53 +2372,7 @@ url-prefix("https://www.newgrounds.com/search/conduct/movies") {
 	}
 	div.pod-body:last-child {
 		width: 600px;
-		if cutoff==1row {
-			height: 139px;
-		}
-		if cutoff==2row {
-			height: 278px;
-		}
-		if cutoff==3row {
-			height: 417px;
-		}
-		if cutoff==4row {
-			height: 556px;
-		}
-		if cutoff==5row {
-			height: 695px;
-		}
-		if cutoff==6row {
-			height: 834px;
-		}
-		if cutoff==7row {
-			height: 973px;
-		}
-		if cutoff==8row {
-			height: 1112px;
-		}
-		if cutoff==9row {
-			height: 1251px;
-		}
-		if cutoff==10row {
-			height: 1390px;
-		}
-		if cutoff==11row {
-			height: 1529px;
-		}
-		if cutoff==12row {
-			height: 1668px;
-		}
-		if cutoff==13row {
-			height: 1807px;
-		}
-		if cutoff==14row {
-			height: 1946px;
-		}
-		if cutoff==15row {
-			height: 2085px;
-		}
 	}
-
 
 	div.portalsubmission-cards {
 		display: grid;
@@ -2819,13 +2397,6 @@ url-prefix("https://www.newgrounds.com/search/conduct/audio") {
 	body:after {
 		content: '';
 		background: #000 url(https://kakuyamii.github.io/NG12-theme/images/2012/bg-skins/green0-outer.jpg) top center no-repeat!important;
-		if layout==2013 or layout==2014 {
-			background-image: url(https://web.archive.org/web/20121115121342im_/http://www.newgrounds.com/img/bg-skins/green2-outer.jpg)!important;
-		}
-		if layout==2013 and background==default {
-			background: #000 url(https://kakuyamii.github.io/NG12-theme/images/2012/bg-skins/green1-outer.jpg) top center no-repeat!important;
-			background-image: url(https://kakuyamii.github.io/NG12-theme/images/2012/bg-skins/green1-outer.jpg)!important;
-		}
 	}
 	div.pod-head {
 		background: #213915 url(https://kakuyamii.github.io/NG12-theme/images/2012/bg-skins/podtops/podtop-green.jpg) top left no-repeat;
@@ -3392,7 +2963,6 @@ body {
 		max-height: 300px!important;
 	}
 
-
 	if visualization==none {
 		.audio-listen-wrapper {
 			background: #292929 !important;
@@ -3405,7 +2975,6 @@ body {
 		}
 	}
 
-
 	@keyframes animated-filter {
 		0% {
 			filter: hue-rotate( 0deg)
@@ -3417,7 +2986,6 @@ body {
 			filter: hue-rotate( 0deg)
 		}
 	}
-
 
 	.audio-listen-wrapper {
 		background: url(bgi);
@@ -3860,7 +3428,6 @@ body {
 		}
 	}
 
-
 ol.classic-portal-list a.item:hover {
 	background-color: #3d1d0d;
 }
@@ -3901,9 +3468,6 @@ div.thin:nth-child(2) {
 		background-image: url("https://kakuyamii.github.io/NG12-theme/images/2012/bg-skins/pink0-outer.jpg") !important;
 		background-color: #000 !important;
 		if background==default and layout==2013 {
-			background: #000 url(https://kakuyamii.github.io/NG12-theme/images/2012/bg-skins/pink1-outer.jpg) top center no-repeat!important;
-		}
-		if layout==2013 {
 			background: #000 url(https://kakuyamii.github.io/NG12-theme/images/2012/bg-skins/pink1-outer.jpg) top center no-repeat!important;
 		}
 	}
@@ -4176,7 +3740,6 @@ div.thin:nth-child(2) {
 		}
 	}
 
-
 	div.body-center {
 		z-index: 2;
 	}
@@ -4208,11 +3771,9 @@ div.thin:nth-child(2) {
 		}
 	}
 
-
 	.inhousepromo {
 		display: none;
 	}
-
 
 	/*    div.pod:nth-of-type(1) {
     visibility: hidden;
@@ -4317,7 +3878,6 @@ div.thin:nth-child(2) {
 		margin-right: auto;
 	}
 
-
 	/* stupid athor comments */
 	.right.wide.column > div.pod:last-child {
 		top: 50px;
@@ -4345,7 +3905,6 @@ div.thin:nth-child(2) {
 		position: absolute;
 		background-image: url(https://kakuyamii.github.io/NG12-theme/images/2012/bg-main/pod-23.jpg);
 	}
-
 
 	#author_comments > p {
 		z-index: 999;
@@ -4634,7 +4193,6 @@ div.thin:nth-child(2) {
 	}
 }
 
-
 @-moz-document domain("newgrounds.com") {
 	/* profile page */
 	body.skin-userpage::after {
@@ -4644,9 +4202,6 @@ div.thin:nth-child(2) {
 		top: -1300px;
 		position: relative;
 		z-index: 0;
-		if layout==2013 or layout==2014 {
-			top: -1300px!important;
-		}
 	}
 	div.userbody div.body-center {
 		max-width: 950px;
@@ -4657,9 +4212,6 @@ div.thin:nth-child(2) {
 		top: 70px;
 		left: 0px;
 		margin: 0 auto;
-		if layout==2013 or layout==2014 {
-			top: 15px;
-		}
 	}
 	div.userbody div.body-center {
 		position: relative;
@@ -4685,11 +4237,6 @@ div.thin:nth-child(2) {
 			height: 41px;
 		}
 	}
-	if layout==2013 or layout==2014 {
-		div.user-header-bg {
-			top: 75px;
-		}
-	}
 	.user-header-bg::before {
 		content: '';
 		background-color: transparent;
@@ -4703,9 +4250,6 @@ div.thin:nth-child(2) {
 		width: 976px;
 		margin: 0 auto;
 		z-index: 1;
-		if layout==2013 or layout==2014 {
-			top: 65px!important;
-		}
 	}
 	div.croppable-image-advanced div.croppable-image-advanced-inner img {
 		display: none;
@@ -5442,7 +4986,6 @@ background: none;
 		background: #000 url(https://kakuyamii.github.io/NG12-theme/images/2012/bg-main/podstripe.gif) -1px bottom repeat-x;
 	}
 
-
 	.ql-body .ql-align-center,
 	.ql-body p {
 		margin: 10px 0 5px 0;
@@ -5455,15 +4998,6 @@ background: none;
 		margin-left: 4px;
 		& svg {
 			height: 60px;
-			if fulp==def {
-				background-image: url(https://web.archive.org/web/20120328203446im_/http://uimg.ngfiles.com/icons/0/1_large.gif);
-			}
-			if fulp==F2012 {
-				background-image: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/tomfulppfps/fulp1.gif);
-			}
-			if fulp==LF2012 {
-				background-image: url(https://raw.githubusercontent.com/hmajora/ng12-image-repository/refs/heads/tomfulppfps/fulp2.gif);
-			}
 		}
 	}
 
@@ -5614,7 +5148,6 @@ background: none;
 		background: url(https://kakuyamii.github.io/NG12-theme/images/2012/formstuff/input-checkboxes.jpg) 0 0 no-repeat;
 		display: block;
 		height: 16px;
-
 
 		&::before {
 			height: 16px;
@@ -5895,33 +5428,14 @@ background: none;
 		background-color: #1b1717;
 		background-image: url(https://kakuyamii.github.io/NG12-theme/images/2012/icons/hovers/rankandrate.png);
 	}
-	if layout==E2012 {
-		a.portalsubmission-footer-feature.game div[class^="rated-"]::before {
-			background-color: #296395!important;
-		}
-	}
-	if layout==E2012 {
-		a.portalsubmission-footer-feature.movie div[class^="rated-"]::before {
-			background-color: #a52e2e!important;
-		}
-	}
 	div[class^="rated-e"]::before {
 		background-position: -40px 0;
-		if layout==E2012 {
-			background-position: -20px 0;
-		}
 	}
 	div[class^="rated-t"]::before {
 		background-position: -40px -20px;
-		if layout==E2012 {
-			background-position: -20px -20px;
-		}
 	}
 	div[class^="rated-m"]::before {
 		background-position: -40px -40px;
-		if layout==E2012 {
-			background-position: -20px -40px;
-		}
 	}
 
 	div.footer-main {
